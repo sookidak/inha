@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+/* table */
+table caption{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; } 
+.table {border-collapse:collapse !important; display: block; width: 100%; }
+.table:after{content:'';display: block;clear: both;}
+.table th{font-size: 16px; font-weight: 400; color: #000000 ; padding: 0 20px ;text-align:center; background-color: #f6f6f6; height: 70px; border-right: 0; border-left: 1px solid #eee; border-top: 2px solid #bbb; border-bottom: 1px solid #ddd;} 
+.table th:first-child, .table td:first-child{ border-left: 0 }
+.table td{font-size: 14px; font-weight: 300; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px;}
+.table td.title{text-align:left !important; padding: 0 20px; }
+
+
+.table.table-type2{border-collapse:collapse !important;  }
+.table.table-type2 th{ border-right:0; border-left:0 ; border:0; border-bottom: 1px solid #eee;} 
+.table.table-type2 tr:first-child td, .table.table-type2 tr:first-child th{ border-left: 0 ;  border-top: 2px solid #bbb;}
+.table.table-type2 td:nth-child(2) {border-left: 0}
+.table.table-type2 td.line{border-left: 1px solid #eee !important;}
+
+/* badge */
+.badge{ display: inline-block; position: relative; top: -2px; border-radius: 3px; background:#0670B9; font-size: 13px; font-weight: 400; color: #fff;  padding: 2px 10px ; margin-right: 7px }
+.badge.badge-point{background:#DA2C2D;}
+
+
+
+
+/* components */
+
+input{line-height:normal; border: 1px solid #ddd; font-size: 14px; font-weight: 300; color: #777; background: #fff; height: 40px; padding: 0 20px}
+label.hide{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
+input:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
+input:focus{ outline: none; border: 1px solid #199da3;font-weight: 400; color: #000; }
+
+select{line-height:normal; border: 1px solid #ddd; font-size: 14px; line-height: 22px; font-weight: 300; color: #777; background: #fff; height: 40px; padding: 0 20px}
+select:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
+select:focus{ outline: none; border: 1px solid #199da3;font-weight: 400; color: #000; }
