@@ -3,7 +3,7 @@
 @font-face {
 	font-family: 'NotoKrL';
 	font-style: normal;
-	font-weight: 100;
+	font-weight: 300;
 	src: url('../fonts/notokr/NotoSans-Light.eot');
 	src: url('../fonts/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/NotoSans-Light.woff2') format('woff2'),
@@ -75,7 +75,7 @@ body {
 	font-family: 'NotoKrL',sans-serif;
 	font-size:14px;
 	color:#333;
-	-webkit-text-size-adjust: 140%;
+	-webkit-text-size-adjust: 100%;
 	vertical-align: middle;
 	letter-spacing:-0.04em;
 }

@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* component */
+.btn-m{height:45px;min-width:130px;padding:0 30px;}
+.btn-b{height:60px;min-width:180px;padding:0 40px;}
+.btn.mint{background:#199da3;}
+.btn.gray{background: #757a85}
+
+/* tab */
+.tab-wrap{position:relative;}
+.tablist-type1{width:100%;display:table;table-layout: fixed;border-bottom:2px solid #0770bb}
+.tablist-type1 a{display:table-cell;text-align:center;height:60px;color:#000;font-size:18px}
+.tablist-type1 a.active{position:relative;border-left:2px solid #0770bb;border-top:2px solid #0770bb;border-right:2px solid #0770bb;color:#0770bb;font-size:20px;font-family:'NotoKrR',sans-serif;border-radius:10px 0 0 0;}
+.tablist-type1 a.active:after{content:'';display:block;height:2px;position:absolute;left:0;bottom:-2px;right:0;background:#fff;}
+
+.tablist-type2:after{content:'';display:block;clear:both;}
+.tablist-type2 a{float:left;padding:15px 20px;color:#777;font-size:18px;border-bottom:1px solid #ddd}
+.tablist-type2 a.active{color:#0770bb;border-bottom:2px solid #0770bb;font-family:'NotoKrR',sans-serif;}

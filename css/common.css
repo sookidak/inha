@@ -31,7 +31,9 @@
 }
 
 /* component */
-.btn{display:inline-block;border-radius:8px 0 0px 0;background:#0770bb;min-width:130px;height:45px;font-size:16px;color:#fff;}
+.btn{display:inline-block;border-radius:10px 0 0px 0;min-width:130px;height:45px;font-size:16px;color:#fff;background: #0770bb}
+
+
 
 /* loading */
 .lds-default {

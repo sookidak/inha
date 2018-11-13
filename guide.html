@@ -73,21 +73,102 @@
 		<table class="table-guide">
 			<tr>
 				<th>
-					<button type="button" class="btn btn-normal">normal</button>
+					<button type="button" class="btn btn-m">m</button>
 				</th>
 				<td>
-					<xmp><button type="button" class="btn btn-normal">normal</button></xmp>
+					<xmp><button type="button" class="btn btn-m">m</button></xmp>
 				</td>
 				<th>
-					<button type="button" class="btn btn-normal">normal</button>
+					<button type="button" class="btn btn-m mint">m-mint</button>
 				</th>
 				<td>
-					<xmp><button type="button" class="btn btn-normal">normal</button></xmp>
+					<xmp><button type="button" class="btn btn-m mint">m-mint</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-m gray">m-gray</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-m gray">m-gray</button></xmp>
+				</td>
+				<th>
+					
+				</th>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-b">big</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-b ">big</button></xmp>
+				</td>
+				<th>
+					<button type="button" class="btn btn-b mint">b-mint</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-b mint">b-mint</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-b gray">b-gray</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-b gray">b-gray</button></xmp>
+				</td>
+				<th>
+					
+				</th>
+				<td>
+					
 				</td>
 			</tr>
 		</table>
 	</section>
 	<!-- //버튼 가이드 -->
+	<!-- 탭 가이드 -->
+	<section class="guide-section" id="guide-tab">
+		<h2 class="guide-title2">탭가이드</h2>
+
+		<!-- tab-type1 -->
+		<div class="tab-wrap">
+			<div role="tablist" class="tablist-type1">
+				<a id="info-anchor" href="#info" class="active" role="tab" aria-selected="true">소개</a>
+				<a id="doctors-anchor" href="#doctors" role="tab" aria-selected="false">의료진</a>
+				<a id="time-anchor" href="#link" role="tab" aria-selected="false">진료시간표</a>
+				<a id="hinfo-anchor"href="#link" role="tab" aria-selected="false">건강정보</a>
+				<a id="news-anchor" href="#link" role="tab" aria-selected="false">언론소식</a>
+			</div>
+			<div id="info" tabindex="0" role="tabpanel" aria-labelledby="info-anchor">
+				소개
+			</div>
+			<div id="doctors" tabindex="0" role="tabpanel" aria-labelledby="doctors-anchor" hidden>
+				의료진
+			</div>
+		</div>
+		<!-- //tab-type1 -->
+
+		<!-- tab-type2 -->
+		<div class="tab-wrap">
+			<div role="tablist" class="tablist-type2">
+				<a id="have-anchor" href="#have" class="active" role="tab" aria-selected="true">구비서류</a>
+				<a id="guide-anchor" href="#guide" role="tab" aria-selected="false">발급안내</a>
+			</div>
+			<div id="have" tabindex="0" role="tabpanel" aria-labelledby="have-anchor">
+				구비서류
+			</div>
+			<div id="guide" tabindex="0" role="tabpanel" aria-labelledby="guide-anchor" hidden>
+				발급안내
+			</div>
+		</div>
+		<!-- //tab-type2 -->
+
+	</section>
+	<!-- //탭 가이드 -->
 </section>
 </body>
 </html>
