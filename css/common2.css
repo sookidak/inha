@@ -67,27 +67,32 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 /* error */
 .error-box{width: 980px; margin: 0 auto 50px; padding-bottom: 70px; border:1px solid #ddd; border-radius: 8px 8px 0 0}
 .error-box .box-top-logo{background: url(../img/err_logo.png) no-repeat center 16px #ddd; height: 60px; border-radius: 6px 6px 0 0}
-.error-box .err-icon{width:152px; height: 150px;  background: url(../img/icon_err_join.png) no-repeat -1px -2px ;margin: 56px auto 0; }
+.error-box .err-icon{width:152px; height: 145px;  background: url(../img/icon_err_join.png) no-repeat -1px -2px ;margin: 56px auto 0; }
 .error-box .err-icon.err-icon-bg2{background-position:-1px -174px }
-.error-box .err-tit{font-size: 30px; line-height: 37px; color: #000; text-align:center; margin:22px 0 30px}
+.error-box .err-tit{font-size: 30px; line-height: 37px; color: #000; text-align:center; margin:22px 0 20px}
+.error-box .err-tit.err-tit_mr{padding-top: 42px}
 .error-box .err-cont{font-size: 16px; line-height: 24px; color: #777; text-align:center;}
-.error-box .err-info{ padding: 30px 0; font-size: 16px;background-color: #f5f5f5; width: 780px; margin: 50px auto 0; text-align: center;font-family: 'NotoKrR'; color: #0770bb}
+.error-box .err-info{ padding: 30px 0; font-size: 16px;background-color: #f5f5f5; width: 780px; margin: 45px auto 0; text-align: center;font-family: 'NotoKrR'; color: #0770bb}
 .error-box .err-info .err-info-tit{display: block;color: #000; font-size: 18px; margin-bottom: 20px}
-.error-box .err-banner{}
-.error-box .err-banner .bowser-list li{ text-align: center; }
-.error-box .err-banner .bowser-list .bow-cr{}
-.error-box .err-banner .bowser-list .bow-in{}
-.error-box .err-banner .bowser-list .bow-sa{}
-.error-box .err-banner .bowser-list .bow-fi{}
-.error-box .err-banner .bowser-list .bow-op{}
+.error-box .err-banner .bowser-list{ margin:53px auto 0; display:table;}
+.error-box .err-banner .bowser-list li{text-align: center; width: 130px;display:table-cell;padding:60px 28px 0;text-align:center;position:relative; background: url(../img/icon_err_browser.png) no-repeat;}
+.error-box .err-banner .bowser-list li:first-child{padding-left:0}
+.error-box .err-banner .bowser-list li:last-child{padding-right:0;}
+.error-box .err-banner .bowser-list li:last-child:after{content:'';display:none;}
+.error-box .err-banner .bowser-list .bow-cr{background-position: 40px 0px;}
+.error-box .err-banner .bowser-list .bow-in{background-position: -120px 0px;}
+.error-box .err-banner .bowser-list .bow-sa{background-position: -305px 0px;}
+.error-box .err-banner .bowser-list .bow-fi{background-position: -492px 0px;}
+.error-box .err-banner .bowser-list .bow-op{background-position: -678px 0px;}
 .error-box .err-banner .bow-name{color: #000; font-size: 16px; line-height: 30px; font-family: 'NotoKrR';}
 .error-box .err-banner .bow-ver{color: #777; font-size: 14px;}
 
-.error-box .err-banner .err-banner-btn{letter-spacing: -1px; line-height: 26px; background-color: #fff;width: 130px; height: 30px; border-radius: 30px; border:1px solid #aaa ;color: #777; font-size: 14px;}
+.error-box .err-banner .err-banner-btn{ display: inline-block; letter-spacing: -1px; line-height: 26px; background-color: #fff;width: 130px; height: 30px; border-radius: 30px; border:1px solid #aaa ;color: #777; font-size: 14px; margin-top:20px }
 .error-box .err-banner .err-banner-btn:hover{background-color: #0770bb;border:1px solid #0770bb ; color: #fff;}
 
 
+
 /* button */
-.btn-wrap{text-align:center;}
-.btn-wrap button{margin-left: 8px}
+.btn-wrap{text-align:center; }
+.btn-wrap button{margin-left: 8px;}
 .btn-wrap button:first-child {margin-left: 0px}
