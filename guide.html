@@ -3,8 +3,8 @@
 	table th,table td{border:1px solid #ccc;padding:5px;font-size:13px}
 	.guide{padding:20px;width:1180px;margin:0 auto;}
 	.guide-title{font-size:30px;margin-bottom:30px;text-align: center;font-weight: bold}
-	.guide-title2{font-size:20px;margin-bottom:20px}
-	.table-guide{width:100%;}
+	.guide-title2{font-size:24px;margin-bottom:20px;font-weight: bold}
+	.table-guide{width:1180px;}
 	.guide-section{margin-bottom:30px;}
 	.guide-nav{margin-bottom:20px;}
 	.guide-nav:after{content:'';display:block;clear: both;width:100%;}
@@ -24,100 +24,6 @@
 			<li><a href="#guide-tab">탭</a></li>
 		</ul>
 	</section>
-	<!-- 컬러 가이드 -->
-	<section class="guide-section" id="guide-icon">
-		<h2 class="guide-title2">컬러 가이드</h2>
-		<table class="table-guide">
-			<tr>
-				<th>
-					<div class="box-g1"></div>
-				</th>
-				<td>
-					마스터 테스트 77777777
-				</td>
-				<th>
-					<div class="box-g1"></div>
-				</th>
-				<td>
-					컬러getooooooooo
-				</td>
-			</tr>
-		</table>
-	</section>
-	<!-- //컬러 가이드 -->
-	<!-- 아이콘 가이드 -->
-	<section class="guide-section" id="guide-icon">
-		<h2 class="guide-title2">아이콘가이드</h2>
-		<table class="table-guide">
-			<tr>
-				<th>
-					<div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-				</th>
-				<td>
-					<xmp><button type="button" class="btn btn-normal">normal</button></xmp>
-				</td>
-				<th>
-					<div class="item loading-3">
-						<div class="loading"></div>
-						<div>.loading-3</div>
-					</div>
-				</th>
-				<td>
-					<xmp><button type="button" class="btn btn-normal">normal</button></xmp>
-				</td>
-			</tr>
-		</table>
-	</section>
-	<!-- //아이콘 가이드 -->
-	<!-- 컴포넌트 가이드 -->
-	<section class="guide-section" id="guide-component">
-		<h2 class="guide-title2">컴포넌트</h2>
-		
-		<table class="table-guide">
-			<colgroup>
-				<col style="width:20%">
-				<col style="width:30%">
-				<col style="width:20%">
-				<col style="width:30%">
-			</colgroup>
-			<tr>
-				<th>
-					<div class="checkbox">
-						<input type="checkbox" id="check-a" aria-checked=”true”>
-						<label for="check-a" >체크A</label>
-					</div>
-				</th>
-				<td>
-<xmp>
-<div class="checkbox">
-	<input type="checkbox" id="check-a" aria-checked=”true”>
-	<label for="check-a" >체크A</label>
-</div>
-</xmp>
-				</td>
-				<th>
-					<ul>
-						<li class="checkbox">
-							<input type="checkbox" id="check-a2" aria-checked=”true”>
-							<label for="check-a2" >체크A</label>
-						</li>
-						<li class="checkbox">
-								<input type="checkbox" id="check-b2" aria-checked=”false”>
-								<label for="check-b2" x>체크A</label>
-						</li>
-						<li class="checkbox">
-							<input type="checkbox" id="check-c2" aria-checked=”false”>
-							<label for="check-c2" >체크A</label>
-						</li>
-					</ul>
-				</th>
-				<td>
-					
-				</td>
-			</tr>
-		</table>
-	</section>
-	<!-- //아이콘 가이드 -->
 	<!-- 버튼 가이드 -->
 	<section class="guide-section" id="guide-btns">
 		<h2 class="guide-title2">버튼가이드</h2>
@@ -152,24 +58,24 @@
 			</tr>
 			<tr>
 				<th>
-					<button type="button" class="btn btn-b">big</button>
+					<button type="button" class="btn btn-l">large</button>
 				</th>
 				<td>
-					<xmp><button type="button" class="btn btn-b ">big</button></xmp>
+					<xmp><button type="button" class="btn btn-l">large</button></xmp>
 				</td>
 				<th>
-					<button type="button" class="btn btn-b mint">b-mint</button>
+					<button type="button" class="btn btn-l mint">l-mint</button>
 				</th>
 				<td>
-					<xmp><button type="button" class="btn btn-b mint">b-mint</button></xmp>
+					<xmp><button type="button" class="btn btn-l mint">l-mint</button></xmp>
 				</td>
 			</tr>
 			<tr>
 				<th>
-					<button type="button" class="btn btn-b gray">b-gray</button>
+					<button type="button" class="btn btn-l gray">l-gray</button>
 				</th>
 				<td>
-					<xmp><button type="button" class="btn btn-b gray">b-gray</button></xmp>
+					<xmp><button type="button" class="btn btn-l gray">l-gray</button></xmp>
 				</td>
 				<th>
 					
@@ -181,6 +87,176 @@
 		</table>
 	</section>
 	<!-- //버튼 가이드 -->
+	<!-- 컴포넌트 가이드 -->
+	<section class="guide-section" id="guide-component">
+		<h2 class="guide-title2">컴포넌트</h2>
+		
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="checkbox">
+						<input type="checkbox" id="check" aria-checked=”false” >
+						<label for="check" >체크A</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="check-a" aria-checked=”true” checked>
+						<label for="check-a" >체크A</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="check-ad" aria-checked=”false” disabled >
+						<label for="check-ad" >체크A</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="check-acd" aria-checked=”true” checked disabled >
+						<label for="check-acd" >체크A</label>
+					</div>
+				</th>
+				<td>
+<xmp>
+<div class="checkbox">
+	<input type="checkbox" id="check" aria-checked=”false” >
+	<label for="check" >체크A</label>
+</div>
+<div class="checkbox">
+	<input type="checkbox" id="check-a" aria-checked=”true” checked>
+	<label for="check-a" >체크A</label>
+</div>
+<div class="checkbox">
+	<input type="checkbox" id="check-ad" aria-checked=”false” disabled >
+	<label for="check-ad" >체크A</label>
+</div>
+<div class="checkbox">
+	<input type="checkbox" id="check-acd" aria-checked=”true” checked disabled >
+	<label for="check-acd" >체크A</label>
+</div>
+
+</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="checkbox-type2">
+						<input type="checkbox" id="check-b1" aria-checked=”false” >
+						<label for="check-b1" >체크B</label>
+					</div>
+					<div class="checkbox-type2">
+						<input type="checkbox" id="check-b" aria-checked=”true” checked>
+						<label for="check-b" >체크B</label>
+					</div>
+					<div class="checkbox-type2">
+						<input type="checkbox" id="check-bd" aria-checked=”false” disabled >
+						<label for="check-bd" >체크B</label>
+					</div>
+					<div class="checkbox-type2">
+						<input type="checkbox" id="check-bcd" aria-checked=”false” checked disabled >
+						<label for="check-bcd" >체크B</label>
+					</div>
+				</th>
+				<td>
+<xmp>
+<div class="checkbox-type2">
+	<input type="checkbox" id="check-b1" aria-checked=”false” >
+	<label for="check-b1" >체크B</label>
+</div>
+<div class="checkbox-type2">
+	<input type="checkbox" id="check-b" aria-checked=”true” checked>
+	<label for="check-b" >체크B</label>
+</div>
+<div class="checkbox-type2">
+	<input type="checkbox" id="check-bd" aria-checked=”false” disabled >
+	<label for="check-bd" >체크B</label>
+</div>
+<div class="checkbox-type2">
+	<input type="checkbox" id="check-bcd" aria-checked=”false” checked disabled >
+	<label for="check-bcd" >체크B</label>
+</div>
+</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="radio">
+						<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+						<label for="radio-a2" >라디오</label>
+					</div>
+					<div class="radio">
+							<input type="radio" id="radio-b2" name="select1"  value="2" aria-checked=”false”>
+							<label for="radio-b2" >라디오</label>
+					</div>
+					<div class="radio">
+						<input type="radio" id="radio-c2" name="select1" value="3"  aria-checked=”false” disabled>
+						<label for="radio-c2" >라디오</label>
+					</div>
+				</th>
+				<td>
+<xmp>
+<div class="radio">
+	<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+	<label for="radio-a2" >라디오</label>
+</div>
+<div class="radio">
+	<input type="radio" id="radio-b2" name="select1"  value="2" aria-checked=”false”>
+	<label for="radio-b2" >라디오</label>
+</div>
+<div class="radio">
+	<input type="radio" id="radio-c2" name="select1" value="3"  aria-checked=”false” disabled>
+	<label for="radio-c2" >라디오</label>
+</div>
+</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="switch-wrap">
+						<div class="switch-button">
+							<input type="radio" id="switch-button1" name="switch"  value="1" aria-checked=”false”>
+							<label for="switch-button1" >네</label>
+						</div>
+						<div class="switch-button">
+							<input type="radio" id="switch-button2" name="switch"  value="2" aria-checked=”true” checked>
+							<label for="switch-button2" >아니오</label>
+						</div>
+					</div>
+					<div class="switch-wrap">
+						<div class="switch-button">
+							<input type="radio" id="switch-button3" name="switch2"  value="1" aria-checked=”false” disabled>
+							<label for="switch-button3" >네</label>
+						</div>
+						<div class="switch-button">
+							<input type="radio" id="switch-button4" name="switch2"  value="2" aria-checked=”true” checked>
+							<label for="switch-button4" >아니오</label>
+						</div>
+					</div>
+				</th>
+				<td>
+<xmp>
+<div class="switch-wrap">
+	<div class="switch-button">
+		<input type="radio" id="switch-button1" name="switch"  value="1" aria-checked=”false”>
+		<label for="switch-button1" >네</label>
+	</div>
+	<div class="switch-button">
+		<input type="radio" id="switch-button2" name="switch"  value="2" aria-checked=”true” checked>
+		<label for="switch-button2" >아니오</label>
+	</div>
+</div>
+<div class="switch-wrap">
+	<div class="switch-button">
+		<input type="radio" id="switch-button3" name="switch2"  value="1" aria-checked=”false” disabled>
+		<label for="switch-button3" >네</label>
+	</div>
+	<div class="switch-button">
+		<input type="radio" id="switch-button4" name="switch2"  value="2" aria-checked=”true” checked>
+		<label for="switch-button4" >아니오</label>
+	</div>
+</div>
+</xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //아이콘 가이드 -->
+
 
 	<!-- 탭 가이드 -->
 	<section class="guide-section" id="guide-tab">
@@ -263,31 +339,6 @@
 
 	</section>
 	<!-- //탭 가이드 -->
-
-	<!-- components:inputs -->
-	<section class="guide-section" id="guide-components">
-		<h2 class="guide-title2">components</h2>
-		<h3 class="guide-title3">components : input</h3>
-		<table class="table-guide">
-			<tr>
-				<th>
-					<input type="text">
-				</th>
-				<td>
-					마스터 테스트 77777777
-				</td>
-				<th>
-					<div class="box-g1"></div>
-				</th>
-				<td>
-					컬러getooooooooo
-				</td>
-			</tr>
-		</table>
-
-	</section>
-	<!-- //components:inputs -->
-
 
 
 		<!-- 컨포넌트  가이드 -->
