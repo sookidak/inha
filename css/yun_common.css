@@ -17,7 +17,11 @@
 .tablist-type2 a{float:left;padding:15px 20px;color:#777;font-size:18px;border-bottom:1px solid #ddd}
 .tablist-type2 a.active{color:#0770bb;border-bottom:2px solid #0770bb;font-family:'NotoKrR',sans-serif;}
 
-/* input */
-input[type=text]{height:40px;border:1px solid #ddd;font-size:14px;padding:0 20px;color:#777;background:#fff}
-input[type=text]:disabled{background: #f8f8f8;border:1px solid #eee;}
-input[type=text]:focus{border:1px solid #199da3;color:#000;font-family: 'NotoKrR',sans-serif}
+
+/* checkbox */
+.checkbox{position:relative;display: inline-block;}
+li.checkbox{margin-right:10px}
+.checkbox input[type=checkbox]{position:absolute;left:0;top:0;}
+.checkbox label{display:inline-block;position:relative;padding-left:35px;min-width:25px;min-height:25px;line-height:25px;color:#777;}
+.checkbox label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:url('../img/icon_component.png') -40px 0px;cursor:pointer;}
+.checkbox input[type=checkbox]:checked +label:before{background-position: -40px -40px;z-index:10;}
