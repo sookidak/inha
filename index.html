@@ -1,14 +1,539 @@
 @@include('./inc/head.html')
-@@include('./inc/header.html')
-@@include('./inc/location.html')
+<style>
+	body{padding:10px;}
+	table th,table td{border:1px solid #ccc;font-size:13px;color:#000;}
+	table{width:100%;}
+	thead th{background: #eee;color: #000;}
+	th{padding:4px;}
+	td{padding:4px;}
+	tbody th{font-weight: bold;vertical-align:top}
+	tbody td{vertical-align:top}
+	h1{margin-bottom:20px;padding:10px;}
+	.guide{background:#f1fcff;color:#000}
+</style>
+
 <!-- container -->
-<section class="container" id="container">
-	<div class="pagetitle-wrap">
-		<h1 class="title">가정의학과</h1>
-	</div>
-	<div class="contents">
-		<img src="./img/test.png" alt="">
-	</div>
+<h1>인하대병원 PC</h1>
+<section>
+<table id="table-ia">
+	<thead>
+	<tr class="guide">
+		<td>공통가이드</td>
+		<td colspan="5">
+			<a href="./guide.html" target="_blank">./guide.html</a><br>
+			<a href="./guide-jh.html" target="_blank">./guide-jh.html</a><br>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">메뉴</th>
+		<th rowspan="2">화면유형</th>
+		<th rowspan="2">파일경로</th>
+		<th rowspan="2">비고</th>
+	</tr>
+
+	<tr>
+		<th>category</th>
+		<th>2depth</th>
+		<th>3depth/</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th rowspan="40">회원</th>
+		<td>로그인</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank">/member/login.html</a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="25">회원가입</td>
+		<td>유형선택>일반회원>[Step.1]약관동의</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>일반회원>[Step.2]본인확인</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>일반회원>[Step.2]본인확인>휴대폰 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>일반회원>[Step.2]본인확인>아이핀 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>일반회원>[Step.3] 정보입력</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>일반회원>[Step.3] 정보입력>우편번호 찾기</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>일반회원>[Step.4] 가입완료</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.1] 법정대리인 본인인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.1] 법정대리인 본인인증>휴대폰 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.1] 법정대리인 본인인증>아이핀 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.2] 약관동의</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.3] 본인인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.3] 본인인증>휴대폰 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.3] 본인인증>아이핀 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.4] 정보입력</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.4] 정보입력>우편번호 찾기</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>어린이회원>[Step.5] 가입완료</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>국내거주 외국인회원>[Step.1] 약관동의</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>국내거주 외국인회원>[Step.2] 본인인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>국내거주 외국인회원>[Step.2] 본인인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>국내거주 외국인회원>[Step.2] 본인인증>휴대폰 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>국내거주 외국인회원>[Step.2] 본인인증>아이핀 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>국내거주 외국인회원>[Step.3] 정보입력</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>국내거주 외국인회원>[Step.3] 정보입력>우편번호 찾기</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>유형선택>국내거주 외국인회원>[Step.4] 가입완료</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="5">아이디찾기</td>
+		<td>본인인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>본인인증>휴대폰 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>본인인증>아이핀 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>아이디 찾기</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>결과안내 (일치하는 정보가 없는 화면)</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="5">비밀번호 찾기 </td>
+		<td>아이디+본인인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>아이디+본인인증>휴대폰 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>아이디+본인인증>아이핀 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>결과안내 (일치하는 정보가 있는 화면)</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>결과안내 (일치하는 정보가 없는 화면)</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="3">휴면계정 복원</td>
+		<td>본인인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>본인인증>휴대폰 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>본인인증>아이핀 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>비밀번호 변경 안내</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th rowspan="7">이용안내</th>
+		<td>병문안 안내</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>편의시설</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>전화번호 안내</td>
+		<td>[Tab] 주요전화번호,[Tab] 간호본부,[Tab] 진료부서</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>편의시설</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>층별안내</td>
+		<td>[Tab] 본관, [Tab] 신관</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>주차장 이용안내</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>찾아오시는 길	</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th rowspan="31">병원소개</th>
+		<td rowspan="2">의료원장인사말</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>역대의료원장</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>병원설립이념</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>미션&비전</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>연혁</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="8">윤리경영</td>
+		<td>윤리경영 추진전략>[Tab] 목표와 추진단계, [Tab] 추진체계,[Tab] 운영체계</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>윤리강령</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>윤리실천지침</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>우리의 다짐</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>윤리실천 GUIDE</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>신고제도</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>윤리상담실</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>사이버 클린센터</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>병원현황</td>
+		<td></td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>사회공헌활동</td>
+		<td>[Tab] 소개,[Tab] 주요소식>목록,[Tab] 주요소식>상세</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="2">공지사항</td>
+		<td>목록</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="2">인하뉴스</td>
+		<td>목록</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="21">채용공고</td>
+		<td>목록</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td >상세</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.1] 개인정보 수집 및 이용동의</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.1] 개인정보 수집 및 이용동의>휴대폰 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.1] 개인정보 수집 및 이용동의>아이핀 인증</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.2] 채용항목 선택 및 비밀번호 셋팅</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.3] 기본정보 입력</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.4] 가족사항 입력</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.5] 학력사항 입력</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.6] 약력사항 입력</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.7] 자기소개 입력</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>상세>온라인 지원>[Step.8] 지원서 접수 및 완료</td>
+		<td></td>
+		<td><a href="" target="_blank"></a></td>
+		<td></td>
+	</tr>
 </section>
 <!-- //container -->
-@@include('./inc/footer.html')
+
+</body>
+</html>

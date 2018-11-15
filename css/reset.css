@@ -109,6 +109,7 @@ table {
 }
 input, select {
 	vertical-align:middle;
+	font-size:initial;
 }
 em{font-style:normal}
 sub,sup{
