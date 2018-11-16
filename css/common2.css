@@ -168,3 +168,52 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 
 /* board - nolist */
 .board_wrap .no_list{height: 280px;background:  url(../img/icon_noimg.png) no-repeat center 70px; padding-top: 173px; font-size: 18px;}
+
+
+
+/* layer popup */
+#layer_bg{ position: fixed; top:0; left: 0; width: 100%; height: 100%;background-color: #3d4044; opacity: 0.8; z-index: 1}
+#layer_box{width: 600px; height: 540px; background-color: #fff; margin-top: 50px; position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) ; z-index: 2; -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6); -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);	box-shadow: 5px 5px 5px rgba(68,68,68,0.6); }
+#layer_box .layer_wrap{width: 600px; height: 490px;position: relative;}
+#layer_box .layer_wrap .layer_cont{width: 100%; height: 490px; overflow-y:auto;overflow-x:hidden; position: absolute;top: 0; left: 0 ; padding: 30px; background-color: #fff}
+#layer_box .layer_close{height: 50px;width: 600px; background-color: #3d4044; position: relative;}
+#layer_box .layer_close .checkbox{position:relative;display: inline-block;vertical-align: middle;margin-right:10px; margin-left: 30px; margin-top: 15px}
+#layer_box .layer_close .checkbox input[type=checkbox]{position:absolute;left:0;top:0;}
+#layer_box .layer_close .checkbox label{display:inline-block;position:relative;padding-left:30px;min-width:20px;min-height:20px;line-height:20px;color:#fff;}
+#layer_box .layer_close .checkbox label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:20px;height:20px;background:url('../img/icon_component.png') 0px -180px;cursor:pointer;z-index:10;}
+#layer_box .layer_close .checkbox input[type=checkbox]:checked +label:before{background-position: 0px -157px;}
+#layer_box .layer_close .btn-close{width: 16px; height: 16px; background:url('../img/icon_component.png') no-repeat -34px -172px; position: absolute;top:15px;right: 30px;}
+
+/* loading */
+  .loading .loading-icon {
+	background: transparent;
+	width: 77px;
+	height: 77px;
+	position: relative;
+	margin: 0 auto;
+  }
+  .loading .loading-icon:after {
+	display: block;
+	content: "";
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow:
+	-webkit-animation: rotate 1.2s steps(13) infinite;
+	-o-animation: rotate 1.2s steps(13) infinite;
+	animation: rotate 1.2s steps(13) infinite;
+  }
+  @keyframes rotate {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
