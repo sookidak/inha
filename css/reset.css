@@ -139,6 +139,7 @@ button,
 [type="submit"] {
 	-webkit-appearance: button;
 	cursor: pointer;
+	padding: 0;
 }
 button,
 [type="button"]{border:none;}

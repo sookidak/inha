@@ -182,10 +182,13 @@
 .nav-wrap .common-layou:after{content:'';display:block;clear:both;}
 .gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif;width:172px;text-align: center;}
 .header-quickbtn{float:right;}
-.btn-allmenu:before{content:'';display:inline-block;width:;}
+.btn-allmenu{width:24px;height:18px;}
+.btn-allmenu:before{content:'';display:inline-block;width:24px;height:18px;background:url('../img/icon_header.png') left top no-repeat}
 .nav{float:left;display: inline-block;}
 .quickbtn-res{float:left;display:inline-block;padding:0 20px;height:70px;background: #0770bb;color: #fff;font-size:16px}
+.quickbtn-res:before{content:'';display:inline-block;width:28px;height:24px;background:url('../img/icon_header.png') -60px top no-repeat}
 .quickbtn-my{float:left;display:inline-block;padding:0 20px;height:70px;background:#199da3;color: #fff;font-size:16px}
+.quickbtn-my:before{content:'';display:inline-block;width:24px;height:24px;background:url('../img/icon_header.png') -120px top no-repeat}
 
 
 /* header-loaction */

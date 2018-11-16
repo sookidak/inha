@@ -8,7 +8,7 @@
 
 /* tab */
 .tab-wrap{position:relative;}
-.tablist-type1{width:100%;display:table;table-layout: fixed;border-bottom:2px solid #0770bb}
+.tablist-type1{width:100%;display:table;table-layout: fixed;border-bottom:2px solid #0770bb;margin-bottom:60px}
 .tablist-type1 a{display:table-cell;text-align:center;height:60px;color:#000;font-size:18px}
 .tablist-type1 a.active{position:relative;border-left:2px solid #0770bb;border-top:2px solid #0770bb;border-right:2px solid #0770bb;color:#0770bb;font-size:20px;font-family:'NotoKrR',sans-serif;border-radius:10px 0 0 0;}
 .tablist-type1 a.active:after{content:'';display:block;height:2px;position:absolute;left:0;bottom:-2px;right:0;background:#fff;}
@@ -53,3 +53,21 @@
 .switch-button input[type=radio]:disabled +label{background: #f8f8f8;color:#777;border-color:#eee;}
 .switch-button:first-child label{border-radius:3px 0 0 3px}
 .switch-button:last-child label{border-radius:0 3px 3px 0}
+
+/* 문단 단위 */
+.prg-wrap{border-top:1px solid #ddd;padding-top:40px;padding-bottom:78px;}
+.prg-wrap:after{content:'';display: block;clear: both;}
+.prg-wrap:first-child{border-top:none;}
+.prg-wrap:last-child{padding-bottom:0;}
+.prg-wrap .prg-left{float:left;}
+.prg-wrap .prg-title{font-size:24px;color: #000;}
+.prg-wrap .prg-right{float:right;width:84%;padding-left:20px;}
+.prg-cont{line-height:24px;font-size:16px;color: #333;letter-spacing:-0.068em;}
+
+.cont-text-type1{margin-bottom:30px;}
+
+/* list-type */
+.list-type1 {}
+.list-type1 li{padding-left:10px;position: relative;margin-bottom:7px;}
+.list-type1 li:before{content:'';display:inline-block;position:absolute;left:0;top:50%;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
+.list-type1 li a{color:#0770bb;border-bottom:1px solid #0770bb;}
