@@ -104,8 +104,8 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 .search-box select{ width: 175px; height: 60px ; vertical-align: top;font-size: 16px; margin-right: 4px;  border-radius:10px 0 0px 0; letter-spacing: -1px}
 .search-box input[type=text]{width: 447px; height: 60px; vertical-align: top;font-size: 16px; border-radius:10px 0 0px 0;  letter-spacing: -1px}
 .search-box button{ width: 120px; min-width: 120px; height: 60px;vertical-align: top;border-radius: 0  10px 0px 0; background: url(../img/icon_components.png) no-repeat left -15px #0770bb; padding-left: 63px; text-align: left;font-family: 'NotoKrR'; font-weight: normal; letter-spacing: -1px}
-.search-result{font-size: 14px; color: #777; margin-bottom: 15px;}
-.search-result .acc{ color: #0770bb ; font-family: 'NotoKrR'; vertical-align: top;}
+.search_result{font-size: 14px; color: #777; margin-bottom: 15px;}
+.search_result .acc{ color: #0770bb ; font-family: 'NotoKrR'; vertical-align: top;}
 
 
 /* board -list */

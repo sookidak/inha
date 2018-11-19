@@ -26,7 +26,7 @@
 				<label><input type="text" id="" placeholder="찾으시는 검색어를 입력해주세요." /></label>
 				<button type="button" class="btn">검색</button>
 			</div>		
-			<p class="search-result">총 <span class="acc">17건</span>이 검색되었습니다.</p>
+			<p class="search_result">총 <span class="acc">17건</span>이 검색되었습니다.</p>
 			<!-- //board search box -->
 			<!-- Board_List-->		
 			<div class="board_list_wrap">
