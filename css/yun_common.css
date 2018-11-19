@@ -2,7 +2,7 @@
 
 /* component */
 .btn-m{height:45px;min-width:130px;padding:0 30px;}
-.btn-l{height:60px;min-width:180px;padding:0 40px;}
+.btn-l{height:60px;min-width:180px;padding:0 40px;font-size:18px;}
 .btn.color01{background:#0770bb;}/* blue */
 .btn.color02{background:#199da3;}/* mint */
 .btn.color03{background: #757a85}/* gray */
@@ -96,3 +96,17 @@
 .etcbox-type3 .etcbox-title1{margin-bottom:0;font-size:16px;line-height:28px;vertical-align:middle;font-family:'NotoKrL',sans-serif;}
 .etcbox-type3 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0px -40px no-repeat;margin-right:10px;vertical-align:middle;}
 .etcbox-type4 .etcbox-cont{line-height:30px;font-size:16px;color:#000;}
+
+
+/* info */
+.contents-top{text-align: center;line-height:38px;margin-bottom:70px;}
+.section-cont:after{content:'';display:block;clear:both;}
+.sec-left{float:left;vertical-align: top}
+.sec-right{float:right;vertical-align: top}
+
+.info .sec-left{width:40%;text-align:left;}
+.info .sec-right{width:60%;font-size:16px;line-height:24px;color:#333;}
+.info .sec-right p{margin-bottom:30px;vertical-align: middle}
+.info-text-style1{color:#000;font-family: 'NotoKrDL';vertical-align:middle}
+.info-text-em{margin-left:4px;margin-right:15px;vertical-align:bottom;}
+.info-sign{vertical-align:bottom}
