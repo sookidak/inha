@@ -68,7 +68,6 @@
 .cont-text-type1{margin-bottom:30px;}
 
 /* list-type */
-.list-type1 {}
 .list-type1 li{padding-left:10px;position: relative;margin-bottom:7px;}
 .list-type1 li:before{content:'';display:inline-block;position:absolute;left:0;top:50%;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
 
