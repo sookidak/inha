@@ -89,10 +89,10 @@
 .etcbox .etcbox-cont{line-height:20px;}
 .etcbox .etcbox-title1{position:relative;font-size:20px;margin-bottom:20px;font-family:'NotoKrM',sans-serif;}
 
-.etcbox-type2 .etcbox-title1{margin-bottom:14px;}
-.etcbox-type2 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0 0 no-repeat;margin-right:10px;vertical-align:top;}
+.etcbox-type2 .etcbox-title1{margin-bottom:14px;vertical-align:middle;}
+.etcbox-type2 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0 0 no-repeat;margin-right:10px;vertical-align:middle;}
 .etcbox-type2 .list-type2{margin-left:26px;}
 
 .etcbox-type3 .etcbox-title1{margin-bottom:0;font-size:16px;line-height:28px;vertical-align:middle;font-family:'NotoKrL',sans-serif;}
-.etcbox-type3 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0px -40px no-repeat;margin-right:10px;vertical-align:top;}
+.etcbox-type3 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0px -40px no-repeat;margin-right:10px;vertical-align:middle;}
 .etcbox-type4 .etcbox-cont{line-height:30px;font-size:16px;color:#000;}
