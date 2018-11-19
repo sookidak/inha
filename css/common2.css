@@ -8,7 +8,6 @@
 .title-style1{font-family: 'NotoKrM'; font-size: 40px; color: #000;font-weight: normal; }
 .title-style2{font-family: 'NotoKrL'; font-size: 30px; color: #000;font-weight: normal; }
 .title-style3{font-family: 'NotoKrM'; font-size: 24px; color: #000;font-weight: normal; }
-
 .text-style1{font-family: 'NotoKrR'; font-size: 18px; color: #000;font-weight: normal;}
 .text-style2{font-family: 'NotoKrL'; font-size: 16px; color: #333;font-weight: normal;}
 .text-style3{font-family: 'NotoKrL'; font-size: 14px; color: #0770bb;font-weight: normal;}
@@ -22,8 +21,6 @@
 .table td{font-size: 14px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px;}
 .table td.t-r{text-align:right !important;}
 .table td.t-l{text-align:left !important;}
-
-
 .table.table-type2{border-collapse:collapse !important;  }
 .table.table-type2 th{ border-right:0; border-left:0 ; border:0; border-bottom: 1px solid #eee;} 
 .table.table-type2 tr:first-child td, .table.table-type2 tr:first-child th{ border-left: 0 ;  border-top: 2px solid #bbb;}
@@ -38,7 +35,7 @@
 
 
 /* components */
-input[type=text]{line-height:normal; border: 1px solid #ddd; font-size: 14px; font-family: 'NotoKrL'; color: #777; background: #fff; height: 40px; padding: 0 20px}
+input[type=text], input[type=password]{line-height:normal; border: 1px solid #ddd; font-size: 14px; font-family: 'NotoKrL'; color: #777; background: #fff; height: 40px; padding: 0 20px}
 label.hide{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
 input[type=text]:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
 input[type=text]:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000; }
@@ -57,7 +54,6 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 .page span:hover span, .page span:hover{  color: #000 }
 .page span:hover{border-color:#199da3 }
 .page .active span, .page .active:hover span{ background-color:#199da3; color:#fff;border:0; font-family: 'NotoKrM'; font-weight: normal; font-size: 16px; padding-top:3px ; }
-
 .page a.jump span{cursor:pointer;line-height:3200px;overflow-x:hidden;overflow-y:hidden;background: url(../img/icon_components.png) no-repeat #fff;}
 .page a.first span{background-position:  10px 11px; }
 .page a.prev span{background-position: -11px 11px;  margin-right: 15px}
@@ -87,7 +83,6 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 .error-box .err-banner .bowser-list .bow-op{background-position: -678px 0px;}
 .error-box .err-banner .bow-name{color: #000; font-size: 16px; line-height: 30px; font-family: 'NotoKrR';}
 .error-box .err-banner .bow-ver{color: #777; font-size: 14px;}
-
 .error-box .err-banner .err-banner-btn{ display: inline-block; letter-spacing: -1px; line-height: 26px; background-color: #fff;width: 130px; height: 30px; border-radius: 30px; border:1px solid #aaa ;color: #777; font-size: 14px; margin-top:20px }
 .error-box .err-banner .err-banner-btn:hover{background-color: #0770bb;border:1px solid #0770bb ; color: #fff;}
 
@@ -118,7 +113,6 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 
 /* board - detail */
 .board-wrap .board-con-box .con-main{padding:  0 20px}/* 에디터 적용후 수정요망 */
-
 .board-wrap .board-con-box{ width: 880px; float: left; }
 .board-wrap .board-con-box .con-tit{ height: 100px; background-color:#f6f6f6; vertical-align: middle; color: #000; font-family: 'NotoKrR'; font-size: 18px; line-height: 26px; padding: 0 20px; border-bottom: 1px solid #dddddd; border-top: 2px solid #bbbbbb; display: table-cell; width: 880px }
 .board-wrap .con-info:after, .board-wrap .category:after, .board-wrap .data:after{content:'';display:block;clear:both;}
@@ -198,10 +192,19 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 	  transform: rotate(360deg);
 	}
   }
-    .loading.loading-full
 
-
-    /* login */
+/* login */
+.login-box{width: 980px; height: 620px; margin:0 auto;  border:1px solid #dddddd; border-radius: 8px; text-align: center;letter-spacing:-0.07em;}
+.login-box p{text-align: center;}
+.login-box .login-text01{color: #000; font-size: 30px; margin-top: 95px;}
+.login-box .login-text02{color: #777; font-size: 18px; margin-top: 20px;}
+.login-box .login-text03{color: #777; font-size: 16px; margin-top: 80px;}
+.login-box .input-wrap{width: 715px;  position: relative;margin: 50px auto 0;}
+.login-box .input-wrap:after { display: block; content: ""; }
+.login-box .input-wrap input[type=text], .login-box .input-wrap input[type=password]{ height: 60px; width: 573px; display: block; margin-bottom: 10px; font-size: 16px }
+.login-box .input-wrap .btn{position: absolute; top: 0; right: 0; width: 130px; height: 130px; font-size: 18px; }
+.login-box .btn-wrap{margin-top: 30px; }
+.login-box .btn-wrap .btn{width: 200px; height: 50px; letter-spacing:-0.08em;}
     
 
-    /* join */
+/* join */
