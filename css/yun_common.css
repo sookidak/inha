@@ -3,8 +3,9 @@
 /* component */
 .btn-m{height:45px;min-width:130px;padding:0 30px;}
 .btn-l{height:60px;min-width:180px;padding:0 40px;}
-.btn.mint{background:#199da3;}
-.btn.gray{background: #757a85}
+.btn.color01{background:#0770bb;}/* blue */
+.btn.color02{background:#199da3;}/* mint */
+.btn.color03{background: #757a85}/* gray */
 
 /* tab */
 .tab-wrap{position:relative;}
@@ -70,4 +71,6 @@
 .list-type1 {}
 .list-type1 li{padding-left:10px;position: relative;margin-bottom:7px;}
 .list-type1 li:before{content:'';display:inline-block;position:absolute;left:0;top:50%;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
-.list-type1 li a{color:#0770bb;border-bottom:1px solid #0770bb;}
+
+/* link-type1 */
+.active-type1{color:#0770bb;border-bottom:1px solid #0770bb;}

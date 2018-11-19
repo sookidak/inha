@@ -5,10 +5,9 @@
 
 
 /* text */
-h1, h2, h3{ font-weight: normal;}
-h1{font-family: 'NotoKrM'; font-size: 40px; color: #000; }
-h2{font-family: 'NotoKrL'; font-size: 30px; color: #000; }
-h3{font-family: 'NotoKrM'; font-size: 24px; color: #000; }
+.title-style1{font-family: 'NotoKrM'; font-size: 40px; color: #000;font-weight: normal; }
+.title-style2{font-family: 'NotoKrL'; font-size: 30px; color: #000;font-weight: normal; }
+.title-style3{font-family: 'NotoKrM'; font-size: 24px; color: #000;font-weight: normal; }
 
 .text-style1{font-family: 'NotoKrR'; font-size: 18px; color: #000;font-weight: normal;}
 .text-style2{font-family: 'NotoKrL'; font-size: 16px; color: #333;font-weight: normal;}
