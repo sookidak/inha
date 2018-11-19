@@ -73,10 +73,26 @@
 .cont-text-type1{margin-bottom:30px;}
 
 /* list-type */
-.list-type1 li{padding-left:10px;position: relative;margin-bottom:7px;}
+.list-type1{text-align:left;}
+.list-type1 li{padding-left:10px;font-size:16px;position: relative;margin-bottom:7px;color:#333;}
 .list-type1 li:before{content:'';display:inline-block;position:absolute;left:0;top:50%;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
 
-/* link-type1 */
-.active-type1{color:#0770bb;border-bottom:1px solid #0770bb;}
+.list-type2{text-align:left;}
+.list-type2 li{padding-left:13px;position: relative;margin-bottom:7px;font-size:14px;color:#333;}
+.list-type2 li:before{content:'';display:inline-block;position:absolute;left:0;top:50%;margin-top:-2px;width:4px;height:4px;background:#aaa;}
 
-/* info */
+/* link-type1 */
+.active-type1{color:#0770bb;border-bottom:1px solid #0770bb;font-size:inherit;display:inline;vertical-align: top}
+
+/* contbox */
+.etcbox{padding:30px;background:#f3f3f3;text-align: left;}
+.etcbox .etcbox-cont{line-height:20px;}
+.etcbox .etcbox-title1{position:relative;font-size:20px;margin-bottom:20px;font-family:'NotoKrM',sans-serif;}
+
+.etcbox-type2 .etcbox-title1{margin-bottom:14px;vertical-align:middle;}
+.etcbox-type2 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0 0 no-repeat;margin-right:10px;vertical-align:middle;}
+.etcbox-type2 .list-type2{margin-left:26px;}
+
+.etcbox-type3 .etcbox-title1{margin-bottom:0;font-size:16px;line-height:28px;vertical-align:middle;font-family:'NotoKrL',sans-serif;}
+.etcbox-type3 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0px -40px no-repeat;margin-right:10px;vertical-align:middle;}
+.etcbox-type4 .etcbox-cont{line-height:30px;font-size:16px;color:#000;}

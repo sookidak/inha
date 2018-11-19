@@ -12,7 +12,7 @@
 	.guide-nav li:hover{background:#199da3;}
 	.guide-nav li a{display:block;color:#fff;padding:0 20px;font-weight: bold}
 	.box-g1{width:14px;height:10px;display:inline-block;background:#0770bb}
-	.source-wrap{border:1px solid #ccc;padding:10px;background:#f8f8f8;color: #000;line-height:1.4;}
+	.source-wrap{border:1px solid #ccc;padding:10px;line-height:1.4;}
 </style>
 
 <section class="guide">
@@ -27,6 +27,8 @@
 			<li><a href="#guide-tab">탭</a></li>
 			<li><a href="#guide-table">테이블</a></li>
 			<li><a href="#guide-paging">페이징</a></li>
+			<li><a href="#guide-list">리스트</a></li>
+			<li><a href="#guide-etcbox">추가사항</a></li>
 		</ul>
 	</section>
 	<!-- 텍스트  가이드 -->
@@ -87,6 +89,14 @@
 				</th>
 				<td>
 					<xmp><p class="text-style4">style4 주석등 보조텍스트2</p></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<a href="" class="active-type1">공통 링크 스타일</a>
+				</th>
+				<td>
+					<xmp><a href="" class="active-type1">공통 링크 스타일</a></xmp>
 				</td>
 			</tr>
 		</table>
@@ -157,66 +167,66 @@
 	<!-- //버튼 가이드 -->
 	<!-- input  가이드 -->
 	<section class="guide-section" id="guide-input">
-			<h2 class="guide-title2">input 가이드</h2>
-			<table class="table-guide">
-				<tr>
-					<th>
-						<label for="" class="hide">text</label><input type="text" id="" />
-					</th>
-					<td>
-						<xmp><label for="" class="hide">text</label><input type="text" id="" /></xmp>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<label for="" class="hide">text</label><input type="text" id="" disabled/>
-					</th>
-					<td>
-						<xmp><label for="" class="hide">text</label><input type="text" id="" disabled/></xmp>
-					</td>
-				</tr>	
-			</table>
-		</section>	
-		<!-- //input 가이드 -->		
-		<!-- select  가이드 -->
-		<section class="guide-section" id="guide-select">
-			<h2 class="guide-title2">select 가이드</h2>
-			<table class="table-guide">					
-				<tr>
-					<th>	 
-						<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
-							<option lang="ko" value="1" role="menuitem">선택지1</option>	    
-							<option lang="ko" value="2" role="menuitem">선택지2</option>	  
-						</select>	
-					</th>
-					<td>
-						<xmp>
-	<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
-		<option lang="ko" value="1" role="menuitem">선택지1</option>	    
-		<option lang="ko" value="2" role="menuitem">선택지2</option>	  
-	</select>
-						</xmp>
-					</td>
-				</tr>				
-				<tr>
-					<th>	 
-						<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" disabled>    
-							<option lang="ko" value="1" role="menuitem">선택지1</option>	    
-							<option lang="ko" value="2" role="menuitem">선택지2</option>	  
-						</select>	
-					</th>
-					<td>
-						<xmp>	 
-	<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" disabled>    
-		<option lang="ko" value="1" role="menuitem">선택지1</option>	    
-		<option lang="ko" value="2" role="menuitem">선택지2</option>	  
-	</select>
-						</xmp>
-					</td>
-				</tr>	
-			</table>
-		</section>
-		<!-- //select 가이드 -->	
+		<h2 class="guide-title2">input 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<label for="" class="hide">text</label><input type="text" id="" />
+				</th>
+				<td>
+					<xmp><label for="" class="hide">text</label><input type="text" id="" /></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="" class="hide">text</label><input type="text" id="" disabled/>
+				</th>
+				<td>
+					<xmp><label for="" class="hide">text</label><input type="text" id="" disabled/></xmp>
+				</td>
+			</tr>	
+		</table>
+	</section>	
+	<!-- //input 가이드 -->		
+	<!-- select  가이드 -->
+	<section class="guide-section" id="guide-select">
+		<h2 class="guide-title2">select 가이드</h2>
+		<table class="table-guide">					
+			<tr>
+				<th>	 
+					<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
+						<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+						<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+					</select>	
+				</th>
+				<td>
+					<xmp>
+<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
+	<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+	<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+</select>
+					</xmp>
+				</td>
+			</tr>				
+			<tr>
+				<th>	 
+					<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" disabled>    
+						<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+						<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+					</select>	
+				</th>
+				<td>
+					<xmp>	 
+<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" disabled>    
+	<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+	<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+</select>
+					</xmp>
+				</td>
+			</tr>	
+		</table>
+	</section>
+	<!-- //select 가이드 -->	
 	<!-- 컴포넌트 가이드 -->
 	<section class="guide-section" id="guide-component">
 		<h2 class="guide-title2">컴포넌트</h2>
@@ -870,6 +880,128 @@
 		</table>
 	</section>
 	<!-- //paging 가이드 -->
+	<!-- 리스트  가이드 -->
+	<section class="guide-section" id="guide-list">
+		<h2 class="guide-title2">리스트 가이드</h2>
+		<ul class="list-type1">
+			<li>포괄적인 진료</li>
+			<li>가족 단위의 지속적인 건강관리</li>
+			<li>치료 중 진찰 및 치료 후 진찰 </li>
+		</ul>
+<div class="source-wrap">
+<xmp>
+<ul class="list-type1">
+	<li>포괄적인 진료</li>
+	<li>가족 단위의 지속적인 건강관리</li>
+	<li>치료 중 진찰 및 치료 후 진찰 </li>
+</ul>
+</xmp>
+</div>
+<br><br>
+
+		<ul class="list-type2">
+			<li>안경이나 렌즈를 사용하고 계시면 병원에 오실 때 안경이나 렌즈를 지참하시기 바랍니다.</li>
+			<li>검사 시 금식하지 않으셔도 됩니다.</li>
+			<li>여성의 경우 생리가 완전히 끝난 후 소변 검사 가능합니다.</li>
+			<li>임신중인 여성은 반드시 의사에게 상담 후 흉부 촬영 여부를 결정하시기 바랍니다.</li>
+		</ul>
+<div class="source-wrap">
+<xmp>
+<ul class="list-type2">
+	<li>안경이나 렌즈를 사용하고 계시면 병원에 오실 때 안경이나 렌즈를 지참하시기 바랍니다.</li>
+	<li>검사 시 금식하지 않으셔도 됩니다.</li>
+	<li>여성의 경우 생리가 완전히 끝난 후 소변 검사 가능합니다.</li>
+	<li>임신중인 여성은 반드시 의사에게 상담 후 흉부 촬영 여부를 결정하시기 바랍니다.</li>
+</ul>
+</xmp>
+</div>
+	</section>
+	<!-- //리스트 가이드 -->
+
+	<!-- etcbox 가이드 -->
+	<section class="guide-section" id="guide-etcbox">
+		<h2 class="guide-title2">etcbox 가이드</h2>
+		<div class="etcbox etcbox-type1">
+			<div class="etcbox-title1">증명서 발급안내 (진단서 등)</div>
+			<div class="etcbox-cont">
+				<ul>
+					<li>환자에 대한 증명서 발급은 단순한 서류의 발급이 아니라,환자의 수술 및 경과 기록, 입원 병력 등 치료와 관련된 내용들이 포함되어 있는 개인정보 입니다.</li>
+					<li>따라서, 환자 본인 외에 발급이 어려우며, 부득이할 경우 위의 의무 기록 사본 발급과 동일한 신청자 별 구비 서류를 지참하여야만 서류 발행이 가능함을 알려드립니다.</li>
+					<li>(의료법 시행규칙 제 13조의 3항 준용)</li>
+				</ul>
+			</div>
+		</div><br><br>
+		<div class="source-wrap">
+<xmp>
+<div class="etcbox etcbox-type1">
+	<div class="etcbox-title1">증명서 발급안내 (진단서 등)</div>
+	<div class="etcbox-cont">
+		<ul>
+			<li>환자에 대한 증명서 발급은 단순한 서류의 발급이 아니라,환자의 수술 및 경과 기록, 입원 병력 등 치료와 관련된 내용들이 포함되어 있는 개인정보 입니다.</li>
+			<li>따라서, 환자 본인 외에 발급이 어려우며, 부득이할 경우 위의 의무 기록 사본 발급과 동일한 신청자 별 구비 서류를 지참하여야만 서류 발행이 가능함을 알려드립니다.</li>
+			<li>(의료법 시행규칙 제 13조의 3항 준용)</li>
+		</ul>
+	</div>
+</div>
+</xmp>
+</div>
+<Br><br>
+	<div class="etcbox etcbox-type2">
+		<div class="etcbox-title1">유의사항</div>
+		<ul class="list-type2">
+			<li>안경이나 렌즈를 사용하고 계시면 병원에 오실 때 안경이나 렌즈를 지참하시기 바랍니다.</li>
+			<li>검사 시 금식하지 않으셔도 됩니다.</li>
+			<li>여성의 경우 생리가 완전히 끝난 후 소변 검사 가능합니다.</li>
+			<li>임신중인 여성은 반드시 의사에게 상담 후 흉부 촬영 여부를 결정하시기 바랍니다.</li>
+		</ul>
+	</div><br><br>
+	<div class="source-wrap">
+<xmp>
+<div class="etcbox etcbox-type2">
+	<div class="etcbox-title1">유의사항</div>
+	<ul class="list-type2">
+		<li>안경이나 렌즈를 사용하고 계시면 병원에 오실 때 안경이나 렌즈를 지참하시기 바랍니다.</li>
+		<li>검사 시 금식하지 않으셔도 됩니다.</li>
+		<li>여성의 경우 생리가 완전히 끝난 후 소변 검사 가능합니다.</li>
+		<li>임신중인 여성은 반드시 의사에게 상담 후 흉부 촬영 여부를 결정하시기 바랍니다.</li>
+	</ul>
+</div>
+</xmp>			
+</div>
+<Br><br>
+	<div class="etcbox etcbox-type3">
+		<div class="etcbox-title1">보다 빠른 예약을 원하시나요? <a href="" class="active-type1">여기</a>를 클릭해주세요.</div>
+	</div><br><br>
+	<div class="source-wrap">
+<xmp>
+<div class="etcbox etcbox-type3">
+	<div class="etcbox-title1">보다 빠른 예약을 원하시나요? <a href="" class="active-type1">여기</a>를 클릭해주세요.</div>
+</div>
+</xmp>
+</div>
+<Br><br>
+	<div class="etcbox etcbox-type4">
+		<div class="etcbox-cont">
+			<ul>
+				<li>암 환자나 암 질환이 의심되는 분은 암진료 상담실로 연락주시면 상담을 통하여 신속하게 진료를 받을 수 있도록 도와드립니다.</li>
+				<li>암진료 상담실      ☎ 032-890-3600, 3637, 3638 </li>
+			</ul>
+		</div>
+	</div><br><br>
+	<div class="source-wrap">
+<xmp>
+<div class="etcbox etcbox-type4">
+	<div class="etcbox-cont">
+		<ul>
+			<li>암 환자나 암 질환이 의심되는 분은 암진료 상담실로 연락주시면 상담을 통하여 신속하게 진료를 받을 수 있도록 도와드립니다.</li>
+			<li>암진료 상담실      ☎ 032-890-3600, 3637, 3638 </li>
+		</ul>
+	</div>
+</div>
+</xmp>			
+</div>
+</section>
+	<!-- //etcbox 가이드 -->	
 
 
 </section>
