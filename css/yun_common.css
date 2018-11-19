@@ -6,6 +6,11 @@
 .btn.color01{background:#0770bb;}/* blue */
 .btn.color02{background:#199da3;}/* mint */
 .btn.color03{background: #757a85}/* gray */
+.btn.color04{background: #199da3; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}/* gray */
 
 /* tab */
 .tab-wrap{position:relative;}
@@ -73,3 +78,5 @@
 
 /* link-type1 */
 .active-type1{color:#0770bb;border-bottom:1px solid #0770bb;}
+
+/* info */
