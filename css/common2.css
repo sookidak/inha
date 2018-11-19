@@ -128,7 +128,8 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 .board-wrap .board-con-box .con-fiie { border-bottom: 1px solid #eeeeee;padding-bottom: 14px; margin-bottom: 37px  }
 .board-wrap .board-con-box .con-fiie .fiie-tit{background:  url(../img/icon_components.png) no-repeat -75px 19px #f6f6f6; border-bottom: 1px solid #eeeeee;border-top:1px solid #eeeeee; color: #000; font-family: 'NotoKrR'; font-size: 16px; padding-left: 47px; height: 50px; display: table-cell;vertical-align: middle; width: 880px }
 .board-wrap .board-con-box .con-fiie .fiie-list{ margin-top: 18px;}
-.board-wrap .board-con-box .con-fiie .fiie-list li{  padding-left: 32px; height: 27px;background:  url(../img/icon_list03.png) no-repeat 20px 10px; }
+.board-wrap .board-con-box .con-fiie .fiie-list li{  padding-left: 32px; height: 20px;}
+.board-wrap .board-con-box .con-fiie .fiie-list li:before{left:20px;top:50%;}
 .board-wrap .board-con-box .con-fiie .fiie-list a{color: #777777; font-size: 14px; line-height: 20px; display: inline-block; border-bottom: 1px solid #777777 }
 .board-wrap .board-navi-box{width: 280px; float: right; }
 .board-wrap .board-navi-box .navi-tit{width: 280px;height: 100px; vertical-align: middle; color: #0770bb; font-family: 'NotoKrR'; font-size: 24px; line-height: 26px; padding: 0 20px; border-bottom: 1px solid #dddddd; border-top: 2px solid #bbbbbb; display: table-cell; position: relative; }
@@ -211,7 +212,8 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 .join-wrap{text-align: center;}
 .join-wrap .title-style2{}
 .join-wrap .text-style2{font-size: 18px; color: #777; margin-top: 12px;}
-.join-wrap .btn-wrap{ width: 880px; margin:0 auto;  margin-top: 50px;  }
+
+.join-wrap .btn-wrap{ width: 880px; margin:50px auto 80px; }
 .join-wrap .btn-wrap button{ width: 280px; height: 340px ;background-color: #fff; border:3px solid #dddddd; color: #333; font-size: 24px; cursor: pointer; border-radius: 25px 0 0 0; position: relative;}
 .join-wrap .btn-wrap button:hover{color: #fff;background: #199da3; border:0;  
 	background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%); 
@@ -234,6 +236,10 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 
 
 /* join step */
+
+
+.join-step{text-align: left;}
+.join-step .text-style1{ color:#333; font-family:'NotoKrDL';text-align: center; margin-bottom: 80px;}
 .step-wrap{ margin:0 auto; width: 611px; margin: 3px auto 30px;}
 .step-wrap li{display:inline-block;padding:0px;text-align:center; position:relative; width: 72px;margin-left:105px;}
 .step-wrap li:before{ content: ''; position: absolute; ;left: -114px; top: 15px; width: 123px;    height: 2px;  background:url('../img/icon_dot_line.png') }
@@ -244,9 +250,6 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 .step-wrap li.stepOn .txt{color: #0770bb; font-family:'notoKrM',sans-serif;}
 .step-wrap li.stepOn .StepNum{ background: #0770bb; font-weight: normal;}
 
-
-
-.join-step01 .text-style1{ color:#333; font-family:'NotoKrDL';text-align: center; margin-bottom: 80px;}
 
 .agree-area{ margin-bottom: 50px; }
 .agree-area .title-style3 {font-size: 20px;}
