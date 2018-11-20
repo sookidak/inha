@@ -69,9 +69,9 @@
 .prg-wrap:after{content:'';display: block;clear: both;}
 /* .prg-wrap:first-child{border-top:none;} */
 .prg-wrap:last-child{padding-bottom:0;}
-.prg-wrap .prg-left{float:left;}
-.prg-wrap .prg-title{font-size:24px;color: #000;}
-.prg-wrap .prg-right{float:right;width:84%;padding-left:20px;}
+.prg-wrap .prg-left{float:left;width:200px;}
+.prg-wrap .prg-title{font-size:24px;color: #000;line-height:32px;}
+.prg-wrap .prg-right{float:right;width:980px;}
 .prg-cont{line-height:24px;font-size:16px;color: #333;letter-spacing:-0.068em;}
 
 .cont-text-type1{margin-bottom:30px;}
@@ -121,20 +121,48 @@
 .ide-list:after{content:'';display:block;clear:both;}
 .ide-list li{float:left;margin-right:72px;letter-spacing:-0.06em;}
 .ide-list li:last-child{margin-right:0}
-.ide-box{
-	text-align:center;
-	padding-top:3px;
-	padding-left:3px;
-	background: #0975b8; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #0975b8 0%, #1798a5 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #0975b8 0%,#1798a5 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #0975b8 0%,#1798a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	border-radius:50%;width:200px;height:200px;display:inline-block;
-	margin-bottom:32px;
+.ide-box{text-align:center;padding-top:3px;padding-left:3px;
+background: #0975b8; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #0975b8 0%, #1798a5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #0975b8 0%,#1798a5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #0975b8 0%,#1798a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+border-radius:50%;width:200px;height:200px;display:inline-block;
+margin-bottom:32px;
 }
 .ide-box-inner{width:194px;height:194px;border-radius:50%;display:table-cell;background:#fff;vertical-align:middle;font-size:18px;color:#333;font-family: 'NotoKrR';line-height:24px;}
 .ide-text{color:#777;line-height:24px;font-size:16px;text-align:center;}
 .ide-line{position:absolute;top:100px;left:50%;right:0;display:inline-block;height:2px;background:#ddd;width:1042px;z-index:0;margin-left:-521px}
 
 /* 미션&비전 */
-.mission-text{font-size:24px;line-height: 32px;color:#333;}
+.mission-text{font-size:24px;line-height: 32px;color:#333;font-family: 'NotoKrDL';letter-spacing: -0.06em;margin-bottom:60px;}
+.mission-text2{font-family: 'NotoKrR';}
+.mission-list li{float:left;text-align:center;margin-right:100px;}
+.mission-list li:last-child{margin-right:0;}
+.mission-box{display:inline-block;width:200px;height:200px;border:3px solid #0770bb;border-radius:50%;color:#0770bb;font-family: 'NotoKrB';font-size:18px;text-align:center;padding-top:57px;}
+.mission-box.mbox-2{border-color:#2ca48f;color:#2ca48f;padding-top:42px;}
+.mission-box.mbox-3{border-color:#e3751c;color:#e3751c;padding-top:46px;}
+.mission-box:before{content:'';display:inline-block;width:98px;height:55px;background: url(../img/icon_info.png) left top no-repeat;margin-bottom:26px;}
+.mission-box.mbox-2:before{background-position:0 -100px;width:78px;height:80px;margin-bottom:14px;}
+.mission-box.mbox-3:before{background-position:0 -200px;width:69px;height:72px;margin-bottom:19px;}
+.mission-box p{display:block;}
+.mission-text3{font-size:16px;line-height:24px;margin-top:16px;}
+
+.mission-list2 dt{font-family:'NotoKrR';font-size:24px;line-height:37px;letter-spacing:-0.06em;}
+.mission-list2 dd{font-size:16px;line-height:22px;margin-bottom:46px;}
+.mission-list2 dd:last-child{margin-bottom:0;}
+.mission-list2 .mission-text4{margin-left:10px;font-family:'NotoKrM';}
+
+.mission-text5{font-size:24px;line-height: 32px;letter-spacing: -0.06em;margin-bottom:60px;}
+.apro{font-family: 'NotoKrB';font-size:24px;}
+.apro-plus{color:#fe0101}
+.mission-img{text-align:center;margin-bottom:60px;}
+.mission-list3:after{content:'';display:block;clear:both;}
+.mission-list3 li{float:left;font-size:16px;margin-right:30px;letter-spacing:-0.06em;text-align:center;}
+.mission-list3 li em{font-family: 'NotoKrB';}
+.mission-list3 li:last-child{margin-right:0;}
+.mission-subtext{margin-top:7px;}
+
+/* 현황 */
+.jojic-editor{width:880px;height:525px;background:#e3e3e3;}
+.jojic-box{position:relative;float:left;}
+.jojic-box:before{content:'';display:inline-block;width:}
