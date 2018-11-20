@@ -1,4 +1,8 @@
 @charset "utf-8";
+/* color */
+.color-style1{color:#0770bb}
+.color-style2{color:#2ca48f}
+.color-style3{color:#e3751c}
 
 /* component */
 .btn-m{height:45px;min-width:130px;padding:0 30px;}
@@ -10,7 +14,7 @@
 	background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}/* gray */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 
 /* tab */
 .tab-wrap{position:relative;}
@@ -63,7 +67,7 @@
 /* 문단 단위 */
 .prg-wrap{border-top:1px solid #ddd;padding-top:40px;padding-bottom:78px;}
 .prg-wrap:after{content:'';display: block;clear: both;}
-.prg-wrap:first-child{border-top:none;}
+/* .prg-wrap:first-child{border-top:none;} */
 .prg-wrap:last-child{padding-bottom:0;}
 .prg-wrap .prg-left{float:left;}
 .prg-wrap .prg-title{font-size:24px;color: #000;}
@@ -110,3 +114,27 @@
 .info-text-style1{color:#000;font-family: 'NotoKrDL';vertical-align:middle}
 .info-text-em{margin-left:4px;margin-right:15px;vertical-align:bottom;}
 .info-sign{vertical-align:bottom}
+
+/* 설립이념 */
+.ide-wrap{position: relative;}
+.ide-list{position:relative;left:50%;transform: translate(-50%, 0);display:inline-block;}
+.ide-list:after{content:'';display:block;clear:both;}
+.ide-list li{float:left;margin-right:72px;letter-spacing:-0.06em;}
+.ide-list li:last-child{margin-right:0}
+.ide-box{
+	text-align:center;
+	padding-top:3px;
+	padding-left:3px;
+	background: #0975b8; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #0975b8 0%, #1798a5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #0975b8 0%,#1798a5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #0975b8 0%,#1798a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius:50%;width:200px;height:200px;display:inline-block;
+	margin-bottom:32px;
+}
+.ide-box-inner{width:194px;height:194px;border-radius:50%;display:table-cell;background:#fff;vertical-align:middle;font-size:18px;color:#333;font-family: 'NotoKrR';line-height:24px;}
+.ide-text{color:#777;line-height:24px;font-size:16px;text-align:center;}
+.ide-line{position:absolute;top:100px;left:50%;right:0;display:inline-block;height:2px;background:#ddd;width:1042px;z-index:0;margin-left:-521px}
+
+/* 미션&비전 */
+.mission-text{font-size:24px;line-height: 32px;color:#333;}
