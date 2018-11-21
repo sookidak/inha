@@ -17,8 +17,8 @@
 			</ul>
 			<p class="text-style1">아래 회원정보를 입력해주세요.</p>
 
-			<h2 class="join-tit">기본정보</h2>
-			<table class="table table-join">	  
+			<h2 class="title-style4">기본정보</h2>
+			<table class="table table-type3">	  
 				<caption><span class="offscreen">회원가입을 위한 이름, 아이디, 비밀번호, 비밀번호확인, 이메일, 휴대전화, 전화번호, 주소를 입력 하는 표 입니다.</span></caption> 	  
 				<colgroup>	    
 					<col style="width:200px"/>	    
@@ -66,13 +66,15 @@
 							<label for="email01">이메일<span class="acc">*<span class="offscreen">필수입력</span></span></label>
 						</th>	      
 						<td>
-							<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
-							<span class="join-text">@</span>
-							<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
-							<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">    
-								<option lang="ko" value="1" role="menuitem">직접입력</option>	    
-								<option lang="ko" value="2" role="menuitem"></option>	  
-							</select>
+							<div class="input-email">
+								<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+								<span class="input-text">@</span>
+								<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+								<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">    
+									<option lang="ko" value="1" role="menuitem">직접입력</option>	    
+									<option lang="ko" value="2" role="menuitem"></option>	  
+								</select>
+							</div>
 						</td>	 	    
 					</tr>    
 					<tr>	         
@@ -80,9 +82,11 @@
 							<label for="hp01">휴대전화<span class="acc">*<span class="offscreen">필수입력</span></span></label>
 						</th>	      
 						<td>
-							<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="join-text num">-</span>	
-							<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="join-text num">-</span>
-							<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+							<div class="input-num">
+								<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text">-</span>	
+								<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="input-text">-</span>
+								<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+							</div>
 						</td>	 	    
 					</tr>    
 					<tr>	         
@@ -90,9 +94,11 @@
 							<label for="ph01">전화번호</label>
 						</th>	      
 						<td>
-							<input type="text" id="ph01" maxlength="3" title="전화번호 앞번호 입력" class="phoneNum" /><span class="join-text num">-</span>	
-							<label><input type="text" id="ph02" maxlength="4" title="전화번호 중간번호 입력"  class="phoneNum"/></label><span class="join-text num">-</span>
-							<label><input type="text" id="ph03" maxlength="4" title="전화번호 뒷번호 입력"  class="phoneNum"/></label>
+							<div class="input-num">
+								<input type="text" id="ph01" maxlength="3" title="전화번호 앞번호 입력" class="phoneNum" /><span class="input-text">-</span>	
+								<label><input type="text" id="ph02" maxlength="4" title="전화번호 중간번호 입력"  class="phoneNum"/></label><span class="input-text">-</span>
+								<label><input type="text" id="ph03" maxlength="4" title="전화번호 뒷번호 입력"  class="phoneNum"/></label>
+							</div>
 						</td>	 	    
 					</tr>    
 					<tr>	         
@@ -100,16 +106,18 @@
 							<label for=zip>주소<span class="acc">*<span class="offscreen">필수입력</span></span></label>
 						</th>	      
 						<td>
-							<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled/>
-							<button type="button" class="btn zip">우편번호 찾기</button><br/>
-							<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
-							<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+							<div class="input-add">
+								<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled />
+								<button type="button" class="btn zip">우편번호 찾기</button><br/>
+								<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
+								<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+							</div>
 						</td>	 	    
 					</tr>   
 				</tbody>	
 			</table>
-			<h2 class="join-tit">선택정보</h2>
-			<table class="table table-join style2">	  
+			<h2 class="title-style4 marT50">선택정보</h2>
+			<table class="table table-type3 height">	  
 				<caption><span class="offscreen">회원가입을 위한 이름, 아이디, 비밀번호, 비밀번호확인, 이메일, 휴대전화, 전화번호, 주소를 입력 하는 표 입니다.</span></caption>   
 				<colgroup>	    
 					<col style="width:200px"/>	    

@@ -24,6 +24,7 @@
 			<li><a href="#guide-input">입력박스</a></li>
 			<li><a href="#guide-select">선택박스</a></li>
 			<li><a href="#guide-component">컴포넌트</a></li>
+			<li><a href="#guide-agree">동의박스</a></li>
 			<li><a href="#guide-tab">탭</a></li>
 			<li><a href="#guide-table">테이블</a></li>
 			<li><a href="#guide-paging">페이징</a></li>
@@ -88,6 +89,14 @@
 				</th>
 				<td>
 					<xmp><div class="title-style3">타이틀 스타일3</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="title-style4">타이틀 스타일4</div>
+				</th>
+				<td>
+					<xmp><div class="title-style4">타이틀 스타일4</div></xmp>
 				</td>
 			</tr>
 			<tr>
@@ -215,7 +224,77 @@
 				<td>
 					<xmp><label for="" class="hide">text</label><input type="text" id="" disabled/></xmp>
 				</td>
-			</tr>	
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-email">
+						<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+						<span class="input-text">@</span>
+						<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+						<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">    
+							<option lang="ko" value="1" role="menuitem">직접입력</option>	    
+							<option lang="ko" value="2" role="menuitem"></option>	  
+						</select>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-email">
+	<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+	<span class="input-text">@</span>
+	<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+	<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">    
+		<option lang="ko" value="1" role="menuitem">직접입력</option>	    
+		<option lang="ko" value="2" role="menuitem"></option>	  
+	</select>
+</div>
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-num">
+						<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text num">-</span>	
+						<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="input-text num">-</span>
+						<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-num">
+	<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text num">-</span>	
+	<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="input-text num">-</span>
+	<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+</div>	
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-add">
+						<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled />
+						<button type="button" class="btn zip">우편번호 찾기</button><br/>
+						<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
+						<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-add">
+	<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled />
+	<button type="button" class="btn zip">우편번호 찾기</button><br/>
+	<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
+	<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+</div>						
+					</xmp>
+				</td>
+			</tr>			
 		</table>
 	</section>	
 	<!-- //input 가이드 -->		
@@ -426,9 +505,48 @@
 			</tr>
 		</table>
 	</section>
-	<!-- //아이콘 가이드 -->
-
-
+	<!-- //컴포넌트 가이드 -->
+	<!-- 동의 가이드 -->
+	<section class="guide-section" id="guide-agree">
+		<h2 class="guide-title2">동의안내 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="agree-area">                    
+						<h2 class="title-style4">마케팅 활용 안내 <span class="acc">[필수]</span></h2>
+						<textarea disabled class="scrollbox">
+컨텐츠 화인요망
+						</textarea>       
+						<div class="agree-box"> 
+							<div class="checkbox-type2">
+								<input type="checkbox" id="agree-b1" aria-checked=”false” >
+								<label for="agree-b1" >마케팅 활용안내에 동의합니다.</label>
+							</div>
+						</div>                
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<xmp>
+<div class="agree-area">                    
+	<h2 class="title-style4">마케팅 활용 안내 <span class="acc">[필수]</span></h2>
+	<textarea disabled class="scrollbox">
+컨텐츠 화인요망
+	</textarea>       
+	<div class="agree-box"> 
+		<div class="checkbox-type2">
+			<input type="checkbox" id="check-b1" aria-checked=”false” >
+			<label for="check-b1" >마케팅 활용안내에 동의합니다.</label>
+		</div>
+	</div>                
+</div>
+					</xmp>
+				</td>
+			</tr>	
+		</table>
+	</section>	
+	<!-- //동의 가이드 -->
 	<!-- 탭 가이드 -->
 	<section class="guide-section" id="guide-tab">
 		<h2 class="guide-title2">탭가이드</h2>
@@ -680,6 +798,68 @@
 					</xmp>
 				</td>
 			</tr>
+			<tr>
+				<td>
+					<table class="table table-type3">	  
+						<caption><span class="offscreen">Type3</span></caption> 	  
+						<colgroup>	    
+							<col style="width:200px"/>	    
+							<col style=""/>	  
+						</colgroup>	  
+						<tbody>	    
+							<tr>	         
+								<th>
+									이름<span class="acc">*<span class="offscreen">필수입력</span></span>
+								</th>	      
+								<td>
+									송헌호
+								</td>	 	    
+							</tr>    
+							<tr>	         
+								<th>
+									<label for="id">아이디<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+								</th>	      
+								<td>
+									<input type="text" id="id" />
+									<button type="button" class="btn" maxlength="10" title="아이디입력">중복확인</button>
+									<p class="info-text"><span>*</span>아이디는 6자리 이상 10자리 이하로 입력해주세</p>
+								</td>	 	    
+							</tr>   
+						</tbody>	
+					</table>
+				</td>
+			</tr> 
+			<tr>
+				<td><xmp>
+<table class="table table-type3">	  
+	<caption><span class="offscreen">Type3</span></caption> 	  
+	<colgroup>	    
+		<col style="width:200px"/>	    
+		<col style=""/>	  
+	</colgroup>	  
+	<tbody>	    
+		<tr>	         
+			<th>
+				이름<span class="acc">*<span class="offscreen">필수입력</span></span>
+			</th>	      
+			<td>
+				송헌호
+			</td>	 	    
+		</tr>    
+		<tr>	         
+			<th>
+				<label for="id">아이디<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+			</th>	      
+			<td>
+				<input type="text" id="id" />
+				<button type="button" class="btn" maxlength="10" title="아이디입력">중복확인</button>
+				<p class="info-text"><span>*</span>아이디는 6자리 이상 10자리 이하로 입력해주세요</p>
+			</td>	 	    
+		</tr>   
+	</tbody>	
+</table>					
+				</xmp></td>
+			</tr> 
 		</table>
 	</section>
 	<!-- //테이블 가이드 -->
