@@ -1,0 +1,219 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style2">일반회원 (만 14세 이상)</h1>
+	</div>
+	<div class="contents">
+		<div class="member-wrap">
+			<ul class="step-wrap">
+				<li class="stepOn"><span class="StepNum">1</span> <span class="txt">약관동의</span></li>
+				<li class="stepOn"><span class="StepNum">2</span> <span class="txt">본인인증</span></li>
+				<li class="stepOn"><span class="StepNum">3</span> <span class="txt">정보입력<span class="offscreen">(현재단계)</span></span></li>
+				<li class="stepOff"><span class="StepNum">4</span> <span class="txt">가입완료</span></li>
+			</ul>
+			<p class="text-style1">아래 회원정보를 입력해주세요.</p>
+
+			<h2 class="join-tit">기본정보</h2>
+			<table class="table table-join">	  
+				<caption><span class="offscreen">회원가입을 위한 이름, 아이디, 비밀번호, 비밀번호확인, 이메일, 휴대전화, 전화번호, 주소를 입력 하는 표 입니다.</span></caption> 	  
+				<colgroup>	    
+					<col style="width:200px"/>	    
+					<col style=""/>	  
+				</colgroup>	  
+				<tbody>	    
+					<tr>	         
+						<th>
+							<label for="name">이름<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+						</th>	      
+						<td>
+							<input type="text" id="name" disabled value="송헌호"/>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for="id">아이디<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+						</th>	      
+						<td>
+							<input type="text" id="id" />
+							<button type="button" class="btn" maxlength="10" title="아이디입력">중복확인</button>
+							<p class="info-text"><span>*</span>아이디는 6자리 이상 10자리 이하로 입력해주세요</p>
+						</td>	 	    
+					</tr>   
+					<tr>	         
+						<th>
+							<label for="password">비밀번호<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+						</th>	      
+						<td>
+							<input type="password" id="password" maxlength="20" title="비밀번호입력"/>
+							<p class="info-text"><span>*</span>비밀번호는 10~20자리 이내 영문, 숫자, 특수문자(!,@,*)중 2종류 이상 또는 8~20자리 이내 영문, 숫자, 특수문자(!,@,*)중 3종류 이상을 조합하여 입력해주세요</p>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for="passCheck">비밀번호 확인<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+						</th>	      
+						<td>
+							<input type="password" id="passCheck" maxlength="20" title="비밀번호입력"/>
+							<p class="info-text"><span>*</span>위에서 설정한 비밀번호와 동일하게 입력해주세요</p>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for="email01">이메일<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+						</th>	      
+						<td>
+							<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+							<span class="join-text">@</span>
+							<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+							<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">    
+								<option lang="ko" value="1" role="menuitem">직접입력</option>	    
+								<option lang="ko" value="2" role="menuitem"></option>	  
+							</select>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for="hp01">휴대전화<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+						</th>	      
+						<td>
+							<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="join-text num">-</span>	
+							<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="join-text num">-</span>
+							<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for="ph01">전화번호</label>
+						</th>	      
+						<td>
+							<input type="text" id="ph01" maxlength="3" title="전화번호 앞번호 입력" class="phoneNum" /><span class="join-text num">-</span>	
+							<label><input type="text" id="ph02" maxlength="4" title="전화번호 중간번호 입력"  class="phoneNum"/></label><span class="join-text num">-</span>
+							<label><input type="text" id="ph03" maxlength="4" title="전화번호 뒷번호 입력"  class="phoneNum"/></label>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for=zip>주소<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+						</th>	      
+						<td>
+							<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled/>
+							<button type="button" class="btn zip">우편번호 찾기</button><br/>
+							<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
+							<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+						</td>	 	    
+					</tr>   
+				</tbody>	
+			</table>
+			<h2 class="join-tit">선택정보</h2>
+			<table class="table table-join style2">	  
+				<caption><span class="offscreen">회원가입을 위한 이름, 아이디, 비밀번호, 비밀번호확인, 이메일, 휴대전화, 전화번호, 주소를 입력 하는 표 입니다.</span></caption>   
+				<colgroup>	    
+					<col style="width:200px"/>	    
+					<col style=""/>	   
+					<col style="width:170px"/>	  
+				</colgroup>	 	  
+				<tbody>	    
+					<tr>	         
+						<th>메일수신동의</th>
+						<td>인하대병원에서 발송하는 홍보, 안내 목적의 정보를 메일로 받으시겠습니까?<br/>단, 회원가입, 진료예약 등의 정보성 메일은 수신동의 관계없이 발송됩니다.</td>	 
+						<td>
+							<div class="switch-wrap">
+								<div class="switch-button">
+									<input type="radio" id="email-agree01" name="email-agree"  value="1" aria-checked=”false”>
+									<label for="email-agree01" >네</label>
+								</div>
+								<div class="switch-button">
+									<input type="radio" id="email-agree02" name="email-agree"  value="2" aria-checked=”false”>
+									<label for="email-agree02" >아니오</label>
+								</div>
+							</div>
+						</td>	      					 	    
+					</tr>     
+					<tr>	         
+						<th>SMS/MMS 수신동의</th>
+						<td>인하대병원에서 발송하는 홍보, 안내 목적의 정보를 SMS 또는 MMS로 받으시겠습니까?<br/>단, 진료예약 등의 정보성 알림은 수신동의 관계없이 발송됩니다.</td>	 
+						<td>
+							<div class="switch-wrap">
+								<div class="switch-button">
+									<input type="radio" id="sns-agree01" name="sns-agree"  value="1" aria-checked=”false”>
+									<label for="sns-agree01" >네</label>
+								</div>
+								<div class="switch-button">
+									<input type="radio" id="sns-agree02" name="sns-agree"  value="2" aria-checked=”false”>
+									<label for="sns-agree02" >아니오</label>
+								</div>
+							</div>
+						</td>	      					 	    
+					</tr>        
+					<tr>	         
+						<th>관심질병 카테고리</th>
+						<td colspan="2">
+							인하대병원에서 발송하는 홍보, 안내 목적의 정보를 SMS 또는 MMS로 받으시겠습니까?<br/>단, 진료예약 등의 정보성 알림은 수신동의 관계없이 발송됩니다.
+							<ul class="check-list">
+								<li>
+									<div class="checkbox">
+										<input type="checkbox" id="check01" aria-checked=”false” >
+										<label for="check01" >카테고리-A</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox">
+										<input type="checkbox" id="check02" aria-checked=”false” >
+										<label for="check02" >카테고리-B</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox">
+										<input type="checkbox" id="check03" aria-checked=”false” >
+										<label for="check03" >카테고리-C</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox">
+										<input type="checkbox" id="check04" aria-checked=”false” >
+										<label for="check04" >카테고리-D</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox">
+										<input type="checkbox" id="check05" aria-checked=”false” >
+										<label for="check05" >카테고리-A</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox">
+										<input type="checkbox" id="check06" aria-checked=”false” >
+										<label for="check06" >카테고리-B</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox">
+										<input type="checkbox" id="check07" aria-checked=”false” >
+										<label for="check07" >카테고리-C</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox ">
+										<input type="checkbox" id="check08" aria-checked=”false” >
+										<label for="check08" >카테고리-D</label>
+									</div>
+								</li>
+							</ul>
+						</td>	
+					</tr>  
+				</tbody>	
+			</table>
+			<div class="btn-wrap marT60">
+				<button type="button" class="btn btn-l color02">가입완료</button>
+				<button type="button" class="btn btn-l color03 ">가입취소</button>	
+			</div>
+			
+		</div>
+	</div>
+</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
