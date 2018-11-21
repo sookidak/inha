@@ -6,9 +6,9 @@
 	.guide-title2{font-size:24px;margin-bottom:20px;font-weight: bold}
 	.table-guide{width:1180px;}
 	.guide-section{margin-bottom:30px;}
-	.guide-nav{margin-bottom:20px;}
+	.guide-nav{margin-bottom:20px; position: fixed; left: 0}
 	.guide-nav:after{content:'';display:block;clear: both;width:100%;}
-	.guide-nav li{display:table-cell;vertical-align:middle;height:40px;background:#3d4044}
+	.guide-nav li{vertical-align:middle;height:40px;background:#3d4044; line-height: 40px}
 	.guide-nav li:hover{background:#199da3;}
 	.guide-nav li a{display:block;color:#fff;padding:0 20px;font-weight: bold}
 	.box-g1{width:14px;height:10px;display:inline-block;background:#0770bb}
@@ -19,20 +19,89 @@
 	<section class="guide-title">인하대병원 가이드</section>
 	<section class="guide-nav">
 		<ul>
+			<li><a href="#guide-css">기본css</a></li>
+			<li><a href="#guide-color">컬러</a></li>
 			<li><a href="#guide-text">텍스트</a></li>
+			<li><a href="#guide-badge">뱃지</a></li>
 			<li><a href="#guide-btns">버튼</a></li>
 			<li><a href="#guide-input">입력박스</a></li>
 			<li><a href="#guide-select">선택박스</a></li>
 			<li><a href="#guide-component">컴포넌트</a></li>
+			<li><a href="#guide-agree">동의박스</a></li>
 			<li><a href="#guide-tab">탭</a></li>
 			<li><a href="#guide-table">테이블</a></li>
 			<li><a href="#guide-paging">페이징</a></li>
 			<li><a href="#guide-list">리스트</a></li>
+			<li><a href="#guide-err">에러박스</a></li>
 			<li><a href="#guide-etcbox">추가사항</a></li>
 		</ul>
 	</section>
+	<!-- css  가이드 -->
+	<section class="guide-section" id="guide-css">
+		<h2 class="guide-title2">기본 css 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					텍스트 왼쪽 정렬
+				</th>
+				<td>
+					textL
+				</td>
+				<th>
+					텍스트 가운데 정렬
+				</th>
+				<td>
+					textC
+				</td>
+				<th>
+					텍스트 오른쪽 정렬
+				</th>
+				<td>
+					textR
+				</td>
+			</tr>
+			<tr>
+				<th>
+					숨김 css 
+				</th>
+				<td>
+					offscreen
+				</td>
+				<th>
+					float 왼쪽 정렬
+				</th>
+				<td>
+					floatL
+				</td>
+				<th>
+					float 오른쪽 정렬
+				</th>
+				<td>
+					floatR
+				</td>
+			</tr>
+			<tr>
+				<th>
+					margin 상단
+				</th>
+				<td>
+					marT10
+				</td>
+				<th>
+					margin 왼쪽
+				</th>
+				<td>
+					marL5
+				</td>
+				<th colspan="2">
+					마진값 숫자변경하여 쓰되 없는 것은 common.css 추가 요망				
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //css  가이드 -->
 	<!-- 컬러  가이드 -->
-	<section class="guide-section" id="guide-text">
+	<section class="guide-section" id="guide-color">
 		<h2 class="guide-title2">컬러 가이드</h2>
 		<table class="table-guide">
 			<tr>
@@ -149,6 +218,27 @@
 		</table>
 	</section>
 	<!-- //텍스트 가이드 -->
+	<!-- badge  가이드 -->
+	<section class="guide-section" id="guide-badge">
+		<h2 class="guide-title2">badge 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<p class="badge badge-point">중요</p>
+				</th>
+				<td>
+					<xmp><p class="badge badge-point">중요</p></xmp>
+				</td>
+				<th>
+					<p class="badge">NEW</p>
+				</th>
+				<td>
+					<xmp><p class="badge">NEW</p></xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //badge  가이드 -->
 	<!-- 버튼 가이드 -->
 	<section class="guide-section" id="guide-btns">
 		<h2 class="guide-title2">버튼가이드</h2>
@@ -208,6 +298,24 @@
 					<xmp><button type="button" class="btn btn-l color03">l-gray</button></xmp>
 				</td>
 			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="btn-wrap">
+						<button type="button" class="btn btn-l color02">회원가입</button>
+						<button type="button" class="btn btn-l color03 ">메인으로</button>	
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="btn-wrap">
+	<button type="button" class="btn btn-l color02">회원가입</button>
+	<button type="button" class="btn btn-l color03 ">메인으로</button>	
+</div>
+					</xmp>
+				</td>
+			</tr>
 			
 		</table>
 	</section>
@@ -231,7 +339,77 @@
 				<td>
 					<xmp><label for="" class="hide">text</label><input type="text" id="" disabled/></xmp>
 				</td>
-			</tr>	
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-email">
+						<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+						<span class="input-text">@</span>
+						<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+						<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">    
+							<option lang="ko" value="1" role="menuitem">직접입력</option>	    
+							<option lang="ko" value="2" role="menuitem"></option>	  
+						</select>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-email">
+	<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+	<span class="input-text">@</span>
+	<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+	<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">    
+		<option lang="ko" value="1" role="menuitem">직접입력</option>	    
+		<option lang="ko" value="2" role="menuitem"></option>	  
+	</select>
+</div>
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-num">
+						<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text num">-</span>	
+						<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="input-text num">-</span>
+						<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-num">
+	<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text num">-</span>	
+	<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="input-text num">-</span>
+	<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+</div>	
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-add">
+						<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled />
+						<button type="button" class="btn zip">우편번호 찾기</button><br/>
+						<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
+						<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-add">
+	<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled />
+	<button type="button" class="btn zip">우편번호 찾기</button><br/>
+	<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
+	<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+</div>						
+					</xmp>
+				</td>
+			</tr>			
 		</table>
 	</section>	
 	<!-- //input 가이드 -->		
@@ -442,9 +620,48 @@
 			</tr>
 		</table>
 	</section>
-	<!-- //아이콘 가이드 -->
-
-
+	<!-- //컴포넌트 가이드 -->
+	<!-- 동의 가이드 -->
+	<section class="guide-section" id="guide-agree">
+		<h2 class="guide-title2">동의안내 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="agree-area">                    
+						<h2 class="title-style4">마케팅 활용 안내 <span class="acc">[필수]</span></h2>
+						<textarea disabled class="scrollbox">
+컨텐츠 화인요망
+						</textarea>       
+						<div class="agree-box"> 
+							<div class="checkbox-type2">
+								<input type="checkbox" id="agree-b1" aria-checked=”false” >
+								<label for="agree-b1" >마케팅 활용안내에 동의합니다.</label>
+							</div>
+						</div>                
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<xmp>
+<div class="agree-area">                    
+	<h2 class="title-style4">마케팅 활용 안내 <span class="acc">[필수]</span></h2>
+	<textarea disabled class="scrollbox">
+컨텐츠 화인요망
+	</textarea>       
+	<div class="agree-box"> 
+		<div class="checkbox-type2">
+			<input type="checkbox" id="check-b1" aria-checked=”false” >
+			<label for="check-b1" >마케팅 활용안내에 동의합니다.</label>
+		</div>
+	</div>                
+</div>
+					</xmp>
+				</td>
+			</tr>	
+		</table>
+	</section>	
+	<!-- //동의 가이드 -->
 	<!-- 탭 가이드 -->
 	<section class="guide-section" id="guide-tab">
 		<h2 class="guide-title2">탭가이드</h2>
@@ -557,7 +774,7 @@
 								<td>111</td>	      
 								<td>A</td>	 
 								<td>B</td>	      
-								<td class="t-l"><p class="badge badge-new">NEW</p>게시물 내용</td> 
+								<td class="textL"><p class="badge badge-new">NEW</p>게시물 내용</td> 
 								<td>2018.09.12</td>	      
 								<td>15,510</td>	    
 							</tr>   
@@ -565,7 +782,7 @@
 								<td>111</td>	      
 								<td>A</td>	 
 								<td>B</td>	      
-								<td class="t-l"><p class="badge badge-point">중요</p>게시물 내용</td>	 
+								<td class="textL"><p class="badge badge-point">중요</p>게시물 내용</td>	 
 								<td>2018.09.12</td>	      
 								<td>15,510</td>	    
 							</tr>
@@ -601,7 +818,7 @@
 			<td>111</td>	      
 			<td>A</td>	 
 			<td>B</td>	      
-			<td class="t-l"><p class="badge badge-new">NEW</p>게시물 내용</td> 
+			<td class="textL"><p class="badge badge-new">NEW</p>게시물 내용</td> 
 			<td>2018.09.12</td>	      
 			<td>15,510</td>	    
 		</tr>   
@@ -609,7 +826,7 @@
 			<td>111</td>	      
 			<td>A</td>	 
 			<td>B</td>	      
-			<td class="t-l"><p class="badge badge-point">중요</p>게시물 내용</td>	 
+			<td class="textL"><p class="badge badge-point">중요</p>게시물 내용</td>	 
 			<td>2018.09.12</td>	      
 			<td>15,510</td>	    
 		</tr>
@@ -696,6 +913,68 @@
 					</xmp>
 				</td>
 			</tr>
+			<tr>
+				<td>
+					<table class="table table-type3">	  
+						<caption><span class="offscreen">Type3</span></caption> 	  
+						<colgroup>	    
+							<col style="width:200px"/>	    
+							<col style=""/>	  
+						</colgroup>	  
+						<tbody>	    
+							<tr>	         
+								<th>
+									이름<span class="acc">*<span class="offscreen">필수입력</span></span>
+								</th>	      
+								<td>
+									송헌호
+								</td>	 	    
+							</tr>    
+							<tr>	         
+								<th>
+									<label for="id">아이디<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+								</th>	      
+								<td>
+									<input type="text" id="id" />
+									<button type="button" class="btn" maxlength="10" title="아이디입력">중복확인</button>
+									<p class="info-text"><span>*</span>아이디는 6자리 이상 10자리 이하로 입력해주세</p>
+								</td>	 	    
+							</tr>   
+						</tbody>	
+					</table>
+				</td>
+			</tr> 
+			<tr>
+				<td><xmp>
+<table class="table table-type3">	  
+	<caption><span class="offscreen">Type3</span></caption> 	  
+	<colgroup>	    
+		<col style="width:200px"/>	    
+		<col style=""/>	  
+	</colgroup>	  
+	<tbody>	    
+		<tr>	         
+			<th>
+				이름<span class="acc">*<span class="offscreen">필수입력</span></span>
+			</th>	      
+			<td>
+				송헌호
+			</td>	 	    
+		</tr>    
+		<tr>	         
+			<th>
+				<label for="id">아이디<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+			</th>	      
+			<td>
+				<input type="text" id="id" />
+				<button type="button" class="btn" maxlength="10" title="아이디입력">중복확인</button>
+				<p class="info-text"><span>*</span>아이디는 6자리 이상 10자리 이하로 입력해주세요</p>
+			</td>	 	    
+		</tr>   
+	</tbody>	
+</table>					
+				</xmp></td>
+			</tr> 
 		</table>
 	</section>
 	<!-- //테이블 가이드 -->
@@ -964,7 +1243,35 @@
 </div>
 	</section>
 	<!-- //리스트 가이드 -->
-
+	<!-- err  가이드 -->
+	<section class="guide-section" id="guide-err">
+		<h2 class="guide-title2">에러박스 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="error-box">
+						<div class="box-top-logo"><span class="offscreen">인하대학교병원</span></div>
+						<div class="err-icon"></div>
+						<p class="err-tit">죄송합니다.<br/>현재 찾을 수 없는 페이지를 요청하셨습니다.</p>
+						<p class="err-cont">존재하지 않는 주소를 입력하셨거나 변경 또는 삭제되어 찾을 수 없습니다.<br/>이전 페이지로 되돌아가시거나 메인화면으로 이동하여 서비스를 이용해주시기 바랍니다.</p>		
+					</div>
+				</th>
+			<tr>				
+			</tr>
+				<td>
+					<xmp>
+<div class="error-box">
+	<div class="box-top-logo"><span class="offscreen">인하대학교병원</span></div>
+	<div class="err-icon"></div>
+	<p class="err-tit">죄송합니다.<br/>현재 찾을 수 없는 페이지를 요청하셨습니다.</p>
+	<p class="err-cont">존재하지 않는 주소를 입력하셨거나 변경 또는 삭제되어 찾을 수 없습니다.<br/>이전 페이지로 되돌아가시거나 메인화면으로 이동하여 서비스를 이용해주시기 바랍니다.</p>		
+</div>
+				</xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //err  가이드 -->
 	<!-- etcbox 가이드 -->
 	<section class="guide-section" id="guide-etcbox">
 		<h2 class="guide-title2">etcbox 가이드</h2>
