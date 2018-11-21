@@ -253,8 +253,8 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 .step-wrap{ margin:0 auto; width: 612px; margin: 3px auto 30px;}
 .step-wrap li{display:inline-block;padding:0px;text-align:center; position:relative; width: 72px;margin-left:105px;}
 .step-wrap li:before{ content: ''; position: absolute; ;left: -114px; top: 15px; width: 123px;    height: 2px;  background:url('../img/icon_dot_line.png') }
-.step-wrap li:first-child:before{  content:'';display:none;}
 .step-wrap li:first-child{ margin-left: 0;}
+.step-wrap li:first-child:before{  content:'';display:none;}
 .step-wrap li .txt{font-size: 20px; margin-top: 10px; display: inline-block; color: #777}
 .step-wrap li .StepNum{width: 30px; height: 30px; color: #fff; background: #777; font-size: 16px;font-family:'notoKrM',sans-serif; display: block; border-radius: 30px; line-height: 28px; font-weight: normal; margin:0 auto;}
 .step-wrap li.stepOn .txt{color: #0770bb; font-family:'notoKrM',sans-serif;}
@@ -262,7 +262,7 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 
 .step-wrap.style2{width: 792px;}
 .step-wrap.style2 li:first-child{position: relative; height: 60px}
-.step-wrap.style2 li:first-child .txt{position:absolute; top: 30px; width: 170px; left:-50px;}
+.step-wrap.style2 li:first-child .txt{position:relative; top: 0px; width: 170px; left:-50px;}
 
 
 /* agree */
@@ -276,14 +276,14 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 .member-wrap .join-tit{font-size: 20px; color: #000;  font-family:'notoKrM',sans-serif; margin-bottom: 15px; font-weight: normal; margin-top: 50px}
 .member-wrap .join-tit:first-child{margin-top:0px}
 .member-wrap .table-join{border-top:2px solid #bbbbbb;  }
-.member-wrap .table-join th{width: 200px; border:1px solid #eeeeee;text-align: left;padding-left: 30px;border-right: 0; background: #fff; height: 60px; }
-.member-wrap .table-join th .acc{color: #199da3; margin-left:2px; position: relative;top: 2px; }
-.member-wrap .table-join td{text-align: left; border-left: 0; border-right: 0; padding: 10px 0; line-height: 24px; font-size: 16px;}
+.member-wrap .table-join th{width: 200px; border:1px solid #eeeeee;text-align: left;padding-left: 30px;border-right: 0; border-left: 0; background: #fff; height: 60px; }
+.member-wrap .table-join th .acc{color: #199da3; margin-left:2px; position: relative;top: 4px; }
+.member-wrap .table-join td{text-align: left; border-left: 0; border-right: 0; border-left: 0;padding: 10px 0; line-height: 24px; font-size: 16px;}
 .member-wrap .table-join input[type=text],.table-join input[type=password]{width: 400px;vertical-align: top; }
 .member-wrap .table-join .btn{ height: 40px; border-radius: 0; vertical-align: top; font-size: 14px;  font-weight: normal; min-width:88px; position: relative; left: -3px}
 .member-wrap .table-join .btn.zip{width:115px;}
 .member-wrap .table-join .info-text{ font-size: 14px; letter-spacing: -0.5px; margin-top: 8px; line-height: 14px; }
-.member-wrap .table-join .info-text span{display: inline-block; margin-right: 3px; position: relative;top: 1px}
+.member-wrap .table-join .info-text span{display: inline-block; margin-right: 3px; position: relative;top: 3px}
 .member-wrap .table-join #name:disabled{background:#fff; border: 0 ; font-size: 16px; color: #777777; padding: 0; height: 30px;}
 .member-wrap .table-join .emil{width: 210px !important;}
 .member-wrap .table-join select.emil{width: 180px !important; margin-left: 6px;}
