@@ -165,4 +165,5 @@ margin-bottom:32px;
 /* 현황 */
 .jojic-editor{width:880px;height:525px;background:#e3e3e3;}
 .jojic-box{position:relative;float:left;}
-.jojic-box:before{content:'';display:inline-block;width:}
+.jojic-icon{display:inline-block;width:100px;height:100px;background: #777;border-radius:50%;}
+.jojic-icon:before{content:'';display:inline-block;width:61px;height:58px;background:url('../img/icon_info.png') -160px top no-repeat;}
