@@ -8,6 +8,18 @@
 .info-text-em{margin-left:4px;margin-right:15px;vertical-align:bottom;}
 .info-sign{vertical-align:bottom}
 
+/* 역대의료원장 */
+.editor-historyp{display:table;}
+.historyp-left{display:table-cell;}
+.historyp-right{display:table-cell;padding-left:30px;vertical-align:top;padding-top:8px;letter-spacing: -0.06em;}
+.historyp-wrap{position: relative;margin-bottom:11px;}
+.historyp-title{font-size:30px;color:#0770bb;font-family:'NotoKrM';margin-bottom:37px;}
+.historyp-title .sidetext{font-size:20px;color:#777;font-family:'NotoKrDL';margin-left:13px;vertical-align: middle;}
+.historyp-cont{display:table-cell;width:90px;font-size:18px;font-family: 'NotoR';color:#000}
+.historyp-cont2{display:table-cell;}
+.historyp-cont2 li{font-size:16px;margin-bottom:5px;color:#333;line-height:1.5em;}
+.historyp-cont2 .historyp-y{font-family: 'NotoR';color:#000;margin-right:8px;}
+
 /* 설립이념 */
 .ide-wrap{position: relative;}
 .ide-list{position:relative;left:50%;transform: translate(-50%, 0);display:inline-block;}
