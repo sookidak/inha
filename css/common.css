@@ -129,6 +129,7 @@ background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%);
 background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.btn.color05{background: #fff; border:1px solid #757a85; color: #757a85  }/* gray */
 
 /* button group */
 .btn-wrap{text-align:center; }
@@ -194,12 +195,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 .prg-wrap .prg-right{float:right;width:980px;}
 .prg-cont{line-height:24px;font-size:16px;color: #333;letter-spacing:-0.068em;}
 
+/* table -  문단에들어간 테이블 정리 */
+.prg-cont .table th{line-height: 22px;}
+.prg-cont .table td{line-height: 20px;}
+
 .cont-text-type1{margin-bottom:30px;}
 
 /* list-type */
 .list-type1{text-align:left;}
-.list-type1 li{padding-left:10px;font-size:16px;position: relative;margin-bottom:7px;color:#333;}
-.list-type1 li:before{content:'';display:inline-block;position:absolute;left:0;top:50%;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
+.list-type1 > li{padding-left:10px;font-size:16px;position: relative;margin-bottom:7px;color:#333;}
+.list-type1 > li:before{content:'';display:inline-block;position:absolute;left:0;top:12px;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
+
+.list-type1 li ul{text-align:left;margin-top:7px;padding-bottom:1px;}
+.list-type1 li ul li{font-size:16px;position: relative;margin-bottom:6px;color:#777;}
+
 
 .list-type2{text-align:left;}
 .list-type2 li{padding-left:13px;position: relative;margin-bottom:7px;font-size:14px;color:#333;}
@@ -277,9 +286,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 .table-type3 .check-list:after { display: block; content: ""; }
 .table-type3 .check-list li{ float: left; width: 245px; height: 45px}
 
-/* table -  문단에들어간 테이블 정리 */
-.prg-cont .table th{line-height: 22px;}
-.prg-cont .table td{line-height: 20px;}
+
 
 
 /* badge */
@@ -380,13 +387,13 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
 
 /* board - img list  */
 .board-wrap .img-list {width: 1180px; position:relative; text-align:center;}
-.board-wrap .img-list > li {width: 380px; height: 395px; border: 1px solid #eeeeee;box-sizing:border-box; float: left; margin-left:20px; margin-bottom: 20px; }
+.board-wrap .img-list > li {width: 380px; height: 395px; text-align: left; border: 1px solid #eeeeee;box-sizing:border-box; float: left; margin-left:20px; margin-bottom: 20px; }
 .board-wrap .img-list > li:after{content:'';display:inline-block;}
 .board-wrap .img-list > li:nth-child(3n+1){margin-left:0px;}
 .board-wrap .img-list > li:last-child{margin-bottom: 50px;}
 .board-wrap .img-list .thum-img{width:378px; height:285px}
 .board-wrap .img-list .category{margin-top: 17px; margin-left: 20px; }
-.board-wrap .img-list .tit{margin-top: 13px; margin-left: 12px; color:#000;font-size: 16px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 340px }
+.board-wrap .img-list .tit{margin-top: 13px; margin-left: 20px; color:#000;font-size: 16px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 340px }
 .board-wrap .img-list .tit .badge{margin-right: 7px; margin-top: 3px}
 .board-wrap .img-list .data{margin-top: 8px; margin-left: 20px;}
 .board-wrap .img-list .tit a:hover, .board-wrap .img-list .tit a:focus{text-decoration: underline; cursor: pointer; }
@@ -466,6 +473,7 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
 .floatL{float:left;}
 .floatR{float:right;}
 
+.marT7{margin-top: 7px !important}
 .marT10{margin-top: 10px !important}
 .marT15{margin-top: 15px !important}
 .marT20{margin-top: 20px !important}
@@ -473,6 +481,7 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
 .marT40{margin-top: 40px !important}
 .marT50{margin-top: 50px !important}
 .marT60{margin-top: 60px !important}
+.marT80{margin-top: 80px !important}
 .marL5{margin-left: 5px !important}
 .marL10{margin-left: 10px !important}
 .marL20{margin-left: 20px !important}
