@@ -99,3 +99,53 @@
 .map-wrap{ height: 490px; width: 1180px; border-radius: 8px; background: #eee }
 .btn-wrap.map .btn-m{width: 150px !important; letter-spacing: -1px ;padding: 0 10px}
 .btn-wrap.map .btn-l{width: 210px !important;   }
+.map .subway01{color: #273C97; font-family:'notoKrM',sans-serif;}
+.map .subway02{color: #BF7E00; font-family:'notoKrM',sans-serif;}
+.map .subway03{color: #406DA6; font-family:'notoKrM',sans-serif;}
+
+
+/* res  - 진료예약  */
+.res-notice{font-size: 16px; width: 90px; height: 20px; line-height: 20px; padding-left: 25px;  background: url(../img/icon_contents.png) no-repeat #fff; background-size: 134px; position: absolute; top: 120px; right: 10px}
+.res-wrap{width: 1180px; height: 945px; border-radius: 8px;  position: relative; box-sizing: border-box;font-size: 16px;}
+.res-wrap > div{float: left;  height: 945px; box-sizing: border-box;position: relative;}
+.res-wrap .title{font-family:'notoKrM',sans-serif; width: 100%;  height: 80px; color:#777; font-size: 20px; font-weight: normal; padding:17px 20px;  }
+.res-wrap .title span{ display: block; margin-bottom: 7px; vertical-align: top;}
+.res-wrap .title.on{background: #0770bb; color: #fff; border-color:#0770bb  !important }
+.res-wrap .before{ width: 100%; height: 100%;position: relative; color: #777}
+.res-wrap .before p{position: absolute; top: 45%; left: 50%; transform: translateY(-50%) translateX(-50%) ;}
+
+/* res  - 진료예약 - 진료과 */
+.res-wrap .res-dept{ width: 279px; }
+.res-wrap .res-dept .dept-tit{border-radius: 8px 0 0 0}
+.res-wrap .res-dept .dept-box{height: 865px; border-left:1px solid #dddddd;border-bottom:1px solid #dddddd;border-radius: 0  0 0 8px; overflow-x:hidden;overflow-y:scroll;  }
+.res-wrap .res-dept .dept-box button.detp-list{ color: #333; border-bottom:1px solid #eeeeee; width: 100%; height: 60px; background: #fff; font-size: 16px; letter-spacing: -1px ; font-family:'notoKrL',sans-serif; }
+.res-wrap .res-dept .dept-box button.detp-list:last-child{ border-bottom:0; margin-bottom:8px;}
+.res-wrap .res-dept .dept-box button.detp-list.active{border:2px solid #0770bb;font-family:'notoKrM',sans-serif; color: #0770bb;  }
+
+/* res  - 진료예약 - 의료진 */
+.res-wrap .res-docter{width: 600px;}
+.res-wrap .res-docter .doc-tit{border:1px solid #dddddd; }
+.res-wrap .res-docter .doc-tit.on{border-left:1px solid #dddddd !important; border-right:1px solid #dddddd !important;}
+.res-wrap .res-docter .doc-box{height: 865px; border:1px solid #dddddd;border-top:0;overflow-x:hidden;overflow-y:scroll;}
+
+.res-wrap .res-docter .doc-box .doc-list .doc_photo{}
+.res-wrap .res-docter .doc-box .doc-list .name{}
+.res-wrap .res-docter .doc-box .doc-list dl{}
+.res-wrap .res-docter .doc-box .doc-list dt{}
+.res-wrap .res-docter .doc-box .doc-list dd{}
+
+
+/* res  - 진료예약 - 진료일정  */
+.res-wrap .res-data-info{width: 299px;}
+.res-wrap .res-data-info .data-tit{ border:1px solid #dddddd;border-left:0; border-radius: 0 8px 0  0; }
+.res-wrap .res-data-info .data-box{border-right:1px solid #dddddd; height: 493px}
+
+/* res  - 진료예약 - 예약정보  */
+.res-wrap .res-data-info .info-tit{color: #fff; background: #757a85;padding:29px 20px; }
+.res-wrap .res-data-info .info-box{border-right:1px solid #dddddd;border-bottom:1px solid #dddddd;border-radius: 0 0 8px 0; height: 292px; }
+.res-wrap .res-data-info .info-box dl{position: relative; padding-top: 17px; margin-left: 20px}
+.res-wrap .res-data-info .info-box dt, .res-wrap .res-data-info .info-box dd{display: table;}
+.res-wrap .res-data-info .info-box dt > div, .res-wrap .res-data-info .info-box dd > div{display: table-cell;vertical-align: middle;}
+.res-wrap .res-data-info .info-box dt{ width: 100px; height: 46px; float: left; padding-left: 10px; position: relative;  }
+.res-wrap .res-data-info .info-box dt:before{content:'';display:inline-block;position:absolute;left:0;top:21px;width:4px;height:4px;background:#aaa;}
+.res-wrap .res-data-info .info-box dd{height: 46px; font-family:'notoKrM',sans-serif; width: 160px;float: right; margin-right: 10px; line-height: 21px }
