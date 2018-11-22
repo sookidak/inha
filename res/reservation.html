@@ -1,0 +1,133 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">진료예약</h1>
+		<p class="text-style1">
+			아래 번호 순서대로 원하시는 예약정보를 선택하신 후 예약완료 버튼을 누르시면 최종 완료됩니다.
+		</p>
+	</div>
+	<div class="contents">
+		<!-- 진료예약 -->
+		<button type="button" class="res-notice">유의사항</button>
+		<div class="res-wrap">
+			<!-- 진료과 선택 -->
+			<div class="res-dept">
+				<div class="dept-tit title on"><span>01</span>진료과 선택</div>
+				<div class="dept-box">
+					<button type="button" class="detp-list">가정의학과</button>
+					<button type="button" class="detp-list">감염내과</button>
+					<button type="button" class="detp-list">뇌신경센터 (신경과)</button>
+					<button type="button" class="detp-list">뇌신경센터 (신경외과)</button>
+					<button type="button" class="detp-list">뇌혈관센터 (신경과)</button>
+					<button type="button" class="detp-list">뇌혈관센터 (신경외과)</button>
+					<button type="button" class="detp-list">당뇨내분비센터</button>
+					<button type="button" class="detp-list">류마티스내과</button>
+					<button type="button" class="detp-list">비뇨의학과</button>
+					<button type="button" class="detp-list">비만센터 (가정의학과)</button>
+					<button type="button" class="detp-list">비만센터 (소아청소년과)</button>
+					<button type="button" class="detp-list">비만센터 (외과)</button>
+					<button type="button" class="detp-list">산부인과</button>
+					<button type="button" class="detp-list active">유방갑상선외과센터 (정신건강의학과)<span class="offscreen">선택</span></button>
+					<button type="button" class="detp-list">비뇨의학과</button>
+					<button type="button" class="detp-list">비만센터 (가정의학과)</button>
+					<button type="button" class="detp-list">비만센터 (소아청소년과)</button>
+					<button type="button" class="detp-list">비만센터 (외과)</button>
+					<button type="button" class="detp-list">산부인과</button>
+				</div>				
+			</div>
+			<!-- // 진료과 선택 -->
+			<!-- 의료진 선택 -->
+			<div class="res-docter">				
+				<div class="doc-tit title on"><span>02</span>의료진 선택</div><!-- 진료과 선택전 class on 제거-->
+				<div class="doc-box">
+					<!--  진료과 선택 전 --
+					<div class="before"><p>진료과를 선택해주세요.</p></div>
+					//진료과 선택 전 -->
+					<!-- 의료진 롤링 -->
+					<a href="" type="button" title="의료진선택" class="doc-list">
+						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+						<div class="name">Dr.김대혁</div>
+						<dl>
+							<dt>진료일정</dt>
+							<dd>
+								<p>오전 - 월, 화, 수</p>
+								<p>오후 - 수, 토</p>
+							</dd>
+							<dt>전문분야</dt>
+							<dd>
+								<p>두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성 빈맥, 심실빈맥,</p>
+							</dd>
+							<dt>비고사항</dt>
+							<dd>
+								<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+								<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+							</dd>
+						</dl>
+					</a>
+					<!-- //의료진 롤링 -->
+				</div>					
+			</div>
+			<!-- // 의료진 선택 -->
+			<!-- 예약일/시선택 & 예약정보-->
+			<div class="res-data-info">
+				<div class="res-data">
+					<div class="data-tit title on"><span>03</span>예약일/시 선택	</div><!-- 의료진 선택전 class on 제거-->
+					<div class="data-box">
+						<!-- 의료진 선택전 --
+						<div class="before"><p>의료진을 선택해주세요.</p></div>
+						//의료진 선택전 -->
+						<div class="calendar">
+							<div> 설계서확인요망 </div>
+							
+						</div>
+						<!-- 날짜 선택전 -->
+						<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu">    
+							<option lang="ko" value="1" role="menuitem">날짜를 선택해주세요</option>	  
+							<option lang="ko" value="1" role="menuitem">날짜를 선택해주세요</option>	  
+							<option lang="ko" value="1" role="menuitem">날짜를 선택해주세요</option>	  
+						</select>
+						<!-- //날짜 선택전 -->
+					</div>						
+				</div>
+				<div class="res-info">
+					<div class="info-tit title">예약정보</div>
+					<div class="info-box">
+						<dl>
+							<dt><div>환자명</div></dt>
+							<dd><div>송헌호</div></dd>
+							<dt><div>진료과</div></dt>
+							<dd><div>유방갑상선외과센터 <br/>(정신건강의학과)</div></dd>
+							<dt><div>의료진</div></dt>
+							<dd><div>-</div></dd>
+							<dt><div>예약일/시</div></dt>
+							<dd><div>-</div></dd>
+						</dl>
+					</div>							
+				</div>						
+			</div>	
+			<!-- // 예약일/시선택 & 예약정보- -->	
+		</div>
+		<!-- // 진료예약 -->	
+		<div class="btn-wrap marT50">
+			<button type="button" class="btn btn-l color02">예약완료</button>
+			<button type="button" class="btn btn-l color03 ">예약취소</button>	
+		</div>	
+		<!-- 빠른예약 -->
+		<div class="etcbox etcbox-type3 marT50">
+			<div class="etcbox-title1">보다 빠른 예약을 원하시나요?<br/>전화번호를 남기시면 전문상담원이 빠른 예약을 도와드립니다</div>
+			<div class="input-num">
+				<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum"/><span class="input-text">-</span>	
+				<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"/></label><span class="input-text">-</span>
+				<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum"/></label>
+				<button type="button" class="btn marL10">인증하기</button>
+			</div>
+		</div>
+		<!-- // 빠른예약 -->
+	</div>
+</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

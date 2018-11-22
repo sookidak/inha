@@ -20,7 +20,7 @@
 .top-wrap .top-left{position:absolute;left:0;top:23px;}
 .top-wrap .top-right{position:absolute;right:0;top:23px;}
 
-/* header-top- */
+/* header-top- */list-type1
 .link-unit{line-height:14px;font-family: 'NotoKrM',sans-serif;font-size:14px;letter-spacing:-0.05em;}
 .link-unit:after{content:'';display:block;clear:both;}
 .link-unit li{position:relative;float:left;vertical-align:middle;padding-right:13px;}
@@ -50,7 +50,7 @@
 .pagetitle-wrap{text-align: center;margin-bottom:60px;}
 .pagetitle-wrap .title-style1{}
 .pagetitle-wrap .text-style1{margin-top:30px;}
-.contents{margin-bottom:100px;}
+.contents{margin-bottom:100px; position: relative;}
 
 /* footer */
 .footer{background:#3d4044;}
@@ -198,13 +198,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 /* table -  문단에들어간 테이블 정리 */
 .prg-cont .table th{line-height: 22px;}
 .prg-cont .table td{line-height: 20px;}
+.prg-cont .list-type1 > li:before{top:12px;}
 
 .cont-text-type1{margin-bottom:30px;}
 
 /* list-type */
 .list-type1{text-align:left;}
 .list-type1 > li{padding-left:10px;font-size:16px;position: relative;margin-bottom:7px;color:#333;}
-.list-type1 > li:before{content:'';display:inline-block;position:absolute;left:0;top:12px;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
+.list-type1 > li:before{content:'';display:inline-block;position:absolute;left:0;top:8px;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
 
 .list-type1 li ul{text-align:left;margin-top:7px;padding-bottom:1px;}
 .list-type1 li ul li{font-size:16px;position: relative;margin-bottom:6px;color:#777;}
@@ -226,9 +227,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 .etcbox-type2 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0 0 no-repeat;margin-right:10px;vertical-align:middle;}
 .etcbox-type2 .list-type2{margin-left:26px;}
 
-.etcbox-type3 .etcbox-title1{margin-bottom:0;font-size:16px;line-height:28px;vertical-align:middle;font-family:'NotoKrL',sans-serif;}
-.etcbox-type3 .etcbox-title1:before{content:'';display:inline-block;width:30px;height:30px;background:url(../img/icon_contents.png) 0px -40px no-repeat;margin-right:10px;vertical-align:middle;}
+.etcbox-type3 {position: relative;}
+.etcbox-type3 .etcbox-title1{margin-bottom:0;font-size:16px;line-height:22px;vertical-align:middle;font-family:'NotoKrL',sans-serif; padding-left: 40px;}
+.etcbox-type3 .etcbox-title1:before{content:'';width:30px;height:30px;background:url(../img/icon_contents.png) 0px -40px no-repeat; position: absolute;top: 7px;left: 0}
+.etcbox-type3 .input-num{position: absolute;top:35px ;right:25px }
+.etcbox-type3 .input-text{margin:0 2px }
+
 .etcbox-type4 .etcbox-cont{line-height:30px;font-size:16px;color:#000;}
+
+.etcbox .btn{ height: 40px; border-radius: 0; vertical-align: top; font-size: 14px;  font-weight: normal; min-width:88px; position: relative; left: -3px}
+
 
 /* section 공통상단 */
 .contents-top{text-align: center;line-height:38px;margin-bottom:70px;}
@@ -250,6 +258,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 .text-style2{font-family: 'NotoKrL'; font-size: 16px; color: #333;font-weight: normal;}
 .text-style3{font-family: 'NotoKrL'; font-size: 14px; color: #0770bb;font-weight: normal;}
 .text-style4{font-family: 'NotoKrL'; font-size: 14px; color: #777;font-weight: normal;}
+.text-nec{vertical-align: bottom; color: #199da3; font-size: 14px;font-family: 'NotoKrR'; float: right; display: inline-block; position: relative;top: 5px; }
+.text-style1.lineH{line-height: 24px;}
+
+
+.NotoKrL {font-family: 'NotoKrL',sans-serif; }
+.NotoKrDL {font-family: 'NotoKrDL',sans-serif;}
+.NotoKrR {font-family: 'NotoKrR',sans-serif; }
+.NotoKrM {font-family: 'NotoKrM',sans-serif; }
+.NotoKrB {font-family: 'NotoKrB',sans-serif; }
 
 
 /* table */
@@ -304,14 +321,15 @@ select::-ms-expand { display: none;}
 select:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
 select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center }
 
-.input-email, .input-num, .input-add{text-align: left;} 
+.input-email, .input-num, .input-add, .input-rrn{text-align: left;} 
 .input-text{color: #333333; font-size: 16px; letter-spacing: 0; display: inline-block; margin:0 4px; }
 .input-email .emil{width: 210px !important;}
 .input-email select.emil{width: 180px !important; margin-left: 6px;}
 .input-num .phoneNum{width: 123px !important;}
-.input-add input[type=text]{width: 400px;vertical-align: top; }
-.input-add .btn {height: 40px; border-radius: 0; vertical-align: top; font-size: 14px;  font-weight: normal; min-width:88px; position: relative; left: -3px}
+.input-add input[type=text]{width: 400px;vertical-align: middle; }
+.input-add .btn {height: 40px; border-radius: 0; vertical-align: middle; font-size: 14px;  font-weight: normal; min-width:88px; position: relative; left: -3px}
 .input-add .btn.zip{width:115px !important;}
+.input-rrn .rrn{width: 193px !important; }
 
 	
 /* paging */
