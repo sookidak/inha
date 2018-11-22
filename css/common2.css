@@ -84,3 +84,18 @@
 .member-wrap .find-id-result li:first-child  {margin-left: 0px;}
 .member-wrap .find-id-result li .res{color: #000; font-size: 28px;  font-family:'notoKrM',sans-serif; margin-top: 33px; font-weight: normal}
 .member-wrap .pw-find-input{width: 580px; height: 50px !important; display: block; margin:0 auto }
+
+
+/* guide  - 편의시설 */
+.amenity > li{height: 450px !important;}
+.amenity .tit{font-family: 'NotoKrDL',sans-serif  !important; font-size: 18px !important; font-weight: normal; margin-top: 18px !important;}
+.amenity dl.info{margin-top:12px; margin-left: 20px;  }
+.amenity dl.info dt{color: #333; height: 26px; width: 80px; float: left; line-height: 22px}
+.amenity dl.info dd{color: #777;height: 26px;  width: 260px;display:inline-block; line-height: 22px}
+.amenity dl.info .line{display: inline-block; margin: 0 5px; font-size: 10px; position: relative;top: -3px  }
+.amenity > li.height{height: 500px !important;}
+
+/* guide  - 찾아오시는 길 */
+.map-wrap{ height: 490px; width: 1180px; border-radius: 8px; background: #eee }
+.btn-wrap.map .btn-m{width: 150px !important; letter-spacing: -1px ;padding: 0 10px}
+.btn-wrap.map .btn-l{width: 210px !important;   }
