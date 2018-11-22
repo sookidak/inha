@@ -57,6 +57,15 @@ margin-bottom:32px;
 
 /* 현황 */
 .jojic-editor{width:880px;height:525px;background:#e3e3e3;}
-.jojic-box{position:relative;float:left;}
-.jojic-icon{display:inline-block;width:100px;height:100px;background: #777;border-radius:50%;}
-.jojic-icon:before{content:'';display:inline-block;width:61px;height:58px;background:url('../img/icon_info.png') -160px top no-repeat;}
+.jojic-box{position:relative;float:left;width:480px;}
+.jojic-icon{position:relative;display:inline-block;width:100px;height:100px;background: #777;border-radius:50%;text-align:center;float:left;margin-right:60px;}
+.jojic-icon:before{content:'';display:inline-block;position:absolute;left:50%;top:50%;margin-top:-29px;margin-left:-30px;width:61px;height:58px;background:url('../img/icon_info.png') -160px top no-repeat;}
+.jojic-icon.type2:before{margin-top:-16px;margin-left:-30px;width:60px;height:32px;background-position:-160px -100px;}
+.jojic-box .list-type2{float:left;}
+.jojic-box .list-type2 li{display:table;margin-bottom:29px;font-family: 'NotoKrM';font-size:16px;width:194px;clear:both;}
+.jojic-box .list-type2 li:after{content:'';display:block;clear:both;}
+.list-subtit{display:table-cell;width:120px;}
+.list-data{display:table-cell;color:#000;font-family:'NotoKrL';text-align:right;}
+.list-data2{color:#000;font-family:'NotoKrL';text-align:left;}
+.jojic-box .list-type2 li em{font-family: 'NotoKrM'}
+.jojic-box .list-type2.oneline{margin-top:42px}

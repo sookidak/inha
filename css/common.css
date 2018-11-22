@@ -99,7 +99,7 @@
 .copyright-wrap .common-layout{padding-top:30px;padding-bottom:42px;color:#aaa;}
 .copyright-info{float:left;font-family:'notoKrR',sans-serif;line-height:24px;}
 .copyright-info .hos-info{color:#fff;margin-bottom:20px;font-size:16px;line-height:1;}
-.copyright-info .hos-info em{color:#0cd4dd;font-size:22px;margin:0 8px;position: relative;top: -0.15em;}
+.copyright-info .hos-info em{color:#0cd4dd;font-size:22px;margin:0 8px;position: relative;top: -0.15em;vertical-align: middle}
 .copyright-info .copyright{text-transform: uppercase;}
 .copyright-relative{float:right;text-align: right}
 .relative-row{margin-top:30px}
@@ -294,8 +294,8 @@ input[type=text]:disabled, input[type=password]:disabled{ border: 1px solid #eee
 input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000; }
 select{ line-height:normal; border: 1px solid #ddd; font-size: 14px; line-height: 22px; font-family: 'NotoKrL'; color: #777; background: url(../img/icon_components_select_off.png) no-repeat right center; height: 40px; padding: 0 20px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; text-align: left; padding-right:56px; border-radius: 0} 
 select::-ms-expand { display: none;}
-select:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
-select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center }
+select:disabled{ border-color:#eee; color: #777; background: #f8f8f8; }
+select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center }
 
 .input-email, .input-num, .input-add{text-align: left;} 
 .input-text{color: #333333; font-size: 16px; letter-spacing: 0; display: inline-block; margin:0 4px; }
@@ -331,8 +331,8 @@ select:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; c
 
 /* board-search */
 .search-box{ text-align: center; margin-bottom: 60px ; font-size: 0 ; letter-spacing: -4px}
-.search-box select{ width: 175px; height: 60px ; vertical-align: top;font-size: 16px; margin-right: 4px;  border-radius:10px 0 0px 0; letter-spacing: -1px}
-.search-box input[type=text]{width: 447px; height: 60px; vertical-align: top;font-size: 16px; border-radius:10px 0 0px 0;  letter-spacing: -1px}
+.search-box select{ width: 175px; height: 60px ; vertical-align: top;font-size: 16px; margin-right: 4px;  border-radius:10px 0 0px 0; letter-spacing: -1px;border-width:2px;border-color:#eee;}
+.search-box input[type=text]{width: 447px; height: 60px; vertical-align: top;font-size: 16px; border-radius:10px 0 0px 0;  letter-spacing: -1px;border:2px solid #eee;}
 .search-box button{ width: 120px; min-width: 120px; height: 60px;vertical-align: top;border-radius: 0  10px 0px 0; background: url(../img/icon_components.png) no-repeat left -15px #0770bb; padding-left: 63px; text-align: left;font-family: 'NotoKrR'; font-weight: normal; letter-spacing: -1px}
 .search-result{font-size: 14px; color: #777; margin-bottom: 15px;}
 .search-result .acc{ color: #0770bb ; font-family: 'NotoKrR'; vertical-align: top;}
