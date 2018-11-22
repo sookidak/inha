@@ -20,7 +20,7 @@
 .top-wrap .top-left{position:absolute;left:0;top:23px;}
 .top-wrap .top-right{position:absolute;right:0;top:23px;}
 
-/* header-top- */list-type1
+/* header-top- */
 .link-unit{line-height:14px;font-family: 'NotoKrM',sans-serif;font-size:14px;letter-spacing:-0.05em;}
 .link-unit:after{content:'';display:block;clear:both;}
 .link-unit li{position:relative;float:left;vertical-align:middle;padding-right:13px;}
