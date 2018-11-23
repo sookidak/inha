@@ -7,6 +7,7 @@
 </div>
 <!-- header -->
 <header class="header">
+	<!-- header-top -->
 	<section class="top-wrap">
 		<div class="common-layout">
 			<h1><a href=""><img src="../img/logo.png" alt="인하대병원" /></a></h1>
@@ -24,15 +25,17 @@
 				</ul>
 			</div>
 			<div class="top-right">
-				<ul class="link-unit">
-					<li><a href="">로그인</a></li>
-					<li><a href="">회원가입</a></li>
-					<li><a href=""><span class="">KOR</span></a></li>
+				<ul class="link-unit2">
+					<li><a href="#lilnk">로그인</a></li>
+					<li><a href="#lilnk">회원가입</a></li>
+					<li><a href="#lilnk" class="link-language">KOR</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
+	<!-- //header-top -->
 	<section class="nav-wrap">
+		<!-- 네비게이션 -->
 		<div class="common-layout">
 			<nav id="nav" class="nav">
 				<button type="button" class="btn-allmenu"><span class="offscreen">메뉴모두보기</span></button>
@@ -40,7 +43,7 @@
 					<ul class="gnb" role="navigation" aria-label="메인">
 						<li><a href="#">진료예약</a></li>
 						<li><a href="#">진료과/의료진</a></li>
-						<li><a href="#">진료안내</a></li>
+						<li><a href="#" class="active">진료안내</a></li>
 						<li><a href="#">건강정보</a></li>
 						<li><a href="#">병원소개</a></li>
 					</ul>
@@ -51,17 +54,94 @@
 				<button type="button" class="quickbtn-my">나의차트</button>
 			</div>
 		</div>
-		<section class="header-opensection">
-			<div class="gnb-sublist">
-				<nav>
-					<ul>
-						<li><a href="#link">회원예약</a></li>
-						<li><a href="#link">비회원예약</a></li>
-						<li><a href="#link">빠른예약</a></li>
+		<!-- //네비게이션 -->
+		
+		<!-- 마우스 오버 시 열리는 section -->
+		<section class="opensection-wrap">
+			<!-- subdepth 네비게이션 -->
+			<div class="subnav-wrap">
+				<div class="common-layout">
+					<div class="opensection-nav">
+						<div class="gnb2-wrap">
+							<ul class="gnb-2depth">
+								<li><a href="#link">회원예약</a></li>
+								<li><a href="#link">비회원예약</a></li>
+								<li><a href="#link">빠른예약</a></li>
+							</ul>
+						</div>
+						<div class="gnb2-wrap">
+							<ul class="gnb-2depth">
+								<li><a href="#link">진료과 및 의료진</a></li>
+								<li><a href="#link">전문센터</a></li>
+								<li><a href="#link">전문클리닉</a></li>
+								<li><a href="#link">지원부서</a></li>
+							</ul>
+						</div>
+						<div class="gnb2-wrap">
+							<ul class="gnb-2depth">
+								<li><a href="#link" class="has-depth active">진료예약안내</a>
+									<div class="gnb3-wrap">
+										<ul class="gnb-3depth">
+											<li><a href="#link" class="active">가정간호소개</a></li>
+											<li><a href="#link">대상자 및 주요내용</a></li>
+											<li><a href="#link">비용 및 이용방법</a></li>
+											<li><a href="#link">위치 및 연락처</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#link">외래진료안내</a></li>
+								<li><a href="#link">입원진료안내</a></li>
+								<li><a href="#link">응급진료안내</a></li>
+								<li><a href="#link">가정간호안내</a></li>
+								<li><a href="#link">증명서발급안내</a></li>
+							</ul>
+						</div>
+						<div class="gnb2-wrap">
+							<ul class="gnb-2depth">
+								<li><a href="#link">건강매거진</a></li>
+								<li><a href="#link">영양정보</a></li>
+								<li><a href="#link">약품정보</a></li>
+								<li><a href="#link">검사정보</a></li>
+								<li><a href="#link">건강상담</a></li>
+							</ul>
+						</div>
+						<div class="gnb2-wrap">
+							<ul class="gnb-2depth">
+								<li><a href="#link">병원장인사말</a></li>
+								<li><a href="#link">미션&비전&설립이념</a></li>
+								<li><a href="#link">연혁</a></li>
+								<li><a href="#link">윤리경영</a></li>
+								<li><a href="#link">병원현황</a></li>
+								<li><a href="#link">사회공헌활동</a></li>
+								<li><a href="#link">공지사항</a></li>
+								<li><a href="#link">인하뉴스</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="opensection-qbanner">
+						<div class="qbanner-title">베스트 의료진/센터</div>
+					</div>
+				</div>
+			</div>
+			<!-- //subdepth 네비게이션 -->
+			<div class="opensection-bottom">
+				<div class="common-layout">
+					<div class="open-info-text">최상의 진료, 연구, 교육을 통해<br>
+						고객신뢰 . 첨단의술 . 내부화합을 실천합니다.</div>
+					<ul class="open-info-list">
+						<li class="open-info trust"><span>Trust</span></li>
+						<li class="open-info tech"><span>Technology</span></li>
+						<li class="open-info team"><span>Teamwork</span></li>
 					</ul>
-				</nav>
+					<div class="open-info-tel">
+						<span class="small">대표전화</span>
+						032-890-2114<br>
+						<span class="small2">진료예약</span>032-890-2000
+					</div>
+				</div>
 			</div>
 		</section>
+		<!-- //마우스 오버 시 열리는 section -->
 	</section>
 	
 </header>
