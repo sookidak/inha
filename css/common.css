@@ -500,8 +500,9 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
 
 
 /* layer popup */
-#layer-bg{ position: fixed; top:0; left: 0; width: 100%; height: 100%;background-color: #3d4044; opacity: 0.8; z-index: 100}
-#layer-box{width: 600px; height: 540px; background-color: #fff;  position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) ; z-index: 105; -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6); -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);	box-shadow: 5px 5px 5px rgba(68,68,68,0.6); }
+#layer-bg{ display: none;position: fixed; top:0; left: 0; width: 100%; height: 100%;background-color: #3d4044; opacity: 0.8; z-index: 100}
+#layer-box{display: none;width: 600px; height: 540px; background-color: #fff;  position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) ; z-index: 105; -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6); -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);	box-shadow: 5px 5px 5px rgba(68,68,68,0.6); }
+#layer-bg.active, #layer-box.active{display: block;}
 #layer-box .layer-wrap{height: 490px;position: relative;}
 #layer-box .layer-wrap .layer-cont{width: 100%; height: 490px; overflow-y:auto;overflow-x:hidden; position: absolute;top: 0; left: 0 ; padding: 30px; background-color: #fff}
 #layer-box .layer-close{height: 50px;background-color: #3d4044; position: relative;}

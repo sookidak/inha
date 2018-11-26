@@ -1,0 +1,42 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">진료예약</h1>
+		<p class="text-style1">
+			아래 번호 순서대로 원하시는 예약정보를 선택하신 후 예약완료 버튼을 누르시면 최종 완료됩니다.
+		</p>
+	</div>
+	<div class="contents">
+		
+	</div>
+</div>
+</section>
+<!-- 유의사항 layer popup -->
+<div id="layer-bg" class="active"></div>
+<div id="layer-box" role="dialog" aria-labelledby="layerpopup" class="res-notice-box active">
+	<div class="layer-wrap">		
+		<div class="layer-cont" style="z-index: 1">
+			<div class="title-style3">유의사항</div>
+			<div class="res-notice-text">
+				1. 환자명은 반드시 실제 진료받으시는 분과 일치 해야합니다.<br/>
+				2. 의료진의 진료일정과 실제 예약 가능한 일/시는 상이할 수 있습니다.<br/>
+				3. 과초진 진료 시 1,2차 의료기관의 진료의뢰서를 지참하셔야 진료를 받으실 수 있습니다.<br/>
+				<div class="sub">
+					- 의료급여환자는 반드시 2차 의료기관의 진료의뢰서 필수 지참<br/>
+					- 미지참 시 진료비는 보험수가 100% 전액 본인 부담
+				</div>
+				4. 예약변경 및 취소는 전화로 문의바랍니다. (032-890-2000)<br/>
+				5. 3회 이상 예약 부도 시 진료예약에 제한이 있을 수 있습니다.
+			</div>
+		</div>	
+	</div>
+	<div class="layer-close">
+		<button type="button" class="btn-close"><span class="offscreen">레이어 닫기</span></button>
+	</div>	
+</div>
+<!-- //유의사항 layer popup -->
+<!-- //container -->
+@@include('../inc/footer.html')
