@@ -11,61 +11,153 @@
 	</div>
 	<div class="contents">
 		<!-- 진료예약 -->
-		<button type="button" class="res-notice">유의사항</button>
-		<div class="res-wrap">
-			<!-- 진료과 선택 -->
-			<div class="res-dept">
-				<div class="dept-tit title on"><span>01</span>진료과 선택</div>
-				<div class="dept-box">
-					<button type="button" class="detp-list">가정의학과</button>
-					<button type="button" class="detp-list">감염내과</button>
-					<button type="button" class="detp-list">뇌신경센터 (신경과)</button>
-					<button type="button" class="detp-list">뇌신경센터 (신경외과)</button>
-					<button type="button" class="detp-list">뇌혈관센터 (신경과)</button>
-					<button type="button" class="detp-list">뇌혈관센터 (신경외과)</button>
-					<button type="button" class="detp-list">당뇨내분비센터</button>
-					<button type="button" class="detp-list">류마티스내과</button>
-					<button type="button" class="detp-list">비뇨의학과</button>
-					<button type="button" class="detp-list">비만센터 (가정의학과)</button>
-					<button type="button" class="detp-list">비만센터 (소아청소년과)</button>
-					<button type="button" class="detp-list">비만센터 (외과)</button>
-					<button type="button" class="detp-list">산부인과</button>
-					<button type="button" class="detp-list active">유방갑상선외과센터 (정신건강의학과)<span class="offscreen">선택</span></button>
-					<button type="button" class="detp-list">비뇨의학과</button>
-					<button type="button" class="detp-list">비만센터 (가정의학과)</button>
-					<button type="button" class="detp-list">비만센터 (소아청소년과)</button>
-					<button type="button" class="detp-list">비만센터 (외과)</button>
-					<button type="button" class="detp-list">산부인과</button>
-				</div>				
-			</div>
-			<!-- // 진료과 선택 -->
-			<!-- 의료진 선택 -->
-			<div class="res-docter">				
-				<div class="doc-tit title on"><span>02</span>의료진 선택</div><!-- 진료과 선택전 class on 제거-->
-				<div class="doc-box">
+			<button type="button" class="res-notice">유의사항</button>
+			<div class="res-wrap">
+				<!-- 진료과 선택 -->
+				<div class="res-dept">
+					<div class="dept-tit title on"><span>01</span>진료과 선택</div>
+					<div class="dept-box">
+						<!-- 선택된 진료과 class active 추가  -->
+						<button type="button" class="detp-list">가정의학과</button>
+						<button type="button" class="detp-list">감염내과</button>
+						<button type="button" class="detp-list">뇌신경센터 (신경과)</button>
+						<button type="button" class="detp-list">뇌신경센터 (신경외과)</button>
+						<button type="button" class="detp-list">뇌혈관센터 (신경과)</button>
+						<button type="button" class="detp-list">뇌혈관센터 (신경외과)</button>
+						<button type="button" class="detp-list">당뇨내분비센터</button>
+						<button type="button" class="detp-list">류마티스내과</button>
+						<button type="button" class="detp-list">비뇨의학과</button>
+						<button type="button" class="detp-list">비만센터 (가정의학과)</button>
+						<button type="button" class="detp-list">비만센터 (소아청소년과)</button>
+						<button type="button" class="detp-list">비만센터 (외과)</button>
+						<button type="button" class="detp-list">산부인과</button>
+						<button type="button" class="detp-list active">유방갑상선외과센터 (정신건강의학과)<span class="offscreen">선택</span></button>
+						<button type="button" class="detp-list">비뇨의학과</button>
+						<button type="button" class="detp-list">비만센터 (가정의학과)</button>
+						<button type="button" class="detp-list">비만센터 (소아청소년과)</button>
+						<button type="button" class="detp-list">비만센터 (외과)</button>
+						<button type="button" class="detp-list">산부인과</button>
+					</div>				
+				</div>
+				<!-- // 진료과 선택 -->
+				<!-- 의료진 선택 -->
+				<div class="res-docter">				
+					<div class="doc-tit title on"><span>02</span>의료진 선택</div><!-- 진료과 선택전 class on 제거-->
+					<div class="doc-box">
 					<!--  진료과 선택 전 --
 					<div class="before"><p>진료과를 선택해주세요.</p></div>
 					//진료과 선택 전 -->
+					<!-- 선택된 의료진 a태그 class active 추가 -->
 					<!-- 의료진 롤링 -->
-					<a href="" type="button" title="의료진선택" class="doc-list">
+					<a href="#" title="의료진선택" class="doc-list ">
 						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
-						<div class="name">Dr.김대혁</div>
-						<dl>
-							<dt>진료일정</dt>
-							<dd>
-								<p>오전 - 월, 화, 수</p>
-								<p>오후 - 수, 토</p>
-							</dd>
-							<dt>전문분야</dt>
-							<dd>
-								<p>두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성 빈맥, 심실빈맥,</p>
-							</dd>
-							<dt>비고사항</dt>
-							<dd>
-								<p>“비만센터(목요일 10시부터) 진료합니다”</p>
-								<p>“비만센터(목요일 10시부터) 진료합니다”</p>
-							</dd>
-						</dl>
+						<div class="text-wrap">
+							<div class="name">김대혁</div>
+							<div  class="day">
+								<div class="tit">진료일정</div>
+								<div class="con">
+									<p>오전 - 월, 화, 수</p>
+									<p>오후 - 수, 토</p>
+								</div>
+							</div>
+							<div  class="fie">
+								<div class="tit">전문분야</div>
+								<div class="con">
+									<p>두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성 빈맥, 심실빈맥,</p>
+								</div>
+							</div>
+							<div  class="ect">
+								<div class="tit">비고사항</div>
+								<div class="con">
+									<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+									<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- //의료진 롤링 -->
+					<!-- 의료진 롤링 -->
+					<a href="#" title="의료진선택" class="doc-list active">
+						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+						<div class="text-wrap">
+							<div class="name">김대혁</div>
+							<div  class="day">
+								<div class="tit">진료일정</div>
+								<div class="con">
+									<p>오전 - 월, 화, 수</p>
+									<p>오후 - 수, 토</p>
+								</div>
+							</div>
+							<div  class="fie">
+								<div class="tit">전문분야</div>
+								<div class="con">
+									<p>두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성 빈맥, 심실빈맥,</p>
+								</div>
+							</div>
+							<div  class="ect">
+								<div class="tit">비고사항</div>
+								<div class="con">
+									<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+									<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- //의료진 롤링 -->
+					<!-- 의료진 롤링 -->
+					<a href="#" title="의료진선택" class="doc-list ">
+						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+						<div class="text-wrap">
+							<div class="name">김대혁</div>
+							<div  class="day">
+								<div class="tit">진료일정</div>
+								<div class="con">
+									<p>오전 - 월, 화, 수</p>
+									<p>오후 - 수, 토</p>
+								</div>
+							</div>
+							<div  class="fie">
+								<div class="tit">전문분야</div>
+								<div class="con">
+									<p>두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성 빈맥, 심실빈맥,</p>
+								</div>
+							</div>
+							<div  class="ect">
+								<div class="tit">비고사항</div>
+								<div class="con">
+									<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+									<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- //의료진 롤링 -->
+					<!-- 의료진 롤링 -->
+					<a href="#" title="의료진선택" class="doc-list ">
+						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+						<div class="text-wrap">
+							<div class="name">김대혁</div>
+							<div  class="day">
+								<div class="tit">진료일정</div>
+								<div class="con">
+									<p>오전 - 월, 화, 수</p>
+									<p>오후 - 수, 토</p>
+								</div>
+							</div>
+							<div  class="fie">
+								<div class="tit">전문분야</div>
+								<div class="con">
+									<p>두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성 빈맥, 심실빈맥, 심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,심실빈맥,</p>
+								</div>
+							</div>
+							<div  class="ect">
+								<div class="tit">비고사항</div>
+								<div class="con">
+									<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+									<p>“비만센터(목요일 10시부터) 진료합니다”</p>
+								</div>
+							</div>
+						</div>
 					</a>
 					<!-- //의료진 롤링 -->
 				</div>					
@@ -80,16 +172,92 @@
 						<div class="before"><p>의료진을 선택해주세요.</p></div>
 						//의료진 선택전 -->
 						<div class="calendar">
-							<div> 설계서확인요망 </div>
-							
+							<div class="year"> 
+								<button type="button" class="prev"><span class="offscreen">이전달</span></button> 
+								2018년 12월
+								<button type="button" class="next"><span class="offscreen">다음달</span></button>
+							</div>
+							<button type="button" class="today">오늘</button>
+							<table class="cal">	  
+								<caption><span class="offscreen">예약 일/시 선택을 위한 테이블입니다.</span></caption>	 	  
+								<thead>
+									<tr>
+										<th>일</th>
+										<th>월</th>
+										<th>화</th>
+										<th>수</th>
+										<th>목</th>
+										<th>금</th>
+										<th>토</th>
+									</tr>
+								</thead>	  
+								<tbody>	    
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>1</td>
+										<td>2</td>
+									</tr>   
+									<tr>
+										<td>3</td>
+										<td>4</td>
+										<td>5</td>
+										<td>6</td>
+										<td>7</td>
+										<td>8</td>
+										<td>9</td>
+									</tr>   
+									<tr>
+										<td>10</td>
+										<td>11</td>
+										<td><div class="today">12</div></td>
+										<td><button class="on">13</button></td>
+										<td>14</td>
+										<td><button class="on">15</button></td>
+										<td>16</td>
+									</tr>   
+									<tr>
+										<td>17</td>
+										<td>18</td>
+										<td><button class="on">19</button></td>
+										<td><button class="on">20</button></td>
+										<td>21</td>
+										<td><button class="active">22</button></td>
+										<td><button class="on">23</button></td>
+									</tr>   
+									<tr>
+										<td>24</td>
+										<td>25</td>
+										<td><button class="on">26</button></td>
+										<td>27</td>
+										<td>28</td>
+										<td><button class="on">29</button></td>
+										<td>30</td>
+									</tr>   
+									<tr>
+										<td>31</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>	
+							</table>
 						</div>
-						<!-- 날짜 선택전 -->
-						<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu">    
-							<option lang="ko" value="1" role="menuitem">날짜를 선택해주세요</option>	  
-							<option lang="ko" value="1" role="menuitem">날짜를 선택해주세요</option>	  
-							<option lang="ko" value="1" role="menuitem">날짜를 선택해주세요</option>	  
-						</select>
+						<!-- 날짜 선택전  disabled 적용-->
+						<label><select id="selector" class="" aria-haspopup="true" aria-controls="select-data">  
+							<option lang="ko" value="" role="data">날짜를 선택해주세요</option>	  
+							<option lang="ko" value="" role="data">09:45</option>	   
+							<option lang="ko" value="" role="data">10:00</option>	    
+							<option lang="ko" value="" role="data">10:15</option>	   
+						</select></label>
 						<!-- //날짜 선택전 -->
+
 					</div>						
 				</div>
 				<div class="res-info">
@@ -101,9 +269,9 @@
 							<dt><div>진료과</div></dt>
 							<dd><div>유방갑상선외과센터 <br/>(정신건강의학과)</div></dd>
 							<dt><div>의료진</div></dt>
-							<dd><div>-</div></dd>
+							<dd><div>배은기</div></dd>
 							<dt><div>예약일/시</div></dt>
-							<dd><div>-</div></dd>
+							<dd><div>2018.11.22 (금) 09:45</div></dd>
 						</dl>
 					</div>							
 				</div>						
@@ -119,10 +287,10 @@
 		<div class="etcbox etcbox-type3 marT50">
 			<div class="etcbox-title1">보다 빠른 예약을 원하시나요?<br/>전화번호를 남기시면 전문상담원이 빠른 예약을 도와드립니다</div>
 			<div class="input-num">
-				<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum"/><span class="input-text">-</span>	
-				<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"/></label><span class="input-text">-</span>
-				<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum"/></label>
-				<button type="button" class="btn marL10">인증하기</button>
+				<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="" class="phoneNum"/><span class="input-text">-</span>	
+				<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value=""  class="phoneNum"/></label><span class="input-text">-</span>
+				<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="" class="phoneNum"/></label>
+				<button type="button" class="btn marL10">예약신청</button>
 			</div>
 		</div>
 		<!-- // 빠른예약 -->

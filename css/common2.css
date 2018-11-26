@@ -105,7 +105,12 @@
 
 
 /* res  - 진료예약  */
-.res-notice{font-size: 16px; width: 90px; height: 20px; line-height: 20px; padding-left: 25px;  background: url(../img/icon_contents.png) no-repeat #fff; background-size: 134px; position: absolute; top: 120px; right: 10px}
+.res-notice{font-size: 16px; width: 90px; height: 20px; line-height: 20px; padding-left: 25px;  background: url(../img/icon_contents.png) no-repeat #fff; background-size: 134px; position: absolute; top: -30px; right: 10px}
+.res-notice-box{ width: 600px !important; height: 366px !important; }
+#layer-box.res-notice-box .layer-wrap{height: 366px !important; }
+#layer-box.res-notice-box .layer-wrap .layer-cont{height: 366px !important; overflow-y: hidden;  }
+.res-notice-box .res-notice-text{color: #333;  font-size: 16px;font-family:'notoKrR',sans-serif; line-height: 35px; margin-top:30px }
+.res-notice-box .res-notice-text .sub{color: #777;  font-size: 14px;font-family:'notoKrL',sans-serif; line-height: 24px;}
 .res-wrap{width: 1180px; height: 945px; border-radius: 8px;  position: relative; box-sizing: border-box;font-size: 16px;}
 .res-wrap > div{float: left;  height: 945px; box-sizing: border-box;position: relative;}
 .res-wrap .title{font-family:'notoKrM',sans-serif; width: 100%;  height: 80px; color:#777; font-size: 20px; font-weight: normal; padding:17px 20px;  }
@@ -127,18 +132,38 @@
 .res-wrap .res-docter .doc-tit{border:1px solid #dddddd; }
 .res-wrap .res-docter .doc-tit.on{border-left:1px solid #dddddd !important; border-right:1px solid #dddddd !important;}
 .res-wrap .res-docter .doc-box{height: 865px; border:1px solid #dddddd;border-top:0;overflow-x:hidden;overflow-y:scroll;}
-
-.res-wrap .res-docter .doc-box .doc-list .doc_photo{}
-.res-wrap .res-docter .doc-box .doc-list .name{}
-.res-wrap .res-docter .doc-box .doc-list dl{}
-.res-wrap .res-docter .doc-box .doc-list dt{}
-.res-wrap .res-docter .doc-box .doc-list dd{}
-
+.res-wrap .res-docter .doc-box .doc-list {display: block; border-bottom:1px solid #eeeeee ; background: #fff ; position: relative;}
+.res-wrap .res-docter .doc-box .doc-list:after{content:'';display: block;clear: both;}
+.res-wrap .res-docter .doc-box .doc-list.active{border:2px solid #0770bb;}
+.res-wrap .res-docter .doc-box .doc-list .doc_photo{ float: left; margin-top: 40px; margin-left: 20px; }
+.res-wrap .res-docter .doc-box .doc-list .text-wrap{padding-top: 40px; width: 345px; float: right;}
+.res-wrap .res-docter .doc-box .doc-list .text-wrap .name{font-size: 22px; color: #000; font-family:'notoKrM',sans-serif;margin-bottom: 20px;}
+.res-wrap .res-docter .doc-box .doc-list .text-wrap > div{margin-bottom: 20px;}
+.res-wrap .res-docter .doc-box .doc-list .text-wrap > div:after{content:'';display: block;clear: both;}
+.res-wrap .res-docter .doc-box .doc-list .text-wrap .tit{font-size: 16px; color: #333; font-family:'notoKrDL',sans-serif; width: 70px; float: left; }
+.res-wrap .res-docter .doc-box .doc-list .text-wrap .con{ line-height: 20px;font-size: 14px; width: 275px; float: right; position: relative;top: -2px }
+.res-wrap .res-docter .doc-box .doc-list .day .con{color: #333; font-family:'notoKrM',sans-serif;}
+.res-wrap .res-docter .doc-box .doc-list .fie .con{color: #333;}
+.res-wrap .res-docter .doc-box .doc-list .ect .con{color: #777;}
 
 /* res  - 진료예약 - 진료일정  */
 .res-wrap .res-data-info{width: 299px;}
 .res-wrap .res-data-info .data-tit{ border:1px solid #dddddd;border-left:0; border-radius: 0 8px 0  0; }
 .res-wrap .res-data-info .data-box{border-right:1px solid #dddddd; height: 493px}
+.res-wrap .res-data-info .data-box .calendar{ position: relative; padding:40px 20px 30px;  }
+.res-wrap .res-data-info .data-box .calendar .year{color: #000; font-family:'notoKrM',sans-serif;font-size: 20px; padding-top:2px }
+.res-wrap .res-data-info .data-box .calendar .year button{width: 20px; height: 20px;background: url(../img/icon_components.png) no-repeat -55px -95px; vertical-align: middle;}
+.res-wrap .res-data-info .data-box .calendar .year .prev{background-position:-49px -95px ; margin-right: 10px; }
+.res-wrap .res-data-info .data-box .calendar .year .next{background-position:-86px -95px ; margin-left: 10px; }
+.res-wrap .res-data-info .data-box .calendar button.today{width: 50px; height: 25px; background:#eeeeee; color:#333333; font-size: 14px; font-family:'notoKrL',sans-serif; border-radius: 25px ; position: absolute; right: 20px; top: 40px;  }
+.res-wrap .res-data-info .data-box .calendar .cal{ width: 100%; text-align: center; margin-top:20px; }
+.res-wrap .res-data-info .data-box .calendar .cal thead th{ height: 38px ; font-size: 14px; color: #777777; font-family:'notoKrB',sans-serif; }
+.res-wrap .res-data-info .data-box .calendar .cal tbody td{ height: 38px ; width:36px; font-size: 14px; color: #333; line-height: 29px}
+.res-wrap .res-data-info .data-box .calendar .cal div,  .res-wrap .res-data-info .data-box .calendar .cal button{width:30px; height: 30px; border-radius: 15px; background: #fff }
+.res-wrap .res-data-info .data-box .calendar .cal .today{ background:#eeeeee}
+.res-wrap .res-data-info .data-box .calendar .cal .active{ background:#0770bb; color: #fff; font-family:'notoKrR',sans-serif;}
+.res-wrap .res-data-info .data-box .calendar .cal .on{ border: 1px solid #0770bb}
+.res-wrap .res-data-info .data-box select{margin: 0 20px; width: 260px;}
 
 /* res  - 진료예약 - 예약정보  */
 .res-wrap .res-data-info .info-tit{color: #fff; background: #757a85;padding:29px 20px; }
