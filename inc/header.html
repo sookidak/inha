@@ -57,7 +57,8 @@
 		<!-- //네비게이션 -->
 		
 		<!-- 마우스 오버 시 열리는 section -->
-		<section class="opensection-wrap">
+		<!-- 마우스 오버시 열릴는 section 보여줄때는 active 클래스 추가 -->
+		<section class="opensection-wrap active">
 			<!-- subdepth 네비게이션 -->
 			<div class="subnav-wrap">
 				<div class="common-layout">
@@ -79,21 +80,58 @@
 						</div>
 						<div class="gnb2-wrap">
 							<ul class="gnb-2depth">
+								<!-- 3depth메뉴 가지고 있는 메뉴는 has-depth 클래스 추가, 하위메뉴 열릴때는 active 클래스 추가 -->
 								<li><a href="#link" class="has-depth active">진료예약안내</a>
 									<div class="gnb3-wrap">
 										<ul class="gnb-3depth">
-											<li><a href="#link" class="active">가정간호소개</a></li>
+											<li><a href="#link" >초진안내</a></li>
+											<li><a href="#link">재진안내</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#link" class="has-depth">외래진료안내</a>
+									<div class="gnb3-wrap">
+										<ul class="gnb-3depth">
+											<li><a href="#link" >절차안내</a></li>
+											<li><a href="#link">시간 및 접수안내</a></li>
+											<li><a href="#link">순서도</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#link" class="has-depth">입원진료안내</a>
+									<div class="gnb3-wrap">
+										<ul class="gnb-3depth">
+											<li><a href="#link" >입원안내</a></li>
+											<li><a href="#link">퇴원안내</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#link" class="has-depth">응급진료안내</a>
+									<div class="gnb3-wrap">
+										<ul class="gnb-3depth">
+											<li><a href="#link" >절차안내</a></li>
+											<li><a href="#link">퇴원안내</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#link" class="has-depth">가정간호안내</a>
+									<div class="gnb3-wrap">
+										<ul class="gnb-3depth">
+											<li><a href="#link" >가정간호소개</a></li>
 											<li><a href="#link">대상자 및 주요내용</a></li>
 											<li><a href="#link">비용 및 이용방법</a></li>
 											<li><a href="#link">위치 및 연락처</a></li>
 										</ul>
 									</div>
 								</li>
-								<li><a href="#link">외래진료안내</a></li>
-								<li><a href="#link">입원진료안내</a></li>
-								<li><a href="#link">응급진료안내</a></li>
-								<li><a href="#link">가정간호안내</a></li>
-								<li><a href="#link">증명서발급안내</a></li>
+								<li><a href="#link" class="has-depth">증명서발급안내</a>
+									<div class="gnb3-wrap">
+										<ul class="gnb-3depth">
+											<li><a href="#link" >온라인발급안내</a></li>
+											<li><a href="#link">오프라인발급안내</a></li>
+										</ul>
+									</div>
+								</li>
 							</ul>
 						</div>
 						<div class="gnb2-wrap">
@@ -134,9 +172,11 @@
 						<li class="open-info team"><span>Teamwork</span></li>
 					</ul>
 					<div class="open-info-tel">
-						<span class="small">대표전화</span>
-						032-890-2114<br>
-						<span class="small2">진료예약</span>032-890-2000
+						<ul>
+							<li class="tel-smalltext">대표전화</li>
+							<li>032-890-2114</li>
+							<li><span class="small2">진료예약</span>032-890-2000</li>
+						</ul>
 					</div>
 				</div>
 			</div>

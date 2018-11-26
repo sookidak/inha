@@ -56,16 +56,18 @@
 .quickbtn-my:before{content:'';display:inline-block;width:24px;height:24px;background:url('../img/icon_header.png') -120px top no-repeat;margin-right:10px;vertical-align: middle}
 
 /* header - 열린부분 */
-.opensection-wrap{position:absolute;left:0;top:71px;right:0;background:#fff;z-index:15;}
+.opensection-wrap.active{display:block;}
+.opensection-wrap{position:absolute;left:0;top:71px;right:0;background:#fff;z-index:15;display:none;}
 .subnav-wrap .common-layout{padding-left:52px;}
 .opensection-bottom{background: #eef5fb;height:162px;border-top:1px solid #e8e8e8}
 .gnb2-wrap{position:relative;float:left;width:172px;height:348px;border-right:1px solid #e8e8e8;padding-top:32px;}
 .gnb-2depth{font-size:16px;color:#777}
 .gnb-2depth>li> a{line-height:36px;display:block;padding-left:20px;position: relative;}
 .gnb-2depth> li> a:hover,.gnb-2depth >li>a.active{background:#0770bb;color:#fff;font-family: 'NotoKrM'}
-.gnb-2depth >li >a.has-depth.active:after{content:'';display:inline-block;position:absolute;right:10px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url('../img/icon_header.png') 0 -120px no-repeat;z-index:100;}
+.gnb-2depth> li> a:hover+.gnb3-wrap,.gnb-2depth >li>a.active+.gnb3-wrap{display:block;}
+.gnb-2depth >li >a.has-depth:hover:after,.gnb-2depth >li >a.has-depth.active:after{content:'';display:inline-block;position:absolute;right:10px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url('../img/icon_header.png') 0 -120px no-repeat;z-index:100;}
 
-.gnb3-wrap{position:absolute;left:171px;top:-1px;bottom:-1px;right:-1px;padding-top:30px;background:#0770bb;width:172px;z-index:10;color:#fff;padding-left:20px;}
+.gnb3-wrap{position:absolute;left:171px;top:-1px;bottom:-1px;right:-1px;padding-top:30px;background:#0770bb;width:172px;z-index:10;color:#fff;padding-left:20px;display:none;}
 .gnb-3depth li a{font-size:16px;color:#fff;line-height:36px;font-family: 'NotoKrDL';}
 .gnb-3depth li a:hover,.gnb-3depth li a.active{border-bottom:1px solid #fff;}
 
@@ -73,14 +75,14 @@
 .qbanner-title{text-align: left;font-size:18px;color:#000;font-family: 'NotoKrDL';}
 
 
-.opensection-bottom .common-layout{padding-top:40px;}
-.open-info-text{position:relative;float:left;font-size:22px;color:#333;font-family:'NotoKrR';line-height:37px;letter-spacing:-0.07em;padding-right:28px;}
+.opensection-bottom .common-layout{padding-top:38px;}
+.open-info-text{position:relative;float:left;font-size:22px;color:#333;font-family:'NotoKrR';line-height:37px;letter-spacing:-0.07em;padding-right:28px;margin-top:4px;}
 .open-info-text:after{content:'';position:absolute;right:-4px;top:50%;margin-top:-4px; display:inline-block;width:8px;height:8px;background: #cbcdd2;border-radius:8px;}
 
 .open-info-list{vertical-align: bottom;float:left;}
-.open-info-list li{position:relative;margin-right:100px;display:table-cell;text-align:center;vertical-align: bottom;height:91px;width:172px;}
+.open-info-list li{position:relative;margin-right:100px;display:table-cell;text-align:center;vertical-align: bottom;height:87px;width:172px;}
 .open-info-list li:last-child{margin-right:0;}
-.open-info:before{content:'';display:inline-block;background: url(../img/icon_header.png) no-repeat;margin-bottom:9px;}
+.open-info:before{content:'';display:inline-block;background: url(../img/icon_header.png) no-repeat;margin-bottom:5px;}
 .open-info.trust:before{background-position:-180px 0;width:64px;height:65px;}
 .open-info.tech:before{background-position:-180px -100px;width:60px;height:59px;}
 .open-info.team:before{background-position:-180px -200px;width:70px;height:49px;}
@@ -90,8 +92,9 @@
 .open-info.tech:after{content:'';position:absolute;right:-4px;top:50%;margin-top:-4px; display:inline-block;width:8px;height:8px;background: #cbcdd2;border-radius:8px;}
 
 .open-info-tel{float:right;font-size:22px;color:#000;text-align:right;width:200px;font-family: 'NotoKrR';}
-.open-info-tel .small{font-size:14px;color:#777;display:block;margin-bottom:10px;}
-.open-info-tel .small2{font-size:14px;color:#777;margin-right:10px;}
+.open-info-tel .tel-smalltext{font-size:14px;color:#777;display:block;margin-bottom:10px;letter-spacing:-0.06em;}
+.open-info-tel .small2{font-size:14px;color:#777;margin-right:10px;letter-spacing:-0.06em;display:inline-block;vertical-align: middle;margin-top:-2px;}
+.open-info-tel li{margin-bottom:15px;}
 
 /* header-loaction */
 .location-wrap{height:60px;background: #3d4044;}
