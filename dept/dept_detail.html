@@ -4,11 +4,377 @@
 <!-- container -->
 <section class="container" id="container">
 	<div class="pagetitle-wrap">
-		<h1 class="title-style1">진료과-상세</h1>
+		<h1 class="title-style1">가정의학과</h1>
 	</div>
 	<div class="contents">
-	
+		<!-- tab -->
+		<div class="tab-wrap">
+			<div role="tablist" class="tablist-type1">
+				<a id="info-anchor" href="#info" class="active" role="tab" aria-selected="true">소개</a>
+				<a id="doctors-anchor" href="#doctors" role="tab" aria-selected="false">의료진</a>
+				<a id="time-anchor" href="#time" role="tab" aria-selected="false">진료시간표</a>
+				<a id="hinfo-anchor"href="#health" role="tab" aria-selected="false">건강정보</a>
+				<a id="news-anchor" href="#news" role="tab" aria-selected="false">언론소식</a>
+				<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
+				<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
+				<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
+			</div>			
+			<div class="scroll-btn" style="display: block;">
+				<button type="button" class="scroll-left"><span class="offscreen">탭메뉴 스트롤 왼쪽으로 이동</span></button>
+				<button type="button" class="scroll-right"><span class="offscreen">탭메뉴 스트롤 오른쪽으로 이동</span></button>
+			</div>
+			<!-- 소개 화면 -->
+			<div id="info" tabindex="0" role="tabpanel" aria-labelledby="info-anchor" hidden>
+				<div class="prg-cont">
+					<p class="cont-text-type1">가정의학은 연령, 성별, 질병의 종류에 구애됨이 없이 가족을 대상으로 지속적이고 포괄적인 의료를 제공하는 학문입니다. 수많은 전문 과목으로 지나치게 세분화된 현대 의료는 환자를 하나의 인간이 아닌 각각의 장기 수준으로 다루는 경향을 띄어, 전인적인 접근을 해야 하는 의료가 점점 비인간화되고 있습니다. 뿐만 아니라 이러한 경향과 더불어 의료비가 기하급수적으로 상승하는 등 많은 부작용이 초래 되어왔으며 이러한 역작용을 근본적으로 해결하기 위한 방안으로 생겨나게 된 의료의 새로운 분야가 바로 가정의학입니다.</p>
+					<p class="cont-text-type1"> 가정의학(family medicine)은 연령, 성별, 질병의 종류에 구애됨이 없이 가족을 대상으로 지속적이고 포괄적인 의료를 제공하는 학문입니다. 지속적 의료란 환자와 의사의 관계에서 시간적인 관계를 의미하며, 환자와 의사 또는 가족과 의사가 아플 때나 건강할 때나 언제든지 건강상의 문제점에 대해서는 지속적인 책임을 갖는다는 의미와, 질병의 자연사에 대하여 의사는 병이 다 나을 때까지 계속적인 책임을 진다는 개념을 포함합니다 포괄적 의료란 의사들이 환자 진료시 치료 의학적인 측면뿐 아니라 예방의학, 재활의학적인 방법으로도 접근하여 건강 증진과 건강을 유지하게 하는 의료와 기타 임상 각과의 영역을 범위로 하는 광범위한 의료라는 의미를 내포합니다. .</p>
+					<p class="cont-text-type1">포괄적 의료란 의사들이 환자 진료시 치료 의학적인 측면뿐 아니라 예방의학, 재활의학적인 방법으로도 접근하여 건강 증진과 건강을 유지하게 하는 의료와 기타 임상 각과의 영역을 범위로 하는 광범위한 의료라는 의미를 내포합니다.</p>
+				</div>
+				<div class="prg-wrap">
+					<div class="prg-left"><h1 class="prg-title">진료분야</h1></div>
+					<div class="prg-right">
+						<div class="prg-cont">
+							<ul class="list-type1">
+								<li>포괄적인 진료</li>
+								<li>가족 단위의 지속적인 건강관리</li>
+								<li>치료 중 진찰 및 치료 후 진찰 </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="prg-wrap">
+					<div class="prg-left"><h1 class="prg-title">클리닉</h1></div>
+					<div class="prg-right">
+						<div class="prg-cont">
+							<ul class="list-type1">
+								<li><a href="" class="active-type1">가족 건강 및 금연 클리닉</a></li>
+								<li><a href="" class="active-type1">노인병 및 갱년기 클리닉</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //소개 화면  -->
+			<!-- 의료진 화면 -->
+			<div id="doctors" tabindex="0" role="tabpanel" aria-labelledby="doctors-anchor" hidden>
+				<ul class="doc-list">
+					<!-- 의료진 롤링 -->
+					<li class="doc-box">
+						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+						<p class="name">김대혁</p>
+						<p class="text01">두근거림, 실신, 호흡곤란, 흉통,</p>
+						<p class="text02">“비만센터(목요일 10시부터) 진료합니다.”</p>
+						<button type="button" class="btn color04">진료예약</button>
+						<button type="button" class="mydoc active"><span class="offscreen">나의 의료진 선택하기</span></button>	
+					</li>					
+					<!-- 의료진 롤링 -->
+					<!-- 나의 의료진 선택시 class active 추가 -->
+					<!-- 의료진 롤링 -->
+					<li class="doc-box">
+						<img src="../img/doctor_none.jpg" alt="김대혁 의사 사진" class="doc_photo" />
+						<p class="name">일반의료진</p>
+						<p class="text01">두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성…</p>
+						<p class="text02">“비만센터(목요일 10시부터) 진료합니다. <br/>“비만센터(목요일 10시부터) 진료합니다.“비만센터(목요일 10시부터) 진료합니다.“비만센터(목요일 10시부터) 진료합니다.</p>
+						<button type="button" class="btn color04">진료예약</button>
+						<button type="button" class="mydoc"><span class="offscreen">나의 의료진 선택완료</span></button>	
+					</li>					
+					<!-- 의료진 롤링 -->
+					<!-- 의료진 롤링 -->
+					<li class="doc-box">
+						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+						<p class="name">김대혁</p>
+						<p class="text01">두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성, 두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성</p>
+						<p class="text02">“비만센터(목요일 10시부터) 진료합니다.”<br/>“비만센터(목요일 10시부터) 진료합니다.”</p>
+						<button type="button" class="btn color04">진료예약</button>
+						<button type="button" class="mydoc active"><span class="offscreen">나의 의료진 선택하기</span></button>	
+					</li>					
+					<!-- 의료진 롤링 -->
+					<!-- 나의 의료진 선택시 class active 추가 -->
+					<!-- 의료진 롤링 -->
+					<li class="doc-box">
+						<img src="../img/doctor_none.jpg" alt="김대혁 의사 사진" class="doc_photo" />
+						<p class="name">일반의료진</p>
+						<p class="text01">두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성…</p>
+						<p class="text02">“비만센터(목요일 10시부터) 진료합니다. <br/>“비만센터(목요일 10시부터) 진료합니다.“비만센터(목요일 10시부터) 진료합니다.“비만센터(목요일 10시부터) 진료합니다.</p>
+						<button type="button" class="btn color04">진료예약</button>
+						<button type="button" class="mydoc"><span class="offscreen">나의 의료진 선택완료</span></button>	
+					</li>					
+					<!-- 의료진 롤링 -->
+					<!-- 의료진 롤링 -->
+					<li class="doc-box">
+						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+						<p class="name">김대혁</p>
+						<p class="text01">두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성, 두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성</p>
+						<p class="text02">“비만센터(목요일 10시부터) 진료합니다.”<br/>“비만센터(목요일 10시부터) 진료합니다.”</p>
+						<button type="button" class="btn color04">진료예약</button>
+						<button type="button" class="mydoc active"><span class="offscreen">나의 의료진 선택하기</span></button>	
+					</li>					
+					<!-- 의료진 롤링 -->
+					<!-- 나의 의료진 선택시 class active 추가 -->
+					<!-- 의료진 롤링 -->
+					<li class="doc-box">
+						<img src="../img/doctor_none.jpg" alt="김대혁 의사 사진" class="doc_photo" />
+						<p class="name">일반의료진</p>
+						<p class="text01">두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성…</p>
+						<p class="text02">“비만센터(목요일 10시부터) 진료합니다. <br/>“비만센터(목요일 10시부터) 진료합니다.“비만센터(목요일 10시부터) 진료합니다.“비만센터(목요일 10시부터) 진료합니다.</p>
+						<button type="button" class="btn color04">진료예약</button>
+						<button type="button" class="mydoc"><span class="offscreen">나의 의료진 선택완료</span></button>	
+					</li>					
+					<!-- 의료진 롤링 -->
+					<!-- 의료진 롤링 -->
+					<li class="doc-box">
+						<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+						<p class="name">김대혁</p>
+						<p class="text01">두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성, 두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성</p>
+						<p class="text02">“비만센터(목요일 10시부터) 진료합니다.”<br/>“비만센터(목요일 10시부터) 진료합니다.”</p>
+						<button type="button" class="btn color04">진료예약</button>
+						<button type="button" class="mydoc active"><span class="offscreen">나의 의료진 선택하기</span></button>	
+					</li>					
+					<!-- 의료진 롤링 -->
+					<!-- 나의 의료진 선택시 class active 추가 -->
+					<!-- 의료진 롤링 -->
+					<li class="doc-box">
+						<img src="../img/doctor_none.jpg" alt="김대혁 의사 사진" class="doc_photo" />
+						<p class="name">일반의료진</p>
+						<p class="text01">두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성…</p>
+						<p class="text02">“비만센터(목요일 10시부터) 진료합니다. <br/>“비만센터(목요일 10시부터) 진료합니다.“비만센터(목요일 10시부터) 진료합니다.“비만센터(목요일 10시부터) 진료합니다.</p>
+						<button type="button" class="btn color04">진료예약</button>
+						<button type="button" class="mydoc"><span class="offscreen">나의 의료진 선택완료</span></button>	
+					</li>					
+					<!-- 의료진 롤링 -->
+				</ul>
+			</div>					
+			<!-- // 의료진 화면 -->	
+			<!-- 진료 시간표 화면 -->
+			<div id="time" tabindex="0" role="tabpanel" aria-labelledby="time-anchor">
+				<!-- 진료 시간표 화면 기본 -->
+				<p class="text-style6">
+					가정의학과 의료진의 진료시간표입니다.<br/>
+					의료진별 실제 진료시간은 예약 시 변동될 수 있으니 참고해주시기 바랍니다.
+					<span class="floatR time-info"><span class="dept-icon">●</span>진료과 <span class="center-icon">★</span>센터</span>
+				</p>
+
+				<table class="table table-type1 dept-time marT20">	  
+					<caption><span class="offscreen">Type1</span></caption>	  
+					<colgroup>	    
+						<col style="width:180px"/>							
+						<col style="width:450px"/>	    
+						<col style=""/> 			    
+						<col style=""/> 				    
+						<col style=""/> 				    
+						<col style=""/> 				    
+						<col style=""/> 				    
+						<col style=""/>				    
+						<col style=""/> 						
+						<col style="width:125px"/>	 				
+					</colgroup>	  
+					<thead>
+						<tr>
+							<th rowspan="2">의료진</th>
+							<th rowspan="2">전문분야 및 특이사항</th>
+							<th colspan="7">진료일정</th>
+							<th rowspan="2">예약</th>
+						</tr>
+						<tr>
+							<th>구분</th>
+							<th>월</th>
+							<th>화</th>
+							<th>수</th>
+							<th>목</th>
+							<th>금</th>
+							<th>토</th>
+						</tr>
+					</thead>	  
+					<tbody>
+						<tr>
+							<td rowspan="2">
+								<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+								<p class="name">김대혁</p>
+							</td>
+							<td rowspan="2">
+								<p class="text01">두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 상심실성 빈맥, 심실빈맥, 방실전도장애,    동기능부전증 협심증</p>
+								<p class="text02">비만센터(목요일 10시부터) 진료합니다</p>
+							</td>
+							<td>오전</td>
+							<td><span class="center-icon">★<span class="offscreen">센터</span></span></td>
+							<td><span class="dept-icon">●<span class="offscreen">진료과</span></span></td>
+							<td>　</td>
+							<td>　</td>
+							<td><span class="dept-icon">●<span class="offscreen">진료과</span></span></td>
+							<td>　</td>
+							<td rowspan="2"><button type="button" class="btn res">진료예약</button>　</td>
+						</tr>
+						<tr>
+							<td>오후</td>
+							<td>　</td>
+							<td><span class="dept-icon">●<span class="offscreen">진료과</span></span></td>
+							<td>　</td>
+							<td><span class="dept-icon">●<span class="offscreen">진료과</span></span></td>
+							<td>　</td>
+							<td>　</td>
+						</tr>
+						<tr>
+							<td rowspan="2">
+								<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+								<p class="name">김대혁</p>
+							</td>
+							<td rowspan="2">
+								<p class="text01">경련, 발작, 의식소실, 불면증, 코골이, 수면 무호흡, 하지불안 증상</p>
+								<p class="text02">2층 뇌신경센터 진료</p>
+							</td>
+							<td>오전</td>
+							<td><span class="center-icon">★<span class="offscreen">센터</span></span></td>
+							<td><span class="dept-icon">●<span class="offscreen">진료과</span></span></td>
+							<td><span class="dept-icon">●<span class="offscreen">진료과</span></span></td>
+							<td><span class="dept-icon">●<span class="offscreen">진료과</span></span></td>
+							<td><span class="dept-icon">●<span class="offscreen">진료과</span></span></td>
+							<td>　</td>
+							<td rowspan="2"><button type="button" class="btn res">진료예약</button>　</td>
+						</tr>
+						<tr>
+							<td>오후</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td><span class="center-icon">★<span class="offscreen">센터</span></span></td>
+							<td>　</td>
+							<td>　</td>
+						</tr>
+					</table>
+				</tbody>	
+			</table>
+			<div class="btn-wrap marT50">
+				<button type="button" class="btn btn-l color02">진료시간표 수정</button>	
+			</div>
+			<!-- // 진료 시간표 화면 기본 -->
+			<!-- 진료시간표 수정 화면 -->
+			<p class="text-style6">
+				의료진의 진료시간표 수정화면입니다.<br/>
+				전문분야 변경 및 의료진 추가/삭제는 관리자에 요청해주시기 바랍니다.
+				<span class="floatR time-info"><span class="dept-icon">●</span>진료과 <span class="center-icon">★</span>센터</span>
+			</p>
+
+			<table class="table table-type1 dept-time marT20">	  
+				<caption><span class="offscreen">Type1</span></caption>	  
+				<colgroup>	    
+					<col style="width:180px"/>							
+					<col style="width:160px"/>	    
+					<col style=""/> 			    
+					<col style=""/> 				    
+					<col style=""/> 				    
+					<col style=""/> 				    
+					<col style=""/> 				    
+					<col style=""/>				    
+					<col style=""/> 						
+					<col style="width:410px"/>	 				
+				</colgroup>	  
+				<thead>
+					<tr>
+						<th rowspan="2">의료진</th>
+						<th rowspan="2">온라인 예약여부</th>
+						<th colspan="7">진료일정</th>
+						<th rowspan="2">특이사항</th>
+					</tr>
+					<tr>
+						<th>구분</th>
+						<th>월</th>
+						<th>화</th>
+						<th>수</th>
+						<th>목</th>
+						<th>금</th>
+						<th>토</th>
+					</tr>
+				</thead>	  
+				<tbody>
+					<tr>
+						<td rowspan="2">
+							<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+							<p class="name">김대혁</p>
+						</td>
+						<td rowspan="2">
+							<div class="radio">
+								<input type="radio" id="radio-a1" name="select1"  value="Y" aria-checked=”true” checked>
+								<label for="radio-a1" >Y</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="radio-b1" name="select1"  value="N" aria-checked=”false”>
+								<label for="radio-b1" >N</label>
+							</div>
+						</td>
+						<td>오전</td>
+						<td><label><input type="text" maxlength="1" id="" class="center-icon" value="★" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="dept-icon"  value="●" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="dept-icon"  value="●" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td rowspan="2"><label><textarea>비만센터(목요일 10시부터) 진료합니다</textarea></label></td>
+					</tr>
+					<tr>
+						<td>오후</td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="dept-icon"  value="●" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="dept-icon"  value="●" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+					</tr>
+					<tr>
+						<td rowspan="2">
+							<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+							<p class="name">김대혁</p>
+						</td>
+						<td rowspan="2">
+							<div class="radio">
+								<input type="radio" id="radio-a2" name="select2"  value="Y" aria-checked=”true” checked>
+								<label for="radio-a2" >Y</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="radio-b2" name="select2"  value="N" aria-checked=”false”>
+								<label for="radio-b2" >N</label>
+							</div>
+						</td>
+						<td>오전</td>
+						<td><label><input type="text" maxlength="1" id="" class="center-icon" value="★" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="dept-icon"  value="●" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="dept-icon"  value="●" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="dept-icon"  value="●" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="dept-icon"  value="●" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td rowspan="2"><label><textarea>비만센터(목요일 10시부터) 진료합니다</textarea></label></td>
+					</tr>
+					<tr>
+						<td>오후</td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" class="center-icon" value="★" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+						<td><label><input type="text" maxlength="1" id="" /></label></td>
+					</tr>
+				</table>
+			</tbody>	
+		</table>
+		<div class="btn-wrap marT50">
+			<button type="button" class="btn btn-l color02">저장</button>	
+			<button type="button" class="btn btn-l color03">취소</button>
+		</div>
+		<!-- //진료시간표 수정 화면 -->
 	</div>
+	<!-- //진료 시간표 화면  -->
+	<!-- 건강정보 화면-->
+	<div id="health" tabindex="0" role="tabpanel" aria-labelledby="health-anchor" >
+		건강정보
+	</div>
+	<!-- // 건강정보 화면-->
+	<!-- 언론소식 화면 -->
+	<div id="news" tabindex="0" role="tabpanel" aria-labelledby="news-anchor">
+		언론소식
+	</div>
+	<!-- // 언론소식 화면 -->
+</div>
+<!-- tab -->
+</div>
 </section>
 <!-- //container -->
 @@include('../inc/footer.html')

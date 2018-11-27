@@ -205,17 +205,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 .btn-wrap button:first-child {margin-left: 0px}
 
 
+
 /* tab */
 .tab-wrap{position:relative;}
-.tablist-type1{width:100%;display:table;table-layout: fixed;border-bottom:2px solid #0770bb;margin-bottom:60px}
-.tablist-type1 a{display:table-cell;text-align:center;height:60px;color:#000;font-size:18px}
+.tablist-type1{width:1180px;display:block;table-layout: fixed;margin-bottom:80px;height: 60px; overflow-x: hidden; overflow-y:hidden; white-space:nowrap; letter-spacing: -4px; }
+.tablist-type1 a{display: inline-block;text-align:center;height:60px;color:#000;font-size:18px; line-height: 60px; padding:0 55px; min-width:196px; border-bottom:2px solid #0770bb; letter-spacing: -1px; }
 .tablist-type1 a.active{position:relative;border-left:2px solid #0770bb;border-top:2px solid #0770bb;border-right:2px solid #0770bb;color:#0770bb;font-size:20px;font-family:'NotoKrR',sans-serif;border-radius:10px 0 0 0;}
 .tablist-type1 a.active:after{content:'';display:block;height:2px;position:absolute;left:0;bottom:-2px;right:0;background:#fff;}
+
 
 .tablist-type2:after{content:'';display:block;clear:both;}
 .tablist-type2 a{float:left;padding:15px 20px;color:#777;font-size:18px;border-bottom:1px solid #ddd}
 .tablist-type2 a.active{color:#0770bb;border-bottom:2px solid #0770bb;font-family:'NotoKrR',sans-serif;}
 
+.scroll-btn{display: none; height: 0}
+.scroll-btn button{width: 40px; height: 40px; background: url(../img/icon_contents.png) no-repeat ;position: relative;}
+.scroll-btn button.scroll-left{background-position:-45px -81px; position: absolute;top: 10px; left: -60px; }
+.scroll-btn button.scroll-right{background-position:0px -81px;position: absolute;top: 10px; right: -60px;  }
 
 /* checkbox */
 .checkbox{position:relative;display: inline-block;vertical-align: middle;margin-right:10px;}
@@ -327,6 +333,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 .text-style3{font-family: 'NotoKrL'; font-size: 14px; color: #0770bb;font-weight: normal;}
 .text-style4{font-family: 'NotoKrL'; font-size: 14px; color: #777;font-weight: normal;}
 .text-style5{font-family: 'NotoKrL'; font-size: 18px; color: #777;font-weight: normal;}
+.text-style6{font-family: 'NotoKrR'; font-size: 16px; color: #000;font-weight: normal; line-height: 20px}
 .text-nec{vertical-align: bottom; color: #199da3; font-size: 14px;font-family: 'NotoKrR'; float: right; display: inline-block; position: relative;top: 5px; }
 .text-style1.lineH{line-height: 24px;}
 
@@ -340,7 +347,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 
 /* table */
 .table {border-collapse:collapse !important;  table-layout: fixed; width: 100%}
-.table th{font-size: 16px; font-family: 'NotoKrR'; font-weight: normal; color: #000000 ; padding: 0 20px ;text-align:center; background-color: #f6f6f6; height: 70px; border-right: 0; border-left: 1px solid #eee; border-top: 2px solid #bbb; border-bottom: 1px solid #ddd;} 
+.table th{font-size: 16px; font-family: 'NotoKrR'; font-weight: normal; color: #000000 ; padding: 0 20px ;text-align:center; background-color: #f6f6f6; height: 70px; border-right: 0; border-left: 1px solid #eee; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;} 
 .table th:first-child, .table td:first-child{ border-left: 0 }
 .table th.line{border-right: 1px solid #ddd;}
 .table td{font-size: 14px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px;}
@@ -348,6 +355,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 /* table - table-type1 */
 .table.table-type1 tbody th{  border-top: 0;border-bottom: 1px solid #eee;  }
 .table.table-type1 tbody th:first-child{ border-right: 1px solid #ddd; }
+.table.table-type1 thead tr:first-child th{border-top: 2px solid #bbb;}
 
 /* table -  table-type2 */
 .table.table-type2{border-collapse:collapse !important;  }
