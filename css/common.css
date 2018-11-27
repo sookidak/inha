@@ -8,8 +8,8 @@
 .skip a:focus{top:0;left:0;}
 
 /* 공통 너비 layout */
-.common-layout,
-.container{position:relative;width:1180px;margin:0 auto}
+.common-layout{position:relative;width:1180px;margin:0 auto}
+.container{position:relative;}
 .common-layout:after,
 .container:after{content:'';display:block;clear:both;}
 
@@ -114,11 +114,11 @@
 .location-nav-wrap .location-1.active +.location-nav{display:inline-block;}
 
 /* container */
-.container{padding-top:100px;}
-.pagetitle-wrap{text-align: center;margin-bottom:60px;}
+.container{}
+.pagetitle-wrap{text-align: center;width:1180px;margin:0 auto 60px; padding-top:100px;}
 .pagetitle-wrap .title-style1{}
 .pagetitle-wrap .text-style1{margin-top:30px;}
-.contents{margin-bottom:100px; position: relative;}
+.contents{ position: relative;width:1180px;margin:0 auto 100px}
 
 /* footer */
 .footer{background:#3d4044;}
@@ -250,7 +250,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 .switch-button label{position:relative;border:1px solid #199da3;text-align: center;display: inline-block;float:left;background: #fff;color:#199da3;font-size: 16px;height:40px;width:70px;line-height:40px;cursor: pointer}
 .switch-button input[type=radio]:checked +label{background: #199da3;color:#fff;}
 .switch-button input[type=radio]:disabled +label{background: #f8f8f8;color:#777;border-color:#eee;}
-.switch-button:first-child label{border-radius:3px 0 0 3px}
+.switch-button:first-child label{border-radius:3px 0 0 3px; border-right: 0}
 .switch-button:last-child label{border-radius:0 3px 3px 0}
 
 /* 문단 단위 */
@@ -326,6 +326,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', end
 .text-style2{font-family: 'NotoKrL'; font-size: 16px; color: #333;font-weight: normal;}
 .text-style3{font-family: 'NotoKrL'; font-size: 14px; color: #0770bb;font-weight: normal;}
 .text-style4{font-family: 'NotoKrL'; font-size: 14px; color: #777;font-weight: normal;}
+.text-style5{font-family: 'NotoKrL'; font-size: 18px; color: #777;font-weight: normal;}
 .text-nec{vertical-align: bottom; color: #199da3; font-size: 14px;font-family: 'NotoKrR'; float: right; display: inline-block; position: relative;top: 5px; }
 .text-style1.lineH{line-height: 24px;}
 
@@ -532,7 +533,7 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
   }
 
 /* error */
-.error-box{width: 980px; margin: 0 auto 50px; padding-bottom: 70px; border:1px solid #ddd; border-radius: 8px}
+.error-box{width: 980px; margin: 100px auto 50px; padding-bottom: 70px; border:1px solid #ddd; border-radius: 8px}
 .error-box .box-top-logo{background: url(../img/err_logo.png) no-repeat center 16px #ddd; height: 60px; border-radius: 6px 6px 0 0}
 .error-box .err-icon{width:152px; height: 145px;  background: url(../img/icon_err.png) no-repeat -1px -2px ;margin: 56px auto 0; }
 .error-box .err-icon.err-icon-bg2{background-position:-1px -174px }
@@ -576,6 +577,7 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
 .marT50{margin-top: 50px !important}
 .marT60{margin-top: 60px !important}
 .marT80{margin-top: 80px !important}
+.marT100{margin-top: 100px !important}
 .marL5{margin-left: 5px !important}
 .marL10{margin-left: 10px !important}
 .marL20{margin-left: 20px !important}

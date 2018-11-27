@@ -2,7 +2,7 @@
 
 
 /* login 로그인 */
-.login-box{width: 980px; height: 620px; margin:0 auto;  border:1px solid #dddddd; border-radius: 8px; text-align: center;letter-spacing:-0.07em;}
+.login-box{width: 980px; height: 620px; margin:100px auto 0;  border:1px solid #dddddd; border-radius: 8px; text-align: center;letter-spacing:-0.07em;}
 .login-box p{text-align: center;}
 .login-box .title-style2{ margin-top: 95px;}
 .login-box .login-text02{color: #777; font-size: 18px; margin-top: 20px;}
@@ -136,7 +136,7 @@
 .res-wrap .res-docter .doc-box .doc-list:after{content:'';display: block;clear: both;}
 .res-wrap .res-docter .doc-box .doc-list.active{border:2px solid #0770bb;}
 .res-wrap .res-docter .doc-box .doc-list .doc_photo{ float: left; margin-top: 40px; margin-left: 20px; }
-.res-wrap .res-docter .doc-box .doc-list .text-wrap{padding-top: 40px; width: 345px; float: right;}
+.res-wrap .res-docter .doc-box .doc-list .text-wrap{padding-top: 40px; margin-right: 20px;width: 345px; float: right;}
 .res-wrap .res-docter .doc-box .doc-list .text-wrap .name{font-size: 22px; color: #000; font-family:'notoKrM',sans-serif;margin-bottom: 20px;}
 .res-wrap .res-docter .doc-box .doc-list .text-wrap > div{margin-bottom: 20px;}
 .res-wrap .res-docter .doc-box .doc-list .text-wrap > div:after{content:'';display: block;clear: both;}
@@ -174,3 +174,55 @@
 .res-wrap .res-data-info .info-box dt{ width: 100px; height: 46px; float: left; padding-left: 10px; position: relative;  }
 .res-wrap .res-data-info .info-box dt:before{content:'';display:inline-block;position:absolute;left:0;top:21px;width:4px;height:4px;background:#aaa;}
 .res-wrap .res-data-info .info-box dd{height: 46px; font-family:'notoKrM',sans-serif; width: 160px;float: right; margin-right: 10px; line-height: 21px }
+
+/* dept  - 진료과/의료진 - 진료과  */
+
+.search-wrap{ height: 422px; width: 100%; background: url(../img/dept_bg.jpg) repeat-x top center }
+.search-wrap .search-cont{width: 1180px; margin: 0 auto;}
+.search-wrap .search-cont .title{font-size: 34px; line-height: 46px; color: #000; margin: 0 auto 45px; padding-top: 95px; text-align: center; letter-spacing: -1px; }
+.search-wrap .search-cont .search{ background: #fff; opacity: 0.8; border-radius: 12px 0 0 0 ; height: 80px; position: relative; }
+.search-wrap .search-cont .search input{ background: transparent; border:0; font-size: 24px; line-height: 80px;height: 80px; vertical-align: middle; padding-left: 30px; width: 1070px  }
+.search-wrap .search-cont .search button{vertical-align: middle;height: 80px; width: 100px ; float: right; background: url(../img/icon_dept.png) no-repeat 22px 18px transparent }
+.search-wrap .search-cont .btn-list{ margin: 20px auto 0 ; text-align: center;}
+.search-wrap .search-cont .btn-list li{display: inline-block;}
+.search-wrap .search-cont .btn-list li button{width: 35px; height: 35px; border-radius: 35px; background: #fff; font-size: 16px; color: #777; margin-left: 10px;}
+.search-wrap .search-cont .btn-list li button.all{ width: 66px; color:#fff ; background: #199da3; margin-left: 0px; }
+.search-wrap .search-cont .btn-list li button.etc{width: 103px; }
+
+
+.dept-list{ padding-top: 60px;  }
+.dept-list .list{ width: 280px; height: 250px; text-align: center;display: inline-block; margin-bottom: 50px; margin-left: 17px; position: relative; }
+.dept-list .list:nth-child(4n+1){ margin-left:0px;}
+.dept-list .list .icon{width: 180px; height: 180px; border-radius: 90px; border: 2px solid #dddddd; margin: 0 auto;  background: url(../img/icon_dept_list.png) no-repeat 0px 0px transparent}
+.dept-list .list .over-icon{ width: 180px; height: 180px; border-radius: 90px; margin: 0 auto; position: absolute; top: 0; left:50px; padding:38px 36px;background: #199da3; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #0b79b6 0%, #0b79b6 31%, #199da3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #0b79b6 0%,#0b79b6 31%,#199da3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #0b79b6 0%,#0b79b6 31%,#199da3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b79b6', endColorstr='#199da3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.dept-list .list .over-icon li{width: 45px; height: 45px; display: inline-block;}
+.dept-list .list .over-icon li a{width: 45px; height: 45px; display: block; background: url(../img/icon_dept.png) no-repeat  transparent; }
+.dept-list .list .over-icon li.home a{ background-position: 0px -70px; margin-right: 15px; margin-bottom: 10px  }
+.dept-list .list .over-icon li.doc a{ background-position: 0px -180px; margin-bottom: 10px }
+.dept-list .list .over-icon li.res a{ background-position: 0px -125px; margin-right: 15px;}
+.dept-list .list .over-icon li.con a{ background-position: 0px -235px}
+.dept-list .list .over-icon li.home {  margin-right: 15px; margin-bottom: 10px  }
+.dept-list .list .over-icon li.doc { margin-bottom: 10px }
+.dept-list .list .over-icon li.res {  margin-right: 15px;}
+.dept-list .list .over-icon li a span{ position: absolute; border: 1px solid #0770bb; background: #fff; font-size: 14px; color: #777; padding:5px ;display: none ; }
+.dept-list .list .over-icon li a span:before{content:'';display:inline-block;position:absolute;left:45%;top:22px;width:4px;height:10px;background: url(../img/icon_dept_arr.png) no-repeat}
+.dept-list .list .over-icon li.home a span{top: 0; left:45px;}
+.dept-list .list .over-icon li.doc a span{top: 0; left:85px;}
+.dept-list .list .over-icon li.res a span{top: 58px; left:30px;}
+.dept-list .list .over-icon li.con a span{top: 58px; left:92px;}
+.dept-list .list .text-ko{color: #333; font-size: 22px; font-family:'notoKrM',sans-serif; margin-top:20px }
+.dept-list .list .text-en{color: #777; font-size: 14px; font-family:'notoKrR',sans-serif;margin-top:10px}
+
+
+.dept-list .list .over-icon li.home a:hover{background-position: -54px -70px; }
+.dept-list .list .over-icon li.doc a:hover{background-position: -54px -180px; }
+.dept-list .list .over-icon li.res a:hover{background-position: -54px -125px; }
+.dept-list .list .over-icon li.con a:hover{background-position: -54px -235px; }
+.dept-list .list .over-icon li.home a:hover span{display: block;}
+.dept-list .list .over-icon li.doc a:hover span{display: block;}
+.dept-list .list .over-icon li.res a:hover span{display: block;}
+.dept-list .list .over-icon li.con a:hover span{display: block;}
