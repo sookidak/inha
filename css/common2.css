@@ -194,7 +194,7 @@
 .dept-list .list{ width: 280px; height: 250px; text-align: center;display: inline-block; margin-bottom: 50px; margin-left: 17px; position: relative; }
 .dept-list .list:nth-child(4n+1){ margin-left:0px;}
 .dept-list .list .icon{width: 180px; height: 180px; border-radius: 90px; border: 2px solid #dddddd; margin: 0 auto;  background: url(../img/icon_dept_list.png) no-repeat 0px 0px transparent}
-.dept-list .list .over-icon{ width: 180px; height: 180px; border-radius: 90px; margin: 0 auto; position: absolute; top: 0; left:50px; padding:38px 36px;background: #199da3; /* Old browsers */
+.dept-list .list .over-icon{display: none; width: 180px; height: 180px; border-radius: 90px; margin: 0 auto; position: absolute; top: 0; left:50px; padding:38px 36px;background: #199da3; /* Old browsers */
 background: -moz-linear-gradient(-45deg, #0b79b6 0%, #0b79b6 31%, #199da3 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(-45deg, #0b79b6 0%,#0b79b6 31%,#199da3 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #0b79b6 0%,#0b79b6 31%,#199da3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -216,8 +216,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b79b6', end
 .dept-list .list .over-icon li.con a span{top: 58px; left:92px;}
 .dept-list .list .text-ko{color: #333; font-size: 22px; font-family:'notoKrM',sans-serif; margin-top:20px }
 .dept-list .list .text-en{color: #777; font-size: 14px; font-family:'notoKrR',sans-serif;margin-top:10px}
-
-
 .dept-list .list .over-icon li.home a:hover{background-position: -54px -70px; }
 .dept-list .list .over-icon li.doc a:hover{background-position: -54px -180px; }
 .dept-list .list .over-icon li.res a:hover{background-position: -54px -125px; }
@@ -226,3 +224,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b79b6', end
 .dept-list .list .over-icon li.doc a:hover span{display: block;}
 .dept-list .list .over-icon li.res a:hover span{display: block;}
 .dept-list .list .over-icon li.con a:hover span{display: block;}
+.dept-list .list:hover .over-icon{display: block;}
