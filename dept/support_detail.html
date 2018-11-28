@@ -4,10 +4,36 @@
 <!-- container -->
 <section class="container" id="container">
 	<div class="pagetitle-wrap">
-		<h1 class="title-style1">지원부서-상세</h1>
+		<h1 class="title-style1">간호본부</h1>
 	</div>
 	<div class="contents">
-	
+		<!-- tab -->
+		<div class="tab-wrap">
+			<!-- 선택된 탭 메뉴 class active 적용 -->
+			<div role="tablist" class="tablist-type1">
+				<a id="info-anchor" href="#info" class="active" role="tab" aria-selected="true">소개</a>
+				<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
+			</div>			
+			<!-- 탭 메뉴가 6개 이상일때 조절바 메뉴 스크롤 이동 -->
+			<div class="scroll-btn">
+				<button type="button" class="scroll-left"><span class="offscreen">탭메뉴 스트롤 왼쪽으로 이동</span></button>
+				<button type="button" class="scroll-right"><span class="offscreen">탭메뉴 스트롤 오른쪽으로 이동</span></button>
+			</div>
+			<!-- 소개 화면 -->
+			<div id="info" tabindex="0" role="tabpanel" aria-labelledby="info-anchor" class="tabpanel ">
+				<div class="">editor area</div>
+				<div class="btn-wrap marT50">
+					<button type="button" class="btn color02">목록</button>	
+				</div>
+			</div>			
+			<!-- //소개 화면  -->
+			<!-- 4depth 화면-->
+			<div id="4depth" tabindex="0" role="tabpanel" aria-labelledby="4depth-anchor" class="tabpanel active">
+				4depth 내용
+			</div>
+			<!-- // 4depth 화면-->
+		</div>
+		<!-- tab -->
 	</div>
 </section>
 <!-- //container -->
