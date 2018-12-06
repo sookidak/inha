@@ -623,16 +623,6 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
 .error-box .err-banner .err-banner-btn{ display: inline-block; letter-spacing: -1px; line-height: 26px; background-color: #fff;width: 130px; height: 30px; border-radius: 30px; border:1px solid #aaa ;color: #777; font-size: 14px; margin-top:20px }
 .error-box .err-banner .err-banner-btn:hover, .error-box .err-banner .err-banner-btn:focus{background-color: #0770bb;border:1px solid #0770bb ; color: #fff;}
 
-/* 자주하는 질문 */
-.qna{font-size: 16px; line-height: 22px; border-top: 2px solid #bbbbbb; }
-.qna dt{display: block;position: relative; padding:27px 100px; color: #000;  border-bottom: 1px solid #eeeeee; cursor: pointer;}
-.qna dt:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_component.png') -70px -40px no-repeat;position: absolute;top:30px;left:30px ;}
-.qna dt:after{content:''; display: block; width:20px ;height: 11px;background:url('../img/icon_component.png') -70px -10px no-repeat;position: absolute;top:30px;right:30px ;}
-.qna dt.active{color: #0770bb;}
-.qna dt.active:after{background-position:-70px -25px}
-.qna dd{background: #f6f6f6; padding:27px 100px;color: #777 ;display: none;position: relative;border-bottom: 1px solid #eeeeee;}
-.qna dd:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_component.png') -70px -60px no-repeat;position: absolute;top:30px;left: 30px;}
-
 /* 기본 CSS */
 .textR{text-align:right !important;}
 .textC{text-align:center !important;}

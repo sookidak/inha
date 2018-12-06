@@ -113,11 +113,6 @@ $(document).ready(function() {
 	});
 
 
-
-
-
-
-
 	// 탭 갯수가 6개 이하일때 넓이 조절 이하일때 조절바 노출
 	var tapN = $tablist1.find('a').length;
 	if (tapN < 6) {
@@ -154,26 +149,20 @@ $(document).ready(function() {
 	//탭 가로 스크롤 버튼
 	$('.scroll-left').on('click keydown', function(event) {
 		scrollMove(-196);
-
 	});
 	//탭 가로 스크롤 버튼
 	$('.scroll-right').on('click keydown', function(event) {
 		scrollMove(196);
 	});
-
 	var scrollMove = function (n){
 		$('.tablist-type1').animate({scrollLeft : $('.tablist-type1').scrollLeft() + n}, 500);   
 	}
 
 
-
-
   	//자주하는 질문
   	$qna.find('dt').on('click focus keydown',function() {
   		$qna.find('dt').removeClass('active');
-  		$qna.find('dd').hide();
   		$(this).addClass('active');
-  		$(this).next('dd').slideDown("fast");
   	});
 
 
