@@ -378,11 +378,11 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .text-style2.lineH{line-height: 24px;}
 
 
-.NotoKrL {font-family: 'NotoKrL',sans-serif; }
-.NotoKrDL {font-family: 'NotoKrDL',sans-serif;}
-.NotoKrR {font-family: 'NotoKrR',sans-serif; }
-.NotoKrM {font-family: 'NotoKrM',sans-serif; }
-.NotoKrB {font-family: 'NotoKrB',sans-serif; }
+.NotoKrL {font-family: 'NotoKrL',sans-serif; font-weight: normal; }
+.NotoKrDL {font-family: 'NotoKrDL',sans-serif; font-weight: normal;}
+.NotoKrR {font-family: 'NotoKrR',sans-serif;  font-weight: normal;}
+.NotoKrM {font-family: 'NotoKrM',sans-serif; font-weight: normal; }
+.NotoKrB {font-family: 'NotoKrB',sans-serif; font-weight: normal; }
 
 
 /* table */
