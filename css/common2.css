@@ -311,8 +311,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b79b6', end
 
 /* 진료과/의료진 - 진료과 상세 - 의료진  */
 .doc-list{}
-
 .doc-list .doc-box{  width: 280px; height: 420px; border: 1px solid #dddddd; position: relative; text-align: center; display: inline-block; margin-bottom: 20px; margin-left: 17px ; vertical-align: top }
+.doc-list .doc-box a{position: relative; display: block;}
 .doc-list .doc-box:nth-child(4n+1){ margin-left:0px;}
 .doc-list .doc-box .doc_photo{width: 180px; height: 180px; margin: 20px auto 10px ; display: block;  }
 .doc-list .doc-box .dept{font-size: 20px; color: #000; height: 60px; width: 240px;  border-bottom: 1px solid #dddddd; display: table;  margin-left: 20px;line-height: 22px ; }
@@ -321,9 +321,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b79b6', end
 .doc-list .doc-box .text01{ font-size: 16px; color: #333; line-height: 20px;margin-bottom: 15px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical;word-wrap:break-word; max-height: 40px; padding: 0 20px }
 .doc-list .doc-box .text02{font-size: 14px; color: #777; line-height: 20px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical;word-wrap:break-word;  max-height: 40px;padding: 0 20px; }
 .doc-list .doc-box .btn{width: 228px; height: 50px; border-radius: 0; position: absolute;bottom: 0; left: 0;}
-.doc-list .doc-box .mydoc{width: 50px; height: 50px;background: url(../img/icon_contents.png) no-repeat 17px -121px;position: absolute;bottom: 0; right: 0;border-top: 1px solid #dddddd;}
-.doc-list .doc-box .mydoc.active{background: url(../img/icon_contents.png) no-repeat -23px -121px;}
-
+.doc-list .doc-box .mydoc{width: 50px; height: 50px;position: absolute;bottom: 0; right: 0;border-top: 1px solid #dddddd;}
+.doc-list .doc-box .mydoc > div{position:relative;display: inline-block;vertical-align: middle;width: 50px; height: 50px;}
+.doc-list .doc-box .mydoc input[type=checkbox]{position:absolute;left:0;top:0;}
+.doc-list .doc-box .mydoc label{display:inline-block;position:relative;padding-left:35px;min-width:50px;min-height:50px;line-height:25px;color:#777;}
+.doc-list .doc-box .mydoc label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:48px;height:48px;background: url(../img/icon_contents.png) no-repeat 16px -121px #fff;cursor:pointer;z-index:10;}
+.doc-list .doc-box .mydoc input[type=checkbox]:checked +label:before{background-position: -24px -121px;}
 .doc-list.style2 .doc-box{height: 468px;}
 .doc-list.style2 .doc-box .doc_photo{margin-top: 10px}
 
@@ -350,8 +353,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b79b6', end
 .docter-wrap .docter-cont .doc-time{width: 480px; position: absolute; top: 150px; right: 100px;}
 .docter-wrap .docter-cont .doc-time .dept{font-family: 'NotoKrL'; font-size: 24px; color: #000; margin-bottom: 10px; }
 .docter-wrap .docter-cont .doc-time .name{font-family: 'NotoKrM'; font-size: 65px; color: #000; margin-bottom: 45px; }
-.docter-wrap .docter-cont .doc-time .mydoc{width: 45px; height: 45px;background: url(../img/icon_contents.png) no-repeat -43px 0 ; position: absolute;top: 63px; right: 0; }
-.docter-wrap .docter-cont .doc-time .mydoc.active{ background-position: -95px 0  }
+.docter-wrap .docter-cont .doc-time .mydoc{width: 45px; height: 45px; position: absolute;top: 63px; right: 0; }
+.docter-wrap .docter-cont .doc-time .mydoc > div{position:relative;display: inline-block;vertical-align: middle;width: 50px; height: 50px;}
+.docter-wrap .docter-cont .doc-time .mydoc input[type=checkbox]{position:absolute;left:0;top:-1000px;}
+.docter-wrap .docter-cont .doc-time .mydoc label{display:inline-block;position:relative;padding-left:35px;min-width:50px;min-height:50px;line-height:25px;color:#777;}
+.docter-wrap .docter-cont .doc-time .mydoc label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:45px;height:45px;background: url(../img/icon_contents.png) no-repeat -43px 0 ;cursor:pointer;z-index:10;}
+.docter-wrap .docter-cont .doc-time .mydoc input[type=checkbox]:checked +label:before{background-position:  -95px 0}
 .docter-wrap .docter-cont .doc-time .table{ margin-top: 10px}
 .docter-wrap .docter-cont .doc-time .table th{height: 40px;background: transparent; border:0; border-bottom: 1px solid #9f9a94; border-top: 2px solid #000 ; font-family: 'NotoKrR'; font-size: 16px; color: #333;}
 .docter-wrap .docter-cont .doc-time .table td{height: 40px;background: transparent;  border:0;border-bottom: 1px solid #9f9a94; font-family: 'NotoKrR'; font-size: 16px; color: #333; padding: 0}

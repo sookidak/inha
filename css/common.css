@@ -111,7 +111,7 @@
 .location-nav li a{color:#fff;height:37px;line-height:37px;display:block;padding:0 20px;min-width:188px;}
 .location-nav li a:focus,.location-nav li a:hover{background:#515357;}
 
-.location-nav-wrap .location-1.active{color:#fff;font-family: 'NotoKrR'}
+.location-nav-wrap .location-1.active, .location-nav-wrap .location-1.on{color:#fff;font-family: 'NotoKrR'}
 .location-nav-wrap .location-1.active:after{background-position:-40px -40px;}
 .location-nav-wrap .location-1.active +.location-nav{display:inline-block;}
 
