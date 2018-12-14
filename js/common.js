@@ -84,6 +84,11 @@ $(document).ready(function() {
 		closeMenu();	
 	});
 
+	$(".lang").on('click',function(event) {
+		$(".lang-open").toggle();
+
+	});
+
 	//메뉴 - 2depth
 	$gnb2depth.on('mouseenter',function(){
 		$(this).addClass('active')

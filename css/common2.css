@@ -400,6 +400,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b79b6', end
 .header.main-style .link-unit2 li a{color:#fff;}
 .header.main-style .link-unit2 li a.link-language{border:1px solid #fff;}
 .header.main-style .link-unit2 li a.link-language:before{width:15px;height:15px;background:url(../img/icon_main.png) left top no-repeat;margin-right:5px;vertical-align: top;margin-top:5px;}
+
+.header.main-style .link-unit2 .lang-open a{color:#aaa;border:1px solid #d2d4d7;background:rgba(50,50,50,0.9); border-top:0}
+.header.main-style .link-unit2 .lang-open a:hover, .link-unit2 .lang-open a:focus{ color: #fff;background: rgba(20,20,20,0.9);}
+
+
 .header.main-style .nav-wrap{border-bottom:1px solid #ababab;background: rgba(0,0,0,0.05);}
 .header.main-style .gnb li{color:#fff;}
 .header.main-style .btn-allmenu:before{background:url('../img/icon_main.png') -60px top no-repeat}

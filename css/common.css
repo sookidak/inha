@@ -30,12 +30,20 @@
 .link-unit li:last-child:after{display:none;}
 
 .link-unit2{line-height:14px;vertical-align: top;line-height:18px;}
+.link-unit2 .hide{display: none}
 .link-unit2:after{content:'';display:block;clear:both;}
 .link-unit2 li{position:relative;float:left;vertical-align:top;padding-right:13px;}
-.link-unit2 li:last-child{padding-right:0;}
+.link-unit2 li.lang{padding-right:0;}
 .link-unit2 li a{font-family: 'NotoKrM',sans-serif;font-size:14px;color:#777;letter-spacing:-0.05em;}
 .link-unit2 li a.link-language{display:inline-block;border:1px solid #d2d4d7;min-width:62px;height:26px;text-align:center;border-radius:30px;font-family:'NotoKrB';font-size:12px;padding:0 7px 0  7px;line-height:24px;}
 .link-unit2 li a.link-language:before{content:'';display:inline-block;width:14px;height:14px;background:url(../img/icon_header.png) left -60px no-repeat;margin-right:6px;vertical-align: top;margin-top:5px;}
+.link-unit2 .lang-open{z-index:1000;position: absolute;top: 26px;right:0; width: 62px;  line-height: 24px; font-family: 'NotoKrR',sans-serif; display:none;  }
+.link-unit2 .lang-open a{color:#777; border-radius:30px;border:1px solid #d2d4d7;height:22px; line-height:22px;width: 62px; display:block;background: #fff; font-size:12px; border-top:0 }
+.link-unit2 .lang-open a:hover, .link-unit2 .lang-open a:focus{font-family: 'NotoKrM',sans-serif; color: #000;background: #f8f8f8;}
+
+
+/*로그인 후 환영인사 디자인 받고 수정 */
+.link-unit2 .greet{}
 
 /* header-gnb */
 .header{position:relative;z-index: 999;}
@@ -280,7 +288,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 /* .prg-wrap:first-child{border-top:none;} */
 .prg-wrap:last-child{padding-bottom:0;}
 .prg-wrap .prg-left{float:left;width:200px;}
-.prg-wrap .prg-title{font-size:24px;color: #000;line-height:32px;}
+.prg-wrap .prg-title{font-size:24px;color: #000;line-height:32px;font-family:'NotoKrM',sans-serif; font-weight: normal;}
 .prg-wrap .prg-title .marL{display:inline-block; padding-left:23px;}
 .prg-wrap .prg-right{float:right;width:980px;}
 .prg-cont{line-height:24px;font-size:16px;color: #333;letter-spacing:-0.068em;}
