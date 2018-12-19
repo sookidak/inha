@@ -104,7 +104,6 @@ margin-bottom:32px;
 .member-wrap .text-style1 .acc{color:#e3751c ; vertical-align: bottom;font-family:'notoKrM',sans-serif;}
 .member-wrap .text-style4.pw-reset{width: 580px; display: block; margin:10px auto 30px; line-height: 22px; position: relative; padding-left: 8px; }
 .member-wrap .text-style4.pw-reset .acc{position: absolute; top: 3px; left: 0px}
-
 /* 아이디 및 비밀번호찾기 타이틀 */
 .pagetitle-wrap.along{ margin-bottom: 30px; }
 
@@ -580,6 +579,44 @@ ul.bxslider {  list-style: none;}
 .qna dt:after{content:''; display: block; width:20px ;height: 11px;background:url('../img/icon_component.png') -70px -10px no-repeat;position: absolute;top:30px;right:30px ;}
 .qna dt.active button{color: #0770bb;}
 .qna dt.active:after{background-position:-70px -25px}
-.qna dd{background: #f6f6f6; padding:27px 100px;color: #777 ;position: relative;border-bottom: 1px solid #eeeeee;}
+.qna dd{background: #f6f6f6; padding:27px 100px;color: #777 ;position: relative;border-bottom: 1px solid #eeeeee; word-break: keep-all;}
 .qna dd:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_component.png') -70px -60px no-repeat;position: absolute;top:50%;left: 30px; transform: translateY(-50%)}
 .Accordion-panel[hidden] { display: none;}
+
+
+/* 건강의학정보 */
+.board-wrap .img-list.medi-list > li {height: 335px;}
+.board-wrap .img-list.medi-list2 > li {height: 355px;}
+.board-wrap .img-list.medi-list2 .tit p{margin-bottom: 10px; font-family: 'NotoKrM'; font-weight: normal;}
+
+/* 웹진 */
+.webzine {width: 1180px; position:relative; text-align:center;}
+.webzine > li {width: 280px; height: 415px; text-align: left; border: 1px solid #eeeeee;box-sizing:border-box; float: left; margin-left:20px; margin-bottom: 20px; }
+.webzine > li:after{content:'';display:inline-block;}
+.webzine > li:nth-child(4n+1){margin-left:0px;}
+.webzine > li:last-child{margin-bottom: 50px;}
+.webzine .thum-img{width:278px; height:370px}
+.webzine .category{margin-top: 17px; margin-left: 20px; }
+.webzine .tit{display: inline-block;margin-top: 13px; margin-left: 20px; color:#000;font-size: 16px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 240px }
+.webzine .tit .badge{margin-right: 7px; }
+.webzine .data{margin-top: 8px; margin-left: 20px;}
+.webzine .tit:hover, .board-wrap .img-list .tit:focus{text-decoration: underline; cursor: pointer; }
+
+/* 겅강정보 찜하기 */
+.mylike{width: 45px; height: 45px; position: absolute;top: 20px; right: 20px; }
+.mylike > div{position:relative;display: inline-block;vertical-align: middle;width: 50px; height: 50px;}
+.mylike input[type=checkbox]{position:absolute;left:-10000px;top:0;}
+.mylike label{display:inline-block;position:relative;padding-left:35px;min-width:50px;min-height:50px;line-height:25px;color:#777;}
+.mylike label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:45px;height:45px;background: url(../img/icon_contents.png) no-repeat -43px 0 ;cursor:pointer;z-index:10;}
+.mylike input[type=checkbox]:checked +label:before{background-position:  -95px 0}
+.title-style1 .mylike{top: 0px; right: 0px;}
+
+
+/* 나의 차트 소통센터 */
+.mychart.btn-wrap{ position: relative; top: 40px;  }
+.mychart.btn-wrap button{border-radius: 0;}
+.mychart.btn-wrap button.left{float: left;}
+.mychart.btn-wrap button.right{float: right;}
+
+
+.star{position:relative; top:3px;display:inline-block; margin-right: 2px}

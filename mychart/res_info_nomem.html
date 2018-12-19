@@ -4,10 +4,9 @@
 <!-- container -->
 <section class="container" id="container">
 	<div class="pagetitle-wrap">
-		<h1 class="title-style1">진료예약 (약관동의 및 실명인증)</h1>
+		<h1 class="title-style1">진료예약정보</h1>
 		<p class="text-style1 lineH">
-			인하대병원에서는 보다 정확한 서비스를 제공하기 위해<br/>
-			고객님의 진료예약에 대한 약관동의와 실제 진료받으시는 환자분의 실명인증을 받고 있습니다. 
+			비회원 예약정보를 조회하기 위해서는 예약하신 분의 본인인증과 실제 진료받으실 환자분의 실명인증이 필요합니다.
 		</p>
 	</div>
 	<div class="contents">
@@ -31,8 +30,8 @@
 			<label>
 				<textarea disabled class="scrollbox">
 					컨텐츠 화인요망
-				</textarea>    
-			</label>   
+				</textarea>
+			</label>       
 			<div class="agree-box"> 
 				<div class="checkbox-type2">
 					<input type="checkbox" id="agree-b2" aria-checked="false" >
@@ -41,8 +40,26 @@
 			</div>                
 		</div>		
 		<!-- //약관동의 -->
-		<!-- 실명인증 -->
-		<div class="title-style4">실명인증 <span class="text-nec">* 필수입력</span></div>
+		<!-- 본인 인증 및 실명인증 -->
+		<div class="title-style4">예약하신 분 본인인증<span class="text-nec">* 필수입력</span></div>
+		<table class="table table-type3">	  
+			<caption><span class="offscreen">실명인증을 위한 이름,주민등록번호를 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    
+				<col style="width:200px"/>	    
+				<col style=""/>	  
+			</colgroup>	  
+			<tbody>	    
+				<tr>	         
+					<th>
+						휴대폰 인증
+					</th>	      
+					<td>
+						<button type="button" class="btn">인증하기</button>
+					</td>	 	    
+				</tr>     
+			</tbody>	
+		</table>	
+		<div class="title-style4 marT50">진료받으실 환자분 실명인증 <span class="text-nec">* 필수입력</span></div>
 		<table class="table table-type3">	  
 			<caption><span class="offscreen">실명인증을 위한 이름,주민등록번호를 입력 하는 표 입니다.</span></caption> 	  
 			<colgroup>	    
@@ -74,18 +91,42 @@
 			<button type="button" class="btn btn-l color02">확인</button>
 			<button type="button" class="btn btn-l color03 ">취소</button>	
 		</div>	
-		<!-- // 실명인증 -->	
-		<!-- 빠른예약 -->
-		<div class="etcbox etcbox-type3 marT50">
-			<div class="etcbox-title1">보다 빠른 예약을 원하시나요?<br/>전화번호를 남기시면 전문상담원이 빠른 예약을 도와드립니다</div>
-			<div class="input-num">
-				<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="" class="phoneNum"/><span class="input-text">-</span>	
-				<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value=""  class="phoneNum"/></label><span class="input-text">-</span>
-				<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="" class="phoneNum"/></label>
-				<button type="button" class="btn marL10">예약신청</button>
-			</div>
-		</div>
-		<!-- // 빠른예약 -->
+		<!-- 인증 성공 -->
+		<div class="title-style4 marT80">예약하신 분 본인인증<span class="text-nec">* 필수입력</span></div>
+		<table class="table table-type3">	  
+			<caption><span class="offscreen">실명인증을 위한 이름,주민등록번호를 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    
+				<col style="width:200px"/>	    
+				<col style=""/>	  
+			</colgroup>	  
+			<tbody>	    
+				<tr>	         
+					<th>
+						휴대폰 인증
+					</th>	      
+					<td>
+						<p class="color-style1 NotoKrR">인증성공</p>
+					</td>	 	    
+				</tr> 
+				<tr>	         
+					<th>
+						이름<span class="acc">*<span class="offscreen">필수입력</span></span>
+					</th>	      
+					<td>
+						송헌호
+					</td>	 	    
+				</tr>    
+				<tr>	         
+					<th>
+						휴대전화 <span class="acc">*<span class="offscreen">필수입력</span></span>
+					</th>	      
+					<td>
+						010-3922-3416
+					</td>	 	    
+				</tr>   
+			</tbody>	
+		</table>
+		<!-- // 인증 성공 -->	
 	</div>
 </section>
 <!-- //container -->

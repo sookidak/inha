@@ -1,0 +1,87 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">진료상담</h1>	
+	</div>
+	<div class="contents">
+		<div class="member-wrap">			
+			<h2 class="title-style4 marT30">문의내용</h2>
+			<table class="table table-type2 marT15">	  
+				<caption><span class="offscreen">진료상담에 문의한 내용을 안내하는 표입니다.</span></caption> 	  
+				<colgroup>	    
+					<col style="width:200px"/>	    
+					<col style=""/>	
+					<col style="width:200px"/>	    
+					<col style=""/>	  
+				</colgroup>	 
+				<thead></thead> 
+				<tbody>	
+					<tr>
+						<th>문의일자</th>
+						<td class="textL">2018.09.28</td>
+						<th>상태</th>
+						<td class="textL">답변대기<!-- <p class="color-style1 NotoKrR">답변완료</p> --></td>
+					</tr>
+					<tr>
+						<th>진료과</th>
+						<td colspan="3" class="textL">방사선종양학과</td>
+					</tr>
+					<tr>
+						<th>이름</th>
+						<td colspan="3" class="textL">송헌호</td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td colspan="3" class="textL">hunho6918@naver.com</td>
+					</tr>
+					<tr>
+						<th>제목</th>
+						<td colspan="3" class="textL">내시경 일자 변경가능한가요???</td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td colspan="3" class="textL">환자번호 10018151입니다. 2018/12/18 오전 내시경(박재명 선생님)    예약했는데 급한일이 생겨서 변경 가능할까요?? 빠른 답변 좀 부탁드려요<br>
+						전화나 이메일 모두 괜찮아요.</td>
+					</tr>		   
+				</tbody>
+			</table>	
+			<!-- 답변완료시 답변내용 출력 -->
+			<h2 class="title-style4 marT50">답변내용</h2>
+			<table class="table table-type2 marT15">	  
+				<caption><span class="offscreen">진료상담 답변받은 내용을 안내하는 표입니다.</span></caption> 	  
+				<colgroup>	    
+					<col style="width:200px"/>	    
+					<col style=""/>	
+					<col style="width:200px"/>	    
+					<col style=""/>	  
+				</colgroup>	 
+				<thead></thead> 
+				<tbody>	
+					<tr>
+						<th>답변일자</th>
+						<td class="textL">2018.09.28</td>
+						<th>담당자</th>
+						<td class="textL">김창석</td>
+					</tr>					
+					<tr>
+						<th>내용</th>
+						<td colspan="3" class="textL">유선으로 답변드렸습니다.</td>
+					</tr>		   
+				</tbody>
+			</table>			
+			<!-- // 답변완료시 답변내용 출력 -->			
+			<div class="btn-wrap marT60">
+				<!-- //답변대기시에만 수정 버튼 출력 -->
+				<button type="button" class="btn btn-l color01">수정</button>
+				<button type="button" class="btn btn-l color03 ">삭제</button>
+				<button type="button" class="btn btn-l color02">목록</button>	
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

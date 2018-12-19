@@ -1,0 +1,101 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">고객의 소리</h1>	
+	</div>
+	<div class="contents">
+		<div class="member-wrap">			
+			<h2 class="title-style4 marT30">문의내용</h2>
+			<table class="table table-type2 marT15">	  
+				<caption><span class="offscreen">진료상담에 문의한 내용을 안내하는 표입니다.</span></caption> 	  
+				<colgroup>	    
+					<col style="width:200px"/>	    
+					<col style=""/>	
+					<col style="width:200px"/>	    
+					<col style=""/>	  
+				</colgroup>	 
+				<thead></thead> 
+				<tbody>	
+					<tr>
+						<th>문의일자</th>
+						<td class="textL">2018.09.28</td>
+						<th>상태</th>
+						<td class="textL">답변대기<!-- <p class="color-style1 NotoKrR">답변완료</p> --></td>
+					</tr>
+					<tr>
+						<th>이름</th>
+						<td class="textL">송헌호</td>
+						<th>이메일</th>
+						<td class="textL">hunho6918@naver.com</td>
+					</tr>
+					<tr>
+						<th>휴대전화</th>
+						<td class="textL">010-1234-1234</td>
+						<th>전화번호</th>
+						<td class="textL">02-1234-1234</td>
+					</tr>
+					<tr>
+						<th>문의유형</th>
+						<td class="textL">칭찬/감사</td>
+						<th>해당부서</th>
+						<td class="textL">간호부</td>
+					</tr>
+					<tr>
+						<th>제목</th>
+						<td colspan="3" class="textL">내시경 일자 변경가능한가요???</td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td colspan="3" class="textL">환자번호 10018151입니다. 2018/12/18 오전 내시경(박재명 선생님)    예약했는데 급한일이 생겨서 변경 가능할까요?? 빠른 답변 좀 부탁드려요<br>
+						전화나 이메일 모두 괜찮아요.</td>
+					</tr>		   
+				</tbody>
+			</table>			
+			<h2 class="title-style4 marT50">답변내용<span class="text-nec">* 필수입력</span></h2>
+			<table class="table table-type3 marT15">	  
+				<caption><span class="offscreen">진료상담 답변할 내용을 입력하는 표입니다.</span></caption> 	  
+				<colgroup>	    
+					<col style="width:200px"/>	    
+					<col style=""/>	 
+				</colgroup>	 
+				<thead></thead> 
+				<tbody>	
+					<tr>
+						<th>답변유형<span class="acc">*<span class="offscreen">필수입력</span></span></th>
+						<td class="textL">	
+							<div class="radio">
+								<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked="true" checked>
+								<label for="radio-a2" >직접입력</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="radio-b2" name="select1"  value="2" aria-checked="false">
+								<label for="radio-b2" >유선으로 처리</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="radio-c2" name="select1" value="3"  aria-checked="false">
+								<label for="radio-c2" >이메일로 처리</label>
+							</div>
+						</tr>					
+						<tr>	         
+							<th>
+								<label for="text">내용<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+							</th>	      
+							<td>
+								<textarea class="wide"></textarea>
+							</td>	 	    
+						</tr>		   
+					</tbody>
+				</table>
+				<div class="btn-wrap marT60">
+					<button type="button" class="btn btn-l color01">저장</button>
+					<button type="button" class="btn btn-l color03 ">취소</button>	
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- //container -->
+	@@include('../inc/footer.html')
