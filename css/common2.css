@@ -241,8 +241,7 @@ margin-bottom:32px;
 .res-wrap .res-data-info .data-box .calendar .cal .today{ background:#eeeeee}
 .res-wrap .res-data-info .data-box .calendar .cal .active{ background:#0770bb; color: #fff; font-family:'notoKrR',sans-serif;}
 .res-wrap .res-data-info .data-box .calendar .cal .on{ border: 1px solid #0770bb}
-.res-wrap .res-data-info .data-box select{margin: 0 20px; width: 260px;}
-.res-wrap .res-data-info .data-box .select:before { right:60px;height:38px;width:20px;}
+.res-wrap .res-data-info .data-box .select{margin: 0 20px; width: 260px;}
 
 /* 진료예약 - 예약정보  */
 .res-wrap .res-data-info .info-tit{color: #fff; background: #757a85;padding:29px 20px; }
@@ -620,3 +619,26 @@ ul.bxslider {  list-style: none;}
 
 
 .star{position:relative; top:3px;display:inline-block; margin-right: 2px}
+
+
+
+/* 비급여 */
+#paging {margin:30px auto 0; text-align:center;clear:both}
+#paging .paging-item, #paging .paging-side {display: inline-block;}
+#paging .paging-item, #paging .paging-side span{ border:1px solid #ddd; width:36px; height:36px; font-size: 16px; font-weight: normal; line-height:32px;  text-align:center; color:#777; font-family: 'NotoKrR'; border-radius: 18px; margin: 0 3px  }
+#paging .paging-side span{background: url(../img/icon_components.png) no-repeat #fff;display:block;}
+#paging span.first{background-position:  10px 11px; }
+#paging span.prev{background-position: -11px 11px;  margin-right: 15px}
+#paging span.next{background-position:  -30px 11px; margin-left: 15px}
+#paging span.last{background-position: -51px 11px;}
+#paging .selected{background-color:#199da3; color:#fff;border:0; font-family: 'NotoKrM'; font-weight: normal; font-size: 16px; }
+#paging .paging-side:hover span, #paging .paging-item:hover, #paging .paging-side:focus span, #paging .paging-item:focus{  color: #000 ;border-color:#199da3 }
+
+
+.non-pay th, .non-pay td{padding:10px 5px; line-height: 20px; }
+.non-pay td{text-align: left;}
+
+.non-pay .select1{width: }
+.non-pay .select2{width:300px }
+.non-pay .select3{width:120px }
+.non-pay .input1{width: 450px !important}

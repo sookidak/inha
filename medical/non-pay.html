@@ -1,0 +1,367 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">비급여 진료안내</h1>
+	</div>
+	<div class="contents">
+		<ul class="list-type1">
+			<li>의료법 제45조 제1항 및 제2항, 시행규칙 제42조의 2제 1항 및 2항에 의하여 [비급여 진료비 고지]에 의거 비급여 진료비를 검색하는 화면입니다.</li>
+			<li>조회된 진료비는 1회 비용이며, 진료과정에서 환자 상태 및 진료재료 포함 여부에 따라 비용이 달라질 수 있습니다.</li>
+			<li>매년 1월 1일 기준자료입니다.</li>
+		</ul>
+		<!-- 비급여 검색 -->
+		<div class="search-box non-pay marT50">				
+			<form name="frm_nonpay" id="frm_nonpay" method="post" action="" onsubmit="">
+				<div class="select select1"> 
+				  <label for="arccg_code">행위료</label> 
+				  <select name="arccg_code" id="arccg_code">
+					<option value="1">행위료</option>
+					<option value="2">치료재료대</option>
+					<option value="3">약제비</option>
+					<option value="4">제증명수수료</option>
+					<option value="5">선택진료료</option>
+				  </select>
+				</div>
+				<!-- 행위료 선택일때만 노출 -->
+				<div class="select select2"> 
+				  <label for="arcjg_code">선택</label> 
+				  <select name="arcjg_code" id="arcjg_code" >
+					<option value="" >선택</option>
+					<option value="1" >제1장 기본진료료</option>
+					<option value="1-1" >제1-1장 상급병실료차액</option>
+					<option value="2" >제2장 검사료</option>
+					<option value="3" >제3장 영상진단 및 방사선치료료</option>
+					<option value="3-1" >제3-1장 초음파영상료</option>
+					<option value="3-2" >제3-2장 자기공명영상진단료(MRI)</option>
+					<option value="3-3" >제3-3장 양전자단층촬영료(PET)</option>
+					<option value="5" >제5장 주사료</option>
+					<option value="6" >제6장 마취료</option>
+					<option value="7" >제7장 이학요법료(물리치료료)</option>
+					<option value="8" >제8장 정신요법료</option>
+					<option value="9" >제9장 처치 및 수술료</option>
+					<option value="10"   >제10장 치과처치 및 수술료</option>
+					<option value="18"   >제18장 치과교정 및 보철료</option>
+					<option value="99"   >기타</option>
+				  </select>
+				</div>        
+				<!--// 행위료 선택일때만 노출 -->
+				<div class="select select3"> 
+				  <label for="key_option">명칭</label> 
+				  <select name="key_option" id="key_option" >
+					<option value="1" >명칭</option>
+					<option value="2" >코드</option>
+				  </select>
+				</div>
+				<input class="input1" type="text" name="key_value" id="key_value" value="">
+				<button class="btn" type="submit" >검색</button>
+			</form>
+		</div>
+
+		<!-- 행위료 제9장 처치 및 수술료 선택시에만 출력되는 문구-->
+		<p class="non-pay-title-msg">※미용성형 관련 처치 및 수술의 경우 수술 난이도에 따라 비용이 상이할 수 있습니다.</p>		
+		<!-- //행위료 제9장 처치 및 수술료 선택시에만 출력되는 문구-->	
+
+		<!-- 행위료  -->
+		<table class="table non-pay marT10">
+			<caption><span class="offscreen">비급여 진료비 안내(행위료)</span></caption>
+			<colgroup>	    
+				<col style="width:*"/>	    
+				<col style="width:*"/>	    
+				<col style="width:90px"/>
+				<col style="width:*"/>	  
+				<col style="width:80px"/>	    	  	    
+				<col style="width:70px"/>	    	    
+				<col style="width:70px"/>	    	    
+				<col style="width:90px"/>	    	    
+				<col style="width:70px"/>	    
+				<col style="width:*"/>	  
+			</colgroup>	
+			<thead>
+				<tr>
+					<th rowspan="2" scope="col">분류</th>
+					<th colspan="2" scope="col">항목</th>
+					<th colspan="6" scope="col">가격정보(단위: 원)</th>
+					<th rowspan="2" class="remarks" scope="col">특이사항</th>
+				</tr>
+				<tr>
+					<th scope="col">명칭</th>
+					<th scope="col">코드</th>
+					<th scope="col">구분</th>
+					<th scope="col">비용</th>
+					<th scope="col">최저비용</th>
+					<th scope="col">최대비용</th>
+					<th scope="col">치료재료대<br/>포함여부</th>
+					<th scope="col">약제비<br/>포함여부</th>
+				</tr>
+			</thead>
+			<tbody>					
+				<tr>
+					<td>교육상담료</td>
+					<td>교육상담료-당뇨병교육</td>
+					<td class="textC">AZ001</td>
+					<td>개인당뇨교육(III)</td>
+					<td class="textR">1,001,000</td>
+					<td class="textR">&nbsp;</td>
+					<td class="textR">&nbsp;</td>
+					<td class="textC"></td>
+					<td class="textC"></td>
+					<td>급여인정기준외실시한경우비급여</td>
+				</tr>
+				<!-- 검색 결과가 없을때 나오는 문구 -->
+				<tr>
+					<td colspan="10" class="textC">검색된 행위료 정보가 없습니다.</td>
+				</tr>	
+				<!-- // 검색 결과가 없을때 나오는 문구 -->		
+			</tbody>
+		</table>			
+		<!-- 치료재료대 -->
+		<table class="table non-pay marT10">
+			<caption><span class="offscreen">비급여 진료비 안내(치료재료대)</span></caption>  		
+			<colgroup>	    
+				<col style="width:*"/>	    
+				<col style="width:*"/>	    
+				<col style="width:90px"/>
+				<col style="width:*"/>	  
+				<col style="width:80px"/>	    	  	    
+				<col style="width:80px"/>	    	    
+				<col style="width:80px"/>		    
+				<col style="width:*"/>	  
+			</colgroup>	
+			<thead>
+				<tr>
+					<th rowspan="2" scope="col">분류</th>
+					<th colspan="2" scope="col">항목</th>
+					<th colspan="4" scope="col">가격정보(단위: 원)</th>
+					<th rowspan="2" class="remarks" scope="col">특이사항</th>
+				</tr>
+				<tr>
+					<th scope="col">명칭</th>
+					<th scope="col">코드</th>
+					<th scope="col">구분</th>
+					<th scope="col">비용</th>
+					<th scope="col">최저비용</th>
+					<th scope="col">최대비용</th>
+				</tr>
+			</thead>
+			<tbody>					
+				<tr>
+					<td>교육상담료</td>
+					<td>교육상담료-당뇨병교육</td>
+					<td class="textC">AZ001</td>
+					<td>개인당뇨교육(III)</td>
+					<td class="textR">11,000</td>
+					<td class="textR">11,000</td>
+					<td class="textR">11,000</td>
+					<td>급여인정기준외실시한경우비급여</td>
+				</tr>
+				<!-- 검색 결과가 없을때 나오는 문구 -->
+				<tr>
+					<td colspan="8" class="textC">검색된 치료재료대 정보가 없습니다.</td>
+				</tr>
+				<!-- //검색 결과가 없을때 나오는 문구 -->
+			</tbody>
+		</table>
+		<!-- 약제비 -->
+		<table class="table non-pay marT10">
+			<caption><span class="offscreen">비급여 진료비 안내(약제비)</span></caption>  
+			<colgroup>	    
+				<col style="width:*"/>	    
+				<col style="width:*"/>	    
+				<col style="width:90px"/>
+				<col style="width:*"/>	  
+				<col style="width:80px"/>	    	  	    
+				<col style="width:70px"/>	    	    
+				<col style="width:70px"/>		    
+				<col style="width:*"/>	  
+			</colgroup>	
+			<thead>
+				<tr>
+					<th rowspan="2" scope="col">분류</th>
+					<th colspan="2" scope="col">항목</th>
+					<th colspan="4" scope="col">가격정보(단위: 원)</th>
+					<th rowspan="2" class="remarks" scope="col">특이사항</th>
+				</tr>
+				<tr>
+					<th scope="col">명칭</th>
+					<th scope="col">코드</th>
+					<th scope="col">구분</th>
+					<th scope="col">비용</th>
+					<th scope="col">최저비용</th>
+					<th scope="col">최대비용</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>교육상담료</td>
+					<td>교육상담료-당뇨병교육</td>
+					<td class="textC">AZ001</td>
+					<td>당뇨병교육III(운동처방 포함)</td>
+					<td class="textR">11,000</td>
+					<td class="textR">11,000</td>
+					<td class="textR">11,000</td>
+					<td>급여인정기준외실시한경우비급여</td>
+				</tr>
+				<!-- 검색 결과가 없을때 나오는 문구 -->
+				<tr>
+					<td colspan="8" class="textC">검색된 약제비 정보가 없습니다.</td>
+				</tr>
+				<!-- //검색 결과가 없을때 나오는 문구 -->
+			</tbody>
+		</table>
+		<!-- 제증명수수료 -->
+		<table class="table non-pay marT10">
+			<caption><span class="offscreen">비급여 진료비 안내(제증명수수료)</span></caption>   		
+			<colgroup>	    
+				<col style="width:*"/>	    
+				<col style="width:*"/>	 
+				<col style="width:80px"/>	    	  	    
+				<col style="width:70px"/>	    	    
+				<col style="width:70px"/>		    
+				<col style="width:*"/>	  
+			</colgroup>	
+			<thead>
+				<tr>
+					<th scope="col">항목</th>
+					<th colspan="4" scope="col">가격정보(단위: 원)</th>
+					<th rowspan="2" class="remarks" scope="col">특이사항</th>
+				</tr>
+				<tr>
+					<th scope="col">명칭</th>
+					<th scope="col">구분</th>
+					<th scope="col">비용</th>
+					<th scope="col">최저비용</th>
+					<th scope="col">최대비용</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>복사비용(CD,USB,DVD,Slide,Photography)</td>
+					<td>Gross Photography(1매):타병원제출용</td>
+					<td class="textR">55,000</td>
+					<td class="textR">55,000</td>
+					<td class="textR">55,000</td>
+					<td>급여인정기준외실시한경우비급여</td>
+				</tr>
+				<!-- 검색 결과가 없을때 나오는 문구 -->
+				<tr>
+					<td colspan="6" class="textC">검색된 제증명수수료 정보가 없습니다.</td>
+				</tr>
+				<!-- //검색 결과가 없을때 나오는 문구 -->
+			</tbody>
+		</table>
+		<!-- paging Box-->
+		<div class="pager" role="navigation" aria-label="페이지 선택 영역">	 
+			<div class="page"> 
+				<ul>							
+					<li>	        
+						<a href="#first" class="jump first">	 
+							<span>처음 페이지 보기</span>	        
+						</a>								
+					</li>								
+					<li>
+						<a href="#prev" class="jump prev">	          
+							<span>이전 10 페이지 보기</span>	        
+						</a>
+					</li>	
+					<li class="active"> 
+						<span>	
+							<span class="offscreen">현재 페이지</span>  
+							1
+						</span>
+					</li>
+					<li>  
+						<a href="#2">
+							<span>
+								<span class="offscreen">  페이지 보기 </span>	
+								<span>2</span>	          
+							</span>	        
+						</a>								
+					</li>								
+					<li>	
+						<a href="#3">	            
+							<span>	            
+								<span class="offscreen">  페이지 보기  </span>	            
+								<span>3 </span>	          
+							</span>	        
+						</a>
+					</li>								
+					<li>	        
+						<a href="#4">	          
+							<span>
+								<span class="offscreen">  페이지 보기 </span>	            
+								<span>4 </span>
+							</span>	        
+						</a>								
+					</li>								
+					<li>	        
+						<a href="#5">	
+							<span>	            
+								<span class="offscreen">  페이지 보기</span>	 
+								<span>5</span>	          
+							</span>	        
+						</a>								
+					</li>								
+					<li>
+						<a href="#6">	          
+							<span>	            
+								<span class="offscreen">  페이지 보기</span>	            
+								<span>6</span>	          
+							</span>	        
+						</a>
+					</li>								
+					<li>	        
+						<a href="#7">	          
+							<span>
+								<span class="offscreen">  페이지 보기 </span>	            
+								<span>7</span>	
+							</span>	        
+						</a>								
+					</li>								
+					<li>	        
+						<a href="#8">
+							<span>	            
+								<span class="offscreen">  페이지 보기 </span>
+								<span>8</span>	          
+							</span>	        
+						</a>								
+					</li>								
+					<li>	 
+						<a href="#9">	          
+							<span>	            
+								<span class="offscreen">  페이지 보기 </span>	            
+								<span>9</span>	          
+							</span>	        
+						</a>
+					</li>								
+					<li>	        
+						<a href="#10">	          
+							<span>	
+								<span class="offscreen">  페이지 보기  </span>	            
+								<span>10</span>	          
+
+							</span>	        
+						</a>								
+					</li>								
+					<li>	        
+						<a href="#next" class="jump next">	 
+							<span>다음 10 페이지 보기</span>	        
+						</a>								
+					</li>								
+					<li>
+						<a href="#last" class="jump last">	          
+							<span>마지막 페이지 보기</span>	        
+						</a>
+					</li>	    
+				</ul>	  
+			</div>	
+		</div>
+		<!-- //paging Box-->
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
+
+
