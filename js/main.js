@@ -109,80 +109,94 @@ $(window).scroll(function() {
     $footer.addClass('main-style');
   }
 
+
+  if ($(window).innerHeight()>1010) {
+    if (height >= 1920) { $footer.removeClass('main-style'); }
+  }
+
+  if($(window).innerHeight()>1228){
+    var heiTop = 1920-($(window).innerHeight()-1288);
+    if (height >= heiTop) { 
+      $footer.removeClass('main-style');
+      $("html,body").scrollTop(heiTop+50);
+  }
+}
+
+
 });
 
 
- window.onload = function () {
-            $(".section").each(function () {
+  window.onload = function () {
+    $(".section").each(function () {
                 // 개별적으로 Wheel 이벤트 적용
                 $(this).on("mousewheel DOMMouseScroll", function (e) {
-                    e.preventDefault();
-                    var delta = 0;
-                    if (!event) event = window.event;
-                    if (event.wheelDelta) {
-                        delta = event.wheelDelta / 120;
-                        if (window.opera) delta = -delta;
-                    } else if (event.detail) delta = -event.detail / 3;
-                    var moveTop = null;
+                  e.preventDefault();
+                  var delta = 0;
+                  if (!event) event = window.event;
+                  if (event.wheelDelta) {
+                    delta = event.wheelDelta / 120;
+                    if (window.opera) delta = -delta;
+                  } else if (event.detail) delta = -event.detail / 3;
+                  var moveTop = null;
                     // 마우스휠을 위에서 아래로
                     if (delta < 0) {
-                        if ($(this).next() != undefined) {
-                            if ($(this).hasClass("healthy")) {
-                            moveTop = 2370;
-                          }else{
-                            moveTop = $(this).next().offset().top;                           
-                          }
+                      if ($(this).next() != undefined) {
+                        if ($(this).hasClass("healthy")) {
+                          moveTop = 2370;
+                        }else{
+                          moveTop = $(this).next().offset().top;                           
                         }
+                      }
                     // 마우스휠을 아래에서 위로
-                    } else {
-                        if ($(this).prev() != undefined) {
-                          if ($(this).hasClass("main-top")) {
-                            moveTop = 0;
-                          }else if ($(this).hasClass("healthy")) {
-                            console.log($(document).scrollTop());
+                  } else {
+                    if ($(this).prev() != undefined) {
+                      if ($(this).hasClass("main-top")) {
+                        moveTop = 0;
+                      }else if ($(this).hasClass("healthy")) {
+                            //console.log($(document).scrollTop());
                             var h = $(document).scrollTop();
-                             //오류남 안잡힘 ㅜㅜ
-                             if ( 2000 < h <= 2370) {
-                               moveTop = 1920;         
-                             }
-                             moveTop = $(this).prev().offset().top;  
-                          }else{
-                            moveTop = $(this).prev().offset().top;                           
-                          }
+                            if ( 2000 < h <= 2370) {
+                             moveTop = 1920;         
+                           }
+                           moveTop = $(this).prev().offset().top;  
+                         }else{
+                          moveTop = $(this).prev().offset().top;                           
                         }
+                      }
                     }
                     // 화면 이동 0.8초(800)
                     $("html,body").stop().animate({
-                        scrollTop: moveTop + 'px'
+                      scrollTop: moveTop + 'px'
                     }, {
-                        duration: 800, complete: function () {
-                        }
+                      duration: 800, complete: function () {
+                      }
                     });
-                });
-            });
+                  });
+              });
 
-                 $('.footer').on("mousewheel DOMMouseScroll", function (e) {
-                    e.preventDefault();
-                    var delta = 0;
-                    if (!event) event = window.event;
-                    if (event.wheelDelta) {
-                        delta = event.wheelDelta / 120;
-                        if (window.opera) delta = -delta;
-                    } else if (event.detail) delta = -event.detail / 3;
-                    var moveTop = null;
+    $('.footer').on("mousewheel DOMMouseScroll", function (e) {
+      e.preventDefault();
+      var delta = 0;
+      if (!event) event = window.event;
+      if (event.wheelDelta) {
+        delta = event.wheelDelta / 120;
+        if (window.opera) delta = -delta;
+      } else if (event.detail) delta = -event.detail / 3;
+      var moveTop = null;
                     // 마우스휠을 위에서 아래로
-                    if (delta < 0) {  
+                    if (delta < 0) {
+                      return false;
                     // 마우스휠을 아래에서 위로
-                    } else {   
-                     moveTop = 1920;  
-                    }
+                  } else {   
+                   moveTop = 1920;  
+                 }
                     // 화면 이동 0.8초(800)
                     $("html,body").stop().animate({
-                        scrollTop: moveTop + 'px'
+                      scrollTop: moveTop + 'px'
                     }, {
-                        duration: 800, complete: function () {
-                        }
+                      duration: 800, complete: function () {
+                      }
                     });
-                });
+                  });
 
-        }
+  }

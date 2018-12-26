@@ -166,8 +166,12 @@ $(document).ready(function() {
 
   	//자주하는 질문
   	$qna.find('dt').on('click focus keydown',function() {
-  		$qna.find('dt').removeClass('active');
-  		$(this).addClass('active');
+  		if ($(this).hasClass('active')) {
+  			$(this).removeClass('active');
+  		}else{
+  			$qna.find('dt').removeClass('active');
+  			$(this).addClass('active');
+  		}
   	});
 
 
@@ -178,7 +182,7 @@ $(document).ready(function() {
 	});
 
 
-	//select 
+	//select disable적용
 	if ($("select").length){ 		
 		$('select').each(function(i, e){
 			var sele = $(this).prop('disabled');		
@@ -187,14 +191,12 @@ $(document).ready(function() {
 			}
 		});
 	}
-
-
 	//select 적용 
-  	var selectTarget = $('.select select'); 
-  	selectTarget.change(function(){ 
-  		var select_name = $(this).children('option:selected').text(); 
-  		$(this).siblings('label').text(select_name); 
-  	});
+	var selectTarget = $('.select select'); 
+	selectTarget.change(function(){ 
+		var select_name = $(this).children('option:selected').text(); 
+		$(this).siblings('label').text(select_name); 
+	});
 
 
 

@@ -1,0 +1,34 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">진료예약</h1>
+		<p class="text-style1">
+			아래 번호 순서대로 원하시는 예약정보를 선택하신 후 예약완료 버튼을 누르시면 최종 완료됩니다.
+		</p>
+	</div>
+	<div class="contents">
+		
+	</div>
+</section>
+<!-- 진료과  layer popup -->
+<div id="layer-bg" class="active"></div>
+<div id="layer-box" role="dialog" aria-labelledby="layerpopup" class="active">
+	<div>
+		<div class="layer-wrap">		
+			<div class="layer-cont" style="z-index: 4">				
+				<p class="text-style2 lineH">비만센터(목요일 10시부터) 진료합니다. <br/>오후에는 가정의학과 진료를 담당하고 있습니다.</p>				
+			</div>	
+		</div>
+		<div class="layer-close">
+			<div>
+				<button type="button" class="btn-close"><span class="offscreen">레이어 닫기</span></button>
+			</div>
+		</div>	
+	</div>
+</div>
+<!-- //진료과 layer popup -->
+<!-- //container -->
+@@include('../inc/footer.html')
