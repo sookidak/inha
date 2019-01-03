@@ -14,7 +14,8 @@ $(document).ready(function() {
 	$tablist1=$(".tablist-type1"),
 	$tablist2=$(".tablist-type2"),
 	$qna=$(".qna"),
-	$location=$(".location-nav-wrap");
+	$location=$(".location-nav-wrap"),
+	$resbtn=$(".quickbtn-res");
 
 	var allBtnNum = 0;	//전체메뉴 기본 설정값
 
@@ -69,6 +70,19 @@ $(document).ready(function() {
 		allBtnNum = 0;	
 		closeMenu();
 	});
+	$footer.on('click', function(event) {
+		allBtnNum = 0;	
+		closeMenu();
+	});
+	$resbtn.on('click', function(event) {		
+		if ($opensectionWrap.css("display")== "none") {
+			openMenu();
+			allBtnNum = 1;	
+		} else {
+			allBtnNum = 0;	
+			closeMenu();			
+		}
+	});
 
 	//메뉴 롤오버 이벤트 
 	$gnb.on('mouseenter',function(){
@@ -80,7 +94,7 @@ $(document).ready(function() {
 	$gnb.find('a').on('focus',function(){
 		openMenu();
 	});
-	$gnb2depth.last().blur(function(){
+	$(".opensection-qbanner button").blur(function(){
 		closeMenu();	
 	});
 
@@ -100,12 +114,10 @@ $(document).ready(function() {
 
 	//메뉴 - 3depth
 	$gnb3Wrap.on('mouseenter',function(){
-		$(this).siblings('a').addClass('active')
-		.show();
+		$(this).siblings('a').addClass('active');
 	});
 	$gnb3Wrap.on('mouseleave',function(){		
-		$(this).siblings('a').removeClass('active')
-		.hide();
+		$(this).siblings('a').removeClass('active');
 	});
 
 

@@ -60,9 +60,9 @@
 .nav-wrap .btn-close:before{content:'';display:inline-block;width:24px;height:18px;background:url('../img/icon_header.png') left -170px no-repeat}
 .nav{float:left;display: inline-block;}
 .header-quickbtn{position:absolute;right:0;top:-1px;height:72px; }
-.quickbtn-res{float:left;display:inline-block;padding:0 20px;height:72px;background: #0770bb;color: #fff;font-size:16px;font-family: 'NotoKrM';line-height:72px;}
+.quickbtn-res{float:left;display:inline-block;padding:0 20px;width:135px;height:72px;background: #0770bb;color: #fff;font-size:16px;font-family: 'NotoKrM';line-height:72px;}
 .quickbtn-res:before{content:'';display:inline-block;width:28px;height:24px;background:url('../img/icon_header.png') -60px top no-repeat;margin-right:8px;vertical-align: middle}
-.quickbtn-my{float:left;display:inline-block;padding:0 20px;height:72px;background:#199da3;color: #fff;font-size:16px;font-family: 'NotoKrM';line-height:72px;}
+.quickbtn-my{float:left;display:inline-block;padding:0 20px;width:133px;height:72px;background:#199da3;color: #fff;font-size:16px;font-family: 'NotoKrM';line-height:72px;}
 .quickbtn-my:before{content:'';display:inline-block;width:24px;height:24px;background:url('../img/icon_header.png') -120px top no-repeat;margin-right:10px;vertical-align: middle}
 
 /* header - 열린부분 */
@@ -81,9 +81,17 @@
 .gnb-3depth li a{font-size:16px;color:#fff;line-height:36px;font-family: 'NotoKrDL';}
 .gnb-3depth li a:hover,.gnb-3depth li a.active{border-bottom:1px solid #fff;}
 
-.opensection-qbanner{float:right;width:265px;padding-top:39px;padding-left:20px;padding-right:20px;}
-.qbanner-title{text-align: left;font-size:18px;color:#000;font-family: 'NotoKrDL';}
 
+.opensection-qbanner{float:right;width:268px; height:348px;position: relative;background: #0770bb; 
+background: -moz-linear-gradient(-45deg, #0b79b6 0%, #0770bb 31%, #199da3 100%); 
+background: -webkit-linear-gradient(-45deg, #0770bb 0%,#0770bb 31%,#199da3 100%);
+background: linear-gradient(135deg, #0770bb 0%,#0770bb 31%,#199da3 100%); }
+.opensection-qbanner:after{content:'';display:block; width:95px;height:95px;border-radius:50px;position:absolute;left:50%;top:50px;background:url(../img/icon_header.png) no-repeat  0 -300px  #fff; transform:  translateX(-50%) ;}
+.opensection-qbanner p{font-size:14px; color:#fff; line-height:19px; text-align:center; padding-top:160px;}
+.opensection-qbanner button{background:#199da3; width:268px; height:50px;position:absolute;left:0;bottom:0px;font-size:16px; color:#fff;font-family:'notoKrR',sans-serif; }
+.opensection-qbanner .input-num{text-align:center; margin-top:23px;}
+.opensection-qbanner .input-text{color:#fff}
+.opensection-qbanner input[type="text"]{border:0; width:62px !important; padding:15px}
 
 .opensection-bottom .common-layout{padding-top:38px;}
 .open-info-text{position:relative;float:left;font-size:22px;color:#333;font-family:'NotoKrR';line-height:37px;letter-spacing:-0.07em;padding-right:28px;margin-top:4px;}
@@ -101,9 +109,8 @@
 .open-info.trust:after{content:'';position:absolute;right:-4px;top:50%;margin-top:-4px; display:inline-block;width:8px;height:8px;background: #cbcdd2;border-radius:8px;}
 .open-info.tech:after{content:'';position:absolute;right:-4px;top:50%;margin-top:-4px; display:inline-block;width:8px;height:8px;background: #cbcdd2;border-radius:8px;}
 
-.open-info-tel{float:right;font-size:22px;color:#000;text-align:right;width:200px;font-family: 'NotoKrR';}
-.open-info-tel .tel-smalltext{font-size:14px;color:#777;display:block;margin-bottom:10px;letter-spacing:-0.06em;}
-.open-info-tel .small2{font-size:14px;color:#777;margin-right:10px;letter-spacing:-0.06em;display:inline-block;vertical-align: middle;margin-top:-2px;}
+.open-info-tel{float:right;font-size:22px;color:#000;text-align:right;width:200px;font-family: 'NotoKrR'; padding-top:20px;}
+.open-info-tel span{font-size:14px;color:#777;margin-right:10px;letter-spacing:-0.06em;display:inline-block;vertical-align: middle;margin-top:-2px;}
 .open-info-tel li{margin-bottom:15px;}
 
 /* header-loaction */
@@ -133,16 +140,16 @@
 /* footer */
 .footer{background:#3d4044;}
 .quicklink-wrap{background:#374257;width: 100%;}
-.quicklink{color:#fff;font-family:'notoKrL',sans-serif;letter-spacing: -0.05em;border-left:1px solid #5f6879}
+.quicklink{color:#fff;font-family:'notoKrL',sans-serif;letter-spacing: -0.05em;border-left:1px solid #5f6879; display: table;width: 100%}
 .quicklink:after{content:'';display:block;clear:both;}
-.quicklink li{width:194px;border-right:1px solid #5f6879; display:inline-block;}
-.quicklink li a{display:block;height:50px;line-height:50px;position:relative;padding-left:20px;}
+.quicklink li{height:50px;border-right:1px solid #5f6879; display:table-cell;}
+.quicklink li a{display:inline-block;height:50px;line-height:50px;position:relative;padding-left:20px;width: 100%}
 .quicklink li a:after{content:'';display:inline-block;position:absolute;right:20px;top:50%;margin-top:-14px;width:28px;height:28px;background:#c3c7cd url('../img/icon_quicklink.png') no-repeat;border-radius:28px}
-/*.quicklink li a.quick-1:after{background-position:0 0}
+.quicklink li a.quick-1:after{background-position:0 0}
 .quicklink li a.quick-2:after{background-position:0 -40px}
 .quicklink li a.quick-3:after{background-position:0 -80px}
 .quicklink li a.quick-4:after{background-position:0 -120px}
-.quicklink li a.quick-5:after{background-position:0 -160px}*/
+.quicklink li a.quick-5:after{background-position:0 -160px}
 .quicklink li a.quick-6:after{background-position:0 -200px}
 
 /* banners */
@@ -164,7 +171,7 @@
 /* footer-link */
 .supportlink-wrap{border-bottom:1px solid #34363a;height:65px;}
 .supportlink-wrap:after,
-.supportlink:after{content:'';display:block;clear:both;}
+.supportlink:after{content:'';display:table;clear:both;}
 .supportlink{padding-top:27px;font-family:'notoKrL',sans-serif;font-size:15px;line-height:15px;width:100%;display:table;}
 .supportlink li{display:table-cell;padding:0 10px;text-align:center;position:relative;}
 .supportlink li:after{content:'';display:inline-block;position:absolute;right:0;top:50%;margin-top:-6px;width:1px;height:12px;background:#515357}
@@ -658,3 +665,4 @@ textarea{line-height:normal; border: 1px solid #ddd; font-size: 14px; font-famil
 .marL5{margin-left: 5px !important}
 .marL10{margin-left: 10px !important}
 .marL20{margin-left: 20px !important}
+
