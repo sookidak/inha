@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var $allBtn=$(".btn-allmenu"),
-	$closeBtn=$(".btn-close"),
+	$closeBtn=$(".header .btn-close"),
 	$header = $('.header'),  
 	$footer = $('.footer'), 
 	$nav = $('.nav-btn'), 
