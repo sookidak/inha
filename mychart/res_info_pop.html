@@ -1,0 +1,84 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">진료예약정보</h1>
+	</div>
+	<div class="contents">
+		
+	</div>
+</section>
+<!-- //container -->
+<!-- layer popup active로 보이기 조정-->
+<div id="layer-bg" class="active"></div>
+<div id="layer-box" role="dialog" aria-labelledby="layerpopup" class="active size-Xl">
+	<div>
+		<div class="layer-wrap">		
+			<div class="layer-cont">
+				<h1 class="title-style1">진료예약정보</h1>
+				<h2 class="title-style4 marT30">진료예약정보</h2>
+				<table class="table table-type2 marT15 textLall">	  
+					<caption><span class="offscreen">진료예약정보 예약일시, 예약자명, 진료과, 의료진을 안내하는 표입니다.</span></caption>	  
+					<colgroup>	    
+						<col style="width:180px"/>							
+						<col style="width:290px"/>	    
+						<col style="width:180px"/> 							
+						<col style=""/> 
+					</colgroup>	  
+					<thead>
+					</thead>	  
+					<tbody>	
+						<tr>
+							<th>예약일시</th>
+							<td>2018.11.22(금) 16:05</td>
+							<th>예약자명</th>
+							<td>본인</td>
+						</tr>
+						<tr>
+							<th>예약일시</th>
+							<td>유방갑상선외과센터 (정신건강의학과)</td>
+							<th>예약자명</th>
+							<td>김대혁</td>
+						</tr>
+					</tbody>	
+				</table>
+				<h2 class="title-style4 marT50">환자정보</h2>
+				<table class="table table-type2 marT15 textLall">	  
+					<caption><span class="offscreen">환자정보 이름, 휴대전화, 환자번호를 안내하는 표입니다.</span></caption>	  
+					<colgroup>	    
+						<col style="width:180px"/>							
+						<col style="width:290px"/>	    
+						<col style="width:180px"/> 							
+						<col style=""/> 
+					</colgroup>	  
+					<thead>
+					</thead>	  
+					<tbody>	
+						<tr>
+							<th>이름</th>
+							<td>송헌호</td>
+							<th>휴대전화</th>
+							<td>010-1234-5678</td>
+						</tr> 
+						<tr>
+							<th>환자번호</th>
+							<td colspan="3">001168215</td>
+						</tr> 
+					</tbody>	
+				</table>
+				<div class="btn-wrap marT30">
+					<button type="button" class="btn btn-l color01">인쇄하기</button>
+				</div>
+			</div>	
+		</div>
+		<div class="layer-close">
+			<div>
+				<button type="button" class="btn-close"><span class="offscreen">레이어 닫기</span></button>
+			</div>
+		</div>	
+	</div>
+</div>
+<!-- //layer popup -->
+@@include('../inc/footer.html')

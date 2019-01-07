@@ -1,0 +1,184 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">검진내역</h1>
+	</div>
+	<div class="contents">
+		<div class="etcbox">
+			<ul class="list-type2">
+				<li><span class="color-style1">송헌호(001168215)</span>님의 검진내역입니다.</li>
+				<li>검진유형 및 선택검사 항목별로 검진 받으신 이력을 최대 3년전까지 조회하실 수 있습니다.</li>
+				<li>제공 환경에 따라 일부 정보는 표현이 제한될 수 있습니다.</li>
+			</ul>
+		</div>
+		<div class="board-wrap">
+			<!-- board search box -->
+			<div class="search-box marT60">
+				<!-- category  -->
+				<div class="select">
+					<label for="selector">검진유형 전체</label>
+					<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
+						<option lang="ko" value="1" role="menuitem">검진유형 전체</option>	    
+						<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+					</select>			
+				</div>
+				<!-- //category  -->	
+				<label><input type="text" id="" placeholder="찾으시는 검색어를 입력해주세요." /></label>
+				<button type="button" class="btn">검색</button>
+			</div>		
+			<p class="search-result">총 <span class="acc">17건</span>이 검색되었습니다.</p>
+			<!-- //board search box -->
+			<!-- Board_List-->		
+			<div class="board-list-wrap">
+				<table class="table table-type1">	  
+					<caption><span class="offscreen">Board_List</span></caption>  
+					<colgroup>	    
+						<col style="width:99px"/>	
+						<col style="width:150px"/>	
+						<col style="width:150px"/>	   
+						<col style="width:150px"/>	        
+						<col style=""/>	 
+					</colgroup>	  
+					<thead>	    
+						<tr>	     
+							<th scope="col">번호</th>	
+							<th scope="col">검진유형</th>
+							<th scope="col">검진일자</th>
+							<th scope="col">진료과</th>
+							<th scope="col">선택검사</th>
+						</tr>	  
+					</thead>	  
+					<tbody>
+						<tr>
+							<td>22</td>
+							<td><a href="" title="검진 상세화면으로 이동" class="active-type1">단체검진</a></td>
+							<td>2018.10.22</td>
+							<td>직업환경의학과</td>
+							<td class="textL">생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp)</td>
+						</tr>	
+						<tr>
+							<td>21</td>
+							<td><a href="" title="검진 상세화면으로 이동" class="active-type1">단체검진</a></td>
+							<td>2018.09.22</td>
+							<td>영상의학과</td>
+							<td class="textL">생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp)</td>
+						</tr>   						
+					</tbody>	
+				</table>
+			</div>
+			<!-- //Board_List-->
+			<!-- paging Box-->
+			<div class="pager" role="navigation" aria-label="페이지 선택 영역">	 
+				<div class="page"> 
+					<ul>							
+						<li>	        
+							<a href="#first" class="jump first">	 
+								<span>처음 페이지 보기</span>	        
+							</a>								
+						</li>								
+						<li>
+							<a href="#prev" class="jump prev">	          
+								<span>이전 10 페이지 보기</span>	        
+							</a>
+						</li>	
+						<li class="active"> 
+							<span>	
+								<span class="offscreen">현재 페이지</span>  
+								1
+							</span>
+						</li>
+						<li>  
+							<a href="#2">
+								<span>
+									<span class="offscreen">  페이지 보기 </span>	
+									<span>2</span>	          
+								</span>	        
+							</a>								
+						</li>								
+						<li>	
+							<a href="#3">	            
+								<span>	            
+									<span class="offscreen">  페이지 보기  </span>	            
+									<span>3 </span>	          
+								</span>	        
+							</a>
+						</li>								
+						<li>	        
+							<a href="#4">	          
+								<span>
+									<span class="offscreen">  페이지 보기 </span>	            
+									<span>4 </span>
+								</span>	        
+							</a>								
+						</li>								
+						<li>	        
+							<a href="#5">	
+								<span>	            
+									<span class="offscreen">  페이지 보기</span>	 
+									<span>5</span>	          
+								</span>	        
+							</a>								
+						</li>								
+						<li>
+							<a href="#6">	          
+								<span>	            
+									<span class="offscreen">  페이지 보기</span>	            
+									<span>6</span>	          
+								</span>	        
+							</a>
+						</li>								
+						<li>	        
+							<a href="#7">	          
+								<span>
+									<span class="offscreen">  페이지 보기 </span>	            
+									<span>7</span>	
+								</span>	        
+							</a>								
+						</li>								
+						<li>	        
+							<a href="#8">
+								<span>	            
+									<span class="offscreen">  페이지 보기 </span>
+									<span>8</span>	          
+								</span>	        
+							</a>								
+						</li>								
+						<li>	 
+							<a href="#9">	          
+								<span>	            
+									<span class="offscreen">  페이지 보기 </span>	            
+									<span>9</span>	          
+								</span>	        
+							</a>
+						</li>								
+						<li>	        
+							<a href="#10">	          
+								<span>	
+									<span class="offscreen">  페이지 보기  </span>	            
+									<span>10</span>	          
+
+								</span>	        
+							</a>								
+						</li>								
+						<li>	        
+							<a href="#next" class="jump next">	 
+								<span>다음 10 페이지 보기</span>	        
+							</a>								
+						</li>								
+						<li>
+							<a href="#last" class="jump last">	          
+								<span>마지막 페이지 보기</span>	        
+							</a>
+						</li>	    
+					</ul>	  
+				</div>	
+			</div>
+			<!-- //paging Box-->
+		</div>
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

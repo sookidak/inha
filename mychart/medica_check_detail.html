@@ -1,0 +1,125 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">검진내역</h1>
+	</div>
+	<div class="contents">		
+		<h2 class="title-style4 marT30">기본정보</h2>
+		<table class="table table-type2 marT15 textLall">	  
+			<caption><span class="offscreen">진료예약정보 예약일시, 예약자명, 진료과, 의료진을 안내하는 표입니다.</span></caption>	  
+			<colgroup>	    
+				<col style="width:280px"/>							
+				<col style="width:310px"/>	    
+				<col style="width:280px"/> 							
+				<col style=""/> 
+			</colgroup>	  
+			<thead>
+			</thead>	  
+			<tbody>	
+				<tr>
+					<th>예약일시</th>
+					<td colspan="3">2018.11.22(금) 16:05</td>
+				</tr>
+				<tr>
+					<th>진료과</th>
+					<td>직업환경의학과</td>
+					<th>검사유형</th>
+					<td>단체검진Ⅰ</td>
+				</tr>
+				<tr>
+					<th>선택검사</th>
+					<td colspan="3">생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp), 생체나이측정검사(HP/0), 액상포진검사(hp)</td>
+				</tr>
+			</tbody>	
+		</table>
+		<h2 class="title-style4 marT50">종합 판정소견</h2>
+		<!-- category  -->
+		<div class="select floatR marT20">
+			<label for="selector">종합판독</label>
+			<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
+				<option lang="ko" value="1" role="menuitem">종합판독</option>	    
+				<option lang="ko" value="2" role="menuitem">종합판독2</option>	  
+			</select>			
+		</div>
+		<!-- //category  -->
+		<p class="marT15 lineH text-style4">
+			<span class="star">*</span>아래 항목별로 조회하실 수 있으며, 소견사항은 참고로 하시고 정확한 결과는 판정의사와 직접 상담하시기 바랍니다.<br/>
+			<span class="star">*</span>종합결과 판정의 : <span class="color-style1">직업환경의학과 김철순</span>
+		</p>		
+		<!-- Type.1 -->
+		<table class="table table-type2 marT15 textLall">	  
+			<caption><span class="offscreen">종합판독 상세내역을 안내하는 표입니다.</span></caption>	  
+			<colgroup>	    
+				<col style="width:280px"/>								
+				<col style=""/> 
+			</colgroup>	  
+			<thead>
+			</thead>	  
+			<tbody>	
+				<tr>
+					<th>Scaling</th>
+					<td>세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다.</td>
+				</tr> 
+				<tr>
+					<th>(M) 보철치료</th>
+					<td>세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다.</td>
+				</tr> 
+				<tr>
+					<th>비만</th>
+					<td>세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다. 상세 내용이 들어갑니다.</td>
+				</tr> 
+			</tbody>	
+		</table>
+		<!-- // Type.1 -->
+		<!-- Type.2 -->
+
+		<table class="table table-type1 marT15 textLall">	  
+			<caption><span class="offscreen">종합판독 상세내역을 안내하는 표입니다.</span></caption>	  
+			<colgroup>	    
+				<col style="width:99px"/>	
+				<col style="width:220px"/>
+				<col style=""/>
+				<col style="width:220px"/>							
+				<col style="width:220px"/> 
+			</colgroup>	  
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>검사Set</th>
+					<th>검사명</th>
+					<th>결과</th>
+					<th>정상범위</th>
+				</tr>
+			</thead>	  
+			<tbody>	
+				<tr>
+					<td>1</td>
+					<td class="textL">신체계측</td>
+					<td class="textL">신장</td>
+					<td>181.4</td>
+					<td></td>	
+				</tr> 
+				<tr>
+					<td>2</td>
+					<td class="textL">신체계측</td>
+					<td class="textL">혈중크레아티닌 (Creatinine)</td>
+					<td><span class="num-up">130</span></td>
+					<td>90 ~ 119.9</td>	
+				</tr>
+				<tr>
+					<td>3</td>
+					<td class="textL">신체계측</td>
+					<td class="textL">노력호기 폐활량 (FEF25 ~ 75)</td>
+					<td><span class="num-down">0.57</span></td>
+					<td>0.70 ~ 0.85</td>	
+				</tr>
+			</tbody>	
+		</table>
+		<!-- //Type.2 -->
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
