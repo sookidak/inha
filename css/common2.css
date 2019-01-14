@@ -94,7 +94,7 @@ margin-bottom:32px;
 .login-box .input-wrap .btn{position: absolute; top: 0; right: 0; width: 130px; height: 130px; font-size: 18px; }
 .login-box .btn-wrap{margin-top: 30px; }
 .login-box .btn-wrap .btn{width: 200px; height: 50px; letter-spacing:-0.08em;}
-    
+
 
 /* 회원가입쪽 타이틀 */
 .member-wrap .title-style2{text-align: center;}
@@ -128,22 +128,22 @@ margin-bottom:32px;
 .member-wrap .btn-wrap{ width: 880px; margin:50px auto 80px; }
 .member-wrap .btn-wrap .btn-big{ width: 280px; height: 340px ;background-color: #fff; border:3px solid #dddddd; color: #333; font-size: 24px; cursor: pointer; border-radius: 25px 0 0 0; position: relative;}
 .member-wrap .btn-wrap .btn-icon{ margin: 0 auto;  width: 145px; height: 125px;background:url('../img/icon_join.png') no-repeat; margin-bottom: 27px;}
-.member-wrap .btn-wrap .normal .btn-icon{ background-position: -145px 0; } 
-.member-wrap .btn-wrap .child .btn-icon{ background-position: -145px  -125px;} 
-.member-wrap .btn-wrap .foreigner .btn-icon{ background-position: -145px -250px;} 
+.member-wrap .btn-wrap .normal .btn-icon{ background-position: -145px 0; }
+.member-wrap .btn-wrap .child .btn-icon{ background-position: -145px  -125px;}
+.member-wrap .btn-wrap .foreigner .btn-icon{ background-position: -145px -250px;}
 .member-wrap .btn-wrap .phone .btn-icon{ background-position: -145px -515px;height: 140px;margin-bottom: 32px;}
 .member-wrap .btn-wrap .ipin .btn-icon{ background-position: -145px -375px;height: 140px;margin-bottom: 32px;}
 .member-wrap .btn-wrap .btn-big {margin-left:16px;}
 .member-wrap .btn-wrap .btn-big:first-child{margin-left:0px;}
 .member-wrap .btn-wrap .btn-big .check-icon{width: 35px; height: 35px; position: absolute; top:20px; left: 20px; }
 .member-wrap .btn-wrap .btn-big .s-text{ font-size:16px; ;color:#777; font-family:'NotoKrL'}
-.member-wrap .btn-wrap .btn-big:hover, .member-wrap .btn-wrap .btn-big:focus{color: #fff;background: #199da3; border:0;  
-	background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%); 
+.member-wrap .btn-wrap .btn-big:hover, .member-wrap .btn-wrap .btn-big:focus{color: #fff;background: #199da3; border:0;
+	background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%);
 	background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%);
-	background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); 
+	background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1)}
-.member-wrap .btn-wrap .normal:hover .btn-icon, .member-wrap .btn-wrap .normal:focus .btn-icon{ background-position: 0px 0px; } 
-.member-wrap .btn-wrap .child:hover .btn-icon, .member-wrap .btn-wrap .child:focus .btn-icon{ background-position: 0px -125px;} 
+.member-wrap .btn-wrap .normal:hover .btn-icon, .member-wrap .btn-wrap .normal:focus .btn-icon{ background-position: 0px 0px; }
+.member-wrap .btn-wrap .child:hover .btn-icon, .member-wrap .btn-wrap .child:focus .btn-icon{ background-position: 0px -125px;}
 .member-wrap .btn-wrap .foreigner:hover .btn-icon, .member-wrap .btn-wrap .foreigner:focus .btn-icon{ background-position: 0px -250px;}
 .member-wrap .btn-wrap .phone:hover .btn-icon, .member-wrap .btn-wrap .phone:focus .btn-icon{ background-position: 0px -515px;}
 .member-wrap .btn-wrap .ipin:hover .btn-icon, .member-wrap .btn-wrap .ipin:focus .btn-icon{ background-position: 0px -375px;}
@@ -532,13 +532,13 @@ ul.bxslider {  list-style: none;}
 .bx-viewport {   -webkit-transform: translatez(0);}
 .bx-wrapper {   background: transparent;}
 .bx-wrapper .bx-pager,.bx-wrapper .bx-controls-auto {  position: absolute;    width: 100%;}
-/* LOADER 
+/* LOADER
 .bx-wrapper .bx-loading {  min-height: 50px;  background: url('images/bx_loader.gif') center center no-repeat #ffffff;  height: 100%;  width: 100%;  position: absolute;  top: 0;  left: 0;  z-index: 2000;}*/
 .bx-controls{z-index: 99;}
 /* PAGER */
 .bx-wrapper .bx-pager {  text-align: center;    }
 .bx-wrapper .bx-pager.bx-default-pager a {  background: #fff;  text-indent: -9999px;  display: block;  width: 10px;  height: 10px;  margin: 0 5px;  outline: 0;  -moz-border-radius: 5px;  -webkit-border-radius: 5px;  border-radius: 5px;}
-.bx-wrapper .bx-pager.bx-default-pager a:hover,.bx-wrapper .bx-pager.bx-default-pager a.active,.bx-wrapper .bx-pager.bx-default-pager a:focus {  
+.bx-wrapper .bx-pager.bx-default-pager a:hover,.bx-wrapper .bx-pager.bx-default-pager a.active,.bx-wrapper .bx-pager.bx-default-pager a:focus {
 	background: #fff;width: 25px; }
 .bx-wrapper .bx-pager-item,.bx-wrapper .bx-controls-auto .bx-controls-auto-item {  display: inline-block;  vertical-align: bottom;  *zoom: 1;  *display: inline;}
 .bx-wrapper .bx-pager-item {  font-size: 0;  line-height: 0;}
@@ -627,8 +627,6 @@ ul.bxslider {  list-style: none;}
 .num-down:after{content:'';display:inline-block;width:7px;height:14px;background: url('../img/arr_down.png') left top no-repeat;margin-left:5px;vertical-align:middle;}
 
 
-
-/* 비급여 */
 #paging {margin:30px auto 0; text-align:center;clear:both}
 #paging .paging-item, #paging .paging-side {display: inline-block;}
 #paging .paging-item, #paging .paging-side span{ border:1px solid #ddd; width:36px; height:36px; font-size: 16px; font-weight: normal; line-height:32px;  text-align:center; color:#777; font-family: 'NotoKrR'; border-radius: 18px; margin: 0 3px  }
@@ -641,13 +639,51 @@ ul.bxslider {  list-style: none;}
 #paging .paging-side:hover span, #paging .paging-item:hover, #paging .paging-side:focus span, #paging .paging-item:focus{  color: #000 ;border-color:#199da3 }
 
 
+/* 비급여 */
 .non-pay th, .non-pay td{padding:10px 5px; line-height: 20px; }
 .non-pay td{text-align: left;}
-
 .non-pay .select1{width: }
 .non-pay .select2{width:300px }
 .non-pay .select3{width:120px }
 .non-pay .input1{width: 450px !important}
+
+/* 사회공헌 */
+.activities{border-top: 2px solid #bbbbbb; }
+.activities li{ width: 100%; height:235px; vertical-align: middle; border-bottom: 1px solid #eeeeee; position: relative;}
+.activities img{position: absolute; top: 30px;}
+.activities div{height:235px;  vertical-align: middle; display: table-cell; padding-left:480px}
+.activities h2{color: #333; font-size: 24px; margin-bottom: 15px;}
+.activities p{color: #777; font-size: 16px; line-height: 24px}
+.activities p span{font-family: 'NotoKrR', sans-serif; color:#0770bb }
+
+
+/* 윤리경영 - 단계별 추진내용 */
+.ethical > li {text-align:center;padding-top:3px;padding-left:3px;
+  background: #0975b8; background: -moz-linear-gradient(-45deg, #0975b8 0%, #1798a5 100%); background: -webkit-linear-gradient(-45deg, #0975b8 0%,#1798a5 100%);  background: linear-gradient(135deg, #0975b8 0%,#1798a5 100%); border-radius:10px; width:200px; height:200px; display:inline-block; margin-bottom:32px; margin-right: 28px;
+  }
+.ethical > li > div{width:194px;height:194px;border-radius:8px;display:table-cell;background:#fff;vertical-align:middle;font-size:16px;color:#333;}
+.ethical .step{color: #0770bb;font-family: 'NotoKrM', sans-serif; font-weight: normal; font-size: 16px; margin-bottom: 8px}
+.ethical .text1{font-family: 'NotoKrM', sans-serif; font-weight: normal; font-size: 16px;margin-bottom: 8px}
+.ethical ul li{font-size: 14px; line-height: 24px; }
+
+/* 윤리경영 - 운영체계 */
+.opera{ padding-left: 286px; position: relative; display: inline-block;}
+.opera .title{text-align:center;background: #0975b8; vertical-align: top; padding-top:3px;padding-left:3px; border-radius:10px; width:280px; height:92px; display:inline-block; margin-bottom:20px; margin-right:50px; position: relative;background: -moz-linear-gradient(-45deg, #0975b8 0%, #1798a5 100%); background: -webkit-linear-gradient(-45deg, #0975b8 0%,#1798a5 100%);  background: linear-gradient(135deg, #0975b8 0%,#1798a5 100%); }
+.opera .title::after{content: ""; display: block; width: 1px; height:20px; border-left: 1px dotted  #ddd; position: absolute;bottom:-20px; left: 50%}
+.opera .title p{width:274px;height:86px;border-radius:8px;display:table-cell;background:#fff;vertical-align:middle;font-size:18px; color:#333; font-family: 'NotoKrR', sans-serif;}
+.opera .list-box{ width:280px; height:92px; background: #eeeeee; display:inline-block; border-radius:10px; padding-left: 20px;}
+.opera .list-box .list-type2{display:table-cell; height:92px; vertical-align: middle;}
+.opera .list-box .list-type2 li{font-size: 16px; color: #333; }
+.opera .text1{color: #333; display:inline-block; position: absolute; bottom: 20px; right: -155px; width: 155px; height: 45px; border-top: 1px dotted  #ddd; text-align: center; padding-top: 10px}
+.opera .box1{color: #333; font-size: 16px;display:inline-block; width:280px; height:92px; border-radius:10px; border: 3px solid #dddddd; position: absolute; bottom: 130px; right: -295px;}
+.opera .box1 span{display:table-cell;width:280px; height:92px; vertical-align: middle; text-align: center;}
+.opera .box1::after{content: ""; display: block; width: 1px; height:68px; border-left: 1px dotted  #ddd; position: absolute;bottom:-68px; left: 50%}
+
+/* 윤리경영 - 우리의 다짐 */
+.ethical04{text-align: center; font-size: 16px}
+.ethical04 li{margin-bottom: 30px;}
+.ethical04 p{font-family: 'NotoKrR'; font-weight: normal;margin-bottom: 10px;}
+.ethical04 span{color: #0770bb; font-family: 'NotoKrR'; font-weight: normal; }
 
 
 /* 이용약관 및 개인정보 */
@@ -658,7 +694,7 @@ ul.bxslider {  list-style: none;}
 .agree-text ul li{font-size: 16px; color: #777; line-height: 24px;position: relative; margin-bottom: 6px;}
 .agree-text ul li span{}
 .agree-text ul.type1 li{padding-left: 8px; }
-.agree-text ul.type1 li:after{content: ""; display: block; position: absolute; width: 4px; height: 1px; left: 0; top: 12px; background: #777  }
+.agree-text ul.type1 li:after{content: ""; display: block; position: absolute; width: 4px; height: 1px; left: 0; top: 12px;  border-color: #777  }
 .agree-text ul.type1 ul{margin-top: 5px}
 .agree-text ul.type1 ul li{font-size: 14px;margin-bottom: 0px;padding-left: 10px; }
 .agree-text ul.type1 ul li:after{width: 2px; height: 2px; left: 4px; top: 12px; background: #b5b5b5  }
