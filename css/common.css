@@ -597,7 +597,8 @@ textarea{line-height:normal; border: 1px solid #ddd; font-size: 14px; font-famil
 .board-wrap .board-navi-box .navi-list .thum-img {width: 240px; height: 180px; margin-bottom: 20px}
 
 /* board - nolist */
-.board-wrap .no-list{height: 280px;background:  url(../img/icon_noimg.png) no-repeat center 70px; padding-top: 173px; font-size: 18px;}
+.board-wrap .no-list{height: 280px;background:  url(../img/icon_noimg.png) no-repeat center 70px; padding-top: 173px !important; font-size: 18px;}
+.board-wrap .navi-list .no-list{background-size: 30%; background-position:center 30px; font-size: 16px; text-align: center; padding-top: 153px !important;height: 200px; }
 
 
 /* layer popup */
