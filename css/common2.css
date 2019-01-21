@@ -124,6 +124,7 @@ margin-bottom:32px;
 .step-wrap.style2 li:first-child .txt{position:relative; top: 0px; width: 170px; left:-50px;}
 
 
+
 /* 회원가입 */
 .member-wrap .btn-wrap{ width: 880px; margin:50px auto 80px; }
 .member-wrap .btn-wrap .btn-big{ width: 280px; height: 340px ;background-color: #fff; border:3px solid #dddddd; color: #333; font-size: 24px; cursor: pointer; border-radius: 25px 0 0 0; position: relative;}
@@ -596,7 +597,7 @@ ul.bxslider {  list-style: none;}
 .webzine .tit{display: inline-block;margin-top: 13px; margin-left: 20px; color:#000;font-size: 16px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 240px }
 .webzine .tit .badge{margin-right: 7px; }
 .webzine .data{margin-top: 8px; margin-left: 20px;}
-.webzine .tit:hover, .board-wrap .img-list .tit:focus{text-decoration: underline; cursor: pointer; }
+.webzine .tit:hover, .board-wrap .img-list .tit:focus{text-decoration: underline; cursor: pointer; width: inherit; }
 
 /* 겅강정보 찜하기 */
 .mylike{width: 45px; height: 45px; position: absolute;top: 20px; right: 20px; }
@@ -636,7 +637,9 @@ ul.bxslider {  list-style: none;}
 #paging span.next{background-position:  -30px 11px; margin-left: 15px}
 #paging span.last{background-position: -51px 11px;}
 #paging .selected{background-color:#199da3; color:#fff;border:0; font-family: 'NotoKrM'; font-weight: normal; font-size: 16px; }
-#paging .paging-side:hover span, #paging .paging-item:hover, #paging .paging-side:focus span, #paging .paging-item:focus{  color: #000 ;border-color:#199da3 }
+#paging .paging-side:hover span, #paging .paging-item:hover, #paging .paging-side:focus .span, #paging .paging-item:focus{  color: #000 ;border-color:#199da3 }
+.select.floatR{position: relative;top: -10px; vertical-align: bottom;}
+
 
 
 /* 비급여 */
@@ -715,3 +718,46 @@ ul.bxslider {  list-style: none;}
 .agree-text .text-style2:first-child + h2{margin-top: 30px}
 .agree-text ul + .text-style2 {margin-top: 15px}
 .agree-text p + ul {margin-top: 10px}
+
+
+
+
+
+/* 채용공고  */
+.step-wrap.style3{width:980px;}
+.step-wrap.style3 a{display: block;}
+.step-wrap.style3 li:last-child .txt{width: 90px;left:-10px;position: relative;}
+.step-wrap.style3 li{margin-left:65px;}
+.step-wrap.style3 li:before{width: 70px;left: -64px;}
+
+
+
+
+
+/* 채용 - 기본정보*/
+.table-type3.recruit input[type=text], .table-type3.recruit input[type=password], .table-type3.recruit .select{width: 300px; }
+.table-type3.recruit th{width: 160px;}
+.table-type3.recruit .wide{width:800px !important}
+.table-type3.recruit .recruit-pt{width: 120px; height: 160px ; display: block;margin:0 auto  }
+.table-type3.recruit .input-num .phoneNum{width:90px !important}
+
+/* 채용 - 일반사항, 병역사항*/
+.table-type3.recruit2 input[type=text], .table-type3.recruit2 input[type=password], .table-type3.recruit2 .select{width: 200px; }
+.table-type3.recruit2 th{width: 160px; }
+
+/* 채용 - 가족사항, 학력사항 */
+.table-type1.recruit input[type=text], .table-type1.recruit input[type=password], .table-type1.recruit input[type=number], .table-type1.recruit .select label, .table-type1.recruit select{padding: 0 10px}
+
+.active{display: block; position: absolute; position: relative; }
+
+.recruit .radio label{padding-right:0;}
+
+.list-type1.recruit { margin-top: 80px;}
+.list-type1.recruit li{margin-bottom: 10px; line-height: 24px;}
+.list-type1.recruit > li:before{top:12px;}
+
+.recruit_popup{text-align:center; width: 1000px ; margin:0 auto }
+.recruit_popup:before{content: ""; display: block;background: url(../img/logo2.png) no-repeat center center #fff; width: 219px; height: 52px; margin: 80px auto 50px;  }
+.recruit_pass{background:#f3f3f3; padding:80px 0; margin: 60px; color: #000; font-family: 'NotoKrM',sans-serif ; font-weight: normal; margin-top: 50px; }
+.recruit_pass .text01{font-size: 20px; }
+.recruit_pass .text02{font-size: 24px; padding-top: 30px;}
