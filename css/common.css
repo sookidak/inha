@@ -717,7 +717,8 @@ textarea{line-height:normal; border: 1px solid #ddd; font-size: 14px; font-famil
 .wid70{width:70px !important}
 .wid80{width:79px !important}
 .wid90{width:90px !important}
-.wid100{width:100px !important}
+.wid100{width:100px !important;}
+.wid115{width:115px !important; min-width:115px !important}
 .wid120{width:120px !important}
 .wid140{width:140px !important}
 .wid500{width:300px !important}
