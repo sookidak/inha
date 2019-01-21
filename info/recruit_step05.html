@@ -1,0 +1,347 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">채용공고 제목</h1>
+	</div>
+	<div class="contents">
+		<ul class="step-wrap style3">
+			<li class="stepOn"><a href="#"><span class="StepNum">1</span> <span class="txt">도움말</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">2</span> <span class="txt">기본정보</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">3</span> <span class="txt">가족사항</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">4</span> <span class="txt">학력사항<span class="offscreen">(현재단계)</span></span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">5</span> <span class="txt">개인약력</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">6</span> <span class="txt">자기소개</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">7</span> <span class="txt">지원서접수</span></a></li>
+		</ul>		
+		<h2 class="title-style4 marT80">학력사항</h2>
+		<table class="table table-type1 marT15 recruit">	  
+			<caption><span class="offscreen">채용공고를 위한 학력사항을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    	    
+				<col style="width: 150px"/>	     
+				<col style="width: 270px"/>	    
+				<col style="width: 180px"/>	    
+				<col style="width: 180px"/>	    
+				<col style="width: 130px"/>	    
+				<col style="width: 130px"/>	    
+				<col style="width: 140px"/>	   	  
+			</colgroup>
+			<thead>
+				<tr>
+					<th>학교구분</th>
+					<th>기간</th>
+					<th>학교</th>
+					<th>전공</th>
+					<th>주/야</th>
+					<th>입학구분</th>
+					<th>졸업구분</th>
+				</tr>
+			</thead>	  
+			<tbody>
+				<!-- 학력사항 입력  -->
+				<tr>
+					<td>
+						<div class="select wid">
+							<label for="school_1">고등학교</label>
+							<select id="school_1" name="school_1" aria-haspopup="true" aria-controls="select-menu" title="학교구분 선택">
+								<option value="고등학교">고등학교</option>
+								<option value="전문대학교">전문대학</option>
+								<option value="대학교">대학교</option>
+								<option value="대학원">대학원</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<label><input type="text" id="school_ymda_1" title="학교 입력" name="school_ymda_1" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="school_ymdb_1" title="학교 입력" name="school_ymdb_1" class="wid2" placeholder="예) 20090101" /></label>
+					</td>
+					<td><label><input type="text" id="school_name_1" title="학교 입력" name="school_name_1" class="wid" /></label></td>
+					<td><label><input type="text" id="school_battle_1" title="전공 입력" name="school_battle_1" class="wid" /></label></td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc1_1">주간</label>
+							<select id="school_etc1_1" name="school_etc1_1" aria-haspopup="true" aria-controls="select-menu" title="주/야 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc2_1">주간</label>
+							<select id="school_etc2_1" name="school_etc2_1" aria-haspopup="true" aria-controls="select-menu" title="입학구분 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+								<option value="입학">입학</option>
+								<option value="편입">편입</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc3_1">예정</label>
+							<select id="school_etc3_1" name="school_etc3_1" aria-haspopup="true" aria-controls="select-menu" title="졸업구분 선택">
+								<option value="예정">예정</option>
+								<option value="중퇴">중퇴</option>
+								<option value="자퇴">자퇴</option>
+								<option value="휴학">휴학</option>
+								<option value="졸업">졸업</option>
+								<option value="졸업">편입졸</option>
+							</select>
+						</div>
+					</td>
+				</tr>				
+				<!-- //학력사항 입력  -->
+				<!-- 학력사항 입력  -->
+				<tr>
+					<td>
+						<div class="select wid">
+							<label for="school_2">고등학교</label>
+							<select id="school_2" name="school_2" aria-haspopup="true" aria-controls="select-menu" title="학교구분 선택">
+								<option value="고등학교">고등학교</option>
+								<option value="전문대학교">전문대학</option>
+								<option value="대학교">대학교</option>
+								<option value="대학원">대학원</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<label><input type="text" id="school_ymda_2" title="학교 입학년도 입력" name="school_ymda_2" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="school_ymdb_2" title="학교 졸업년도 입력" name="school_ymdb_2" class="wid2" placeholder="예) 20090101" /></label>
+					</td>
+					<td><label><input type="text" id="school_name_2" title="학교 입력" name="school_name_2" class="wid" /></label></td>
+					<td><label><input type="text" id="school_battle_2" title="전공 입력" name="school_battle_2" class="wid" /></label></td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc1_2">주간</label>
+							<select id="school_etc1_2" name="school_etc1_2" aria-haspopup="true" aria-controls="select-menu" title="주/야 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc2_2">주간</label>
+							<select id="school_etc2_2" name="school_etc2_2" aria-haspopup="true" aria-controls="select-menu" title="입학구분 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+								<option value="입학">입학</option>
+								<option value="편입">편입</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc3_2">예정</label>
+							<select id="school_etc3_2" name="school_etc3_2" aria-haspopup="true" aria-controls="select-menu" title="졸업구분 선택">
+								<option value="예정">예정</option>
+								<option value="중퇴">중퇴</option>
+								<option value="자퇴">자퇴</option>
+								<option value="휴학">휴학</option>
+								<option value="졸업">졸업</option>
+								<option value="졸업">편입졸</option>
+							</select>
+						</div>
+					</td>
+				</tr>				
+				<!-- //학력사항 입력  -->
+				<!-- 학력사항 입력  -->
+				<tr>
+					<td>
+						<div class="select wid">
+							<label for="school_3">고등학교</label>
+							<select id="school_3" name="school_3" aria-haspopup="true" aria-controls="select-menu" title="학교구분 선택">
+								<option value="고등학교">고등학교</option>
+								<option value="전문대학교">전문대학</option>
+								<option value="대학교">대학교</option>
+								<option value="대학원">대학원</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<label><input type="text" id="school_ymda_3" title="학교 입력" name="school_ymda_3" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="school_ymdb_3" title="학교 입력" name="school_ymdb_3" class="wid2" placeholder="예) 20090101" /></label>
+					</td>
+					<td><label><input type="text" id="school_name_3" title="학교 입력" name="school_name_3" class="wid" /></label></td>
+					<td><label><input type="text" id="school_battle_3" title="전공 입력" name="school_battle_3" class="wid" /></label></td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc1_3">주간</label>
+							<select id="school_etc1_3" name="school_etc1_3" aria-haspopup="true" aria-controls="select-menu" title="주/야 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc2_3">주간</label>
+							<select id="school_etc2_3" name="school_etc2_3" aria-haspopup="true" aria-controls="select-menu" title="입학구분 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+								<option value="입학">입학</option>
+								<option value="편입">편입</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc3_3">예정</label>
+							<select id="school_etc3_3" name="school_etc3_3" aria-haspopup="true" aria-controls="select-menu" title="졸업구분 선택">
+								<option value="예정">예정</option>
+								<option value="중퇴">중퇴</option>
+								<option value="자퇴">자퇴</option>
+								<option value="휴학">휴학</option>
+								<option value="졸업">졸업</option>
+								<option value="졸업">편입졸</option>
+							</select>
+						</div>
+					</td>
+				</tr>				
+				<!-- //학력사항 입력  -->
+				<!-- 학력사항 입력  -->
+				<tr>
+					<td>
+						<div class="select wid">
+							<label for="school_4">고등학교</label>
+							<select id="school_4" name="school_4" aria-haspopup="true" aria-controls="select-menu" title="학교구분 선택">
+								<option value="고등학교">고등학교</option>
+								<option value="전문대학교">전문대학</option>
+								<option value="대학교">대학교</option>
+								<option value="대학원">대학원</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<label><input type="text" id="school_ymda_4" title="학교 입력" name="school_ymda_4" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="school_ymdb_4" title="학교 입력" name="school_ymdb_4" class="wid2" placeholder="예) 20090101" /></label>
+					</td>
+					<td><label><input type="text" id="school_name_4" title="학교 입력" name="school_name_4" class="wid" /></label></td>
+					<td><label></label><input type="text" id="school_battle_4" title="전공 입력" name="school_battle_4" class="wid" /></label></td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc1_4">주간</label>
+							<select id="school_etc1_4" name="school_etc1_4" aria-haspopup="true" aria-controls="select-menu" title="주/야 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc2_4">주간</label>
+							<select id="school_etc2_4" name="school_etc2_4" aria-haspopup="true" aria-controls="select-menu" title="입학구분 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+								<option value="입학">입학</option>
+								<option value="편입">편입</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc3_4">예정</label>
+							<select id="school_etc3_4" name="school_etc3_4" aria-haspopup="true" aria-controls="select-menu" title="졸업구분 선택">
+								<option value="예정">예정</option>
+								<option value="중퇴">중퇴</option>
+								<option value="자퇴">자퇴</option>
+								<option value="휴학">휴학</option>
+								<option value="졸업">졸업</option>
+								<option value="졸업">편입졸</option>
+							</select>
+						</div>
+					</td>
+				</tr>				
+				<!-- //학력사항 입력  -->
+				<!-- 학력사항 입력  -->
+				<tr>
+					<td>
+						<div class="select wid">
+							<label for="school_5">고등학교</label>
+							<select id="school_5" name="school_5" aria-haspopup="true" aria-controls="select-menu" title="학교구분 선택">
+								<option value="고등학교">고등학교</option>
+								<option value="전문대학교">전문대학</option>
+								<option value="대학교">대학교</option>
+								<option value="대학원">대학원</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<label><input type="text" id="school_ymda_5" title="학교 입력" name="school_ymda_5" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="school_ymdb_5" title="학교 입력" name="school_ymdb_5" class="wid2" placeholder="예) 20090101" /></label>
+					</td>
+					<td><label><input type="text" id="school_name_5" title="학교 입력" name="school_name_5" class="wid" /></label></td>
+					<td><label><input type="text" id="school_battle_5" title="전공 입력" name="school_battle_5" class="wid" /></label></td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc1_5">주간</label>
+							<select id="school_etc1_5" name="school_etc1_5" aria-haspopup="true" aria-controls="select-menu" title="주/야 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc2_5">주간</label>
+							<select id="school_etc2_5" name="school_etc2_5" aria-haspopup="true" aria-controls="select-menu" title="입학구분 선택">
+								<option value="주간">주간</option>
+								<option value="야간">야간</option>
+								<option value="입학">입학</option>
+								<option value="편입">편입</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="select wid">
+							<label for="school_etc3_5">예정</label>
+							<select id="school_etc3_5" name="school_etc3_5" aria-haspopup="true" aria-controls="select-menu" title="졸업구분 선택">
+								<option value="예정">예정</option>
+								<option value="중퇴">중퇴</option>
+								<option value="자퇴">자퇴</option>
+								<option value="휴학">휴학</option>
+								<option value="졸업">졸업</option>
+								<option value="졸업">편입졸</option>
+							</select>
+						</div>
+					</td>
+				</tr>				
+				<!-- //학력사항 입력  -->
+			</tbody>	
+		</table>		
+		<!-- 학력 내용중 대학교가 하나라도 있으면 하단에 최종학력 성적 입력란 표시 active로 보이기 조정-->
+		<div class="active">
+			<h2 class="title-style4 marT50">최종학력 성적</h2>
+			<!-- 최종학력 성적 입력 -->
+			<table class="table table-type3 recruit">	  
+				<caption><span class="offscreen">채용공고를 위한 최종학력 성적을 입력 하는 표 입니다.</span></caption> 	  
+				<colgroup>	    
+					<col style="width:180px"/>	    
+					<col style=""/>	      
+				</colgroup>	  
+				<tbody>
+					<tr>
+						<th>최종학점</th>
+						<td><label><input type="text" id="alpha_total" title="최종학점 평균 입력" name="alpha_total" class="wid70" /></label> / <label><input type="text" id="textfield" title="최종학점 만점 입력" name="textfield" class="wid70" value="4.5" /></label>
+						<span class="text-style3">평점 입력은 꼭 소수점 2자리로 해주시기 바랍니다. 입력 예) 3.00  3.50  4.00</span>
+					</td>
+					</tr>
+					<tr>
+						<th>최종석차</th>
+						<td><label><input type="text" id="alpha_total_count" title="최종석차 입력" name="alpha_total_count" class="wid70" /></label> / <label><input type="text" id="alpha_total_count2" title="최종석차 전체 학생수 입력" name="alpha_total_count2" class="wid70" /></label></td>
+					</tr>
+				</tbody>
+			</table>		
+			<!-- // 최종학력 성적 입력 -->
+			<div class="btn-wrap marT60">
+				<button type="button" class="btn btn-l color01">저장하기</button>
+				<button type="button" class="btn btn-l color03 ">취소</button>	
+			</div>	
+		</div>
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

@@ -1,0 +1,106 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">채용공고 제목</h1>
+	</div>
+	<div class="contents">
+		<ul class="step-wrap style3">
+			<li class="stepOn"><a href="#"><span class="StepNum">1</span> <span class="txt">도움말<span class="offscreen">(현재단계)</span></span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">2</span> <span class="txt">기본정보</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">3</span> <span class="txt">가족사항</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">4</span> <span class="txt">학력사항</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">5</span> <span class="txt">개인약력</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">6</span> <span class="txt">자기소개</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">7</span> <span class="txt">지원서접수</span></a></li>
+		</ul>		
+		<div class="etcbox etcbox-type2 marT80">
+			<div class="etcbox-title1">유의사항</div>
+			<ul class="list-type2">
+				<li>지원서 접수기간에는 수정이 가능합니다. 마감일에는 지원자가 집중되어 서버에 접속이 어려울 수도 있으니 마감일 이전에 작성을 완료하시기 바랍니다.</li>
+				<li class="color-style5">저장 버튼을 누르지 않고 다른 화면으로 이동하거나 브라우저를 닫을 경우 입력하신 내용들이 저장되지 않습니다.</li>
+				<li>증명사진의 경우 3*4size를 1:1scan 하고, width * height 120 * 160 또는 90 * 120 size를 권장합니다. 파일용량은 300kb 미만의 jpg(.jpeg)파일만 저장이 가능합니다.</li>
+			</ul>
+		</div>
+		<table class="table table-type3 marT30">	  
+			<caption><span class="offscreen">채용공고를 위한 구분 외 6가지 학목을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    
+				<col style="width:200px"/>	    
+				<col style=""/>	  
+			</colgroup>	  
+			<tbody>	    
+				<tr>
+					<th>채용공고</th>
+					<td>2019년도 상반기 임상강사 채용</td>
+				</tr>
+				<tr>	         
+					<th>구분</th>	      
+					<td>내국인</td>	 	    
+				</tr>    
+				<tr>	         
+					<th>
+						<label for="check-b1">종사직종</label>
+					</th>	      
+					<td>
+						<div class="radio">
+							<input type="radio" id="radio-a1" name="select1"  value="1" aria-checked="false">
+							<label for="radio-a1" >진료교수</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked="false">
+							<label for="radio-a2" >임상강사</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-a3" name="select1"  value="1" aria-checked="false">
+							<label for="radio-a3" >FELLOW</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-a4" name="select1"  value="1" aria-checked="false">
+							<label for="radio-a4" >레지던트</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-a5" name="select1"  value="1" aria-checked="false">
+							<label for="radio-a5" >인턴</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-a6" name="select1"  value="1" aria-checked="false">
+							<label for="radio-a6" >AGD</label>
+						</div>
+
+					</td>	 	    
+				</tr>  
+
+				<tr>	   
+					<th>성명</th>	      
+					<td>유승일</td>	 	    
+				</tr>  
+
+				<tr>	         
+					<th>생년월일</th>	      
+					<td>1980년 12월 30일</td>	 	    
+				</tr>  
+
+				<tr>	         
+					<th>성별</th>	      
+					<td>남</td>	 	    
+				</tr>   
+				<tr>	         
+					<th>
+						<label for="password">비밀번호</label>
+					</th>	      
+					<td>
+						<input type="password" id="password" maxlength="20" title="비밀번호입력"/>
+					</td>	 	    
+				</tr>    			
+			</tbody>	
+		</table>
+		<div class="btn-wrap marT60">
+			<button type="button" class="btn btn-l color01">저장하기</button>
+			<button type="button" class="btn btn-l color03 ">취소</button>	
+		</div>	
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

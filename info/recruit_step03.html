@@ -1,0 +1,419 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">채용공고 제목</h1>
+	</div>
+	<div class="contents">
+		<ul class="step-wrap style3">
+			<li class="stepOn"><a href="#"><span class="StepNum">1</span> <span class="txt">도움말</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">2</span> <span class="txt">기본정보<span class="offscreen">(현재단계)</span></span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">3</span> <span class="txt">가족사항</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">4</span> <span class="txt">학력사항</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">5</span> <span class="txt">개인약력</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">6</span> <span class="txt">자기소개</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">7</span> <span class="txt">지원서접수</span></a></li>
+		</ul>		
+		<h2 class="title-style4 marT80">기본정보</h2>		
+		<!-- 기본정보 입력 -->
+		<table class="table table-type3 recruit">	  
+			<caption><span class="offscreen">채용공고를 위한 기본정보을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    
+				<col style="width:160px"/>	    
+				<col style="width:330px"/>	  
+				<col style="width:160px"/>	    
+				<col style=""/>	    
+				<col style="width:200px"/>	  
+			</colgroup>	  
+			<tbody>
+				<tr>	         
+					<th>
+						<label for="birth-y">생년월일</label>
+					</th>	      
+					<td colspan="3">
+						<input type="text" id="birth-y" disabled value="1980" class="wid100" /> 년
+						<input type="text" id="birth-m" disabled value="12" class="wid80" /> <label for="birth-m">월</label>
+						<input type="text" id="birth-d" disabled value="12" class="wid80" /> <label for="birth-d">일</label>
+						<div class="select wid120 marL20">
+							<label for="birth_chk">양력</label>
+							<select id="birth_chk" name="birth_chk" aria-haspopup="true" aria-controls="select-menu" title="양력 음력 선택">   
+								<option value="1" role="menuitem">양력</option>
+								<option value="2" role="menuitem">음력</option>  
+							</select>
+						</div>
+					</td>
+					<td rowspan="4" class="textC">
+						<p class="text-style2">컬러사진</p>
+						<p class="text-style4">6개월이내 촬영 (4X5cm)</p>
+						<!-- 사진 추가시 -->
+						<!-- <img src="../img/doc_photo.png" alt="" class="recruit-pt"> --> 
+					</td>  
+				</tr> 
+				<tr>	         
+					<th>
+						<label for="k_name">한글성명</label>
+					</th>	      
+					<td>
+						<input type="text" id="k_name" disabled value="송헌호" maxlength="20"/>
+					</td>        
+					<th>
+						<label for="c_name">한자성명<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+					</th>	      
+					<td>
+						<input type="text" id="c_name" title="한자성명 입력" placeholder="순수 한글이름인 경우 한글 입력" />
+					</td>	 	
+				</tr>      	    
+				<tr>	         
+					<th>
+						<label for="ph01">전화번호<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+					</th>	      
+					<td>
+						<div class="input-num">
+							<input type="text" id="ph01" maxlength="3" title="전화번호 앞번호 입력" class="phoneNum" /><span class="input-text">-</span>	
+							<label><input type="text" id="ph02" maxlength="4" title="전화번호 중간번호 입력"  class="phoneNum"/></label><span class="input-text">-</span>
+							<label><input type="text" id="ph03" maxlength="4" title="전화번호 뒷번호 입력"  class="phoneNum"/></label>
+						</div>
+					</td>	
+					<th>
+						<label for="hp01">휴대전화</label>
+					</th>	      
+					<td>
+						<div class="input-num">
+							<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text">-</span>	
+							<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="input-text">-</span>
+							<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+						</div>
+					</td>	 	    
+				</tr>    
+				<tr>
+					<th>국적</th>
+					<td>
+						<div class="select">
+							<label for="select02">대한민국</label>
+							<select id="select02" aria-haspopup="true" aria-controls="select-menu" title="국적 선택">   
+								<option value="1" role="menuitem">대한민국</option>
+								<option value="2" role="menuitem">대한민국</option>  
+							</select>
+						</div>
+					</td>
+					<th>사진등록</th>
+					<td><button type="button" class="btn color01 wid120">파일찾기</button></td>
+				</tr>
+				<tr>	         
+					<th>
+						<label for="email01">이메일</label>
+					</th>	      
+					<td colspan="4">
+						<div class="input-email">
+							<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+							<span class="input-text">@</span>
+							<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+							<div class="select emil">
+								<label for="email-sel">직접입력</label>
+								<select id="email-sel" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">   
+									<option value="" role="menuitem">직접입력</option>
+									<option value="chol.com" role="menuitem">chol.com</option>
+									<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+									<option value="empal.com" role="menuitem">empal.com</option>
+									<option value="freechal.com" role="menuitem">freechal.com</option>
+									<option value="hanmail.net" role="menuitem">hanmail.net</option>
+									<option value="hanmir.com" role="menuitem">hanmir.com</option>
+									<option value="hitel.net" role="menuitem">hitel.net</option>
+									<option value="hotmail.com" role="menuitem">hotmail.com</option>
+									<option value="inha.com" role="menuitem">inha.com</option>
+									<option value="intizen.com" role="menuitem">intizen.com</option>
+									<option value="kebi.com" role="menuitem">kebi.com</option>
+									<option value="korea.com" role="menuitem">korea.com</option>
+									<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+									<option value="nate.com" role="menuitem">nate.com</option>
+									<option value="naver.com" role="menuitem">naver.com</option>
+									<option value="netian.com" role="menuitem">netian.com</option>
+									<option value="orgio.net" role="menuitem">orgio.net</option>
+									<option value="wail.co.kr" role="menuitem">wail.co.kr</option>	  
+								</select>
+							</div>
+						</div>
+					</td>	 	    
+				</tr>  
+				<tr>	         
+					<th>
+						<label for=zip>주소<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+					</th>	      
+					<td colspan="4">
+						<div class="input-add">
+							<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled />
+							<button type="button" class="btn zip">우편번호 찾기</button><br/>
+							<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10 wide" disabled placeholder="기본주소"/></label>
+							<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 wide" placeholder="상세주소"/></label>
+						</div>
+					</td>	 	    
+				</tr>   
+			</tbody>	
+		</table>
+		<!-- //기본정보 입력-->
+		<h2 class="title-style4 marT50">일반사항</h2>
+		<!-- 일반사항 입력-->
+		<table class="table table-type3 recruit2">	  
+			<caption><span class="offscreen">채용공고를 위한 일반사항을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    
+				<col style="width:160px"/>	    
+				<col style=""/>	        
+				<col style="width:160px"/>	    
+				<col style=""/>	      
+				<col style="width:160px"/>	      
+				<col style=""/>	      
+			</colgroup>	  
+			<tbody>
+				<tr>
+					<th><label for="height">신장</label></th>
+					<td><input type="text" id="height" name="height" title="입력"> cm</td>
+					<th><label for="weight">체중</label></th>
+					<td><input type="text" id="weight" name="weight" title="입력"> kg</td>
+					<th>시력</th>
+					<td>
+						<div class="select wid90">
+							<label for="eye1">2.0</label>
+							<select id="eye1" aria-haspopup="true" aria-controls="select-menu" title="시력 좌 선택">   
+								<option value="2.0">2.0</option>
+								<option value="1.5">1.5</option>
+								<option value="1.2">1.2</option>
+								<option value="1.0">1.0</option>
+								<option value="0.9">0.9</option>
+								<option value="0.8">0.8</option>
+								<option value="0.7">0.7</option>
+								<option value="0.6">0.6</option>
+								<option value="0.5">0.5</option>
+								<option value="0.4">0.4</option>
+								<option value="0.3">0.3</option>
+								<option value="0.2">0.2</option>
+								<option value="0.1">0.1</option>			
+							</select>
+						</div>
+						좌
+						
+						<div class="select wid90">
+							<label for="eye2">2.0</label>
+							<select id="eye2" aria-haspopup="true" aria-controls="select-menu" title="시력 우 선택">  
+								<option value="2.0">2.0</option>
+								<option value="1.5">1.5</option>
+								<option value="1.2">1.2</option>
+								<option value="1.0">1.0</option>
+								<option value="0.9">0.9</option>
+								<option value="0.8">0.8</option>
+								<option value="0.7">0.7</option>
+								<option value="0.6">0.6</option>
+								<option value="0.5">0.5</option>
+								<option value="0.4">0.4</option>
+								<option value="0.3">0.3</option>
+								<option value="0.2">0.2</option>
+								<option value="0.1">0.1</option>		
+							</select>
+						</div>
+						우
+					</td>
+				</tr>
+				<tr>
+					<th>혈핵형</th>
+					<td>
+						<div class="select ">
+							<label for="blood">A</label>
+							<select id="blood" name="blood" aria-haspopup="true" aria-controls="select-menu" title="혈핵형 선택"> 
+								<option value="A">A</option>
+								<option value="A(RH+)">A(RH+)</option>
+								<option value="A(RH-)">A(RH-)</option>
+								<option value="B">B</option>
+								<option value="B(RH+)">B(RH+)</option>
+								<option value="B(RH-)">B(RH-)</option>
+								<option value="AB">AB</option>
+								<option value="AB(RH+)">AB(RH+)</option>
+								<option value="AB(RH-)">AB(RH-)</option>
+								<option value="O">O</option>
+								<option value="O(RH+)">O(RH+)</option>
+								<option value="O(RH-)">O(RH-)</option>
+							</select>
+						</div>
+					</td>
+					<th><label for="taste">취미/특기</label></th>
+					<td><input type="text" id="taste" name="taste" title="입력"></td>
+					<th>혼인여부</th>
+					<td>
+						<div class="select">
+							<label for="marriage">미혼</label>
+							<select id="marriage" name="marriage" aria-haspopup="true" aria-controls="select-menu" title="혼인여부 선택">
+								<option value="미혼">미혼</option>
+								<option value="기혼">기혼</option>
+								<option value="이혼">이혼</option>
+								<option value="기타">기타</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>장애인대상자</th>
+					<td>
+						<div class="select">
+							<label for="troubles">비장애</label>
+							<select id="troubles" name="troubles" aria-haspopup="true" aria-controls="select-menu" title="장애인대상자 선택">  
+								<option value="비장애">비장애</option>
+								<option value="장애">장  애</option>
+							</select>
+						</div>
+					</td>
+					<th>보훈대상자</th>
+					<td>
+						<div class="select">
+							<label for="death">비대상</label>
+							<select id="death" name="death" aria-haspopup="true" aria-controls="select-menu" title="보훈대상자 선택">
+								<option value="비대상">비대상</option>
+								<option value="대상">대  상</option>
+							</select>
+						</div>
+					</td>
+					<th>색맹여부</th>
+					<td>
+						<div class="select">
+							<label for="color">무</label>
+							<select id="color" name="color" aria-haspopup="true" aria-controls="select-menu" title="색맹여부 선택">  
+								<option value="무">무</option>
+								<option value="유">유</option>
+							</select>
+						</div>
+					</td>
+				</tr>		
+			</tbody>
+		</table>		
+		<!-- //일반사항 입력 -->
+		<h2 class="title-style4 marT50">병역사항</h2>
+		<!-- 병역사항 입력 -->
+		<table class="table table-type3 recruit2">	  
+			<caption><span class="offscreen">채용공고를 위한 병역사항을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    
+				<col style="width:160px"/>	    
+				<col style=""/>	        
+				<col style="width:160px"/>	    
+				<col style=""/>	      
+				<col style="width:160px"/>	      
+				<col style=""/>	      
+			</colgroup>	  
+			<tbody>
+				<tr>
+					<th>역종</th>
+					<td>
+						<div class="select">
+							<label for="army1"></label>
+							<select id="army1" name="army1" aria-haspopup="true" aria-controls="select-menu" title="역종 선택">
+								<option value="면제">면제</option>
+								<option value="예비역">예비역</option>
+								<option value="보충역">보충역</option>
+								<option value="퇴역">퇴역</option>
+								<option value="현역">현역</option>
+								<option value="제1국민역">제1국민역</option>
+								<option value="제2국민역">제2국민역</option>
+								<option value="공중보건의">공중보건의</option>
+								<option value="미필">미필</option>
+							</select>
+						</div>
+					</td>
+					<th>군별</th>
+					<td>
+						<div class="select">
+							<label for="army2"></label>
+							<select id="army2" name="army2" aria-haspopup="true" aria-controls="select-menu" title="군별 선택">
+								<option value=""></option>
+								<option value="육군">육군</option>
+								<option value="방위육군">방위육군</option>
+								<option value="해군">해군</option>
+								<option value="방위해군">방위해군</option>
+								<option value="해병">해병</option>
+								<option value="방위해병">방위해병</option>
+								<option value="공군">공군</option>
+								<option value="방위공군">방위공군</option>
+								<option value="전경">전경</option>
+								<option value="해경">해경</option>
+								<option value="카튜샤">카튜샤</option>
+								<option value="특례">특례</option>
+								<option value="특전사">특전사</option>
+								<option value="공익">공익</option>
+								<option value="의경">의경</option>
+							</select>
+						</div>
+					</td>
+					<th>계급</th>
+					<td>
+						<div class="select">
+							<label for="army3"></label>
+							<select id="army3" name="army3" aria-haspopup="true" aria-controls="select-menu" title="계급 선택">
+								<option value=""></option>
+								<option value="훈병">훈병</option>
+								<option value="이병">이병</option>
+								<option value="일병">일병</option>
+								<option value="상병">상병</option>
+								<option value="병장">병장</option>
+								<option value="일반하사">일반하사</option>
+								<option value="단기하사">단기하사</option>
+								<option value="장기하사">장기하사</option>
+								<option value="중사">중사</option>
+								<option value="상사">상사</option>
+								<option value="준위">준위</option>
+								<option value="원사">원사</option>
+								<option value="소위">소위</option>
+								<option value="중위">중위</option>
+								<option value="대위">대위</option>
+								<option value="소령">소령</option>
+								<option value="중령">중령</option>
+								<option value="대령">대령</option>
+								<option value="준장">준장</option>
+								<option value="소장">소장</option>
+								<option value="중장">중장</option>
+								<option value="대장">대장</option>
+								<option value="수경">수경</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>복무기간</th>
+					<td colspan="5">
+						<div class="select wid120">
+							<label for="army_y1"></label>
+							<select id="army_y1" name="army_y1" aria-haspopup="true" aria-controls="select-menu" title="복무 시작 년도  선택">
+								<!-- 1940 ~ 올해 까지 프로그래밍으로 자동옵션 추가-->
+								<option value="2019">2019</option>
+							</select>
+						</div> 년
+						<div class="select wid100">
+							<label for="army_m1"></label>
+							<select id="army_m1" name="army_m1" aria-haspopup="true" aria-controls="select-menu" title="복무 시작 달 선택">							
+								<!-- 자동으로 12달 옵션 추가-->
+								<option value="12">12</option>
+							</select>
+						</div> 월 ~
+						<div class="select wid120">
+							<label for="army_y2"></label>
+							<select id="army_y2" name="army_y2" aria-haspopup="true" aria-controls="select-menu" title="복무 종료 년도 선택">
+								<!-- 1940 ~ 올해 까지 프로그래밍으로 자동옵션 추가-->
+								<option value="2019">2019</option>
+							</select>
+						</div> 년
+						<div class="select wid100">
+							<label for="army_m2"></label>
+							<select id="army_m2" name="army_m2" aria-haspopup="true" aria-controls="select-menu" title="복무 종료 달 선택">
+								<!-- 자동으로 12달 옵션 추가-->
+								<option value="12">12</option>
+							</select>
+						</div> 월				
+					</td>
+				</tr>
+			</tbody>
+		</table>		
+		<!-- //병역사항 입력 -->
+		<div class="btn-wrap marT60">
+			<button type="button" class="btn btn-l color01">저장하기</button>
+			<button type="button" class="btn btn-l color03 ">취소</button>	
+		</div>	
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

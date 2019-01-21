@@ -1,0 +1,312 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">채용공고 제목</h1>
+	</div>
+	<div class="contents">
+		<ul class="step-wrap style3">
+			<li class="stepOn"><a href="#"><span class="StepNum">1</span> <span class="txt">도움말</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">2</span> <span class="txt">기본정보</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">3</span> <span class="txt">가족사항<span class="offscreen">(현재단계)</span></span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">4</span> <span class="txt">학력사항</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">5</span> <span class="txt">개인약력</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">6</span> <span class="txt">자기소개</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">7</span> <span class="txt">지원서접수</span></a></li>
+		</ul>		
+		<h2 class="title-style4 marT80">가족사항</h2>
+		<div class="btn-wrap2">
+			※ 최대 7개 항목까지 추가 가능
+			<button type="button" class="btn add">추가</button>
+			<button type="button" class="btn del">삭제</button>
+		</div>		
+		<table class="table table-type1 marT15 recruit">	  
+			<caption><span class="offscreen">채용공고를 위한 가족사항을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    	  
+				<col style="width: 165px"/>	     
+				<col style="width: 130px"/>	    
+				<col style="width: 145px"/>	    
+				<col style="width: 430px"/>	    
+				<col style="width: 160px"/>	    
+				<col style="width: 150px"/>	    	  
+			</colgroup>
+			<thead>
+				<tr>
+					<th>관계</th>
+					<th>성명</th>
+					<th>생년월일</th>
+					<th>거주지</th>
+					<th>직업</th>
+					<th>학력</th>
+				</tr>
+			</thead>	  
+			<tbody>
+				<!-- 가족사항 입력  -->
+				<tr>
+					<td>
+						<div class="select wid">
+							<label for="family_concer_1"></label>
+							<select id="family_concer_1" name="family1_concer_1" aria-haspopup="true" aria-controls="select-menu" title="관계 선택">
+								<option value=""></option>
+								<option value="부">부</option>
+								<option value="모">모</option>
+								<option value="자">자</option>
+								<option value="배우자">배우자</option>
+								<option value="장인">장인</option>
+								<option value="장모">장모</option>
+								<option value="조부">조부</option>
+								<option value="조모">조모</option>
+								<option value="손자">손자</option>
+								<option value="시부">시부</option>
+								<option value="시모">시모</option>
+								<option value="형제">형제</option>
+								<option value="자매">자매</option>
+								<option value="처조부">처조부</option>
+								<option value="처조모">처조모</option>
+								<option value="시조모">시조모</option>
+								<option value="시조부">시조부</option>
+								<option value="외조모">외조모</option>
+								<option value="외조부">외조부</option>
+								<option value="자부">자부</option>
+								<option value="남매">남매</option>
+								<option value="형수">형수</option>
+								<option value="본인">본인</option>
+								<option value="조카">조카</option>
+								<option value="배우자조부">배우자조부</option>
+								<option value="배우자조모">배우자조모</option>
+							</select>
+						</div>
+					</td>
+					<td><label><input type="text" id="family_name_1" title="가족 성명 입력" name="family1_name_1" class="wid" /></label></td>
+					<td><label><input type="text" id="family_ymd_1" title="가족 생년월일 입력" name="family1_ymd_1" class="wid" placeholder="예) 20090101" /></label></td>
+					<td>
+						<div class="select wid3">
+							<label for="select_gubn_1"></label>
+							<select id="select_gubn_1" name="select_gubn_1" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<option value="동거">동거</option>
+								<option value="미동거" >미동거</option>
+							</select>
+						</div>
+						<div class="select wid3">
+							<label for="select_con1_1"></label>
+							<select id="select_con1_1" name="select_con1_1" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<!--  기존소스 참고 -->
+								<option value="">개발에서 추가</option>
+							</select>
+						</div>
+						<div class="select wid3">
+							<label for="select_cons2_1"></label>
+							<select id="select_cons2_1" name="select_cons2_1" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<!--  기존소스 참고 -->
+								<option value="">개발에서 추가</option>
+							</select>
+						</div>
+					</td>
+					<td><label><input type="text" id="family_job_1" title="가족 직업 입력" name="family_job_1" class="wid" /></label></td>
+					<td>
+						<div class="select wid">
+							<label for="family_work_1"></label>
+							<select id="family_work_1" name="family_work_1" aria-haspopup="true" aria-controls="select-menu" title="가족 학력 선택">
+								<option value=""></option>
+								<option value="미취학">미취학</option>	
+								<option value="초재">초재</option>
+								<option value="중재">중재</option>
+								<option value="고재">고재</option>
+								<option value="대재">대재</option>
+								<option value="전문대재">전문대재</option>
+								<option value="대학원재">대학원재</option>
+								<option value="초졸">초졸</option>
+								<option value="중졸">중졸</option>
+								<option value="고졸">고졸</option>
+								<option value="전문대졸">전문대졸</option>
+								<option value="대졸">대졸</option>
+								<option value="대학원졸">대학원졸</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<!-- //가족사항 입력  -->
+
+				<!-- 가족사항 입력  -->
+				<tr>
+					<td>
+						<div class="select wid">
+							<label for="family_concer_2"></label>
+							<select id="family_concer_2" name="family1_concer_2" aria-haspopup="true" aria-controls="select-menu" title="관계 선택">
+								<option value=""></option>
+								<option value="부">부</option>
+								<option value="모">모</option>
+								<option value="자">자</option>
+								<option value="배우자">배우자</option>
+								<option value="장인">장인</option>
+								<option value="장모">장모</option>
+								<option value="조부">조부</option>
+								<option value="조모">조모</option>
+								<option value="손자">손자</option>
+								<option value="시부">시부</option>
+								<option value="시모">시모</option>
+								<option value="형제">형제</option>
+								<option value="자매">자매</option>
+								<option value="처조부">처조부</option>
+								<option value="처조모">처조모</option>
+								<option value="시조모">시조모</option>
+								<option value="시조부">시조부</option>
+								<option value="외조모">외조모</option>
+								<option value="외조부">외조부</option>
+								<option value="자부">자부</option>
+								<option value="남매">남매</option>
+								<option value="형수">형수</option>
+								<option value="본인">본인</option>
+								<option value="조카">조카</option>
+								<option value="배우자조부">배우자조부</option>
+								<option value="배우자조모">배우자조모</option>
+							</select>
+						</div>
+					</td>
+					<td><label><input type="text" id="family_name_2" title="가족 성명 입력" name="family1_name_2" class="wid" /></label></td>
+					<td><label><input type="text" id="family_ymd_2" title="가족 생년월일 입력" name="family1_ymd_2" class="wid" placeholder="예) 20090101" /></label></td>
+					<td>
+						<div class="select wid3">
+							<label for="select_gubn_2"></label>
+							<select id="select_gubn_2" name="select_gubn_2" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<option value="동거">동거</option>
+								<option value="미동거" >미동거</option>
+							</select>
+						</div>
+						<div class="select wid3">
+							<label for="select_con1_2"></label>
+							<select id="select_con1_2" name="select_con1_2" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<!--  기존소스 참고 -->
+								<option value="">개발에서 추가</option>
+							</select>
+						</div>
+						<div class="select wid3">
+							<label for="select_cons2_2"></label>
+							<select id="select_cons2_2" name="select_cons2_2" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<!--  기존소스 참고 -->
+								<option value="">개발에서 추가</option>
+							</select>
+						</div>
+					</td>
+					<td><label><input type="text" id="family_job_2" title="가족 직업 입력" name="family_job_2" class="wid" /></label></td>
+					<td>
+						<div class="select wid">
+							<label for="family_work_2"></label>
+							<select id="family_work_2" name="family_work_2" aria-haspopup="true" aria-controls="select-menu" title="가족 학력 선택">
+								<option value=""></option>
+								<option value="미취학">미취학</option>	
+								<option value="초재">초재</option>
+								<option value="중재">중재</option>
+								<option value="고재">고재</option>
+								<option value="대재">대재</option>
+								<option value="전문대재">전문대재</option>
+								<option value="대학원재">대학원재</option>
+								<option value="초졸">초졸</option>
+								<option value="중졸">중졸</option>
+								<option value="고졸">고졸</option>
+								<option value="전문대졸">전문대졸</option>
+								<option value="대졸">대졸</option>
+								<option value="대학원졸">대학원졸</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<!-- //가족사항 입력  -->
+
+				<!-- 가족사항 입력  -->
+				<tr>
+					<td>
+						<div class="select wid">
+							<label for="family_concer_3"></label>
+							<select id="family_concer_3" name="family1_concer_3" aria-haspopup="true" aria-controls="select-menu" title="관계 선택">
+								<option value=""></option>
+								<option value="부">부</option>
+								<option value="모">모</option>
+								<option value="자">자</option>
+								<option value="배우자">배우자</option>
+								<option value="장인">장인</option>
+								<option value="장모">장모</option>
+								<option value="조부">조부</option>
+								<option value="조모">조모</option>
+								<option value="손자">손자</option>
+								<option value="시부">시부</option>
+								<option value="시모">시모</option>
+								<option value="형제">형제</option>
+								<option value="자매">자매</option>
+								<option value="처조부">처조부</option>
+								<option value="처조모">처조모</option>
+								<option value="시조모">시조모</option>
+								<option value="시조부">시조부</option>
+								<option value="외조모">외조모</option>
+								<option value="외조부">외조부</option>
+								<option value="자부">자부</option>
+								<option value="남매">남매</option>
+								<option value="형수">형수</option>
+								<option value="본인">본인</option>
+								<option value="조카">조카</option>
+								<option value="배우자조부">배우자조부</option>
+								<option value="배우자조모">배우자조모</option>
+							</select>
+						</div>
+					</td>
+					<td><label><input type="text" id="family_name_3" title="가족 성명 입력" name="family1_name_3" class="wid" /></label></td>
+					<td><label><input type="text" id="family_ymd_3" title="가족 생년월일 입력" name="family1_ymd_3" class="wid" placeholder="예) 20090101" /></label></td>
+					<td>
+						<div class="select wid3">
+							<label for="select_gubn_3"></label>
+							<select id="select_gubn_3" name="select_gubn_3" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<option value="동거">동거</option>
+								<option value="미동거" >미동거</option>
+							</select>
+						</div>
+						<div class="select wid3">
+							<label for="select_con1_3"></label>
+							<select id="select_con1_3" name="select_con1_3" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<!--  기존소스 참고 -->
+								<option value="">개발에서 추가</option>
+							</select>
+						</div>
+						<div class="select wid3">
+							<label for="select_cons2_3"></label>
+							<select id="select_cons2_3" name="select_cons2_3" aria-haspopup="true" aria-controls="select-menu" title="가족 거주지 선택">
+								<!--  기존소스 참고 -->
+								<option value="">개발에서 추가</option>
+							</select>
+						</div>
+					</td>
+					<td><label><input type="text" id="family_job_3" title="가족 직업 입력" name="family_job_3" class="wid" /></label></td>
+					<td>
+						<div class="select wid">
+							<label for="family_work_3"></label>
+							<select id="family_work_3" name="family_work_3" aria-haspopup="true" aria-controls="select-menu" title="가족 학력 선택">
+								<option value=""></option>
+								<option value="미취학">미취학</option>	
+								<option value="초재">초재</option>
+								<option value="중재">중재</option>
+								<option value="고재">고재</option>
+								<option value="대재">대재</option>
+								<option value="전문대재">전문대재</option>
+								<option value="대학원재">대학원재</option>
+								<option value="초졸">초졸</option>
+								<option value="중졸">중졸</option>
+								<option value="고졸">고졸</option>
+								<option value="전문대졸">전문대졸</option>
+								<option value="대졸">대졸</option>
+								<option value="대학원졸">대학원졸</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<!-- //가족사항 입력  -->
+			</tbody>	
+		</table>		
+		<div class="btn-wrap marT60">
+			<button type="button" class="btn btn-l color01">저장하기</button>
+			<button type="button" class="btn btn-l color03 ">취소</button>	
+		</div>	
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
