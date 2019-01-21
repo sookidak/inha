@@ -645,7 +645,7 @@ ul.bxslider {  list-style: none;}
 /* 비급여 */
 .non-pay th, .non-pay td{padding:10px 5px; line-height: 20px; }
 .non-pay td{text-align: left;}
-.non-pay .select1{width: }
+.non-pay .select1{ }
 .non-pay .select2{width:300px }
 .non-pay .select3{width:120px }
 .non-pay .input1{width: 450px !important}
