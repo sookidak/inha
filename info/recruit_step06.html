@@ -1,0 +1,259 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">채용공고 제목</h1>
+	</div>
+	<div class="contents">
+		<ul class="step-wrap style3">
+			<li class="stepOn"><a href="#"><span class="StepNum">1</span> <span class="txt">도움말</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">2</span> <span class="txt">기본정보</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">3</span> <span class="txt">가족사항</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">4</span> <span class="txt">학력사항</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">5</span> <span class="txt">개인약력<span class="offscreen">(현재단계)</span></span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">6</span> <span class="txt">자기소개</span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">7</span> <span class="txt">지원서접수</span></a></li>
+		</ul>		
+		<h2 class="title-style4 marT80">경력사항</h2>
+		<div class="btn-wrap2">
+			※ 최대 10개 항목까지 추가 가능			
+			<button type="button" class="btn add">추가</button>
+			<button type="button" class="btn del">삭제</button>
+		</div>
+		<table class="table table-type1 marT15 recruit">	  
+			<caption><span class="offscreen">채용공고를 위한 경력사항을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    	    
+				<col style="width: 200px"/>	     
+				<col style="width: 170px"/>	    
+				<col style="width: 280px"/>	    
+				<col style="width: 180px"/>	    
+				<col style="width: 350px"/>	    	  
+			</colgroup>
+			<thead>
+				<tr>
+					<th>근무처</th>
+					<th>고용구분</th>
+					<th>기간</p></th>
+					<th>근무부서</th>
+					<th>이직사유</th>
+				</tr>
+			</thead>	  
+			<tbody>
+				<!-- 경력사항 입력  -->
+				<tr>
+					<td><label><input type="text" id="company_name_1" title="근무처 입력" name="company_name_1" class="wid" /></label></td>
+					<td><label><input type="text" id="company_gubun_1" title="고용구분 입력" name="company_gubun_1" class="wid" placeholder="예) 정규직, 계약직" /></label></td>
+					<td>
+						<label><input type="text" id="company_ymds_1" title="시작 기간 입력" name="company_ymds_1" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="company_ymde_1" title="종료 기간 입력" name="company_ymde_1" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="company_team_1" title="근무부서 입력" name="company_team_1" class="wid" /></label></td>
+					<td><label><input type="text" id="company_c_1" title="이직사유 입력" name="company_c_1" class="wid" /></label></td>				
+				</tr>				
+				<!-- //경력사항 입력  -->	
+				<!-- 경력사항 입력  -->
+				<tr>
+					<td><label><input type="text" id="company_name_2" title="근무처 입력" name="company_name_2" class="wid" /></label></td>
+					<td><label><input type="text" id="company_gubun_2" title="고용구분 입력" name="company_gubun_2" class="wid" placeholder="예) 정규직, 계약직" /></label></td>
+					<td>
+						<label><input type="text" id="company_ymds_2" title="시작 기간 입력" name="company_ymds_2" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="company_ymde_2" title="종료 기간 입력" name="company_ymde_2" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="company_team_2" title="근무부서 입력" name="company_team_2" class="wid" /></label></td>
+					<td><label><input type="text" id="company_c_2" title="이직사유 입력" name="company_c_2" class="wid" /></label></td>				
+				</tr>				
+				<!-- //경력사항 입력  -->	
+				<!-- 경력사항 입력  -->
+				<tr>
+					<td><label><input type="text" id="company_name_3" title="근무처 입력" name="company_name_3" class="wid" /></label></td>
+					<td><label><input type="text" id="company_gubun_3" title="고용구분 입력" name="company_gubun_3" class="wid" placeholder="예) 정규직, 계약직"/></label></td>
+					<td>
+						<label><input type="text" id="company_ymds_3" title="시작 기간 입력" name="company_ymds_3" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="company_ymde_3" title="종료 기간 입력" name="company_ymde_3" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="company_team_3" title="근무부서 입력" name="company_team_3" class="wid" /></label></td>
+					<td><label><input type="text" id="company_c_3" title="이직사유 입력" name="company_c_3" class="wid" /></label></td>				
+				</tr>				
+				<!-- //경력사항 입력  -->	
+				<!-- 경력사항 입력  -->
+				<tr>
+					<td><label><input type="text" id="company_name_4" title="근무처 입력" name="company_name_4" class="wid" /></label></td>
+					<td><label><input type="text" id="company_gubun_4" title="고용구분 입력" name="company_gubun_4" class="wid" placeholder="예) 정규직, 계약직"/></label></td>
+					<td>
+						<label><input type="text" id="company_ymds_4" title="시작 기간 입력" name="company_ymds_4" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="company_ymde_4" title="종료 기간 입력" name="company_ymde_4" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="company_team_4" title="근무부서 입력" name="company_team_4" class="wid" /></label></td>
+					<td><label><input type="text" id="company_c_4" title="이직사유 입력" name="company_c_4" class="wid" /></label></td>				
+				</tr>				
+				<!-- //경력사항 입력  -->	
+				<!-- 경력사항 입력  -->
+				<tr>
+					<td><label><input type="text" id="company_name_5" title="근무처 입력" name="company_name_5" class="wid" /></label></td>
+					<td><label><input type="text" id="company_gubun_5" title="고용구분 입력" name="company_gubun_5" class="wid" placeholder="예) 정규직, 계약직"/></label></td>
+					<td>
+						<label><input type="text" id="company_ymds_5" title="시작 기간 입력" name="company_ymds_5" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="company_ymde_5" title="종료 기간 입력" name="company_ymde_5" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="company_team_5" title="근무부서 입력" name="company_team_5" class="wid" /></label></td>
+					<td><label><input type="text" id="company_c_5" title="이직사유 입력" name="company_c_5" class="wid" /></label></td>				
+				</tr>				
+				<!-- //경력사항 입력  -->				
+			</tbody>	
+		</table>		
+		<h2 class="title-style4 marT50">대학재학시 동아리 활동</h2>
+		<table class="table table-type1 marT15 recruit">	  
+			<caption><span class="offscreen">채용공고를 위한 대학재학시 동아리 활동을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    	    
+				<col style="width: 200px"/>	     
+				<col style="width: 170px"/>	    
+				<col style="width: 280px"/>	    
+				<col style="width: 530px"/>	     	  
+			</colgroup>
+			<thead>
+				<tr>
+					<th>동아리명</th>
+					<th>직함</th>
+					<th>기간</th>
+					<th>동아리 활동목적</th>
+				</tr>
+			</thead>	  
+			<tbody>
+				<!-- 동아리 활동 입력  -->
+				<tr>
+					<td><label><input type="text" id="dongari_name_1" title="동아리명 입력" name="dongari_name_1" class="wid" /></label></td>
+					<td><label><input type="text" id="dongari_c_1" title="직함 입력" name="dongari_c_1" class="wid" /></label></td>
+					<td>
+						<label><input type="text" id="dongari_ymds_1" title="시작 기간 입력" name="dongari_ymds_1" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="dongari_ymde_1" title="종료 기간 입력" name="dongari_ymde_1" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="dongari_etc_1" title="동아리 활동목적 입력" name="dongari_etc_1" class="wid" /></label></td>	
+				</tr>				
+				<!-- //동아리 활동 입력  -->	
+				<!-- 동아리 활동 입력  -->
+				<tr>
+					<td><label><input type="text" id="dongari_name_2" title="동아리명 입력" name="dongari_name_2" class="wid" /></label></td>
+					<td><label><input type="text" id="dongari_c_2" title="직함 입력" name="dongari_c_2" class="wid" /></label></td>
+					<td>
+						<label><input type="text" id="dongari_ymds_2" title="시작 기간 입력" name="dongari_ymds_2" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="dongari_ymde_2" title="종료 기간 입력" name="dongari_ymde_2" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="dongari_etc_2" title="동아리 활동목적 입력" name="dongari_etc_2" class="wid" /></label></td>	
+				</tr>				
+				<!-- //동아리 활동 입력  -->				
+			</tbody>	
+		</table>			
+		<h2 class="title-style4 marT50">외국어 능력</h2>
+		<table class="table table-type1 marT15 recruit">	  
+			<caption><span class="offscreen">채용공고를 위한 대학재학시 동아리 활동을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    	    
+				<col style="width: 140px"/>	     
+				<col style="width: 100px"/>	    
+				<col style="width: 280px"/>	    
+				<col style="width: 200px"/>	    
+				<col style="width: 230px"/>	   
+				<col style="width: 230px"/>	    	  
+			</colgroup>
+			<thead>
+				<tr>
+					<th>외국어명</th>
+					<th>공인점수</th>
+					<th>인증기간</th>
+					<th>인증기관</th>
+					<th>회화</th>
+					<th>독해</th>
+				</tr>
+			</thead>	  
+			<tbody>
+				<!-- 외국어 능력 입력  -->
+				<tr>
+					<td><label><input type="text" id="language_name_1" title="동아리명 입력" name="language_name_1" class="wid" /></label></td>
+					<td><label><input type="text" id="language_c_1" title="직함 입력" name="language_c_1" class="wid" /></label></td>
+					<td>
+						<label><input type="text" id="language_ymds_1" title="시작 기간 입력" name="language_ymds_1" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="language_ymde_1" title="종료 기간 입력" name="language_ymde_1" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="language_etc_1" title="외국어 능력목적 입력" name="language_etc_1" class="wid" /></label></td>	
+					<td>
+						<div class="radio">
+							<input type="radio" id="radio-a1" name="language_dialogue_1"  value="2" aria-checked="false">
+							<label for="radio-a1" >상</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-a2" name="language_dialogue_1"  value="2" aria-checked="false">
+							<label for="radio-a2" >중</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-a3" name="language_dialogue_1"  value="2" aria-checked="false">
+							<label for="radio-a3" >하</label>
+						</div>
+					</td>
+					<td>
+						<div class="radio">
+							<input type="radio" id="radio-b1" name="language_reading_1"  value="2" aria-checked="false">
+							<label for="radio-b1" >상</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-b2" name="language_reading_1"  value="2" aria-checked="false">
+							<label for="radio-b2" >중</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-b3" name="language_reading_1"  value="2" aria-checked="false">
+							<label for="radio-b3" >하</label>
+						</div>
+					</td>
+				</tr>				
+				<!-- //외국어 능력 입력  -->	
+				<!-- 외국어 능력 입력  -->
+				<tr>
+					<td><label><input type="text" id="language_name_2" title="동아리명 입력" name="language_name_2" class="wid" /></label></td>
+					<td><label><input type="text" id="language_c_2" title="직함 입력" name="language_c_2" class="wid" /></label></td>
+					<td>
+						<label><input type="text" id="language_ymds_2" title="시작 기간 입력" name="language_ymds_2" class="wid2" placeholder="예) 20090101" /></label> ~ 
+						<label><input type="text" id="language_ymde_2" title="종료 기간 입력" name="language_ymde_2" class="wid2" placeholder="예) 20090101" /></label>
+					</td>	
+					<td><label><input type="text" id="language_etc_2" title="외국어 능력목적 입력" name="language_etc_2" class="wid" /></label></td>	
+					<td>
+						<div class="radio">
+							<input type="radio" id="radio-c1" name="language_dialogue_2"  value="2" aria-checked="false">
+							<label for="radio-c1" >상</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-c2" name="language_dialogue_2"  value="2" aria-checked="false">
+							<label for="radio-c2" >중</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-c3" name="language_dialogue_2"  value="2" aria-checked="false">
+							<label for="radio-c3" >하</label>
+						</div>
+					</td>
+					<td>
+						<div class="radio">
+							<input type="radio" id="radio-d1" name="language_reading_2"  value="2" aria-checked="false">
+							<label for="radio-d1" >상</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-d2" name="language_reading_2"  value="2" aria-checked="false">
+							<label for="radio-d2" >중</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="radio-d3" name="language_reading_2"  value="2" aria-checked="false">
+							<label for="radio-d3" >하</label>
+						</div>
+					</td>
+				</tr>				
+				<!-- //외국어 능력 입력  -->				
+			</tbody>	
+		</table>
+
+		<div class="btn-wrap marT60">
+			<button type="button" class="btn btn-l color01">저장하기</button>
+			<button type="button" class="btn btn-l color03 ">취소</button>	
+		</div>	
+	</div>
+</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

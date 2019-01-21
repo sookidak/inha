@@ -1,0 +1,49 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">채용공고 제목</h1>
+	</div>
+	<div class="contents">
+		<ul class="step-wrap style3">
+			<li class="stepOn"><a href="#"><span class="StepNum">1</span> <span class="txt">도움말</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">2</span> <span class="txt">기본정보</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">3</span> <span class="txt">가족사항</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">4</span> <span class="txt">학력사항</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">5</span> <span class="txt">개인약력</span></a></li>
+			<li class="stepOn"><a href="#"><span class="StepNum">6</span> <span class="txt">자기소개<span class="offscreen">(현재단계)</span></span></a></li>
+			<li class="stepOff"><a href="#"><span class="StepNum">7</span> <span class="txt">지원서접수</span></a></li>
+		</ul>		
+		<h2 class="title-style4 marT80">자기소개 등록 <span class="text-style4 floatR">(자기소개서는 자서전식으로 성장과정, 성격, 자기평가, 지원동기, 입사 후 포부 등에 대해 기술하시기 바랍니다.)</span></h2>
+		<table class="table table-type3 marT15">	  
+			<caption><span class="offscreen">채용공고를 위한 경력사항을 입력 하는 표 입니다.</span></caption> 	  
+			<colgroup>	    	    
+				<col style="width: 200px"/>	     
+				<col style="width: "/>	     	  
+			</colgroup>
+			<tbody>
+				<th class="textC"><label for="last_etc">한글 2000자 또는<br/>영문 4000자 이내</label>
+					<p class="marT15">0자</p></th>
+				<td><textarea class="wid hei500" id="last_etc" name="last_etc"></textarea></td>
+			</tbody>	
+		</table>
+		<div class="etcbox etcbox-type2">
+			<div class="etcbox-title1">주의사항</div>
+			<ul class="list-type2">
+				<li>지원서는 본인이 직접 작성하여야 하며, 중요한 사항의 기재누락, 허위내용 기재 등이 판명될 때에는 합격 및 입사를 취소할 수 있습니다.</li>
+				<li>기재사항은 증빙할 수 있는 사항을 기재하여야 하며 증빙을 요청 시 원본을 제출할 수 있어야 합니다.</li>
+				<li>취업보호대상자는 해당 증명서 원본을 제출하여야 합니다.</li>
+			</ul>
+		</div>
+
+		<div class="btn-wrap marT60">
+			<button type="button" class="btn btn-l color01">저장하기</button>
+			<button type="button" class="btn btn-l color03 ">취소</button>	
+		</div>	
+	</div>
+</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
