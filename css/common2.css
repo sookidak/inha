@@ -751,7 +751,7 @@ ul.bxslider {  list-style: none;}
 /* 채용 - 가족사항, 학력사항 */
 .table-type1.recruit input[type=text], .table-type1.recruit input[type=password], .table-type1.recruit input[type=number], .table-type1.recruit .select label, .table-type1.recruit select{padding: 0 10px}
 
-.active{display: block; position: absolute; position: relative; }
+.recruit.hide{display: none;}
 
 .recruit .radio label{padding-right:0;}
 
@@ -764,3 +764,43 @@ ul.bxslider {  list-style: none;}
 .recruit_pass{background:#f3f3f3; padding:80px 0; margin: 60px; color: #000; font-family: 'NotoKrM',sans-serif ; font-weight: normal; margin-top: 50px; }
 .recruit_pass .text01{font-size: 20px; }
 .recruit_pass .text02{font-size: 24px; padding-top: 30px;}
+
+
+/* 사이트맵 */
+.sitemap{}
+.sitemap .line{width: 280px; float: left; margin-left: 20px; }
+.sitemap .line:first-child{margin-left: 0px;}
+.sitemap .dept{}
+.sitemap h2 { background: #0975b8; background: -moz-linear-gradient(-45deg, #0975b8 0%, #1798a5 100%); background: -webkit-linear-gradient(-45deg, #0975b8 0%,#1798a5 100%);  background: linear-gradient(135deg, #0975b8 0%,#1798a5 100%); border-radius:20px 0 0 0; width:280px; height:71px; display:inline-block; padding-top: 3px; padding-left: 3px}
+.sitemap h2 p{width:274px;height:65px;border-radius:18px 0 0 0;display:table-cell;background:#fff;vertical-align:middle;font-family: 'NotoKrM',sans-serif ; font-weight: normal;font-size:24px;color:#000;padding-left: 27px;}
+.sitemap .dept > ul{margin-bottom: 60px;}
+.sitemap .dept > ul > li{border-bottom: 1px dotted #ddd}
+.sitemap .dept > ul > li > button{font-size:18px;color:#333;padding-left: 30px; height: 60px; display: block; width: 100%; text-align: left;}
+.sitemap .dept > ul  ul {padding-bottom: 10px;}
+.sitemap .dept > ul  ul  li{position: relative;padding-left: 38px; margin-bottom: 5px; }
+.sitemap .dept > ul  ul  li:after{content: ""; display: block; width: 5px; height: 1px; background-color: #777; position: absolute;top: 12px; left:30px;}
+.sitemap .dept > ul  ul li button{font-size:16px;color:#777;}
+
+
+/* 층별안내 */
+.floor-tab:after{content: ""; display: block;clear: both;}
+.floor-tab .floor-list {width: 80px; float: left;}
+.floor-tab .floor-list li button{width: 80px; height: 55px; display: table-cell; vertical-align: middle; border:1px solid #dddddd; border-top: 0; border-right: 0; text-align: center;font-size:18px;color:#333;font-family: 'NotoKrM',sans-serif ; font-weight: normal;}
+.floor-tab .floor-list li button.active{background: #0770bb; color: #fff; border:0;}
+.floor-tab .floor-list li:first-child button{border-top: 1px solid #dddddd; }
+.floor-tab .floor-box{width: 1100px;min-height: 880px;  border:1px solid #dddddd ;float: right; position: relative; }
+.floor-tab .floor-box .con{padding: 30px 50px; display: none}
+.floor-tab .floor-box .con.active{display: block;}
+.floor-tab .floor-box .con h2{font-size:24px;color:#000;font-family: 'NotoKrM',sans-serif ; font-weight: normal;background-color: #fff;}
+.floor-tab .floor-box .con img{margin-top: 30px}
+.floor-tab .floor-box .info{font-size:14px;color:#777;font-family: 'NotoKrR',sans-serif ; font-weight: normal; line-height: 33px; position: absolute; top: 23px; right: 10px;}
+.floor-tab .floor-box .info span{ margin-right: 12px;}
+.floor-tab .floor-box .info span:before{ content: ""; display: inline-block; width: 25px; height: 30px;background: url(../img/floor-icon.png) no-repeat 0 0; vertical-align: middle; margin-right: 3px;}
+.floor-tab .floor-box .info span.icon2:before{background-position:-25px 0px;}
+.floor-tab .floor-box .info span.icon3:before{background-position:-50px 0px;}
+.floor-tab .floor-box .info span.icon4:before{background-position:-75px 0px;}
+.floor-tab .floor-box .info span.icon5:before{background-position:-100px 0px;}
+.floor-tab .floor-box .info span.icon6:before{background-position:-125px 0px;}
+.floor-tab .floor-box .info span.icon7:before{background-position:-150px 0px;}
+
+
