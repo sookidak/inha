@@ -789,9 +789,9 @@ ul.bxslider {  list-style: none;}
 .floor-tab .floor-list li button.active{background: #0770bb; color: #fff; border:0;}
 .floor-tab .floor-list li:first-child button{border-top: 1px solid #dddddd; }
 .floor-tab .floor-box{width: 1100px;min-height: 880px;  border:1px solid #dddddd ;float: right; position: relative; }
-.floor-tab .floor-box .con{padding: 30px 50px; display: none}
+.floor-tab .floor-box .con{padding: 30px 50px; display: none;text-align:center;}
 .floor-tab .floor-box .con.active{display: block;}
-.floor-tab .floor-box .con h2{font-size:24px;color:#000;font-family: 'NotoKrM',sans-serif ; font-weight: normal;background-color: #fff;}
+.floor-tab .floor-box .con h2{font-size:24px;color:#000;font-family: 'NotoKrM',sans-serif ; font-weight: normal;background-color: #fff;text-align:left;}
 .floor-tab .floor-box .con img{margin-top: 30px}
 .floor-tab .floor-box .info{font-size:14px;color:#777;font-family: 'NotoKrR',sans-serif ; font-weight: normal; line-height: 33px; position: absolute; top: 23px; right: 10px;}
 .floor-tab .floor-box .info span{ margin-right: 12px;}
