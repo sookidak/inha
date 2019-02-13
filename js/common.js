@@ -133,8 +133,8 @@ $(document).ready(function() {
 	// 탭 갯수가 6개 이하일때 넓이 조절 이하일때 조절바 노출
 	var tapN = $tablist1.find('a').length;
 	if (tapN < 6) {
-		var tapW = 1180/tapN;
-		$tablist1.find('a').css( 'width', tapW+'px' );
+		//var tapW = 1180/tapN;
+		//$tablist1.find('a').css( 'width', tapW+'px' );
 	}else if(tapN > 6){
 		$(".scroll-btn").addClass('active')
 	}
@@ -172,7 +172,7 @@ $(document).ready(function() {
 		scrollMove(196);
 	});
 	var scrollMove = function (n){
-		$('.tablist-type1').animate({scrollLeft : $('.tablist-type1').scrollLeft() + n}, 500);
+		$('.tab-box').animate({ scrollLeft: $('.tab-box').scrollLeft() + n}, 500);
 	}
 
 
