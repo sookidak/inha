@@ -192,9 +192,15 @@ background: linear-gradient(135deg, #0770bb 0%,#0770bb 31%,#199da3 100%); }
 .relative-service{text-align:left;font-size:13px;}
 .relative-service p{display:inline-block;vertical-align:middle;line-height:19px;}
 .relative-service:before{content:'';display:inline-block;width:44px;height:44px;background:url('../img/fbnr_service.png') left top no-repeat;vertical-align:middle;margin-right:10px;}
-.relative-btn button{ border:1px solid #34363a; width: 170px; height: 36px; background: transparent; color:#aaa; font-size: 13px;   margin-left:6px; text-align: left; padding-left:10px ; letter-spacing: -1px;position:relative;}
-.relative-btn button:after{content:'';display:block;width: 12px; height: 12px;background:url('../img/icon_header.png') 0 -220px no-repeat;position:absolute; right:6px; top:12px; }
-.relative-btn button:first-child{margin-left:0 }
+.relative-btn > div {display: inline-block;  border:1px solid #34363a; width: 200px; height: 36px; background: transparent; color:#aaa; font-size: 13px;   margin-left:6px; text-align: left; padding-left:10px ; letter-spacing: -1px;position:relative; padding-top: 10px; position: relative; cursor: pointer;}
+.relative-btn > div:after{content:'';display:block;width: 12px; height: 12px;background:url('../img/icon_header.png') 0 -220px no-repeat;position:absolute; right:6px; top:12px; }
+.relative-btn > div:first-child{margin-left:0 }
+.relative-btn > div ul{border:1px solid #34363a; position: absolute; left: -1px; bottom: 34px; background:#3d4044; width: 200px; display: none}
+.relative-btn ul li a{display: block;  height: 36px;padding-top: 10px;border-top:1px solid #34363a;padding-left:10px ;}
+.relative-btn ul li a:hover{color: #fff; font-family:'notoKrR',sans-serif;}
+.relative-btn li:first-child a{border-top:0 }
+.relative-btn > div:hover ul{display: block}
+
 
 /* ----- 공통 guide ----- */
 /* component */
