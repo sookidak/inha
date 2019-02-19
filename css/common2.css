@@ -21,7 +21,7 @@
 .historyp-cont2{display:table-cell;}
 .historyp-cont2 li{font-size:16px;margin-bottom:5px;color:#333;line-height:1.5em;}
 .historyp-cont2 .historyp-y{font-family: 'NotoR';color:#000;margin-right:8px;}
-.historyp .bx-controls{position: absolute; bottom: -15px !important; text-align: left !important; padding-left: 30px !important; width: 100%}
+.historyp .bx-controls{position: absolute; bottom: -15px !important; text-align: left !important; padding-left: 30px !important; width: 700px}
 .historyp .bx-pager{text-align:left !important}
 
 /* 설립이념 */
