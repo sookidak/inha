@@ -218,7 +218,7 @@ margin-bottom:32px;
 .res-wrap .res-docter .doc-box .doc-list {display: block; border-bottom:1px solid #eeeeee ; background: #fff ; position: relative;}
 .res-wrap .res-docter .doc-box .doc-list:after{content:'';display: block;clear: both;}
 .res-wrap .res-docter .doc-box .doc-list.active{border:2px solid #0770bb;}
-.res-wrap .res-docter .doc-box .doc-list .doc_photo{ float: left; margin-top: 40px; margin-left: 20px; }
+.res-wrap .res-docter .doc-box .doc-list .doc_photo{ float: left; margin-top: 40px; margin-left: 20px; width: 180px; }
 .res-wrap .res-docter .doc-box .doc-list .text-wrap{padding-top: 40px; margin-right: 20px;width: 345px; float: right;}
 .res-wrap .res-docter .doc-box .doc-list .text-wrap .name{font-size: 22px; color: #000; font-family:'notoKrM',sans-serif;margin-bottom: 20px;}
 .res-wrap .res-docter .doc-box .doc-list .text-wrap > div{margin-bottom: 20px;}
@@ -315,7 +315,7 @@ margin-bottom:32px;
 .doc-list .doc-box{  width: 280px; height: 420px; border: 1px solid #dddddd; position: relative; text-align: center; display: inline-block; margin-bottom: 20px; margin-left: 17px ; vertical-align: top }
 .doc-list .doc-box a{position: relative; display: block;}
 .doc-list .doc-box:nth-child(4n+1){ margin-left:0px;}
-.doc-list .doc-box .doc_photo{width: 180px; height: 180px; margin: 20px auto 10px ; display: block;  }
+.doc-list .doc-box .doc_photo{width: 180px; height: 196px; margin: 20px auto 10px ; display: block;  }
 .doc-list .doc-box .dept{font-size: 20px; color: #000; height: 60px; width: 240px;  border-bottom: 1px solid #dddddd; display: table;  margin-left: 20px;line-height: 22px ; }
 .doc-list .doc-box .dept span{display: table-cell;vertical-align: middle;}
 .doc-list .doc-box .name{font-family:'notoKrM',sans-serif; font-size: 22px; color: #000; margin-bottom: 20px; }
@@ -338,7 +338,7 @@ margin-bottom:32px;
 .time-info > span{margin-right: 7px; margin-left:17px }
 
 .dept-time th,  .dept-time td{padding:  0 10px; color: #000; line-height: 20px}
-.dept-time .doc_photo{width: 140px; height: 140px; margin: 20px auto 10px ;}
+.dept-time .doc_photo{width: 140px; height: 152px; margin: 20px auto 10px ;}
 .dept-time .name{font-family: 'NotoKrR'; font-size: 18px; color: #000;margin-bottom: 20px }
 .dept-time .text01{font-family: 'NotoKrL'; font-size: 16px; color: #333; text-align: left; padding: 0 20px 20px}
 .dept-time .text02{font-family: 'NotoKrL'; font-size: 14px; color: #777; text-align: left;padding: 0 20px}
@@ -497,6 +497,8 @@ margin-bottom:32px;
 .now-wrap .board .news .tit:after{background-position: -120px -120px }
 .now-wrap .board .recruit .tit:after{background-position:  -160px -120px}
 .now-wrap .board .press .tit:after{background-position:  -60px -120px}
+.now-wrap .board .list-type1 a{width:230px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; display: inline-block }
+.now-wrap .board .list-type1 a span{position: absolute; right: 0;}
 
 
 .section.healthy{background:url('../img/main_healthy_bg.jpg') center top; }
