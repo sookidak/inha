@@ -293,12 +293,12 @@ margin-bottom:32px;
 .dept-list .list .over-icon li.con a{ background-position: 0px -235px}
 .dept-list .list .over-icon li:nth-child(-n+2){margin-bottom: 10px}
 .dept-list .list .over-icon li:nth-child(2n+2){margin-left:15px}
-.dept-list .list .over-icon li a span{ position: absolute; border: 1px solid #0770bb; background: #fff; font-size: 14px; color: #777; padding:5px ;display: none ; }
+.dept-list .list .over-icon li a span{ position: absolute; border: 1px solid #0770bb; background: #fff; font-size: 14px; color: #777; padding:5px ;display: none ; letter-spacing:0px }
 .dept-list .list .over-icon li a span:before{content:'';display:inline-block;position:absolute;left:45%;top:22px;width:4px;height:10px;background: url(../img/icon_dept_arr.png) no-repeat}
-.dept-list .list .over-icon li.home a span{top: -38px; left:9px; }
-.dept-list .list .over-icon li.doc a span{top: -38px; left:-15px;width: 75px;}
-.dept-list .list .over-icon li.res a span{top: -38px; left:-10px;width: 65px;}
-.dept-list .list .over-icon li.con a span{top: -38px; left:-10px;width: 65px;}
+.dept-list .list .over-icon li.home a span{top: -38px; left:8px; }
+.dept-list .list .over-icon li.doc a span{top: -38px; left:-17px;width: 80px;}
+.dept-list .list .over-icon li.res a span{top: -38px; left:-12px;width: 70px;}
+.dept-list .list .over-icon li.con a span{top: -38px; left:-12px;width: 70px;}
 .dept-list .list .text-ko{ font-size: 22px; font-family:'notoKrM',sans-serif; margin-top:20px }
 .dept-list .list .text-en{color: #777; font-size: 14px; font-family:'notoKrR',sans-serif;margin-top:10px}
 .dept-list .list .over-icon li.home a:hover, .dept-list .list .over-icon li.home a:focus{background-position: -54px -70px; }
@@ -497,8 +497,8 @@ margin-bottom:32px;
 .now-wrap .board div ul li{ font-size: 15px; color: #333; margin-bottom: 15px; }
 .now-wrap .board div ul li span.data{font-size: 15px; color: #777; display: inline-block;width: 65px; float: right}
 .now-wrap .board .news .tit:after{background-position: -120px -120px }
-.now-wrap .board .recruit .tit:after{background-position:  -160px -120px}
-.now-wrap .board .press .tit:after{background-position:  -60px -120px}
+.now-wrap .board .recruit .tit:after{background-position:  -60px -120px}
+.now-wrap .board .press .tit:after{background-position:  -160px -120px}
 .now-wrap .board .list-type1 a{width:230px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; display: inline-block }
 .now-wrap .board .list-type1 a span{position: absolute; right: 0;}
 
