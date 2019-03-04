@@ -38,8 +38,8 @@
 				<button data-hei="750" data-wid="390">3세미나실</button>
 				<button data-hei="60" data-wid="390">5세미나실</button>
 				<button data-hei="130" data-wid="410">6세미나실</button>
-				<button data-hei="270" data-wid="39">강의실</button>
-				<button data-hei="380" data-wid="270">전산교육장</button>
+				<button data-hei="270" data-wid="390">강의실</button>
+				<button data-hei="390" data-wid="270">전산교육장</button>
 			</div>
 			<!-- //지하 2층 -->
 			<!-- 지하 2층 -->
@@ -52,7 +52,7 @@
 				<button data-hei="" data-wid="">핵의학과</button>
 			</div>
 			<!-- //지하 2층 -->
-			
+
 
 
 			<!-- //층 선택에 따른 주요시설 리스트 -->
@@ -149,20 +149,26 @@
 			$mark.removeClass('active');
 			$(".con").removeClass('active');
 			$(this).addClass('active');
-			var panel = $(this).attr('data');			
-			var textBox = panel+"-text";
-			$(panel).addClass('active');					
+			var panel = $(this).attr('data');
+			var textBox = panel + "-text";
+			$(panel).addClass('active');
 			$(textBox).addClass('active');
 		});
 		$list2.find('button').on('click', function (e) {
 			e.preventDefault();
-			$list2.find('button').removeClass('active');				
+			$list2.find('button').removeClass('active');
 			$(this).addClass('active');
 			$mark.addClass('active');
-			var hei = $(this).attr('data-hei');	
-			var wid = $(this).attr('data-wid');	
-			console.log(hei+","+ wid);				
+			var hei = $(this).attr('data-hei');
+			var wid = $(this).attr('data-wid');
+			console.log(hei + "," + wid);
+			$mark.stop().animate({
+				top: hei,
+				left: wid
+			});
+
 		});
+
 
 
 
