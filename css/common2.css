@@ -827,5 +827,8 @@ ul.bxslider {  list-style: none;}
 
 .floor-tab .floor-box .icon_mark{position: absolute;top: 330px; left: 270px;  z-index: 1;}
 .floor-tab .floor-box .icon_mark img{ animation:topdown 0.6s linear infinite alternate;display: block;position: absolute;}
+.floor-tab .floor-box .icon_mark2{position: absolute;top: 330px; left: 270px;  z-index: 1; display: none;}
+.floor-tab .floor-box .icon_mark2.active {display: block;}
+.floor-tab .floor-box .icon_mark2 img{ animation:topdown 0.6s linear infinite alternate;display: block;position: absolute;}
 
 
