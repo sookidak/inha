@@ -291,7 +291,6 @@ $(window).scroll(function () {
 
 	if (hei >= 131) {
 		$location.addClass('fix');
-		console.log("00");
 	}else{
 		$location.removeClass('fix');
 	}

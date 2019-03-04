@@ -7,10 +7,11 @@
 		<h1 class="title-style1">층별안내</h1>
 		<p class="text-style1">인하대병원의 진료과, 센터, 검사실, 병동 등의 주요 시설에 대한 위치를 안내하고 있습니다.</p>
 	</div>
-	<div class="contents">		
+	<div class="contents">
 		<div class="floor-tab">
+			<!-- 층수 선택 -->
 			<ul class="floor-list">
-				<li><button data="#B2F" class="active">B2F</button></li> 
+				<li><button data="#B2F" class="active">B2F</button></li>
 				<li><button data="#B1F">B1F</button></li>
 				<li><button data="#F1F">1F</button></li>
 				<li><button data="#F2F">2F</button></li>
@@ -26,96 +27,146 @@
 				<li><button data="#F16F">16F</button></li>
 				<li><button data="#F17F">17F</button></li>
 				<li><button data="#F18F">18F</button></li>
-			</li>
-		</ul>
-		<div class="floor-box">
-			<div class="info">
-				<span class="icon1">은행</span>
-				<span class="icon2">접수·수납창구</span>
-				<span class="icon3">화장실</span>
-				<span class="icon4">엘레베이터</span>
-				<span class="icon5">에스컬레이터</span>
-				<span class="icon6">비상구</span>
-				<span class="icon7">소화기·소화전</span>
+				</li>
+			</ul>
+			<!-- //층수 선택 -->
+			<!-- 층 선택에 따른 주요시설 리스트 -->
+			<!-- 지하 2층 -->
+			<div class="floor-list2 active" id="B2F-text">
+				<button data-hei="330" data-wid="270">1세미나실</button>
+				<button data-hei="270" data-wid="270">2세미나실</button>
+				<button data-hei="750" data-wid="390">3세미나실</button>
+				<button data-hei="60" data-wid="390">5세미나실</button>
+				<button data-hei="130" data-wid="410">6세미나실</button>
+				<button data-hei="270" data-wid="39">강의실</button>
+				<button data-hei="380" data-wid="270">전산교육장</button>
 			</div>
-			<div id="B2F" class="con active">
-				<h2>B2F</h2>
-				<img src="../img/floor-b2f.png" alt="지하2층 도면" />
+			<!-- //지하 2층 -->
+			<!-- 지하 2층 -->
+			<div class="floor-list2" id="B1F-text">
+				<button data-hei="250" data-wid="220">혈관촬영실</button>
+				<button data-hei="" data-wid="">영상의학과</button>
+				<button data-hei="" data-wid="">방사선종양의학과</button>
+				<button data-hei="" data-wid="">정밀의료분석센터</button>
+				<button data-hei="" data-wid="">병리과</button>
+				<button data-hei="" data-wid="">핵의학과</button>
 			</div>
-			<div id="B1F" class="con">
-				<h2>B1F</h2>
-				<img src="../img/floor-b1f.png" alt="지하1층 도면" />
+			<!-- //지하 2층 -->
+			
+
+
+			<!-- //층 선택에 따른 주요시설 리스트 -->
+			<!-- 층별 이미지 -->
+			<div class="floor-box">
+				<p class="icon_mark"><img src="../img/icon_mark.png" alt="표시마크"></p>
+				<div class="info">
+					<span class="icon1">은행</span>
+					<span class="icon2">접수·수납창구</span>
+					<span class="icon3">화장실</span>
+					<span class="icon4">엘레베이터</span>
+					<span class="icon5">에스컬레이터</span>
+					<span class="icon6">비상구</span>
+					<span class="icon7">소화기·소화전</span>
+				</div>
+				<div id="B2F" class="con active">
+					<h2>B2F</h2>
+					<img src="../img/floor-b2f.png" alt="지하2층 도면" />
+				</div>
+				<div id="B1F" class="con">
+					<h2>B1F</h2>
+					<img src="../img/floor-b1f.png" alt="지하1층 도면" />
+				</div>
+				<div id="F1F" class="con">
+					<h2>1F</h2>
+					<img src="../img/floor-1f.png" alt="1층 도면" />
+				</div>
+				<div id="F2F" class="con">
+					<h2>2F</h2>
+					<img src="../img/floor-2f.png" alt="2층 도면" />
+				</div>
+				<div id="F3F" class="con">
+					<h2>3F</h2>
+					<img src="../img/floor-3f.png" alt="3층 도면" />
+				</div>
+				<div id="F5F" class="con">
+					<h2>5F</h2>
+					<img src="../img/floor-5f.png" alt="5층 도면" />
+				</div>
+				<div id="F7F" class="con">
+					<h2>7F</h2>
+					<img src="../img/floor-7f.png" alt="7층 도면" />
+				</div>
+				<div id="F8F" class="con">
+					<h2>8F</h2>
+					<img src="../img/floor-8f.png" alt="8층 도면" />
+				</div>
+				<div id="F9F" class="con">
+					<h2>9F</h2>
+					<img src="../img/floor-9f.png" alt="9층 도면" />
+				</div>
+				<div id="F10F" class="con">
+					<h2>10F</h2>
+					<img src="../img/floor-10f.png" alt="10층 도면" />
+				</div>
+				<div id="F11F" class="con">
+					<h2>11F</h2>
+					<img src="../img/floor-11f.png" alt="11층 도면" />
+				</div>
+				<div id="F12F" class="con">
+					<h2>12F</h2>
+					<img src="../img/floor-12f.png" alt="12층 도면" />
+				</div>
+				<div id="F15F" class="con">
+					<h2>15F</h2>
+					<img src="../img/floor-15f.png" alt="15층 도면" />
+				</div>
+				<div id="F16F" class="con">
+					<h2>16F</h2>
+					<img src="../img/floor-16f.png" alt="16층 도면" />
+				</div>
+				<div id="F17F" class="con">
+					<h2>17F</h2>
+					<img src="../img/floor-17f.png" alt="17층 도면" />
+				</div>
+				<div id="F18F" class="con">
+					<h2>18F</h2>
+					<img src="../img/floor-18f.png" alt="18층 도면" />
+				</div>
 			</div>
-			<div id="F1F" class="con">
-				<h2>1F</h2>
-				<img src="../img/floor-1f.png" alt="1층 도면" />
-			</div>
-			<div id="F2F" class="con">
-				<h2>2F</h2>
-				<img src="../img/floor-2f.png" alt="2층 도면" />
-			</div>
-			<div id="F3F" class="con">
-				<h2>3F</h2>
-				<img src="../img/floor-3f.png" alt="3층 도면" />
-			</div>
-			<div id="F5F" class="con">
-				<h2>5F</h2>
-				<img src="../img/floor-5f.png" alt="5층 도면" />
-			</div>
-			<div id="F7F" class="con">
-				<h2>7F</h2>
-				<img src="../img/floor-7f.png" alt="7층 도면" />
-			</div>
-			<div id="F8F" class="con">
-				<h2>8F</h2>
-				<img src="../img/floor-8f.png" alt="8층 도면" />
-			</div>
-			<div id="F9F" class="con">
-				<h2>9F</h2>
-				<img src="../img/floor-9f.png" alt="9층 도면" />
-			</div>
-			<div id="F10F" class="con">
-				<h2>10F</h2>
-				<img src="../img/floor-10f.png" alt="10층 도면" />
-			</div>
-			<div id="F11F" class="con">
-				<h2>11F</h2>
-				<img src="../img/floor-11f.png" alt="11층 도면" />
-			</div>
-			<div id="F12F" class="con">
-				<h2>12F</h2>
-				<img src="../img/floor-12f.png" alt="12층 도면" />
-			</div>
-			<div id="F15F" class="con">
-				<h2>15F</h2>
-				<img src="../img/floor-15f.png" alt="15층 도면" />
-			</div>
-			<div id="F16F" class="con">
-				<h2>16F</h2>
-				<img src="../img/floor-16f.png" alt="16층 도면" />
-			</div>
-			<div id="F17F" class="con">
-				<h2>17F</h2>
-				<img src="../img/floor-17f.png" alt="17층 도면" />
-			</div>
-			<div id="F18F" class="con">
-				<h2>18F</h2>
-				<img src="../img/floor-18f.png" alt="18층 도면" />
-			</div>
+			<!--// 층별 이미지 -->
 		</div>
 	</div>
-</div>
-<script type="text/javascript">
-	//층별안내 스크립트
-	$(".floor-list").find('button').on('click',function(e) {
-		e.preventDefault();
-		$(".floor-list").find('button').removeClass('active');
-		$(this).addClass('active');		
-		$(".con").removeClass('active');
-		var panel = $(this).attr('data');
-		$(panel).addClass('active');
-	});
-</script>
+	<script type="text/javascript">
+		//층별안내 스크립트
+		var $list1 = $(".floor-list");
+		var $list2 = $(".floor-list2");
+		var $mark = $(".icon_mark");
+
+		$list1.find('button').on('click', function (e) {
+			e.preventDefault();
+			$list1.find('button').removeClass('active');
+			$list2.removeClass('active');
+			$mark.removeClass('active');
+			$(".con").removeClass('active');
+			$(this).addClass('active');
+			var panel = $(this).attr('data');			
+			var textBox = panel+"-text";
+			$(panel).addClass('active');					
+			$(textBox).addClass('active');
+		});
+		$list2.find('button').on('click', function (e) {
+			e.preventDefault();
+			$list2.find('button').removeClass('active');				
+			$(this).addClass('active');
+			$mark.addClass('active');
+			var hei = $(this).attr('data-hei');	
+			var wid = $(this).attr('data-wid');	
+			console.log(hei+","+ wid);				
+		});
+
+
+
+	</script>
 </section>
 <!-- //container -->
 @@include('../inc/footer.html')
