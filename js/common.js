@@ -164,16 +164,21 @@ $(document).ready(function() {
 
 
 	//탭 가로 스크롤 버튼
-	$('.scroll-left').on('click keydown', function(event) {
-		scrollMove(-196);
+	var $box = $('.tab-box');
+	$('.scroll-left').on('click keydown', function(event) {		
+		if (!$box.is(':animated')) scrollMove(-196);		
 	});
 	//탭 가로 스크롤 버튼
 	$('.scroll-right').on('click keydown', function(event) {
-		scrollMove(196);
+		if (!$box.is(':animated')) scrollMove(196);
 	});
 	var scrollMove = function (n){
-		$('.tab-box').animate({ scrollLeft: $('.tab-box').scrollLeft() + n}, 500);
+		$('.tab-box').animate({ scrollLeft: $box.scrollLeft() + n}, 500);	
 	}
+	
+	
+	
+	
 
 
   	//자주하는 질문
@@ -209,6 +214,16 @@ $(document).ready(function() {
 		var select_name = $(this).children('option:selected').text();
 		$(this).siblings('label').text(select_name);
 	});
+
+	
+	//위로가기 버튼 이벤트
+	$('.top-btn').on('click', function (event) {
+		$('html, body').animate({ scrollTop: 0 }, 400);
+	});
+
+	//active 탭으로 기본 이동
+	var p = $('.tablist-type1 .active').position();
+	$box.scrollLeft(p.left);
 
 
 
@@ -261,5 +276,23 @@ $(document).ready(function() {
 
 
 
+
+});
+
+
+
+/* javascript, jquery */
+$(window).scroll(function () {
+	var $location = $('.location-wrap');
+	var hei = $(document).scrollTop();
+
+	//console.log(hei);
+
+
+	if (hei >= 131) {
+		$location.addClass('fix');
+	}else{
+		$location.removeClass('fix');
+	}
 
 });

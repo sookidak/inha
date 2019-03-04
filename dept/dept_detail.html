@@ -12,7 +12,7 @@
 			<!-- 탭 메뉴  -->
 			<div class="tab-box">
 				<div role="tablist" class="tablist-type1">
-					<a id="info-anchor" href="#info" class="active" role="tab" aria-selected="true">소개</a>
+					<a id="info-anchor" href="#info" role="tab" aria-selected="true">소개</a>
 					<a id="doctors-anchor" href="#doctors" role="tab" aria-selected="false">의료진</a>
 					<a id="time-anchor" href="#time" role="tab" aria-selected="false">진료시간표</a>
 					<a id="hinfo-anchor"href="#health" role="tab" aria-selected="false">건강정보</a>
@@ -20,6 +20,10 @@
 					<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
 					<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
 					<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
+					<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
+					<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
+					<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false">4depth</a>
+					<a id="4depth-anchor" href="#4depth" role="tab" aria-selected="false"  class="active">4depth</a>
 				</div>	
 			</div>
 			<!-- 탭 메뉴가 6개 이상일때 조절바 메뉴 스크롤 이동 -->
@@ -250,7 +254,8 @@
 					<tbody>
 						<tr>
 							<td rowspan="2">
-								<img src="../img/doc_photo.png" alt="김대혁 의사 사진" class="doc_photo" />
+								<!-- 의사 사진이 없을 경우의 디폴트 -->
+								<img src="../img/doctor_none.jpg" alt="의사 사진 없음" class="doc_photo" />
 								<p class="name">김대혁</p>
 							</td>
 							<td rowspan="2">
