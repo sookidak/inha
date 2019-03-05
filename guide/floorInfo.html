@@ -202,13 +202,13 @@
 			$(".con").removeClass('active');
 			$(this).addClass('active');
 			var panel = $(this).attr('data');
-			var textBox = panel + "-text";
+			var $textBox = $(panel + "-text");
 			$(panel).addClass('active');
-			$(textBox).addClass('active');
+			$textBox.addClass('active');
 			$list2.find('button').removeClass('active');
-			$(textBox).find('button').eq(0).addClass('active');
-			var heiL = $(textBox).find('button').eq(0).attr('data-hei');
-			var widL = $(textBox).find('button').eq(0).attr('data-wid');
+			$textBox.find('button').eq(0).addClass('active');
+			var heiL = $textBox.find('button').eq(0).attr('data-hei');
+			var widL = $textBox.find('button').eq(0).attr('data-wid');
 			$mark.stop().animate({
 				top: heiL,
 				left: widL

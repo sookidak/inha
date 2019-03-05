@@ -61,7 +61,7 @@ button{color: #333}
 .nav-wrap .btn-close{position:absolute;left:0;top:50%;width:24px;height:18px;margin-top:-9px;display:none}
 .nav-wrap .btn-close:before{content:'';display:inline-block;width:24px;height:18px;background:url('../img/icon_header.png') left -170px no-repeat}
 .nav{float:left;display: inline-block;}
-.header-quickbtn{position:absolute;right:0;top:-1px;height:72px; }
+.header-quickbtn{position:absolute;right:0;top:-1px;height:72px;  }
 .quickbtn-res{float:left;display:inline-block;padding:0 20px;width:135px;height:72px;background: #0770bb;color: #fff;font-size:16px;font-family: 'NotoKrM';line-height:72px;}
 .quickbtn-res:before{content:'';display:inline-block;width:28px;height:24px;background:url('../img/icon_header.png') -60px top no-repeat;margin-right:8px;vertical-align: middle}
 .quickbtn-my{float:left;display:inline-block;padding:0 20px;width:133px;height:72px;background:#199da3;color: #fff;font-size:16px;font-family: 'NotoKrM';line-height:72px;}
@@ -732,6 +732,7 @@ input[readonly]{border: 1px solid #eee !important; color: #777 !important; backg
 .marL5{margin-left: 5px !important}
 .marL10{margin-left: 10px !important}
 .marL20{margin-left: 20px !important}
+.marL25{margin-left: 25px !important}
 .padB0{padding-bottom:0px !important}
 
 .wid70{width:70px !important}
