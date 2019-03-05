@@ -4,7 +4,7 @@
 .info .sec-left{width:40%;text-align:left;}
 .info .sec-right{width:60%;font-size:16px;line-height: 25px;}
 .info .sec-right p{margin-bottom:30px;vertical-align: middle}
-.info-text-style1{color:#000;font-family: 'NotoKrDL';vertical-align:middle}
+.info-text-style1{color:#000;font-family:  'NotoKrR';vertical-align:middle}
 .info-text-em{margin-left:4px;margin-right:15px;vertical-align:bottom;}
 .info-sign{vertical-align:bottom}
 
@@ -16,7 +16,7 @@
 .historyp-right{display:table-cell;padding-left:30px;vertical-align:top;padding-top:8px;letter-spacing: -0.06em; }
 .historyp-wrap{position: relative;margin-bottom:11px;}
 .historyp-title{font-size:30px;color:#0770bb;font-family:'NotoKrM';margin-bottom:37px;}
-.historyp-title .sidetext{font-size:20px;color:#777;font-family:'NotoKrDL';margin-left:13px;vertical-align: middle;}
+.historyp-title .sidetext{font-size:20px;color:#777;font-family: 'NotoKrR';margin-left:13px;vertical-align: middle;}
 .historyp-cont{display:table-cell;width:90px;font-size:18px;font-family: 'NotoR';color:#000}
 .historyp-cont2{display:table-cell;}
 .historyp-cont2 li{font-size:16px;margin-bottom:5px;line-height:1.5em;}
@@ -26,7 +26,7 @@
 
 /* 설립이념 */
 .ide-wrap{position: relative;}
-.ide-list{position:relative;left:50%;transform: translate(-50%, 0);display:inline-block;}
+.ide-list{position:relative;left:50%;transform: translate(-50%, 0);-webkit-transform: translate(-50%, 0);display:inline-block;}
 .ide-list:after{content:'';display:block;clear:both;}
 .ide-list li{float:left;margin-right:72px;letter-spacing:-0.06em;}
 .ide-list li:last-child{margin-right:0}
@@ -43,7 +43,7 @@ margin-bottom:32px;
 .ide-line{position:absolute;top:100px;left:50%;right:0;display:inline-block;height:2px;background:#ddd;width:1042px;z-index:0;margin-left:-521px}
 
 /* 미션&비전 */
-.mission-text{font-size:24px;line-height: 32px;font-family: 'NotoKrDL';letter-spacing: -0.06em;margin-bottom:60px;}
+.mission-text{font-size:24px;line-height: 32px;font-family:  'NotoKrR';letter-spacing: -0.06em;margin-bottom:60px;}
 .mission-text2{font-family: 'NotoKrR';}
 .mission-list li{float:left;text-align:center;margin-right:100px;}
 .mission-list li:last-child{margin-right:0;}
@@ -103,7 +103,7 @@ margin-bottom:32px;
 /* 회원가입쪽 타이틀 */
 .member-wrap .title-style2{text-align: center;}
 .member-wrap .text-style2{font-size: 18px; color: #777; margin-top: 12px;text-align: center;}
-.member-wrap .text-style1{  font-family:'NotoKrDL';text-align: center; margin-bottom: 80px;text-align: center;}
+.member-wrap .text-style1{  font-family: 'NotoKrR';text-align: center; margin-bottom: 80px;text-align: center;}
 .member-wrap .text-style1.line{line-height: 26px; margin-bottom: 75px;}
 .member-wrap .text-style1 .acc{color:#e3751c ; vertical-align: bottom;font-family:'notoKrM',sans-serif;}
 .member-wrap .text-style4.pw-reset{width: 580px; display: block; margin:10px auto 30px; line-height: 22px; position: relative; padding-left: 8px; }
@@ -173,7 +173,7 @@ margin-bottom:32px;
 
 /* 편의시설 */
 .amenity > li{height: 450px !important; letter-spacing: 0}
-.amenity .tit{font-family: 'NotoKrDL',sans-serif  !important; font-size: 18px !important; font-weight: normal; margin-top: 18px !important;}
+.amenity .tit{font-family:  'NotoKrR',sans-serif  !important; font-size: 18px !important; font-weight: normal; margin-top: 18px !important;}
 .amenity dl.info{margin-top:12px; margin-left: 20px;  }
 .amenity dl.info dt{ height: 26px; width: 80px; float: left; line-height: 22px}
 .amenity dl.info dd{color: #777;height: 26px;  width: 260px;display:inline-block; line-height: 22px}
@@ -200,7 +200,7 @@ margin-bottom:32px;
 .res-wrap .title span{ display: block; margin-bottom: 7px; vertical-align: top;}
 .res-wrap .title.on{background: #0770bb; color: #fff; border-color:#0770bb  !important }
 .res-wrap .before{ width: 100%; height: 100%;position: relative; color: #777}
-.res-wrap .before p{position: absolute; top: 45%; left: 50%; transform: translateY(-50%) translateX(-50%) ;}
+.res-wrap .before p{position: absolute; top: 45%; left: 50%; transform: translateY(-50%) translateX(-50%) ;-webkit-transform: translateY(-50%) translateX(-50%) ;}
 
 /* 진료예약 - 진료과 */
 .res-wrap .res-dept{ width: 279px; }
@@ -223,7 +223,7 @@ margin-bottom:32px;
 .res-wrap .res-docter .doc-box .doc-list .text-wrap .name{font-size: 22px; color: #000; font-family:'notoKrM',sans-serif;margin-bottom: 20px;}
 .res-wrap .res-docter .doc-box .doc-list .text-wrap > div{margin-bottom: 20px;}
 .res-wrap .res-docter .doc-box .doc-list .text-wrap > div:after{content:'';display: block;clear: both;}
-.res-wrap .res-docter .doc-box .doc-list .text-wrap .tit{font-size: 16px; font-family:'notoKrDL',sans-serif; width: 70px; float: left; }
+.res-wrap .res-docter .doc-box .doc-list .text-wrap .tit{font-size: 16px; font-family: 'NotoKrR',sans-serif; width: 70px; float: left; }
 .res-wrap .res-docter .doc-box .doc-list .text-wrap .con{ line-height: 20px;font-size: 14px; width: 275px; float: right; position: relative;top: -2px }
 .res-wrap .res-docter .doc-box .doc-list .day .con{ font-family:'notoKrM',sans-serif;}
 .res-wrap .res-docter .doc-box .doc-list .fie .con{}
@@ -266,7 +266,7 @@ margin-bottom:32px;
 .search-wrap .search-cont{width: 1180px; margin: 0 auto;}
 .search-wrap .search-cont .title{font-size: 34px; line-height: 46px; color: #000; margin: 0 auto 45px; padding-top: 95px; text-align: center; letter-spacing: -1px; }
 .search-wrap .search-cont .search{ background: #fff; opacity: 0.8; border-radius: 12px 0 0 0 ; height: 80px; position: relative; }
-.search-wrap .search-cont .search input{ background: transparent; border:0; font-size: 24px; line-height: 80px;height: 80px; vertical-align: middle; padding-left: 30px; width: 1070px  }
+.search-wrap .search-cont .search input{ background: transparent; border:0; font-size: 24px; height: 80px; vertical-align: top; padding-left: 30px; width: 1070px  }
 .search-wrap .search-cont .search button{vertical-align: middle;height: 80px; width: 100px ; float: right; background: url(../img/icon_dept.png) no-repeat 22px 18px transparent }
 .search-wrap .search-cont .btn-list{ margin: 20px auto 0 ; text-align: center;}
 .search-wrap .search-cont .btn-list li{display: inline-block;}
@@ -443,10 +443,11 @@ margin-bottom:32px;
 .main-lolling .bx-wrapper .bx-prev {  left: 15%; }
 .main-lolling .bx-wrapper .bx-next {  right:15%;  }
 
-
 /*.section{color: #fff; font-weight: normal; font-style: normal;font-family: 'NotoKrL'; position: relative; width: 100%}*/
 .section{color: #fff; font-weight: normal; font-style: normal;font-family: 'NotoKrL'; height: 960px; position: relative; width: 100%}
-.section > div.cont{position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) ;  }
+.section > div.cont{position: absolute; top: 50%; left: 50%; 
+	transform: translateY(-50%) translateX(-50%) ;  
+-webkit-transform: translateY(-50%) translateX(-50%) }
 .section h2{font-family: 'TitilliumTextRegular'; font-weight: normal; font-style: normal; font-size: 92px; position:relative; letter-spacing: -4px;}
 .section .h2-capy{ font-size: 20px; line-height: 34px; font-weight: normal; margin-top: 9px;}
 
@@ -483,8 +484,8 @@ margin-bottom:32px;
 .now-wrap .bx-wrapper{width: 100%;height: 300px; border-radius:20px 0 0 0; position: relative; margin-top: 58px; text-align: center;}
 .now-wrap .bx-viewport{width: 100%;height: 300px; border-radius:20px 0 0 0;}
 .now-wrap .now-lolling > div{height: 300px;  padding-top: 72px; border-radius:20px 0 0 0;}
-.now-wrap .now-lolling .text{font-size: 15px;font-family: 'NotoKrM'; margin-bottom: 17px;}
-.now-wrap .now-lolling .tit{font-size: 28px;font-family: 'NotoKrR';margin-bottom: 24px;}
+.now-wrap .now-lolling .text{font-size: 15px;font-family: 'NotoKrM'; margin-bottom: 17px;text-align: center;}
+.now-wrap .now-lolling .tit{font-size: 28px;font-family: 'NotoKrR';margin-bottom: 24px;text-align: center;}
 .now-wrap .now-lolling .btn-wrap button{display: inline-block;border-radius: 0; border:1px solid #fff; margin-left:6px;padding:10px 25px ; background: transparent; font-size: 15px;font-family: 'NotoKrM'; color: #fff}
 .now-wrap .now-lolling .btn-wrap button:first-child{ margin-left:0px  }
 .now-wrap .board{margin-top:20px; }
@@ -586,7 +587,7 @@ ul.bxslider {  list-style: none;}
 .qna dt.active button{color: #0770bb;}
 .qna dt.active:after{background-position:-70px -25px}
 .qna dd{background: #f6f6f6; padding:27px 100px;color: #777 ;position: relative;border-bottom: 1px solid #eeeeee; word-break: keep-all;}
-.qna dd:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_component.png') -70px -60px no-repeat;position: absolute;top:50%;left: 30px; transform: translateY(-50%)}
+.qna dd:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_component.png') -70px -60px no-repeat;position: absolute;top:50%;left: 30px; transform: translateY(-50%); -webkit-transform: translateY(-50%)}
 .Accordion-panel[hidden] { display: none;}
 
 
