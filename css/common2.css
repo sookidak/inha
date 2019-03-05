@@ -793,16 +793,18 @@ ul.bxslider {  list-style: none;}
 
 /* 층별안내 */
 .floor-tab:after{content: ""; display: block;clear: both;}
-.floor-tab .floor-list {width: 40px; float: left;}
-.floor-tab .floor-list li button{width: 40px; height: 55px; display: table-cell; vertical-align: middle; border:1px solid #dddddd; border-top: 0; border-right: 0; text-align: center;font-size:18px;font-family: 'NotoKrM',sans-serif ; font-weight: normal;}
+.floor-tab .list-type2 {margin-bottom: 16px;}
+.floor-tab .list-type2 li {margin-bottom: 11px;}
+.floor-tab .floor-list {width: 45px; float: left;}
+.floor-tab .floor-list li button{width: 45px; height: 55px; display: table-cell; vertical-align: middle; border:1px solid #dddddd; border-top: 0; border-right: 0; text-align: center;font-size:18px;font-family: 'NotoKrM',sans-serif ; font-weight: normal;}
 .floor-tab .floor-list li button.active{background: #0770bb; color: #fff; border:0;}
 .floor-tab .floor-list li:first-child button{border-top: 1px solid #dddddd; }
-.floor-tab .floor-list2 {width: 160px; float: left;min-height: 880px;border:1px solid #dddddd; overflow-y: auto; padding: 20px 5px; display: none}
+.floor-tab .floor-list2 {width: 165px; float: left;min-height: 880px;border:1px solid #dddddd; overflow-y: auto; padding: 20px 5px; display: none}
 .floor-tab .floor-list2.active{display: block}
 .floor-tab .floor-list2 button{display: block;height: 26px;}
 .floor-tab .floor-list2 button:hover{color:#0770bb; }
 .floor-tab .floor-list2 button.active{color:#0770bb; text-decoration: underline;display: block}
-.floor-tab .floor-box{width: 976px;min-height: 880px;  border:1px solid #dddddd ;float: right; position: relative; }
+.floor-tab .floor-box{width: 965px;min-height: 880px;  border:1px solid #dddddd ;float: right; position: relative; }
 .floor-tab .floor-box .con{padding: 30px 0px; display: none;text-align:center;}
 .floor-tab .floor-box .con.active{display: block;}
 .floor-tab .floor-box .con h2{font-size:24px;color:#000; padding-left: 20px; font-family: 'NotoKrM',sans-serif ; font-weight: normal;background-color: #fff;text-align:left;}
@@ -810,6 +812,13 @@ ul.bxslider {  list-style: none;}
 .floor-tab .floor-box .info{font-size:14px;color:#777;font-family: 'NotoKrR',sans-serif ; font-weight: normal; line-height: 33px; position: absolute; top: 23px; right: 80px;}
 .floor-tab .floor-box .info span{ margin-right: 12px;}
 .floor-tab .floor-box .info span:before{ content: ""; display: inline-block; width: 25px; height: 30px;background: url(../img/floor-icon.png) no-repeat 0 0; vertical-align: middle; margin-right: 3px;}
+.floor-tab .floor-box .info span.icon1{color: #339900}
+.floor-tab .floor-box .info span.icon2{color: #0066cc}
+.floor-tab .floor-box .info span.icon3{color: #9900ff}
+.floor-tab .floor-box .info span.icon4{color: #cc6633}
+.floor-tab .floor-box .info span.icon5{color: #cc9933}
+.floor-tab .floor-box .info span.icon6{color: #0099cc}
+.floor-tab .floor-box .info span.icon7{color: #cc0000}
 .floor-tab .floor-box .info span.icon2:before{background-position:-25px 0px;}
 .floor-tab .floor-box .info span.icon3:before{background-position:-50px 0px;}
 .floor-tab .floor-box .info span.icon4:before{background-position:-75px 0px;}
@@ -825,10 +834,7 @@ ul.bxslider {  list-style: none;}
 	100% {top:-14px}
 }
 
-.floor-tab .floor-box .icon_mark{position: absolute;top: 330px; left: 270px;  z-index: 1;}
+.floor-tab .floor-box .icon_mark{position: absolute; top:330px; left: 267px; z-index: 1;}
 .floor-tab .floor-box .icon_mark img{ animation:topdown 0.6s linear infinite alternate;display: block;position: absolute;}
-.floor-tab .floor-box .icon_mark2{position: absolute;top: 330px; left: 270px;  z-index: 1; display: none;}
-.floor-tab .floor-box .icon_mark2.active {display: block;}
-.floor-tab .floor-box .icon_mark2 img{ animation:topdown 0.6s linear infinite alternate;display: block;position: absolute;}
 
 
