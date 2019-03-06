@@ -190,7 +190,7 @@
 			</div>
 			<!-- 15층 -->
 			<div class="floor-list2" id="F15F-text">
-				<button data-hei="190" data-wid="325" data-hei2="390" data-wid2="167" data-hei3="520" data-wid3="216" data-size="32">동 15병동</button>
+				<button data-hei="190" data-wid="325" data-hei2="390" data-wid2="167" data-hei3="520" data-wid3="216" data-size="3">동 15병동</button>
 				<button data-hei="390" data-wid="305">동 15병동 간호근무실</button>
 				<button data-hei="190" data-wid="603" data-hei2="390" data-wid2="783" data-hei3="520" data-wid3="718" data-size="3">서 15병동</button>
 				<button data-hei="390" data-wid="625">서 15병동 간호근무실</button>
@@ -327,7 +327,7 @@
 		var $markp5 = '<p class="icon_mark" id="markp5">' + $markimg + '</p>';
 		var $markp6 = '<p class="icon_mark" id="markp6">' + $markimg + '</p>';
 		
-		$list1.find('button').on('click', function (e) {
+		$list1.find('button').on('click', function (e) { //1덱스 탭 클릭 시
 			e.preventDefault();
 			$list1.find('button').removeClass('active');
 			$list2.removeClass('active');
@@ -342,51 +342,18 @@
 			$list2.find('button').removeClass('active');
 			
 			var heiL = $(textBox).find('button').eq(0).attr('data-hei');
-			var widL = $(textBox).find('button').eq(0).attr('data-wid');	
-			var heiL2 = $(textBox).find('button').eq(0).attr('data-hei2');
-			var widL2 = $(textBox).find('button').eq(0).attr('data-wid2');	
-			var heiL3 = $(textBox).find('button').eq(0).attr('data-hei3');
-			var widL3 = $(textBox).find('button').eq(0).attr('data-wid3');	
-			var heiL4 = $(textBox).find('button').eq(0).attr('data-hei4');
-			var widL4 = $(textBox).find('button').eq(0).attr('data-wid4');	
-			var heiL5 = $(textBox).find('button').eq(0).attr('data-hei5');
-			var widL5 = $(textBox).find('button').eq(0).attr('data-wid5');
-			var heiL6 = $(textBox).find('button').eq(0).attr('data-hei6');
-			var widL6 = $(textBox).find('button').eq(0).attr('data-wid6');			
-			var w = $('#markp').position();
+			var widL = $(textBox).find('button').eq(0).attr('data-wid');
+			var t = $(textBox).find('button').eq(0);
+			var s = $(textBox).find('button').eq(0).attr('data-size');
 			
-			if($(textBox).find('button').eq(0).addClass('active')){ //마커가 1개일 때
+			if($(textBox).find('button').eq(0).addClass('active')){
 				$markp.stop().animate({top: heiL,left: widL});
-				$('#markp2,#markp3,#markp4,#markp5,#markp6').remove();
-			}
-			if($(textBox).find('button').eq(0).attr('data-hei6')){ //마커가 6개 이상일때
-				$('.floor-box').append($markp6,$markp5,$markp4,$markp3,$markp2);
-				$('#markp6').stop().css({'top':w.top,'left':w.left}).animate({top: heiL6,left: widL6});
-				$('#markp5').stop().css({'top':w.top,'left':w.left}).animate({top: heiL5,left: widL5});
-				$('#markp4').stop().css({'top':w.top,'left':w.left}).animate({top: heiL4,left: widL4});
-				$('#markp3').stop().css({'top':w.top,'left':w.left}).animate({top: heiL3,left: widL3});
-				$('#markp2').stop().css({'top':w.top,'left':w.left}).animate({top: heiL2,left: widL2});
-			}else if($(textBox).find('button').eq(0).attr('data-hei5')){ //마커가 5개 이상일때	
-				$('.floor-box').append($markp5,$markp4,$markp3,$markp2);
-				$('#markp5').stop().css({'top':w.top,'left':w.left}).animate({top: heiL5,left: widL5});
-				$('#markp4').stop().css({'top':w.top,'left':w.left}).animate({top: heiL4,left: widL4});
-				$('#markp3').stop().css({'top':w.top,'left':w.left}).animate({top: heiL3,left: widL3});
-				$('#markp2').stop().css({'top':w.top,'left':w.left}).animate({top: heiL2,left: widL2});	
-			}else if($(textBox).find('button').eq(0).attr('data-hei4')){ //마커가 4개 이상일때	
-				$('.floor-box').append($markp4,$markp3,$markp2);
-				$('#markp4').stop().css({'top':w.top,'left':w.left}).animate({top: heiL4,left: widL4});
-				$('#markp3').stop().css({'top':w.top,'left':w.left}).animate({top: heiL3,left: widL3});
-				$('#markp2').stop().css({'top':w.top,'left':w.left}).animate({top: heiL2,left: widL2});	
-			}else if($(textBox).find('button').eq(0).attr('data-hei3')){ //마커가 3개 이상일때	
-				$('.floor-box').append($markp3,$markp2);
-				$('#markp3').stop().css({'top':w.top,'left':w.left}).animate({top: heiL3,left: widL3});
-				$('#markp2').stop().css({'top':w.top,'left':w.left}).animate({top: heiL2,left: widL2});	
-			}else if($(textBox).find('button').eq(0).attr('data-hei2')){ //마커가 2개 이상일때	
-				$('.floor-box').append($markp2);
-				$('#markp2').stop().css({'top':w.top,'left':w.left}).animate({top: heiL2,left: widL2});	
-			}			
+				$('#markp2,#markp3,#markp4,#markp5,#markp6').remove();							
+				pointFor(s,t);
+			}	
 		});
-		$list2.find('button').on('click', function (e) {
+		
+		$list2.find('button').on('click', function (e) { //2덱스 탭 클릭 시
 			var t = $(this);
 			e.preventDefault();
 			$list2.find('button').removeClass('active');
@@ -401,7 +368,7 @@
 			}			
 		});	
 		
-		function pointFor(num,t){
+		function pointFor(num,t){ //마커 2개이상 때 마커 생성 및 좌표값 지정
 			var w = $('#markp').position();			
 			for(var m=2; m<=num; m++){	
 				$('.floor-box').append('<p class="icon_mark" style="left:'+w.left+'px; top:'+w.top+'px" id="markp'+m+'">' + $markimg + '</p>');				
