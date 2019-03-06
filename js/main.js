@@ -121,8 +121,7 @@ $(window).scroll(function() {
       $("html,body").scrollTop(heiTop+50);
   }
 }
-
-
+ 
 });
 
 
@@ -130,6 +129,8 @@ $(window).scroll(function() {
     $(".section").each(function () {
                 // 개별적으로 Wheel 이벤트 적용
                 $(this).on("mousewheel DOMMouseScroll", function (e) {
+                  console.log("00");
+                  
                   e.preventDefault();
                   var delta = 0;
                   if (!event) event = window.event;

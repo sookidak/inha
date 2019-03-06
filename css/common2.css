@@ -72,19 +72,19 @@ margin-bottom:32px;
 .mission-subtext{margin-top:7px;}
 
 /* 현황 */
-.jojic-editor{width:880px;height:525px;background:#e3e3e3;}
-.jojic-box{position:relative;float:left;width:480px;}
-.jojic-icon{position:relative;display:inline-block;width:100px;height:100px;background: #777;border-radius:50%;text-align:center;float:left;margin-right:60px;}
-.jojic-icon:before{content:'';display:inline-block;position:absolute;left:50%;top:50%;margin-top:-29px;margin-left:-30px;width:61px;height:58px;background:url('../img/icon_info.png') -160px top no-repeat;}
-.jojic-icon.type2:before{margin-top:-16px;margin-left:-30px;width:60px;height:32px;background-position:-160px -100px;}
-.jojic-box .list-type2{float:left;}
-.jojic-box .list-type2 li{display:table;margin-bottom:29px;font-family: 'NotoKrM';font-size:16px;width:194px;clear:both;}
-.jojic-box .list-type2 li:after{content:'';display:block;clear:both;}
-.list-subtit{display:table-cell;width:120px;}
-.list-data{display:table-cell;color:#000;font-family:'NotoKrL';text-align:right;}
-.list-data2{color:#000;font-family:'NotoKrL';text-align:left;}
-.jojic-box .list-type2 li em{font-family: 'NotoKrM'}
-.jojic-box .list-type2.oneline{margin-top:42px}
+.jojic-editor{width:880px; }
+.jojic-box{position:relative;}
+.jojic-box li{width: 130px; margin-left:75px ; float: left;font-family:'NotoKrM'; font-size: 16px; text-align: center}
+.jojic-box li::before{content: ""; display: block; width: 100px; height: 100px; border-radius: 50px; background:url(../img/icon_info.png) no-repeat -160px 0 #777777; margin: 0 auto 20px;}
+.jojic-box li:first-child{margin-left: 0}
+.jojic-box .list-data{ left;font-family:'NotoKrL'; display:block; margin-top:8px;}
+.jojic-box .list-data em{ left;font-family:'NotoKrM';}
+.jojic-box li:nth-child(2)::before{background-position: -160px -100px}
+.jojic-box li:nth-child(3)::before{background-position: -160px -200px}
+.jojic-box li:nth-child(4)::before{background-position: -260px 0}
+.jojic-box li:nth-child(5)::before{background-position: -260px -100px}
+
+
 
 /* 로그인 */
 .login-box{width: 980px; height: 620px; margin:100px auto 0;  border:1px solid #dddddd; border-radius: 8px; text-align: center;letter-spacing:-0.07em;}
@@ -522,9 +522,9 @@ margin-bottom:32px;
 .healthy-wrap .info-box .text02{ font-family: 'NotoKrR';font-size: 14px; line-height: 20px}
 
 .section .search{ text-align: center;margin: 10px auto 60px ; font-size: 0 ; letter-spacing: -4px; width: 200px;height: 40px; border-radius:8px 0 0 0 ; border:2px solid #fff; position: relative;   }
-.section .search input[type=text]{color: #fff; padding-left: 20px; border:0; background: transparent;width: 160px;vertical-align: middle; }
+.section .search input[type=text]{color: #fff; padding-left: 20px;padding-right: 0px; border:0; background: transparent;width: 160px;vertical-align: middle; float: left;}
 .section .search input::placeholder {color: #fff;}
-.section .search button{ width: 40px;  height: 40px; vertical-align: middle; background: url(../img/icon_main.png) no-repeat  -120px  6px transparent; }
+.section .search button{ width: 35px;  height: 40px; vertical-align: middle; background: url(../img/icon_main.png) no-repeat  -120px  6px transparent;  }
 
 .section .main-con  .search{ margin: 40px auto 0px ; width: 300px; color: #fff}
 .section .main-con  .search input[type=text]{color: #fff; width: 260px;}
@@ -693,9 +693,9 @@ ul.bxslider {  list-style: none;}
 .opera .box1::after{content: ""; display: block; width: 1px; height:68px; border-left: 1px dotted  #ddd; position: absolute;bottom:-68px; left: 50%}
 
 /* 윤리경영 - 우리의 다짐 */
-.ethical04{text-align: center; font-size: 16px}
+.ethical04{text-align:left; font-size: 16px; letter-spacing: -0.04em}
 .ethical04 li{margin-bottom: 30px;}
-.ethical04 p{font-family: 'NotoKrR'; font-weight: normal;margin-bottom: 10px;}
+.ethical04 p{font-family: 'NotoKrR'; font-weight: normal;margin-bottom: 10px; background: #0770bb; color: #fff; display: inline-block; width: 50px; height: 50px; border-radius: 50px; text-align: center; padding-top:16px; margin-right: 10px;}
 .ethical04 span{color: #0770bb; font-family: 'NotoKrR'; font-weight: normal; }
 
 
