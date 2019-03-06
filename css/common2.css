@@ -72,7 +72,7 @@ margin-bottom:32px;
 .mission-subtext{margin-top:7px;}
 
 /* 현황 */
-.jojic-editor{width:880px;height:525px; }
+.jojic-editor{width:880px; }
 .jojic-box{position:relative;}
 .jojic-box li{width: 130px; margin-left:75px ; float: left;font-family:'NotoKrM'; font-size: 16px; text-align: center}
 .jojic-box li::before{content: ""; display: block; width: 100px; height: 100px; border-radius: 50px; background:url(../img/icon_info.png) no-repeat -160px 0 #777777; margin: 0 auto 20px;}
@@ -522,9 +522,9 @@ margin-bottom:32px;
 .healthy-wrap .info-box .text02{ font-family: 'NotoKrR';font-size: 14px; line-height: 20px}
 
 .section .search{ text-align: center;margin: 10px auto 60px ; font-size: 0 ; letter-spacing: -4px; width: 200px;height: 40px; border-radius:8px 0 0 0 ; border:2px solid #fff; position: relative;   }
-.section .search input[type=text]{color: #fff; padding-left: 20px; border:0; background: transparent;width: 160px;vertical-align: middle; }
+.section .search input[type=text]{color: #fff; padding-left: 20px;padding-right: 0px; border:0; background: transparent;width: 160px;vertical-align: middle; float: left;}
 .section .search input::placeholder {color: #fff;}
-.section .search button{ width: 40px;  height: 40px; vertical-align: middle; background: url(../img/icon_main.png) no-repeat  -120px  6px transparent; }
+.section .search button{ width: 35px;  height: 40px; vertical-align: middle; background: url(../img/icon_main.png) no-repeat  -120px  6px transparent;  }
 
 .section .main-con  .search{ margin: 40px auto 0px ; width: 300px; color: #fff}
 .section .main-con  .search input[type=text]{color: #fff; width: 260px;}
