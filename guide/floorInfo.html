@@ -5,10 +5,30 @@
 <section class="container" id="container">
 	<div class="pagetitle-wrap">
 		<h1 class="title-style1">층별안내</h1>
-		<p class="text-style1">인하대병원의 진료과, 센터, 검사실, 병동 등의 주요 시설에 대한 위치를 안내하고 있습니다.</p>
 	</div>
 	<div class="contents">
+		<!-- board search box -->
+		<div class="search-box">
+			<!-- category  -->
+			<div class="select">
+				<label for="selector">주요시설 전체</label>
+				<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu">
+					<option lang="ko" value="1" role="menuitem">주요시설 전체</option>
+					<option lang="ko" value="2" role="menuitem">선택지2</option>
+				</select>
+			</div>
+			<!-- //category  -->
+			<label><input type="text" id="" placeholder="선택해주세요" /></label>
+			<button type="button" class="btn">검색</button>
+		</div>
+		<!-- //board search box -->
 		<div class="floor-tab">
+			<!-- 안내 사항 -->
+			<ul class="list-type2">
+				<li>인하대병원의 진료과, 센터, 검사실, 병동 등의 주요 시설에 대한 위치를 안내하고 있습니다.</li>
+				<li>좌측의 층별 주요시설을 클릭하시면 해당 층의 위치를 안내 받으실 수 있습니다.</li>
+			</ul>
+			<!-- //안내 사항 -->
 			<!-- 층수 선택 -->
 			<ul class="floor-list">
 				<li><button data="#B2F" class="active">B2F</button></li>
@@ -33,185 +53,203 @@
 			<!-- 층 선택에 따른 주요시설 리스트 -->
 			<!-- 지하 2층 -->
 			<div class="floor-list2 active" id="B2F-text">
-				<button data-hei="330" data-wid="270" class="active">1세미나실</button>
-				<button data-hei="270" data-wid="270">2세미나실</button>
-				<button data-hei="750" data-wid="390">3세미나실</button>
-				<button data-hei="60" data-wid="390">5세미나실</button>
-				<button data-hei="130" data-wid="410">6세미나실</button>
-				<button data-hei="270" data-wid="390">강의실</button>
-				<button data-hei="390" data-wid="270">전산교육장</button>
+				<button data-hei="330" data-wid="267" class="active">1세미나실</button>
+				<button data-hei="270" data-wid="267">2세미나실</button>
+				<button data-hei="750" data-wid="387">3세미나실</button>
+				<button data-hei="60" data-wid="387">5세미나실</button>
+				<button data-hei="130" data-wid="407">6세미나실</button>
+				<button data-hei="270" data-wid="385">강의실</button>
+				<button data-hei="390" data-wid="265">전산교육장</button>
 			</div>
 			<!-- 지하 2층 -->
 			<div class="floor-list2" id="B1F-text">
-				<button data-hei="250" data-wid="205">혈관촬영실</button>
-				<button data-hei="590" data-wid="190">영상의학과</button>
-				<button data-hei="400" data-wid="720">방사선종양의학과</button>
-				<button data-hei="830" data-wid="510">정밀의료분석센터</button>
-				<button data-hei="700" data-wid="720">병리과</button>
-				<button data-hei="920" data-wid="750">핵의학과</button>
+				<button data-hei="250" data-wid="200">혈관촬영실</button>
+				<button data-hei="590" data-wid="185">영상의학과</button>
+				<button data-hei="400" data-wid="715">방사선종양의학과</button>
+				<button data-hei="830" data-wid="505">정밀의료분석센터</button>
+				<button data-hei="700" data-wid="715">병리과</button>
+				<button data-hei="920" data-wid="745">핵의학과</button>
 			</div>
 			<!-- 1층 -->
 			<div class="floor-list2" id="F1F-text">
-				<button data-hei="60" data-wid="410">진료협력센터</button>
-				<button data-hei="365" data-wid="51">호흡기공공전문의료센터</button>
-				<button data-hei="600" data-wid="51">감염내과</button>
-				<button data-hei="680" data-wid="30">성형외과</button>
-				<button data-hei="300" data-wid="290">류마티즘센터</button>
-				<button data-hei="420" data-wid="210">정형외과</button>
-				<button data-hei="580" data-wid="272">폐암센터</button>
-				<button data-hei="910" data-wid="110">비뇨의학과</button>
-				<button data-hei="830" data-wid="390">소아과</button>
-				<button data-hei="740" data-wid="470">알레르기 클리닉</button>
-				<button data-hei="370" data-wid="750">외과</button>
-				<button data-hei="450" data-wid="790">채혈실</button>
-				<button data-hei="740" data-wid="750">권역 응급의료센터</button>
-				<button data-hei="890" data-wid="890">응급 원무과</button>
+				<button data-hei="60" data-wid="405">진료협력센터</button>
+				<button data-hei="365" data-wid="45">호흡기공공전문의료센터</button>
+				<button data-hei="600" data-wid="45">감염내과</button>
+				<button data-hei="680" data-wid="25">성형외과</button>
+				<button data-hei="300" data-wid="285">류마티즘센터</button>
+				<button data-hei="420" data-wid="205">정형외과</button>
+				<button data-hei="580" data-wid="265">폐암센터</button>
+				<button data-hei="910" data-wid="105">비뇨의학과</button>
+				<button data-hei="830" data-wid="385">소아과</button>
+				<button data-hei="740" data-wid="465">알레르기 클리닉</button>
+				<button data-hei="370" data-wid="745">외과</button>
+				<button data-hei="450" data-wid="785">채혈실</button>
+				<button data-hei="740" data-wid="745">권역 응급의료센터</button>
+				<button data-hei="890" data-wid="885">응급 원무과</button>
 			</div>
 			<!-- 2층 -->
 			<div class="floor-list2" id="F2F-text">
-				<button data-hei="45" data-wid="73">뇌신경센터</button>
-				<button data-hei="80" data-wid="250">뇌혈관센터</button>
-				<button data-hei="100" data-wid="825">심혈관센터</button>
-				<button data-hei="300" data-wid="210">두경부임센터</button>
-				<button data-hei="475" data-wid="213">안과센터</button>
-				<button data-hei="700" data-wid="290">당뇨내분비센터</button>
-				<button data-hei="920" data-wid="133">신장센터</button>
-				<button data-hei="920" data-wid="610">재활의학센터</button>
-				<button data-hei="700" data-wid="710">치과센터</button>
-				<button data-hei="730" data-wid="890">정신건강의학과</button>
-				<button data-hei="390" data-wid="735">진단검사의학과</button>
+				<button data-hei="45" data-wid="70">뇌신경센터</button>
+				<button data-hei="80" data-wid="245">뇌혈관센터</button>
+				<button data-hei="100" data-wid="820">심혈관센터</button>
+				<button data-hei="300" data-wid="205">두경부임센터</button>
+				<button data-hei="475" data-wid="210">안과센터</button>
+				<button data-hei="700" data-wid="285">당뇨내분비센터</button>
+				<button data-hei="920" data-wid="130">신장센터</button>
+				<button data-hei="920" data-wid="605">재활의학센터</button>
+				<button data-hei="700" data-wid="705">치과센터</button>
+				<button data-hei="730" data-wid="885">정신건강의학과</button>
+				<button data-hei="390" data-wid="730">진단검사의학과</button>
 			</div>
 			<!-- 3층 -->
 			<div class="floor-list2" id="F3F-text">
-				<button data-hei="70" data-wid="90">산부인과</button>
-				<button data-hei="60" data-wid="270">유방·갑상선 외과센터</button>
-				<button data-hei="85" data-wid="410">가정의학과</button>
-				<button data-hei="88" data-wid="694">척추센터·통증센터</button>
-				<button data-hei="145" data-wid="790">예방관리센터</button>
-				<button data-hei="400" data-wid="215">내시경센터</button>
-				<button data-hei="300" data-wid="530">국제진료센터</button>
-				<button data-hei="240" data-wid="790">종합검진플러스센터</button>
-				<button data-hei="400" data-wid="790">건강증진센터</button>
-				<button data-hei="840" data-wid="70">혈액종양내과</button>
-				<button data-hei="820" data-wid="190">암통합지원센터</button>
-				<button data-hei="585" data-wid="250">소화기센터</button>
-				<button data-hei="830" data-wid="550">3병동</button>
-				<button data-hei="625" data-wid="690">피부과</button>
-				<button data-hei="720" data-wid="870">국가지정 입원치료병동</button>
+				<button data-hei="70" data-wid="85">산부인과</button>
+				<button data-hei="60" data-wid="265">유방·갑상선 외과센터</button>
+				<button data-hei="85" data-wid="405">가정의학과</button>
+				<button data-hei="88" data-wid="690">척추센터·통증센터</button>
+				<button data-hei="145" data-wid="785">예방관리센터</button>
+				<button data-hei="400" data-wid="210">내시경센터</button>
+				<button data-hei="300" data-wid="525">국제진료센터</button>
+				<button data-hei="240" data-wid="785">종합검진플러스센터</button>
+				<button data-hei="400" data-wid="785">건강증진센터</button>
+				<button data-hei="840" data-wid="65">혈액종양내과</button>
+				<button data-hei="820" data-wid="185">암통합지원센터</button>
+				<button data-hei="585" data-wid="245">소화기센터</button>
+				<button data-hei="830" data-wid="545">3병동</button>
+				<button data-hei="625" data-wid="685">피부과</button>
+				<button data-hei="720" data-wid="865">국가지정 입원치료병동</button>
 			</div>
 			<!-- 5층 -->
 			<div class="floor-list2" id="F5F-text">
-				<button data-hei="440" data-wid="830">심장혈관 촬영실1</button>
-				<button data-hei="260" data-wid="690">심장혈관 촬영실2</button>
+				<button data-hei="440" data-wid="825">심장혈관 촬영실1</button>
+				<button data-hei="260" data-wid="685">심장혈관 촬영실2</button>
 			</div>
 			<!-- 7층 -->
 			<div class="floor-list2" id="F7F-text">
-				<button data-hei="530" data-wid="780" data-hei2="530" data-wid2="170">7병동</button>
-				<button data-hei="180" data-wid="420">분만실</button>
-				<button data-hei="240" data-wid="455">고위험임산부집중치료실</button>
-				<button data-hei="315" data-wid="475">가족대기실</button>
-				<button data-hei="180" data-wid="615">진통실</button>
-				<button data-hei="240" data-wid="615">안정실</button>
-				<button data-hei="235" data-wid="513">스테이션</button>
-				<button data-hei="570" data-wid="315">치료실</button>
-				<button data-hei="710" data-wid="335">보호자 대기실</button>
-				<button data-hei="760" data-wid="335">정상아실</button>
-				<button data-hei="760" data-wid="500">집중치료실</button>
-				<button data-hei="440" data-wid="931" data-hei2="440" data-wid2="11">휴게실</button>
+				<button data-hei="430" data-wid="135" data-hei2="430" data-wid2="800" data-hei3="580" data-wid3="170"
+					data-hei4="580" data-wid4="767" data-size="4">7병동</button>
+				<button data-hei="85" data-wid="348">분만실</button>
+				<button data-hei="245" data-wid="450">고위험임산부집중치료실</button>
+				<button data-hei="315" data-wid="470">가족대기실</button>
+				<button data-hei="170" data-wid="610">진통실</button>
+				<button data-hei="240" data-wid="610">안정실</button>
+				<button data-hei="235" data-wid="510">스테이션</button>
+				<button data-hei="575" data-wid="315" data-hei2="565" data-wid2="628" data-size="2">치료실</button>
+				<button data-hei="705" data-wid="330">보호자 대기실</button>
+				<button data-hei="745" data-wid="330">정상아실</button>
+				<button data-hei="820" data-wid="465">집중치료실</button>
+				<button data-hei="435" data-wid="926" data-hei2="450" data-wid2="6" data-size="2">휴게실</button>
 			</div>
 			<!-- 8층 -->
 			<div class="floor-list2" id="F8F-text">
-				<button data-hei="470" data-wid="180">동 8병동</button>
-				<button data-hei="470" data-wid="750">서 8병동</button>
-				<button data-hei="395" data-wid="15">휴게실</button>
-				<button data-hei="45" data-wid="478">어린이 놀이방</button>
-				<button data-hei="390" data-wid="910">병원학교</button>
-				<button data-hei="380" data-wid="315">동 8병동 간호근무실</button>
-				<button data-hei="380" data-wid="633">서 8병동 간호근무실</button>
-				<button data-hei="510" data-wid="633" data-hei2="510" data-wid2="314">치료실</button>
+				<button data-hei="200" data-wid="327" data-hei2="390" data-wid2="157" data-hei3="520" data-wid3="213"
+					data-size="3">동 8병동</button>
+				<button data-hei="200" data-wid="603" data-hei2="390" data-wid2="757" data-hei3="520" data-wid3="712"
+					data-size="3">서 8병동</button>
+				<button data-hei="405" data-wid="10">휴게실</button>
+				<button data-hei="45" data-wid="470">어린이 놀이방</button>
+				<button data-hei="390" data-wid="905">병원학교</button>
+				<button data-hei="385" data-wid="307">동 8병동 간호근무실</button>
+				<button data-hei="385" data-wid="627">서 8병동 간호근무실</button>
+				<button data-hei="510" data-wid="600" data-hei2="510" data-wid2="310" data-size="2">치료실</button>
 			</div>
 			<!-- 9층 -->
 			<div class="floor-list2" id="F9F-text">
-				<button data-hei="470" data-wid="180">동 9병동</button>
-				<button data-hei="470" data-wid="750">서 9병동</button>
-				<button data-hei="0" data-wid="0">뇌졸중 치료실</button>
-				<button data-hei="0" data-wid="0">준중환자실</button>
-				<button data-hei="0" data-wid="0">휴게실</button>
-				<button data-hei="0" data-wid="0">치료실</button>
-				<button data-hei="0" data-wid="0">동 9병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">서 9병동 간호근무실</button>
+				<button data-hei="285" data-wid="327" data-hei2="390" data-wid2="87" data-hei3="520" data-wid3="210"
+					data-size="3">동 9병동</button>
+				<button data-hei="190" data-wid="603" data-hei2="390" data-wid2="787" data-hei3="520" data-wid3="712"
+					data-size="3">서 9병동</button>
+				<button data-hei="135" data-wid="325">뇌졸중 치료실</button>
+				<button data-hei="385" data-wid="218">준중환자실</button>
+				<button data-hei="405" data-wid="925" data-hei2="405" data-wid2="8" data-size="2">휴게실</button>
+				<button data-hei="510" data-wid="597" data-hei2="510" data-wid2="307" data-size="2">치료실</button>
+				<button data-hei="390" data-wid="305">동 9병동 간호근무실</button>
+				<button data-hei="390" data-wid="625">서 9병동 간호근무실</button>
 			</div>
 			<!-- 10층 -->
 			<div class="floor-list2" id="F10F-text">
-				<button data-hei="0" data-wid="0">동 10병동</button>
-				<button data-hei="0" data-wid="0">서 10병동</button>
-				<button data-hei="0" data-wid="0">동 10병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">서 10병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">휴게실</button>
-				<button data-hei="0" data-wid="0">치료실</button>
+				<button data-hei="190" data-wid="325" data-hei2="390" data-wid2="130" data-hei3="520" data-wid3="223"
+					data-size="3">동 10병동</button>
+				<button data-hei="190" data-wid="603" data-hei2="390" data-wid2="814" data-hei3="520" data-wid3="705"
+					data-size="3">서 10병동</button>
+				<button data-hei="390" data-wid="305">동 10병동 간호근무실</button>
+				<button data-hei="390" data-wid="625">서 10병동 간호근무실</button>
+				<button data-hei="405" data-wid="925" data-hei2="405" data-wid2="8" data-size="2">휴게실</button>
+				<button data-hei="510" data-wid="597" data-hei2="510" data-wid2="309" data-size="2">치료실</button>
 			</div>
 			<!-- 11층 -->
 			<div class="floor-list2" id="F11F-text">
-				<button data-hei="0" data-wid="0">동 11병동</button>
-				<button data-hei="0" data-wid="0">서 11병동</button>
-				<button data-hei="0" data-wid="0">동 11병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">서 11병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">휴게실</button>
-				<button data-hei="0" data-wid="0">치료실</button>
+				<button data-hei="190" data-wid="325" data-hei2="390" data-wid2="130" data-hei3="520" data-wid3="223"
+					data-size="3">동 11병동</button>
+				<button data-hei="190" data-wid="603" data-hei2="390" data-wid2="814" data-hei3="520" data-wid3="705"
+					data-size="3">서 11병동</button>
+				<button data-hei="390" data-wid="305">동 11병동 간호근무실</button>
+				<button data-hei="390" data-wid="625">서 11병동 간호근무실</button>
+				<button data-hei="405" data-wid="925" data-hei2="405" data-wid2="8" data-size="2">휴게실</button>
+				<button data-hei="510" data-wid="605" data-hei2="510" data-wid2="305" data-size="2">치료실</button>
 			</div>
 			<!-- 12층 -->
 			<div class="floor-list2" id="F12F-text">
-				<button data-hei="0" data-wid="0">동 12병동</button>
-				<button data-hei="0" data-wid="0">서 12병동</button>
-				<button data-hei="0" data-wid="0">동 12병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">서 12병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">휴게실</button>
-				<button data-hei="0" data-wid="0">치료실</button>
+				<button data-hei="190" data-wid="325" data-hei2="390" data-wid2="130" data-hei3="520" data-wid3="223"
+					data-size="3">동 12병동</button>
+				<button data-hei="190" data-wid="603" data-hei2="390" data-wid2="814" data-hei3="520" data-wid3="705"
+					data-size="3">서 12병동</button>
+				<button data-hei="390" data-wid="305">동 12병동 간호근무실</button>
+				<button data-hei="390" data-wid="625">서 12병동 간호근무실</button>
+				<button data-hei="405" data-wid="925" data-hei2="405" data-wid2="8" data-size="2">휴게실</button>
+				<button data-hei="510" data-wid="605" data-hei2="510" data-wid2="305" data-size="2">치료실</button>
 			</div>
 			<!-- 15층 -->
 			<div class="floor-list2" id="F15F-text">
-				<button data-hei="0" data-wid="0">동 15병동</button>
-				<button data-hei="0" data-wid="0">동 15병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">서 15병동</button>
-				<button data-hei="0" data-wid="0">서 15병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">그룹치료실</button>
-				<button data-hei="0" data-wid="0">휴게실</button>
-				<button data-hei="0" data-wid="0">치료실</button>
-				<button data-hei="0" data-wid="0">쉼터</button>
+				<button data-hei="190" data-wid="325" data-hei2="390" data-wid2="167" data-hei3="520" data-wid3="216"
+					data-size="32">동 15병동</button>
+				<button data-hei="390" data-wid="305">동 15병동 간호근무실</button>
+				<button data-hei="190" data-wid="603" data-hei2="390" data-wid2="783" data-hei3="520" data-wid3="718"
+					data-size="3">서 15병동</button>
+				<button data-hei="390" data-wid="625">서 15병동 간호근무실</button>
+				<button data-hei="45" data-wid="327">그룹치료실</button>
+				<button data-hei="405" data-wid="925" data-hei2="405" data-wid2="8" data-size="2">휴게실</button>
+				<button data-hei="510" data-wid="605" data-hei2="510" data-wid2="305" data-size="2">치료실</button>
+				<button data-hei="45" data-wid="467">쉼터</button>
 			</div>
 			<!-- 16층 -->
 			<div class="floor-list2" id="F16F-text">
-				<button data-hei="0" data-wid="0">동 16병동</button>
-				<button data-hei="0" data-wid="0">동 16병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">서 16병동</button>
-				<button data-hei="0" data-wid="0">서 16병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">휴게실</button>
-				<button data-hei="0" data-wid="0">치료실</button>
-				<button data-hei="0" data-wid="0">해오름방</button>
+				<button data-hei="190" data-wid="325" data-hei2="390" data-wid2="110" data-hei3="525" data-wid3="215"
+					data-size="3">동 16병동</button>
+				<button data-hei="390" data-wid="305">동 16병동 간호근무실</button>
+				<button data-hei="190" data-wid="603" data-hei2="390" data-wid2="783" data-hei3="520" data-wid3="718"
+					data-size="3">서 16병동</button>
+				<button data-hei="390" data-wid="625">서 16병동 간호근무실</button>
+				<button data-hei="405" data-wid="925" data-hei2="405" data-wid2="8" data-size="2">휴게실</button>
+				<button data-hei="510" data-wid="605" data-hei2="510" data-wid2="325" data-size="2">치료실</button>
+				<button data-hei="165" data-wid="485">해오름방</button>
 			</div>
 			<!-- 17층 -->
 			<div class="floor-list2" id="F17F-text">
-				<button data-hei="0" data-wid="0">동 17병동</button>
-				<button data-hei="0" data-wid="0">동 17병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">서 17병동</button>
-				<button data-hei="0" data-wid="0">서 17병동 간호근무실</button>
-				<button data-hei="0" data-wid="0">휴게실</button>
-				<button data-hei="0" data-wid="0">치료실</button>
+				<button data-hei="190" data-wid="325" data-hei2="390" data-wid2="110" data-hei3="525" data-wid3="220"
+					data-size="3">동 17병동</button>
+				<button data-hei="390" data-wid="305">동 17병동 간호근무실</button>
+				<button data-hei="190" data-wid="603" data-hei2="390" data-wid2="834" data-hei3="520" data-wid3="716"
+					data-size="3">서 17병동</button>
+				<button data-hei="390" data-wid="625">서 17병동 간호근무실</button>
+				<button data-hei="405" data-wid="925" data-hei2="405" data-wid2="8" data-size="2">휴게실</button>
+				<button data-hei="510" data-wid="605" data-hei2="510" data-wid2="325" data-size="2">치료실</button>
 			</div>
 			<!-- 18층 -->
 			<div class="floor-list2" id="F18F-text">
-				<button data-hei="0" data-wid="0">18병동</button>
-				<button data-hei="0" data-wid="0">휴게실</button>
-				<button data-hei="0" data-wid="0">수면다윈검사실</button>
-				<button data-hei="0" data-wid="0">치료실</button>
-				<button data-hei="0" data-wid="0">간호근무실</button>
+				<button data-hei="270" data-wid="330" data-hei2="270" data-wid2="605" data-hei3="390" data-wid3="215"
+					data-hei4="390" data-wid4="775" data-hei5="525" data-wid5="210" data-hei6="525" data-wid6="758"
+					data-size="6">18병동</button>
+				<button data-hei="405" data-wid="925" data-hei2="405" data-wid2="8" data-size="2">휴게실</button>
+				<button data-hei="515" data-wid="107" data-hei2="380" data-wid2="87" data-size="2">수면다윈검사실</button>
+				<button data-hei="510" data-wid="605" data-hei2="510" data-wid2="325" data-size="2">치료실</button>
+				<button data-hei="390" data-wid="625" data-hei2="390" data-wid2="305" data-size="2">간호근무실</button>
 			</div>
 			<!-- //층 선택에 따른 주요시설 리스트 -->
 
 			<!-- 층별 이미지 -->
 			<div class="floor-box">
-				<p class="icon_mark"><img src="../img/icon_mark.png" alt="표시마크"></p>
-				<p class="icon_mark2"><img src="../img/icon_mark.png" alt="표시마크"></p>
+				<p class="icon_mark" id="markp"><img src="../img/icon_mark.png" alt="표시마크"></p>
 				<div class="info">
 					<span class="icon1">은행</span>
 					<span class="icon2">접수·수납창구</span>
@@ -290,11 +328,23 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+		//point()		
+		//function point(){//포인터 좌표알려주는 함수	 
+		//$('.con img').click(function(event){
+		//console.log(event.offsetY+45);
+		//console.log(event.offsetX-15);
+		//})
+		//}
 		//층별안내 스크립트
 		var $list1 = $(".floor-list");
 		var $list2 = $(".floor-list2");
-		var $mark = $(".icon_mark");
-		var $mark2 = $(".icon_mark2");
+		var $markimg = '<img src="../img/icon_mark.png" alt="표시마크">';
+		var $markp = $(".icon_mark");
+		var $markp2 = '<p class="icon_mark" id="markp2">' + $markimg + '</p>';
+		var $markp3 = '<p class="icon_mark" id="markp3">' + $markimg + '</p>';
+		var $markp4 = '<p class="icon_mark" id="markp4">' + $markimg + '</p>';
+		var $markp5 = '<p class="icon_mark" id="markp5">' + $markimg + '</p>';
+		var $markp6 = '<p class="icon_mark" id="markp6">' + $markimg + '</p>';
 
 		$list1.find('button').on('click', function (e) {
 			e.preventDefault();
@@ -302,55 +352,84 @@
 			$list2.removeClass('active');
 			$(".con").removeClass('active');
 			$(this).addClass('active');
+
 			var panel = $(this).attr('data');
-			var $textBox = $(panel + "-text");
+			var textBox = panel + "-text";
+
 			$(panel).addClass('active');
-			$textBox.addClass('active');
+			$(textBox).addClass('active');
 			$list2.find('button').removeClass('active');
-			$textBox.find('button').eq(0).addClass('active');
-			var heiL = $textBox.find('button').eq(0).attr('data-hei');
-			var widL = $textBox.find('button').eq(0).attr('data-wid');
-			$mark.stop().animate({
-				top: heiL,
-				left: widL
-			});
-			if($(textBox).find('button').eq(0).attr('data-hei2')){ //마커가 2개 이상일때							
-				var heiL2 = $(textBox).find('button').eq(0).attr('data-hei2');
-				var widL2 = $(textBox).find('button').eq(0).attr('data-wid2');
-				$mark2.addClass('active');
-				$mark2.stop().animate({
-					top: heiL2,
-					left: widL2
-				});
-			}else{
-				$mark2.removeClass('active');
-				$mark2.css({'top':'330px','left':'270px'})
+
+			var heiL = $(textBox).find('button').eq(0).attr('data-hei');
+			var widL = $(textBox).find('button').eq(0).attr('data-wid');
+			var heiL2 = $(textBox).find('button').eq(0).attr('data-hei2');
+			var widL2 = $(textBox).find('button').eq(0).attr('data-wid2');
+			var heiL3 = $(textBox).find('button').eq(0).attr('data-hei3');
+			var widL3 = $(textBox).find('button').eq(0).attr('data-wid3');
+			var heiL4 = $(textBox).find('button').eq(0).attr('data-hei4');
+			var widL4 = $(textBox).find('button').eq(0).attr('data-wid4');
+			var heiL5 = $(textBox).find('button').eq(0).attr('data-hei5');
+			var widL5 = $(textBox).find('button').eq(0).attr('data-wid5');
+			var heiL6 = $(textBox).find('button').eq(0).attr('data-hei6');
+			var widL6 = $(textBox).find('button').eq(0).attr('data-wid6');
+			var w = $('#markp').position();
+
+			if ($(textBox).find('button').eq(0).addClass('active')) { //마커가 1개일 때
+				$markp.stop().animate({ top: heiL, left: widL });
+				$('#markp2,#markp3,#markp4,#markp5,#markp6').remove();
+			}
+			if ($(textBox).find('button').eq(0).attr('data-hei6')) { //마커가 6개 이상일때
+				$('.floor-box').append($markp6, $markp5, $markp4, $markp3, $markp2);
+				$('#markp6').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL6, left: widL6 });
+				$('#markp5').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL5, left: widL5 });
+				$('#markp4').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL4, left: widL4 });
+				$('#markp3').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL3, left: widL3 });
+				$('#markp2').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL2, left: widL2 });
+			} else if ($(textBox).find('button').eq(0).attr('data-hei5')) { //마커가 5개 이상일때	
+				$('.floor-box').append($markp5, $markp4, $markp3, $markp2);
+				$('#markp5').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL5, left: widL5 });
+				$('#markp4').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL4, left: widL4 });
+				$('#markp3').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL3, left: widL3 });
+				$('#markp2').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL2, left: widL2 });
+			} else if ($(textBox).find('button').eq(0).attr('data-hei4')) { //마커가 4개 이상일때	
+				$('.floor-box').append($markp4, $markp3, $markp2);
+				$('#markp4').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL4, left: widL4 });
+				$('#markp3').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL3, left: widL3 });
+				$('#markp2').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL2, left: widL2 });
+			} else if ($(textBox).find('button').eq(0).attr('data-hei3')) { //마커가 3개 이상일때	
+				$('.floor-box').append($markp3, $markp2);
+				$('#markp3').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL3, left: widL3 });
+				$('#markp2').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL2, left: widL2 });
+			} else if ($(textBox).find('button').eq(0).attr('data-hei2')) { //마커가 2개 이상일때	
+				$('.floor-box').append($markp2);
+				$('#markp2').stop().css({ 'top': w.top, 'left': w.left }).animate({ top: heiL2, left: widL2 });
 			}
 		});
 		$list2.find('button').on('click', function (e) {
+			var t = $(this);
 			e.preventDefault();
 			$list2.find('button').removeClass('active');
-			$(this).addClass('active');
+
 			var hei = $(this).attr('data-hei');
 			var wid = $(this).attr('data-wid');
-			var hei2 = $(this).attr('data-hei2');
-			var wid2 = $(this).attr('data-wid2');
-			console.log(hei + "," + wid);
-			$mark.stop().animate({
-				top: hei,
-				left: wid				
-			});
-			if ($(this).attr('data-hei2')){ //마커가 2개 이상일때	
-				$mark2.addClass('active');
-				$mark2.stop().animate({
-					top: hei2,
-					left: wid2
-				});
-			}else{
-				$mark2.removeClass('active');
-				$mark2.css({'top':'330px','left':'270px'})
+
+			if ($(this).addClass('active')) {
+				$markp.stop().animate({ top: hei, left: wid });
+				$('#markp2,#markp3,#markp4,#markp5,#markp6').remove();
+				pointFor($(this).attr('data-size'), t);
 			}
 		});
+
+		function pointFor(num, t) {
+			var w = $('#markp').position();
+			for (var m = 2; m <= num; m++) {
+				$('.floor-box').append('<p class="icon_mark" style="left:' + w.left + 'px; top:' + w.top + 'px" id="markp' + m + '">' + $markimg + '</p>');
+				$('#markp' + m + '').stop().animate({
+					top: t.attr('data-hei' + m + ''),
+					left: t.attr('data-wid' + m + '')
+				})
+			}
+		}				
 	</script>
 </section>
 <!-- //container -->
