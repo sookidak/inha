@@ -206,7 +206,7 @@ margin-bottom:32px;
 .res-wrap .res-dept{ width: 279px; }
 .res-wrap .res-dept .dept-tit{border-radius: 8px 0 0 0}
 .res-wrap .res-dept .dept-box{height: 865px; border-left:1px solid #dddddd;border-bottom:1px solid #dddddd;border-radius: 0  0 0 8px; overflow-x:hidden;overflow-y:scroll;  }
-.res-wrap .res-dept .dept-box button.detp-list{  border-bottom:1px solid #eeeeee; width: 100%; height: 60px; background: #fff; font-size: 16px; letter-spacing: -1px ; font-family:'notoKrL',sans-serif; text-align: left; padding-left: 20px; }
+.res-wrap .res-dept .dept-box button.detp-list{  border-bottom:1px solid #eeeeee; width: 100%; height: 60px; background: #fff; font-size: 16px; letter-spacing: -1px ; font-family:'notoKrL',sans-serif; text-align: left; padding-left: 20px; border:2px solid #fff;}
 .res-wrap .res-dept .dept-box button.detp-list:last-child{ border-bottom:0; margin-bottom:8px;}
 .res-wrap .res-dept .dept-box button.detp-list.active{border:2px solid #0770bb;font-family:'notoKrM',sans-serif; color: #0770bb;  }
 
@@ -215,7 +215,7 @@ margin-bottom:32px;
 .res-wrap .res-docter .doc-tit{border:1px solid #dddddd; }
 .res-wrap .res-docter .doc-tit.on{border-left:1px solid #dddddd !important; border-right:1px solid #dddddd !important;}
 .res-wrap .res-docter .doc-box{height: 865px; border:1px solid #dddddd;border-top:0;overflow-x:hidden;overflow-y:scroll;}
-.res-wrap .res-docter .doc-box .doc-list {display: block; border-bottom:1px solid #eeeeee ; background: #fff ; position: relative;}
+.res-wrap .res-docter .doc-box .doc-list {display: block; border-bottom:1px solid #eeeeee ; background: #fff ; position: relative;border:2px solid #fff;}
 .res-wrap .res-docter .doc-box .doc-list:after{content:'';display: block;clear: both;}
 .res-wrap .res-docter .doc-box .doc-list.active{border:2px solid #0770bb;}
 .res-wrap .res-docter .doc-box .doc-list .doc_photo{ float: left; margin-top: 40px; margin-left: 20px; width: 180px; }
