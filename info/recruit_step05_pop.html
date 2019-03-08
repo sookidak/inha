@@ -1,0 +1,52 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">진료예약</h1>
+		<p class="text-style1">
+			아래 번호 순서대로 원하시는 예약정보를 선택하신 후 예약완료 버튼을 누르시면 최종 완료됩니다.
+		</p>
+	</div>
+	<div class="contents">
+		
+	</div>
+</section>
+<!-- 진료과  layer popup -->
+<div id="layer-bg" class="active"></div>
+<div id="layer-box" role="dialog" aria-labelledby="layerpopup" class="active">
+	<div>
+		<div class="layer-wrap">		
+			<div class="layer-cont" style="z-index: 4">
+				<p class="title-style3">학교 선택하기</p>
+				<p class="text-style3 marT20"><span class="star">*</span> 캠퍼스는 직접입력해주세요.</p>
+				<div class="etcbox-type3 marT10">
+					<input type="text" id="" title="학교이름입력"  class="wid280" />
+					<button type="button" class="btn btn-m marL10 wid115">검색</wid310button>
+					<button type="button" class="btn btn-m marL10 wid115">직접입력</button>
+				</div>
+				<div class="etcbox etcbox-type5">
+					<button type="button">가톨릭상지대학</button>
+					<button type="button">강동대학교</button>
+					<button type="button">강릉영동대학</button>
+					<button type="button">강원관광대학</button>
+					<button type="button">강원전문대학</button>
+					<button type="button">가톨릭상지대학</button>
+					<button type="button">강동대학교</button>
+					<button type="button">강릉영동대학</button>
+					<button type="button">강원관광대학</button>
+					<button type="button">강원전문대학</button>
+				</div>
+			</div>	
+		</div>
+		<div class="layer-close">
+			<div>
+				<button type="button" class="btn-close"><span class="offscreen">레이어 닫기</span></button>
+			</div>
+		</div>	
+	</div>
+</div>
+<!-- //진료과 layer popup -->
+<!-- //container -->
+@@include('../inc/footer.html')
