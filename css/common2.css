@@ -586,6 +586,7 @@ ul.bxslider {  list-style: none;}
 .qna dt.active button{color: #0770bb;}
 .qna dt.active:after{background-position:-70px -25px}
 .qna dd{background: #f6f6f6; padding:27px 100px;color: #777 ;position: relative;border-bottom: 1px solid #eeeeee; word-break: keep-all;}
+.qna dd img{max-width: 1000px;}
 .qna dd:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_component.png') -70px -60px no-repeat;position: absolute;top:50%;left: 30px; transform: translateY(-50%); -webkit-transform: translateY(-50%)}
 .Accordion-panel[hidden] { display: none;}
 
