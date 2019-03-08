@@ -145,8 +145,7 @@ margin-bottom:32px;
 .member-wrap .btn-wrap .btn-big:hover, .member-wrap .btn-wrap .btn-big:focus{color: #fff;background: #199da3; border:0;
 	background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%);
 	background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%);
-	background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1)}
+	background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%);}
 .member-wrap .btn-wrap .normal:hover .btn-icon, .member-wrap .btn-wrap .normal:focus .btn-icon{ background-position: 0px 0px; }
 .member-wrap .btn-wrap .child:hover .btn-icon, .member-wrap .btn-wrap .child:focus .btn-icon{ background-position: 0px -125px;}
 .member-wrap .btn-wrap .foreigner:hover .btn-icon, .member-wrap .btn-wrap .foreigner:focus .btn-icon{ background-position: 0px -250px;}
