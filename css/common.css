@@ -409,6 +409,10 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 
 .etcbox-type4 .btn{  position: absolute;top: 7px;right: 0}
 
+.etcbox-type5 {display: block; height: 200px; overflow-y: auto; margin-top:20px ; padding: 20px;}
+.etcbox-type5 button{display: block; margin-bottom: 5px;}
+.etcbox-type5 button:hover{color: #0770bb}
+
 
 /* section 공통상단 */
 .contents-top{text-align: center;line-height:38px;margin-bottom:70px;}
@@ -745,6 +749,7 @@ input[readonly]{border: 1px solid #eee !important; color: #777 !important; backg
 .wid115{width:115px !important; min-width:115px !important}
 .wid120{width:120px !important}
 .wid140{width:140px !important}
+.wid280{width:280px !important}
 .wid500{width:300px !important}
 
 .hei500{height:500px !important}

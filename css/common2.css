@@ -442,6 +442,7 @@ margin-bottom:32px;
 .main-lolling .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager{ bottom:450px;  }
 .main-lolling .bx-wrapper .bx-prev {  left: 15%; }
 .main-lolling .bx-wrapper .bx-next {  right:15%;  }
+.main-lolling{overflow: hidden;height: 1030px;}
 
 /*.section{color: #fff; font-weight: normal; font-style: normal;font-family: 'NotoKrL'; position: relative; width: 100%}*/
 .section{color: #fff; font-weight: normal; font-style: normal;font-family: 'NotoKrL'; height: 960px; position: relative; width: 100%}
@@ -476,8 +477,7 @@ margin-bottom:32px;
 .main-con .mychart.active{background: #2ca48f; border:5px solid #2ca48f }
 .main-con .mychart.active:before{content: ''; width: 172px; height: 182px; position:absolute; background:url('../img/icon_main.png') 0 -160px no-repeat; bottom: 0px; right: 0px;  }
 
-
-
+.now-lolling{height: 300px; overflow: hidden;}
 .section.now{background:url('../img/main_now_bg.jpg') center top;position: relative; }
 .section .now-wrap{width: 1180px; margin:0 auto}
 .now-wrap  h2:after{content: ''; width: 700px; height: 2px; background: #fff;position: absolute;top: 76px; left: -690px  }
