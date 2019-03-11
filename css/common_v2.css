@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.section.v2 .main-con h2 {font-size: 65px;font-family: 'NotoKrM',sans-serif; letter-spacing: -0.04em;}
+.section.v2 .main-con h2:after {content: none}
+.section.v2 .main-con .h2-capy {position: relative; font-size: 22px; margin-top: 30px; letter-spacing: -0.04em}
+.section.v2 .main-con .h2-capy:after {content: ''; width: 2px; height: 40px; background: #a5a0a0; position: absolute; bottom: -104px; left: 50%;}
+.section.v2 .main-con .main-service {margin-top: 147px;}
+.section.v2 .main-lolling .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager {bottom: 435px;}
+
+.section.v2 .main-con .main-service > div {border: 0; padding: 22px 35px;}
+.section.v2 .main-con .main-service .dept {background-color: #0770bb}
+.section.v2 .main-con .main-service .res {background-color: #199da3}
+.section.v2 .main-con .main-service .mychart {background-color: #2ca48f}
+.section.v2 .main-con .main-service .text {margin-top: 20px;}
